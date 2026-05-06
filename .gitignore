@@ -1,0 +1,49 @@
+# Blenderファイル（大容量バイナリ）
+*.blend
+*.blend1
+*.blend2
+
+# バックアップ
+backups/
+
+# FBX・3Dエクスポート
+*.fbx
+*.fbx.zip
+*.obj
+*.stl
+*.glb
+*.gltf
+*.usd
+*.usdc
+*.usda
+*.max
+*.zip
+
+# 動画・画像
+*.mp4
+*.avi
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.exr
+*.hdr
+*.tga
+
+# 出力・結果フォルダ
+Result/
+exports/
+release/
+Sample/
+uv_layout_preview.png
+
+# OS生成ファイル
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# テンポラリ
+__pycache__/
+*.pyc
+*.pyo
+.tmp/
