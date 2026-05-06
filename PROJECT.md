@@ -191,7 +191,42 @@ bpy.ops.export_scene.fbx(
 
 ## バージョン管理
 
+### gitで管理するもの
+- スクリプト (`scripts/*.py`)
+- ドキュメント (`*.md`, `VERSION`)
+- 解剖学知識ベース (`knowledge/`)
+
+### gitで管理しないもの（バイナリ・大容量）
+- `.blend` ファイル（500MB超のため .gitignore 除外済み）
+- `.fbx` / `.glb` 等のエクスポートファイル
+- `backups/` 内のスナップショット
+
+### .blendファイルのバックアップルール
+**.blendはgit管理外のため、作業の前後で手動バックアップを作成して変更履歴を保護する。**
+
+| タイミング | 操作 | 命名規則 |
+|---|---|---|
+| **大きな変更の前** | `backups/` にコピー | `3DAnatomyFemale_before_<作業内容>_YYYYMMDD.blend` |
+| **セッション終了時** | `bump_version()` を呼ぶ | `.blend`保存 + `CHANGELOG.md`記録 |
+
+```python
+# Blender内で実行（作業前スナップショット）
+import bpy, shutil, os
+from datetime import datetime
+src = bpy.data.filepath
+dst = os.path.join(os.path.dirname(src), "backups",
+      f"3DAnatomyFemale_before_<説明>_{datetime.now().strftime('%Y%m%d')}.blend")
+bpy.ops.wm.save_mainfile()
+shutil.copy2(src, dst)
+print(f"バックアップ: {dst}")
+```
+
+```python
+# セッション終了時（バージョン更新）
+bump_version('patch', '変更内容')   # 位置調整・微修正
+bump_version('minor', '変更内容')   # 筋肉追加・大幅再配置
+bump_version('major', '変更内容')   # 構造的変更
+```
+
 - `VERSION` ファイル: 現在バージョン
-- `CHANGELOG.md`: 変更履歴
-- `backups/`: .blendスナップショット
-- セッション終了時に `bump_version()` で記録
+- `CHANGELOG.md`: 変更履歴（`bump_version()` が自動記録）
