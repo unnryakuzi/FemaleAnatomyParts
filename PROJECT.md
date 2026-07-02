@@ -2,7 +2,7 @@
 
 **メインファイル**: `3DAnatomyFemale.blend`  
 **作業ディレクトリ**: `C:\Users\abesh\Documents\Blender\MaleAnatomy\`  
-**現バージョン**: v1.33.1
+**現バージョン**: `VERSION` ファイル参照（このファイルには記載しない — 二重管理で乖離した実績があるため）
 
 ---
 
