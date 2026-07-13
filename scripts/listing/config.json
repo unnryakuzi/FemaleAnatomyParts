@@ -1,0 +1,56 @@
+{
+  "_comment": "出品自動化の設定。新バージョンを出すたびに version / dirs を更新する。商品IDは固定。",
+
+  "gumroad": {
+    "base_edit": "https://gumroad.com/products/",
+    "products": {
+      "female": { "id": "zdlbhd", "public": "https://liberation58.gumroad.com/l/zdlbhd" },
+      "male":   { "id": "hgbvor", "public": "https://liberation58.gumroad.com/l/hgbvor" },
+      "set":    { "id": "dbwncg", "public": "https://liberation58.gumroad.com/l/dbwncg" }
+    }
+  },
+
+  "booth": {
+    "base_edit": "https://manage.booth.pm/items/",
+    "base_public": "https://kabe-tech.booth.pm/items/",
+    "products": {
+      "female": { "id": "8481858" },
+      "male":   { "id": "8496247" },
+      "set":    { "id": "8496725" }
+    }
+  },
+
+  "root": "C:/Users/abesh/Documents/Blender/MaleAnatomy",
+
+  "female": {
+    "version": "v1.67.0",
+    "previews_dir": "配布パッケージ_v1.67.0/previews",
+    "zip_dir": "配布zip_v1.67.0",
+    "zip_prefix": "FemaleAnatomy_v1.67.0",
+    "preview_order": ["01_front.png","02_front34.png","03_back.png","04_skeleton_front.png","05_torso_closeup.png","06_forearm_tendon.png"]
+  },
+
+  "male": {
+    "version": "Man_v1.1.0",
+    "previews_dir": "配布パッケージ_Man_v1.1.0/previews",
+    "zip_dir": "配布zip_Man_v1.1.0",
+    "zip_prefix": "MaleAnatomy_v1.1.0",
+    "preview_order": ["01_muscle_front.png","02_muscle_front34.png","03_muscle_back.png","04_skeleton_front.png","05_organs.png","06_vessels_nerves.png","07_skin.png","08_torso_closeup.png"]
+  },
+
+  "set_image_order": [
+    "thumbnails/thumb_set.png",
+    "female:01_front.png",
+    "male:01_muscle_front.png",
+    "female:03_back.png",
+    "male:03_muscle_back.png",
+    "female:05_torso_closeup.png",
+    "male:05_organs.png",
+    "male:06_vessels_nerves.png",
+    "male:04_skeleton_front.png"
+  ],
+
+  "thumbnails_dir": "thumbnails",
+  "bg_gray": 184,
+  "connect_js": "C:/Users/abesh/tools/browser-auto/connect.js"
+}
