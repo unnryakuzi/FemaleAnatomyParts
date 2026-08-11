@@ -6,6 +6,7 @@
  *
  * サブコマンド（個別実行 or all）:
  *   node booth.js title  <female|male|set>   商品名に【カラー版】を前置（React value setter）
+ *   node booth.js desc   <product>           config.booth_desc_notes の注記を説明文へ冪等に挿入
  *   node booth.js images <product>           商品画像を全削除→config順で一括追加（1番目=一覧サムネ）
  *   node booth.js files  <product>           作品ファイル: 旧zip削除→新zipアップ（★容量10GB上限→削除を先に）
  *   node booth.js save   <product>           「公開で保存する」（R-18維持）
@@ -30,7 +31,7 @@ const { withBrowser } = require(CFG.connect_js);
 const cmd = process.argv[2];
 const product = process.argv[3];
 if (!cmd || !product || !CFG.booth.products[product]) {
-  console.error('usage: node booth.js <title|images|files|save|all|verify> <female|male|set>');
+  console.error('usage: node booth.js <title|desc|images|files|save|all|verify> <female|male|set>');
   process.exit(1);
 }
 const PID = CFG.booth.products[product].id;
@@ -44,7 +45,17 @@ function imagePaths(p) {
     if (spec.includes(':')) { const [g, f] = spec.split(':'); return fwd(path.join(root, CFG[g].previews_dir, f)); }
     return fwd(path.join(root, spec));
   });
-  return CFG[p].preview_order.map(f => fwd(path.join(root, CFG[p].previews_dir, f)));
+  // ★BOOTH掲載分だけ無彩色マネキン調を使う（previews_dir_booth）。年齢制限判定は商品ページの
+  //   画像を見ているため、肌色のécorché は「裸の人体」と読まれてR-18固定にされる（2026-08-10）。
+  //   配布物・Gumroad はカラーのままなので previews_dir は触らない。
+  //   男性は 07_skin（肌色の全裸レンダー）を落とすため掲載順も別に持つ（preview_order_booth）。
+  const dir = CFG[p].previews_dir_booth || CFG[p].previews_dir;
+  const order = CFG[p].preview_order_booth || CFG[p].preview_order;
+  const list = order.map(f => fwd(path.join(root, dir, f)));
+  // ★BOOTHの一覧サムネは1枚目画像の正方形中央クロップ → 縦長(1000x1400)だと頭と足が切れる。
+  //   正方形の全身サムネを先頭に置いて回避する（2026-07-26）。
+  if (CFG.booth_thumb_first) list.unshift(fwd(path.join(root, CFG.thumbnails_dir, CFG[p].booth_thumb || `thumb_${p}.png`)));
+  return list;
 }
 
 // product の作品ファイル(zip)絶対パスと、削除すべき旧版判定
@@ -70,6 +81,30 @@ async function setTitle(page) {
   } else console.log('title already has カラー版 or not found:', cur);
 }
 
+// 説明文へ注記を1回だけ差し込む（冪等）。config.json の booth_desc_notes[product] が定義。
+// anchor の直後に note を挿入する。marker が既にあれば何もしない。
+async function setDesc(page) {
+  const spec = (CFG.booth_desc_notes || {})[product];
+  if (!spec) { console.log('desc: no booth_desc_notes for', product); return false; }
+  const res = await page.evaluate(({ anchor, note, marker }) => {
+    const ta = document.querySelectorAll('textarea')[0];
+    if (!ta) return { status: 'textarea-not-found' };
+    const cur = ta.value || '';
+    if (cur.includes(marker)) return { status: 'already', len: cur.length };
+    const i = cur.indexOf(anchor);
+    if (i < 0) return { status: 'anchor-not-found', len: cur.length };
+    const at = i + anchor.length;
+    const nv = cur.slice(0, at) + note + cur.slice(at);
+    const set = Object.getOwnPropertyDescriptor(window.HTMLTextAreaElement.prototype, 'value').set;
+    set.call(ta, nv);
+    ta.dispatchEvent(new Event('input', { bubbles: true }));
+    ta.dispatchEvent(new Event('change', { bubbles: true }));
+    return { status: 'inserted', len: nv.length };
+  }, spec);
+  console.log('desc:', JSON.stringify(res));
+  return res.status === 'inserted';
+}
+
 const COUNT_IMGS = () => [...document.querySelectorAll('*')].filter(e => { const s = e.getAttribute('style') || ''; return /background-image/.test(s) && /(booth|pximg|amazonaws|item)/.test(s); }).filter(c => c.getBoundingClientRect().width > 50).length;
 
 async function deleteAllImages(page) {
@@ -87,15 +122,41 @@ async function deleteAllImages(page) {
 
 // ドロップゾーンをクリック→生成された input に生CDPでファイル投入（50MB制限回避）
 async function dropzoneUpload(context, page, dzText, files) {
-  let dz = page.getByText(dzText, { exact: false }).first();
   let captured = null; page.on('filechooser', fc => { captured = fc; });
-  await dz.click(); await page.waitForTimeout(1500);
+  if (typeof dzText === 'string') {
+    await page.getByText(dzText, { exact: false }).first().click();
+  } else {
+    await page.mouse.click(dzText.x, dzText.y); // {x,y} 指定
+  }
+  await page.waitForTimeout(1500);
   const client = await context.newCDPSession(page); await client.send('DOM.enable');
   const doc = await client.send('DOM.getDocument', { depth: -1 });
   const q = await client.send('DOM.querySelectorAll', { nodeId: doc.root.nodeId, selector: 'input[type=file]' });
   if (q.nodeIds.length) { await client.send('DOM.setFileInputFiles', { files, nodeId: q.nodeIds[q.nodeIds.length - 1] }); return true; }
   if (captured) { try { await captured.setFiles(files); return true; } catch (e) { console.log('fc.setFiles err', e.message); } }
   return false;
+}
+
+// 「商品画像」〜「作品ファイル」見出しの間にあるドロップゾーン/「画像を追加」セルの座標を返す。
+// 文言は BOOTH 側で変わる（0枚時=ドロップゾーン / 1枚以上=画像を追加）ので、
+// テキスト一致ではなく「セクション内にある ドラッグ|追加 の要素」で拾う。作品ファイル側の
+// ドロップゾーンに誤爆すると PNG が販売ファイルとして上がるため、範囲限定は必須。
+async function imageZonePoint(page) {
+  const locate = () => page.evaluate(() => {
+    const leaves = [...document.querySelectorAll('*')].filter(e => e.children.length === 0);
+    const topOf = re => { const e = leaves.find(x => re.test((x.textContent || '').trim())); return e ? e.getBoundingClientRect().top + window.scrollY : null; };
+    const secTop = topOf(/^商品画像$/), secBottom = topOf(/^作品ファイル$/);
+    const c = leaves
+      .filter(e => /ドラッグ|画像を追加/.test(e.textContent || ''))
+      .map(e => { const r = e.getBoundingClientRect(); return { x: Math.round(r.x + r.width / 2), y: Math.round(r.y + r.height / 2), absTop: r.top + window.scrollY, text: (e.textContent || '').trim().slice(0, 30) }; })
+      .filter(z => (secTop === null || z.absTop > secTop) && (secBottom === null || z.absTop < secBottom))[0];
+    return c ? { ...c, secTop, secBottom } : null;
+  });
+  let z = await locate();
+  if (!z) return null;
+  await page.evaluate(t => window.scrollTo(0, Math.max(t - 200, 0)), z.absTop);
+  await page.waitForTimeout(800);
+  return await locate();
 }
 
 async function save(page) {
@@ -110,11 +171,11 @@ async function save(page) {
 async function doImages(context, page) {
   await deleteAllImages(page);
   console.log('images after delete', await page.evaluate(COUNT_IMGS));
-  const ok = await dropzoneUpload(context, page, '画像ファイルをドラッグ', imagePaths(product));
-  if (!ok) { // 画像が残っている等で「画像を追加」セルの場合
-    const add = page.getByText('画像を追加', { exact: false }).first();
-    if (await add.count()) { await add.click(); await page.waitForTimeout(800); const fis = await page.$$('input[type=file]'); await fis[fis.length - 1].setInputFiles(imagePaths(product)); }
-  }
+  const zone = await imageZonePoint(page);
+  if (!zone) throw new Error('商品画像のドロップゾーンが見つからない（BOOTHのUI変更を疑う）');
+  console.log('image zone:', zone.text, zone.x, zone.y);
+  const ok = await dropzoneUpload(context, page, { x: zone.x, y: zone.y }, imagePaths(product));
+  if (!ok) throw new Error('input[type=file] が生成されなかった');
   await page.waitForTimeout(10000);
   console.log('image cells now', await page.evaluate(COUNT_IMGS));
 }
@@ -162,10 +223,12 @@ async function run() {
       await page.goto(CFG.booth.base_public + PID, { waitUntil: 'domcontentloaded', timeout: 60000 });
       await page.waitForTimeout(6000);
       const out = process.env.TEMP + `/booth_${product}_pub.png`;
-      await page.screenshot({ path: out }); console.log('saved', out); return;
+      // fullPage: 説明文まで写す（メイン画像だけ見て誤判定した事故があるため）
+      await page.screenshot({ path: out, fullPage: process.env.FULLPAGE === '1' }); console.log('saved', out); return;
     }
     await gotoEdit(page);
     if (cmd === 'title') { await setTitle(page); await save(page); }
+    else if (cmd === 'desc') { if (await setDesc(page)) await save(page); }
     else if (cmd === 'images') { await doImages(context, page); await save(page); }
     else if (cmd === 'files') { await doFiles(context, page); await save(page); }
     else if (cmd === 'all') { await setTitle(page); await doImages(context, page); await doFiles(context, page); await save(page); }

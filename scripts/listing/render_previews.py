@@ -13,6 +13,14 @@
   - 頂点カラーは scene.display.shading.color_type='VERTEX' で再現。
   - 背景は 0.72 グレーで出し、後段の normalize_and_thumbs.py で 184 に正規化する。
   - 出力は config.json の previews_dir / preview_order に従う。
+
+環境変数:
+  PREVIEW_OUT  出力先を上書き（試し撮り用）
+  MANNEQUIN=1  マネキン調（無彩色）で撮る。頂点カラー(肌色)を使わず濃灰マット＋cavityで
+               陰影を出す。BOOTHの年齢制限判定は商品ページの画像を見ているため、
+               肌色のécorché＝「裸の人体」と読まれるのを避ける用途（2026-08-10）。
+  AGESAFE=1    全年齢版の掲載画像を撮る。生殖器(13オブジェクト)を隠し、外皮ショット
+               (07_skin＝肌色の全裸レンダー)を撮らない。MANNEQUIN=1 と併用する。
 """
 import bpy, sys, os, json, math
 from mathutils import Vector, Quaternion
@@ -24,6 +32,8 @@ ROOT = CFG["root"]
 argv = sys.argv[sys.argv.index("--")+1:] if "--" in sys.argv else []
 MODEL = argv[0] if argv else "female"
 SHOT_FILTER = argv[1] if len(argv) > 1 else None
+MANNEQUIN = os.environ.get("MANNEQUIN") == "1"
+AGESAFE = os.environ.get("AGESAFE") == "1"
 
 # 可視化プリセット: shot_type -> 表示するコレクション名の集合（他は hide_render=True）
 PRESETS = {
@@ -40,6 +50,11 @@ PRESETS = {
     },
 }
 ALWAYS_HIDE = {"_RenderSetup", "_ガイドライン"}
+# AGESAFE=1 のとき追加で隠すコレクション。SHOW側のコレクションに入れ子で入っていても
+# 名前で引いて差し引くので確実に消える（男性の生殖器は13オブジェクト）。
+AGESAFE_HIDE = {"生殖器"}
+# AGESAFE=1 で撮らないショット preset（外皮＝全裸の肌色レンダー。全年齢版では出せない）
+AGESAFE_DROP_PRESETS = {"skin"}
 
 # ショット定義: 出力ファイル名 -> (preset, camera, closeup_target)
 # camera: front / front34 / back。closeup_target: None=全身, 'torso'/'forearm'=寄り
@@ -93,6 +108,15 @@ def set_visibility(scene, show_cols):
                 # CURRENT_左広頚筋接触ライン が黄色い線として写り込んだ 2026-07-13）
                 if o.type == 'MESH':
                     show_objs.add(o.name)
+    if AGESAFE:
+        hidden = set()
+        for cn in AGESAFE_HIDE:
+            c = cmap.get(cn)
+            if c:
+                hidden |= {o.name for o in c.all_objects if o.type == 'MESH'}
+        if hidden:
+            show_objs -= hidden
+        print(f"  AGESAFE: hid {len(hidden)} objects from {sorted(AGESAFE_HIDE)}")
     for o in scene.objects:
         o.hide_render = o.name not in show_objs
     return show_objs
@@ -144,12 +168,21 @@ def main():
     scene.view_settings.view_transform = 'Standard'  # 頂点カラーを素直に＆男女でトーン統一
     sh = scene.display.shading
     sh.light = 'STUDIO'
-    sh.color_type = 'VERTEX'
+    sh.color_type = 'SINGLE' if MANNEQUIN else 'VERTEX'
     sh.show_xray = False
     sh.show_object_outline = False
     sh.show_shadows = False
     sh.background_type = 'VIEWPORT'
     sh.background_color = (0.72, 0.72, 0.72)
+    if MANNEQUIN:
+        # 単色にすると筋の走行が陰影だけになるので cavity で凹凸を立てる（無いと構造が読めない）
+        sh.single_color = (0.16, 0.16, 0.17)
+        sh.show_shadows = True
+        sh.shadow_intensity = 0.4
+        sh.show_cavity = True
+        sh.cavity_type = 'BOTH'
+        sh.curvature_ridge_factor = 1.2
+        sh.curvature_valley_factor = 1.2
 
     cam_data = bpy.data.cameras.new("HeadlessCam")
     cam_obj = bpy.data.objects.new("HeadlessCam", cam_data)
@@ -161,6 +194,9 @@ def main():
 
     for fname, preset, cam, closeup in SHOTS[MODEL]:
         if SHOT_FILTER and SHOT_FILTER not in fname:
+            continue
+        if AGESAFE and preset in AGESAFE_DROP_PRESETS:
+            print(f"SKIPPED {fname} (AGESAFE: preset={preset})")
             continue
         show_cols = PRESETS[MODEL][preset]
         names = set_visibility(scene, show_cols)

@@ -22,20 +22,29 @@
 
   "root": "C:/Users/abesh/Documents/Blender/MaleAnatomy",
 
+  "_booth_mannequin": "BOOTHは商品ページの画像で年齢制限を判定する（事務局回答 2026-08-10）。肌色のécorché＝裸の人体と読まれてR-18固定にされたため、BOOTH掲載分だけ無彩色マネキン調に差し替える。配布物・Gumroadはカラーのまま（previews_dir）。撮影は MANNEQUIN=1 blender -b ... render_previews.py",
+
   "female": {
     "version": "v1.67.0",
     "previews_dir": "配布パッケージ_v1.67.0/previews",
+    "previews_dir_booth": "配布パッケージ_v1.67.0/previews_mq",
+    "booth_thumb": "thumb_female_mq.png",
     "zip_dir": "配布zip_v1.67.0",
     "zip_prefix": "FemaleAnatomy_v1.67.0",
     "preview_order": ["01_front.png","02_front34.png","03_back.png","04_skeleton_front.png","05_torso_closeup.png","06_forearm_tendon.png"]
   },
 
+  "_male_booth_gate": "★男性の previews_dir_booth は撮影済みだが、まだBOOTHへ反映していない（2026-08-10）。07_skin.png＝肌色の全裸レンダーが最も明確なR-18要因なので preview_order_booth から外してある。生殖器13オブジェクトも AGESAFE=1 で全ショット非表示。反映と年齢制限の切替は女性(8481858)の再審査結果を見てから行う。全年齢へ切り替えて事務局にR-18固定されると自分で戻せなくなるため、順序を飛ばさない。撮影は MANNEQUIN=1 AGESAFE=1 blender -b ... render_previews.py -- male",
+
   "male": {
     "version": "Man_v1.1.0",
     "previews_dir": "配布パッケージ_Man_v1.1.0/previews",
+    "previews_dir_booth": "配布パッケージ_Man_v1.1.0/previews_mq",
+    "booth_thumb": "thumb_male_mq.png",
     "zip_dir": "配布zip_Man_v1.1.0",
     "zip_prefix": "MaleAnatomy_v1.1.0",
-    "preview_order": ["01_muscle_front.png","02_muscle_front34.png","03_muscle_back.png","04_skeleton_front.png","05_organs.png","06_vessels_nerves.png","07_skin.png","08_torso_closeup.png"]
+    "preview_order": ["01_muscle_front.png","02_muscle_front34.png","03_muscle_back.png","04_skeleton_front.png","05_organs.png","06_vessels_nerves.png","07_skin.png","08_torso_closeup.png"],
+    "preview_order_booth": ["01_muscle_front.png","02_muscle_front34.png","03_muscle_back.png","04_skeleton_front.png","05_organs.png","06_vessels_nerves.png","08_torso_closeup.png"]
   },
 
   "set_image_order": [
@@ -49,6 +58,18 @@
     "male:06_vessels_nerves.png",
     "male:04_skeleton_front.png"
   ],
+
+  "_booth_thumb_first": "BOOTHの一覧サムネは1枚目画像の正方形中央クロップ。縦長(1000x1400)を1枚目にすると頭と足が切れるため、正方形サムネを先頭に足す（2026-07-26）",
+  "booth_thumb_first": true,
+
+  "_booth_desc_notes": "node booth.js desc <product> が anchor の直後へ note を1回だけ挿入する（marker で冪等判定）。BOOTH掲載画像を無彩色にしたぶん、配布データはカラーである旨を購入者に明示するため（2026-08-10）",
+  "booth_desc_notes": {
+    "female": {
+      "anchor": "（glTF=COLOR_0／FBX=頂点カラー／OBJ=頂点ごとRGB）。",
+      "marker": "無彩色（マネキン調）",
+      "note": "\n\n  ※ 当ページの商品画像は、構造が見やすいよう無彩色（マネキン調）でレンダリングしたものです。配布データは上記のとおりカラー着色済みですので、ご購入後は色付きの状態でご利用いただけます。"
+    }
+  },
 
   "thumbnails_dir": "thumbnails",
   "bg_gray": 184,
