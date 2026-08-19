@@ -9,6 +9,12 @@
  *   node gumroad.js covers  <product>              ★「Product covers」の旧ゴミを全削除（狭VP）→説明欄先頭がメイン昇格
  *   node gumroad.js desc    <product>              説明欄画像を全削除→config順で再挿入（※bannerも消える。必要時のみ）
  *   node gumroad.js thumb   <product>              正方形サムネを thumbnails/thumb_<p>.png に差替
+ *   node gumroad.js files   <product>              Contentタブの配布zipを config の版へ差替
+ *
+ * ★files の順序（2026-08-19 BOOTHでの事故を踏まえた設計）:
+ *   「先にアップロード → 全部揃ったのを確認 → 旧版を削除 → Save changes」。
+ *   先に消すと、アップロード側で落ちたときに商品のファイルが 0 本になる。
+ *   BOOTH は総容量 10GB 上限のため削除が先だが、Gumroad にその制約は無い。
  *
  * ★最重要の罠（6/14発見）:
  *   Gumroad には Description とは別に「Product covers」アセットがあり、存在すると
@@ -26,7 +32,7 @@ const { withBrowser } = require(CFG.connect_js);
 const cmd = process.argv[2];
 const product = process.argv[3];
 if (!cmd || !product || !CFG.gumroad.products[product]) {
-  console.error('usage: node gumroad.js <verify|covers|desc|thumb> <female|male|set>');
+  console.error('usage: node gumroad.js <verify|covers|desc|thumb|files> <female|male|set>');
   process.exit(1);
 }
 const PID = CFG.gumroad.products[product].id;
@@ -46,6 +52,56 @@ function imagePaths(p) {
   return CFG[p].preview_order.map(f => path.join(root, CFG[p].previews_dir, f));
 }
 
+// product の配布zip（絶対パス）。booth.js と同じ規則。
+function zipSpec(p) {
+  const root = CFG.root;
+  const mk = g => CFG[g].preview_order ? ['blend', 'fbx', 'glb', 'obj'].map(ext =>
+    path.join(root, CFG[g].zip_dir, `${CFG[g].zip_prefix}_${ext}.zip`)) : [];
+  if (p === 'set') return [...mk('male'), ...mk('female')];
+  return mk(p);
+}
+
+// Content タブに出ているファイル名（拡張子なしで表示される: MaleAnatomy_v1.2.0_obj）
+async function listFiles(page) {
+  return await page.evaluate(() =>
+    [...new Set((document.body.innerText.match(/(?:Male|Female)Anatomy_[A-Za-z0-9_.\-]+/g) || []))]);
+}
+
+async function gotoContent(page) {
+  await page.goto(EDIT + '/content', { waitUntil: 'domcontentloaded', timeout: 60000 });
+  await page.waitForTimeout(7000);
+}
+
+// 行の「Actions」→「Delete」。行はホバーしないとボタンが出ないので座標で当てる。
+async function deleteFileByName(page, name) {
+  const box = await page.evaluate((nm) => {
+    const el = [...document.querySelectorAll('div')]
+      .filter(e => (e.textContent || '').includes(nm) && e.querySelectorAll('*').length <= 12).pop();
+    if (!el) return null;
+    el.scrollIntoView({ block: 'center' });
+    const r = el.getBoundingClientRect();
+    return { x: Math.round(r.x + r.width / 2), y: Math.round(r.y + r.height / 2) };
+  }, name);
+  if (!box) { console.log('  行が見つからない:', name); return false; }
+  await page.mouse.move(box.x, box.y);
+  await page.waitForTimeout(700);
+  const btn = await page.evaluate((y) => {
+    const c = [...document.querySelectorAll('button,[role=button]')]
+      .filter(e => /Actions/i.test(e.getAttribute('aria-label') || e.textContent || ''))
+      .map(e => { const r = e.getBoundingClientRect(); return { x: Math.round(r.x + r.width / 2), y: Math.round(r.y + r.height / 2), d: Math.abs(r.y + r.height / 2 - y) }; })
+      .sort((a, b) => a.d - b.d)[0];
+    return c || null;
+  }, box.y);
+  if (!btn) { console.log('  Actions が出ない:', name); return false; }
+  await page.mouse.click(btn.x, btn.y);
+  await page.waitForTimeout(1200);
+  const del = page.getByRole('menuitem', { name: 'Delete', exact: true }).first();
+  if (await del.count()) await del.click();
+  else await page.getByText('Delete', { exact: true }).last().click();
+  await page.waitForTimeout(2000);
+  return true;
+}
+
 async function gotoEdit(page, vp) {
   if (vp) { try { await page.setViewportSize(vp); } catch (e) {} }
   await page.goto(EDIT, { waitUntil: 'domcontentloaded', timeout: 60000 });
@@ -53,7 +109,7 @@ async function gotoEdit(page, vp) {
 }
 
 async function run() {
-  await withBrowser(async ({ getPage }) => {
+  await withBrowser(async ({ context, getPage }) => {
     const page = await getPage('gumroad');
     page.on('dialog', async d => { await d.accept(); });
 
@@ -126,12 +182,111 @@ async function run() {
       console.log('thumb replaced + saved:', path.basename(thumb));
       return;
     }
+
+    if (cmd === 'files') {
+      // ★Gumroad の set は「バンドル」商品（/products/<id>/edit が /bundles/<key>/product/edit へ
+      //   リダイレクトする）。Content タブは同梱商品(Male l/hgbvor + Female l/zdlbhd)を並べるだけで
+      //   自前のファイルを持たない＝汎用 input[type=file] が無い。個別商品を更新すれば
+      //   バンドルの配布物も自動で新しくなるので、ここでやることは無い（2026-08-19 実測）。
+      //   ※BOOTH のセットは実ファイルを8本持つので、そちらは booth.js files set が必要。
+      if (product === 'set') {
+        console.log('Gumroad の set はバンドル商品です。同梱の male / female を更新すれば');
+        console.log('配布物は自動で反映されるため、ここでの操作は不要です。');
+        return;
+      }
+      const want = zipSpec(product);
+      const wantNames = want.map(f => path.basename(f, '.zip'));
+
+      // ── 1) アップロード → 保存 → 再読込で確認（削除はそのあと）
+      await gotoContent(page);
+      console.log('現在:', await listFiles(page));
+      console.log('目標:', wantNames);
+      const before = await listFiles(page);
+      const need = want.filter(f => !before.includes(path.basename(f, '.zip')));
+      if (need.length) {
+        // ★1本ずつアップして都度保存する。4本まとめて setFileInputFiles すると
+        //   Save は有効化されるのに保存後は1本も残らない（2026-08-19 実測）。
+        //   1本ずつなら "Changes saved!" が出て再読込後も残ることを確認済み。
+        for (const f of need) {
+          const name = path.basename(f, '.zip');
+          await gotoContent(page);
+          console.log('uploading', path.basename(f));
+          const client = await context.newCDPSession(page);
+          await client.send('DOM.enable');
+          const doc = await client.send('DOM.getDocument', { depth: -1 });
+          const q = await client.send('DOM.querySelectorAll', { nodeId: doc.root.nodeId, selector: 'input[type=file]' });
+          let target = null;
+          for (const id of q.nodeIds) {
+            const a = await client.send('DOM.getAttributes', { nodeId: id });
+            const idx = a.attributes.indexOf('accept');
+            if (!(idx >= 0 ? a.attributes[idx + 1] : '')) target = id;   // accept 無し = 汎用
+          }
+          if (!target) throw new Error('Content タブの汎用 input[type=file] が見つからない');
+          await client.send('DOM.setFileInputFiles', { files: [f], nodeId: target });
+
+          // 行が出るまで待つ（＝クライアント側にアップロードが登録された）
+          let listed = false;
+          for (let i = 0; i < 180; i++) {
+            if ((await listFiles(page)).includes(name)) { listed = true; break; }
+            await page.waitForTimeout(5000);
+          }
+          if (!listed) throw new Error(name + ' がリストに現れない');
+          if (!(await save(page))) throw new Error(name + ' の保存ができなかった');
+
+          await gotoContent(page);
+          if (!(await listFiles(page)).includes(name)) throw new Error(name + ' が保存されなかった');
+          console.log('  保存OK:', name);
+        }
+      } else console.log('all current zips already present');
+
+      // 再読込して「本当に保存されたか」を確認してから削除に進む
+      await gotoContent(page);
+      const after = await listFiles(page);
+      console.log('保存後:', after);
+      const missing = wantNames.filter(n => !after.includes(n));
+      if (missing.length) throw new Error('新版が保存されていないため削除を中止: ' + missing.join(','));
+
+      // ── 2) 旧版を削除 → 保存 → 再読込で確認
+      const olds = after.filter(n => /Anatomy_v/.test(n) && !wantNames.includes(n));
+      console.log('削除対象(旧版):', olds);
+      if (olds.length) {
+        for (const n of olds) { console.log('delete', n); await deleteFileByName(page, n); }
+        if (!(await save(page))) throw new Error('削除後の保存ができなかった');
+      }
+
+      await gotoContent(page);
+      console.log('最終:', await listFiles(page));
+      console.log('files 完了 + saved');
+      return;
+    }
   });
 }
 
-async function save(page) {
-  await page.getByRole('button', { name: 'Save changes', exact: true }).first().click();
+// ★Save changes は「アップロード処理中」も「変更なし」も disabled になる。
+//   実測(2026-08-19): 442MB 1本で約90秒 disabled のままだった。押せるまで待つ。
+async function waitSaveEnabled(page, maxMs) {
+  const t0 = Date.now();
+  while (Date.now() - t0 < maxMs) {
+    const dis = await page.evaluate(() => {
+      const b = [...document.querySelectorAll('button')].find(x => /Save changes/i.test(x.textContent || ''));
+      return b ? b.disabled : null;
+    });
+    if (dis === null) throw new Error('Save changes ボタンが見つからない');
+    if (dis === false) return true;
+    console.log('  Save disabled… 待機', Math.round((Date.now() - t0) / 1000) + 's');
+    await page.waitForTimeout(10000);
+  }
+  return false;
+}
+
+async function save(page, maxWaitMs = 1800000) {
+  if (!(await waitSaveEnabled(page, maxWaitMs))) {
+    console.log('Save changes が有効にならなかった（変更なし or 処理継続中）');
+    return false;
+  }
+  await page.getByRole('button', { name: 'Save changes', exact: true }).first().click({ timeout: 30000 });
   await page.waitForTimeout(8000);
+  return true;
 }
 
 run().catch(e => { console.error('ERROR:', e.message); process.exit(1); });

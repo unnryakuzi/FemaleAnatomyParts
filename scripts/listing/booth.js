@@ -21,6 +21,15 @@
  *   - 「削除」は別カラムの <span>削除</span>（行リンクと非親子）。行リンクと中心Yの最近傍で対応付け、
  *     対象版のみ座標クリック（confirm accept）。リフローするので毎回再計測し下(大Y)から。
  *   - 保存後 confirm/公開ダイアログは accept。R-18 は触らない。
+ *
+ * ★★ 未保存の手編集は save で消える（2026-08-18 実証・再発防止）:
+ *   このファイルの各サブコマンドは毎回 page.goto でページを開き直す。したがって
+ *   「ブラウザ上で本文を書き換える」→「node booth.js save <product>」の順で呼ぶと、
+ *   goto で編集前の内容が読み直され、**編集が破棄されたまま保存される**。
+ *   実例: 説明文から「生殖器」を削除 → save → 保存成功と表示されるが公開ページは元のまま。
+ *   対策: config に無い自由な本文編集をするときは、編集と「公開で保存する」クリックを
+ *   **同一 page セッション内**で行う使い捨てスクリプトを書く（このファイルの save と混ぜない）。
+ *   確認は編集画面ではなく**公開ページで語句の出現数を数える**こと。
  */
 const path = require('path');
 const fs = require('fs');
@@ -180,9 +189,36 @@ async function doImages(context, page) {
   console.log('image cells now', await page.evaluate(COUNT_IMGS));
 }
 
+// 作品ファイルのモーダルを開く。★ボタン名は「ファイルの追加・管理」。
+// 旧実装は「変更する」を探しており、見つからないと黙って素通りしていた。その状態でも
+// ファイル一覧と「削除」は編集ページ側に出ているので削除だけ成功し、アップロード時に
+// ドロップゾーンが 0x0（非表示）で落ちる ＝ 商品のファイルが全部消える事故になった
+// （2026-08-19 実際に発生）。開けたことを確認できなければ例外を投げて先へ進ませない。
+async function openFileModal(page) {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    for (const name of ['ファイルの追加・管理', '変更する']) {
+      // ★getByText(...).last() は「モーダル内の見出し」(非表示)を掴んで click が落ちる。
+      //   role=button で編集ページ側の実ボタンを取る。
+      let btn = page.getByRole('button', { name, exact: false }).first();
+      if (!(await btn.count())) btn = page.getByText(name, { exact: false }).first();
+      if (!(await btn.count())) continue;
+      try {
+        await btn.scrollIntoViewIfNeeded();
+        await btn.click({ timeout: 10000 });
+      } catch (e) { continue; }
+      await page.waitForTimeout(3500);
+      const open = await page.evaluate(() => [...document.querySelectorAll('*')]
+        .some(e => /ドラッグ/.test(e.textContent || '') && e.children.length <= 2 &&
+                   (e.offsetWidth || e.offsetHeight || e.getClientRects().length)));
+      if (open) { console.log('file modal opened via', name); return true; }
+    }
+    await page.waitForTimeout(2000);
+  }
+  throw new Error('作品ファイルのモーダルを開けなかった（削除前に中断）');
+}
+
 async function doFiles(context, page) {
-  const change = page.getByText('変更する', { exact: false }).first();
-  if (await change.count()) { await change.scrollIntoViewIfNeeded(); await change.click(); await page.waitForTimeout(3000); }
+  await openFileModal(page);
   // 旧版判定: 現行 zip_prefix と一致しない .zip を削除（容量10GB対策で先に削除）
   const keep = new Set(zipSpec(product).map(f => path.basename(f)));
   for (let it = 0; it < 20; it++) {
@@ -197,8 +233,10 @@ async function doFiles(context, page) {
     await page.mouse.click(olds[0].x, olds[0].y); await page.waitForTimeout(1800);
   }
   // 既にある現行版はスキップ、無いものだけアップ
-  const present = await page.evaluate(() => new Set([...document.querySelectorAll('a')].filter(a => /\.zip/.test(a.textContent || '')).map(a => a.textContent.trim())));
-  const need = zipSpec(product).filter(f => !present.has(path.basename(f)));
+  // ★page.evaluate は Set を返せない（構造化クローンで {} になり .has が落ちる）。必ず配列で返す。
+  //   2026-08-19: ここで例外→旧zipを消した直後にアップせず終了し、商品のファイルが0本になった。
+  const present = await page.evaluate(() => [...document.querySelectorAll('a')].filter(a => /\.zip/.test(a.textContent || '')).map(a => a.textContent.trim()));
+  const need = zipSpec(product).filter(f => !present.includes(path.basename(f)));
   if (need.length) {
     console.log('uploading', need.map(f => path.basename(f)));
     await dropzoneUpload(context, page, 'ファイルをドラッグ', need);
@@ -218,7 +256,10 @@ async function doFiles(context, page) {
 async function run() {
   await withBrowser(async ({ context, getPage }) => {
     const page = await getPage('booth');
-    page.on('dialog', async d => { await d.accept(); });
+    // ★accept() は「既に閉じられたダイアログ」に対して Protocol error を投げ、
+    //   未捕捉のまま Node を落とす（2026-08-19: セット商品で旧zipを1本消した直後に死亡）。
+    //   握りつぶして処理を継続させる。
+    page.on('dialog', async d => { try { await d.accept(); } catch (e) { /* already handled */ } });
     if (cmd === 'verify') {
       await page.goto(CFG.booth.base_public + PID, { waitUntil: 'domcontentloaded', timeout: 60000 });
       await page.waitForTimeout(6000);

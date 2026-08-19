@@ -1,0 +1,16 @@
+{
+ "model": "male",
+ "outline": {
+  "waist": {
+   "front": 0.878,
+   "side": 0.878,
+   "back": 0.878
+  },
+  "hem": {
+   "front": 0.66,
+   "side": 0.79,
+   "back": 0.7
+  },
+  "power": 1.6
+ }
+}

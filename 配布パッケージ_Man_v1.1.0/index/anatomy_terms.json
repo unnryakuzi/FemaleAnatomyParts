@@ -1,0 +1,2079 @@
+{
+ "_meta": {
+  "desc": "正規化base名(JA) -> {en, la, conf}. 左右・番号はBlender適用スクリプトで展開。{o}=英語序数, {n}=算用数字, {r}=ローマ数字。conf=low は要照合(BodyParts3D/FMAで確認推奨)。",
+  "source_note": "出典 BodyParts3D(c)DBCLS / 3DAnatomyman(always3d) CC BY-SA 2.1 JP。最終的にFMA公式英名と照合推奨。"
+ },
+ "Body_Tpose": {
+  "en": "Body skin",
+  "la": "Cutis",
+  "conf": "low"
+ },
+ "Head_Base": {
+  "en": "Head skin",
+  "la": "Cutis capitis",
+  "conf": "low"
+ },
+ "Breast_Base": {
+  "en": "Breast (skin)",
+  "la": "Mamma",
+  "conf": "low"
+ },
+ "前頭骨": {
+  "en": "Frontal bone",
+  "la": "Os frontale"
+ },
+ "頭頂骨": {
+  "en": "Parietal bone",
+  "la": "Os parietale"
+ },
+ "側頭骨": {
+  "en": "Temporal bone",
+  "la": "Os temporale"
+ },
+ "後頭/後頭骨": {
+  "en": "Occipital bone",
+  "la": "Os occipitale"
+ },
+ "蝶形骨": {
+  "en": "Sphenoid bone",
+  "la": "Os sphenoidale"
+ },
+ "篩骨": {
+  "en": "Ethmoid bone",
+  "la": "Os ethmoidale"
+ },
+ "上顎骨": {
+  "en": "Maxilla",
+  "la": "Maxilla"
+ },
+ "下顎骨": {
+  "en": "Mandible",
+  "la": "Mandibula"
+ },
+ "頬骨": {
+  "en": "Zygomatic bone",
+  "la": "Os zygomaticum"
+ },
+ "鼻骨": {
+  "en": "Nasal bone",
+  "la": "Os nasale"
+ },
+ "涙骨": {
+  "en": "Lacrimal bone",
+  "la": "Os lacrimale"
+ },
+ "口蓋骨": {
+  "en": "Palatine bone",
+  "la": "Os palatinum"
+ },
+ "鋤骨": {
+  "en": "Vomer",
+  "la": "Vomer"
+ },
+ "下鼻甲介": {
+  "en": "Inferior nasal concha",
+  "la": "Concha nasalis inferior"
+ },
+ "舌骨": {
+  "en": "Hyoid bone",
+  "la": "Os hyoideum"
+ },
+ "鼻軟骨": {
+  "en": "Nasal cartilage",
+  "la": "Cartilago nasi"
+ },
+ "甲状軟骨": {
+  "en": "Thyroid cartilage",
+  "la": "Cartilago thyroidea"
+ },
+ "上中切歯": {
+  "en": "Maxillary central incisor",
+  "la": "Dens incisivus centralis superior"
+ },
+ "上側切歯": {
+  "en": "Maxillary lateral incisor",
+  "la": "Dens incisivus lateralis superior"
+ },
+ "上犬歯": {
+  "en": "Maxillary canine",
+  "la": "Dens caninus superior"
+ },
+ "上第N小臼歯": {
+  "en": "Maxillary {o} premolar",
+  "la": "Dens premolaris superior {r}"
+ },
+ "上第N大臼歯": {
+  "en": "Maxillary {o} molar",
+  "la": "Dens molaris superior {r}"
+ },
+ "下中切歯": {
+  "en": "Mandibular central incisor",
+  "la": "Dens incisivus centralis inferior"
+ },
+ "下側切歯": {
+  "en": "Mandibular lateral incisor",
+  "la": "Dens incisivus lateralis inferior"
+ },
+ "下犬歯": {
+  "en": "Mandibular canine",
+  "la": "Dens caninus inferior"
+ },
+ "下第N小臼歯": {
+  "en": "Mandibular {o} premolar",
+  "la": "Dens premolaris inferior {r}"
+ },
+ "下第N大臼歯": {
+  "en": "Mandibular {o} molar",
+  "la": "Dens molaris inferior {r}"
+ },
+ "前頭筋": {
+  "en": "Frontalis",
+  "la": "Venter frontalis (m. occipitofrontalis)"
+ },
+ "後頭筋": {
+  "en": "Occipitalis",
+  "la": "Venter occipitalis (m. occipitofrontalis)"
+ },
+ "側頭頭頂筋": {
+  "en": "Temporoparietalis",
+  "la": "Musculus temporoparietalis"
+ },
+ "帽状腱膜;上頭蓋腱膜;頭外被腱膜": {
+  "en": "Galea aponeurotica (epicranial aponeurosis)",
+  "la": "Aponeurosis epicranialis"
+ },
+ "眼輪筋眼瞼部": {
+  "en": "Orbicularis oculi, palpebral part",
+  "la": "M. orbicularis oculi, pars palpebralis"
+ },
+ "眼輪筋眼窩部": {
+  "en": "Orbicularis oculi, orbital part",
+  "la": "M. orbicularis oculi, pars orbitalis"
+ },
+ "皺眉筋": {
+  "en": "Corrugator supercilii",
+  "la": "Musculus corrugator supercilii"
+ },
+ "鼻根筋": {
+  "en": "Procerus",
+  "la": "Musculus procerus"
+ },
+ "鼻筋": {
+  "en": "Nasalis",
+  "la": "Musculus nasalis"
+ },
+ "鼻中隔下制筋": {
+  "en": "Depressor septi nasi",
+  "la": "Musculus depressor septi nasi"
+ },
+ "上唇鼻翼挙筋": {
+  "en": "Levator labii superioris alaeque nasi",
+  "la": "M. levator labii superioris alaeque nasi"
+ },
+ "上唇挙筋": {
+  "en": "Levator labii superioris",
+  "la": "Musculus levator labii superioris"
+ },
+ "小頬骨筋": {
+  "en": "Zygomaticus minor",
+  "la": "Musculus zygomaticus minor"
+ },
+ "大頬骨筋": {
+  "en": "Zygomaticus major",
+  "la": "Musculus zygomaticus major"
+ },
+ "口角挙筋": {
+  "en": "Levator anguli oris",
+  "la": "Musculus levator anguli oris"
+ },
+ "笑筋": {
+  "en": "Risorius",
+  "la": "Musculus risorius"
+ },
+ "頬筋": {
+  "en": "Buccinator",
+  "la": "Musculus buccinator"
+ },
+ "口輪筋": {
+  "en": "Orbicularis oris",
+  "la": "Musculus orbicularis oris"
+ },
+ "口角下制筋": {
+  "en": "Depressor anguli oris",
+  "la": "Musculus depressor anguli oris"
+ },
+ "下唇下制筋": {
+  "en": "Depressor labii inferioris",
+  "la": "Musculus depressor labii inferioris"
+ },
+ "オトガイ筋": {
+  "en": "Mentalis",
+  "la": "Musculus mentalis"
+ },
+ "咬筋浅部": {
+  "en": "Masseter, superficial part",
+  "la": "M. masseter, pars superficialis"
+ },
+ "咬筋深部": {
+  "en": "Masseter, deep part",
+  "la": "M. masseter, pars profunda"
+ },
+ "側頭筋": {
+  "en": "Temporalis",
+  "la": "Musculus temporalis"
+ },
+ "内側翼突筋": {
+  "en": "Medial pterygoid",
+  "la": "Musculus pterygoideus medialis"
+ },
+ "外側翼突筋上頭": {
+  "en": "Lateral pterygoid, superior head",
+  "la": "M. pterygoideus lateralis, caput superius"
+ },
+ "外側翼突筋下頭": {
+  "en": "Lateral pterygoid, inferior head",
+  "la": "M. pterygoideus lateralis, caput inferius"
+ },
+ "胸鎖乳突筋": {
+  "en": "Sternocleidomastoid",
+  "la": "Musculus sternocleidomastoideus"
+ },
+ "広頚筋": {
+  "en": "Platysma",
+  "la": "Platysma"
+ },
+ "顎二腹筋前腹": {
+  "en": "Digastric, anterior belly",
+  "la": "M. digastricus, venter anterior"
+ },
+ "顎二腹筋後腹": {
+  "en": "Digastric, posterior belly",
+  "la": "M. digastricus, venter posterior"
+ },
+ "茎突舌骨筋": {
+  "en": "Stylohyoid",
+  "la": "Musculus stylohyoideus"
+ },
+ "顎舌骨筋": {
+  "en": "Mylohyoid",
+  "la": "Musculus mylohyoideus"
+ },
+ "オトガイ舌骨筋": {
+  "en": "Geniohyoid",
+  "la": "Musculus geniohyoideus"
+ },
+ "胸骨舌骨筋": {
+  "en": "Sternohyoid",
+  "la": "Musculus sternohyoideus"
+ },
+ "肩甲舌骨筋": {
+  "en": "Omohyoid",
+  "la": "Musculus omohyoideus"
+ },
+ "胸骨甲状筋": {
+  "en": "Sternothyroid",
+  "la": "Musculus sternothyroideus"
+ },
+ "甲状舌骨筋": {
+  "en": "Thyrohyoid",
+  "la": "Musculus thyrohyoideus"
+ },
+ "前斜角筋": {
+  "en": "Anterior scalene",
+  "la": "Musculus scalenus anterior"
+ },
+ "中斜角筋": {
+  "en": "Middle scalene",
+  "la": "Musculus scalenus medius"
+ },
+ "後斜角筋": {
+  "en": "Posterior scalene",
+  "la": "Musculus scalenus posterior"
+ },
+ "頭長筋": {
+  "en": "Longus capitis",
+  "la": "Musculus longus capitis"
+ },
+ "頚長筋上斜線維": {
+  "en": "Longus colli, superior oblique part",
+  "la": "M. longus colli, pars obliqua superior"
+ },
+ "頚長筋下斜線維": {
+  "en": "Longus colli, inferior oblique part",
+  "la": "M. longus colli, pars obliqua inferior"
+ },
+ "頚長筋垂直線維": {
+  "en": "Longus colli, vertical part",
+  "la": "M. longus colli, pars verticalis"
+ },
+ "前頭直筋": {
+  "en": "Rectus capitis anterior",
+  "la": "Musculus rectus capitis anterior"
+ },
+ "外側頭長筋": {
+  "en": "Rectus capitis lateralis",
+  "la": "Musculus rectus capitis lateralis",
+  "conf": "low"
+ },
+ "上頭斜筋": {
+  "en": "Obliquus capitis superior",
+  "la": "Musculus obliquus capitis superior"
+ },
+ "下頭斜筋": {
+  "en": "Obliquus capitis inferior",
+  "la": "Musculus obliquus capitis inferior"
+ },
+ "頭板状筋": {
+  "en": "Splenius capitis",
+  "la": "Musculus splenius capitis"
+ },
+ "頚板状筋": {
+  "en": "Splenius cervicis",
+  "la": "Musculus splenius cervicis"
+ },
+ "頭最長筋": {
+  "en": "Longissimus capitis",
+  "la": "Musculus longissimus capitis"
+ },
+ "多裂筋": {
+  "en": "Multifidus",
+  "la": "Musculus multifidus"
+ },
+ "胸半棘筋": {
+  "en": "Semispinalis thoracis",
+  "la": "Musculus semispinalis thoracis"
+ },
+ "胸回旋筋": {
+  "en": "Rotatores thoracis",
+  "la": "Musculi rotatores thoracis"
+ },
+ "胸最長筋": {
+  "en": "Longissimus thoracis",
+  "la": "Musculus longissimus thoracis"
+ },
+ "胸棘筋": {
+  "en": "Spinalis thoracis",
+  "la": "Musculus spinalis thoracis"
+ },
+ "胸棘間筋": {
+  "en": "Interspinales thoracis",
+  "la": "Musculi interspinales thoracis"
+ },
+ "頚棘筋": {
+  "en": "Spinalis cervicis",
+  "la": "Musculus spinalis cervicis"
+ },
+ "腰回旋筋": {
+  "en": "Rotatores lumborum",
+  "la": "Musculi rotatores lumborum"
+ },
+ "腰棘間筋": {
+  "en": "Interspinales lumborum",
+  "la": "Musculi interspinales lumborum"
+ },
+ "腰内側横突間筋": {
+  "en": "Medial intertransversarii lumborum",
+  "la": "Mm. intertransversarii mediales lumborum"
+ },
+ "腰外側横突間筋": {
+  "en": "Lateral intertransversarii lumborum",
+  "la": "Mm. intertransversarii laterales lumborum"
+ },
+ "頚腸肋筋": {
+  "en": "Iliocostalis cervicis",
+  "la": "Musculus iliocostalis cervicis"
+ },
+ "腰腸肋筋": {
+  "en": "Iliocostalis lumborum",
+  "la": "Musculus iliocostalis lumborum"
+ },
+ "腰方形筋": {
+  "en": "Quadratus lumborum",
+  "la": "Musculus quadratus lumborum"
+ },
+ "上後鋸筋": {
+  "en": "Serratus posterior superior",
+  "la": "Musculus serratus posterior superior"
+ },
+ "僧帽筋上行部": {
+  "en": "Trapezius, ascending part",
+  "la": "M. trapezius, pars ascendens"
+ },
+ "僧帽筋下行部": {
+  "en": "Trapezius, descending part",
+  "la": "M. trapezius, pars descendens"
+ },
+ "僧帽筋水平部": {
+  "en": "Trapezius, transverse part",
+  "la": "M. trapezius, pars transversa"
+ },
+ "広背筋": {
+  "en": "Latissimus dorsi",
+  "la": "Musculus latissimus dorsi"
+ },
+ "第N肋骨": {
+  "en": "{o} rib",
+  "la": "Costa {r}"
+ },
+ "第N肋軟骨": {
+  "en": "{o} costal cartilage",
+  "la": "Cartilago costalis {r}"
+ },
+ "肋軟骨": {
+  "en": "Costal cartilage",
+  "la": "Cartilagines costales"
+ },
+ "胸骨柄": {
+  "en": "Manubrium of sternum",
+  "la": "Manubrium sterni"
+ },
+ "胸骨体": {
+  "en": "Body of sternum",
+  "la": "Corpus sterni"
+ },
+ "剣状突起": {
+  "en": "Xiphoid process",
+  "la": "Processus xiphoideus"
+ },
+ "内肋間筋_上部": {
+  "en": "Internal intercostals, upper part",
+  "la": "Mm. intercostales interni (superior)",
+  "conf": "low"
+ },
+ "内肋間筋_下部": {
+  "en": "Internal intercostals, lower part",
+  "la": "Mm. intercostales interni (inferior)",
+  "conf": "low"
+ },
+ "外肋間筋_上部": {
+  "en": "External intercostals, upper part",
+  "la": "Mm. intercostales externi (superior)",
+  "conf": "low"
+ },
+ "外肋間筋_下部": {
+  "en": "External intercostals, lower part",
+  "la": "Mm. intercostales externi (inferior)",
+  "conf": "low"
+ },
+ "最内肋間筋_上部": {
+  "en": "Innermost intercostals, upper part",
+  "la": "Mm. intercostales intimi (superior)",
+  "conf": "low"
+ },
+ "最内肋間筋_下部": {
+  "en": "Innermost intercostals, lower part",
+  "la": "Mm. intercostales intimi (inferior)",
+  "conf": "low"
+ },
+ "胸横筋": {
+  "en": "Transversus thoracis",
+  "la": "Musculus transversus thoracis"
+ },
+ "長肋骨挙筋": {
+  "en": "Levatores costarum longi",
+  "la": "Musculi levatores costarum longi"
+ },
+ "短肋骨挙筋": {
+  "en": "Levatores costarum breves",
+  "la": "Musculi levatores costarum breves"
+ },
+ "前鋸筋": {
+  "en": "Serratus anterior",
+  "la": "Musculus serratus anterior"
+ },
+ "大胸筋鎖骨部": {
+  "en": "Pectoralis major, clavicular part",
+  "la": "M. pectoralis major, pars clavicularis"
+ },
+ "大胸筋胸肋部": {
+  "en": "Pectoralis major, sternocostal part",
+  "la": "M. pectoralis major, pars sternocostalis"
+ },
+ "大胸筋腹部": {
+  "en": "Pectoralis major, abdominal part",
+  "la": "M. pectoralis major, pars abdominalis"
+ },
+ "小胸筋": {
+  "en": "Pectoralis minor",
+  "la": "Musculus pectoralis minor"
+ },
+ "白線": {
+  "en": "Linea alba",
+  "la": "Linea alba"
+ },
+ "外腹斜筋": {
+  "en": "External oblique",
+  "la": "Musculus obliquus externus abdominis"
+ },
+ "第N胸椎": {
+  "en": "{o} thoracic vertebra (T{n})",
+  "la": "Vertebra thoracica {r}"
+ },
+ "第N腰椎": {
+  "en": "{o} lumbar vertebra (L{n})",
+  "la": "Vertebra lumbalis {r}"
+ },
+ "第N頚椎": {
+  "en": "{o} cervical vertebra (C{n})",
+  "la": "Vertebra cervicalis {r}"
+ },
+ "環椎[CN];第N頚椎": {
+  "en": "Atlas (C1)",
+  "la": "Atlas"
+ },
+ "軸椎[CN];第N頚椎": {
+  "en": "Axis (C2)",
+  "la": "Axis"
+ },
+ "隆椎;第N頚椎": {
+  "en": "Vertebra prominens (C7)",
+  "la": "Vertebra prominens"
+ },
+ "仙骨;仙椎[N－N]": {
+  "en": "Sacrum",
+  "la": "Os sacrum"
+ },
+ "第N胸椎椎間円板": {
+  "en": "{o} thoracic intervertebral disc",
+  "la": "Discus intervertebralis thoracicus {r}"
+ },
+ "第N腰椎椎間円板": {
+  "en": "{o} lumbar intervertebral disc",
+  "la": "Discus intervertebralis lumbalis {r}"
+ },
+ "第N頚椎椎間円板": {
+  "en": "{o} cervical intervertebral disc",
+  "la": "Discus intervertebralis cervicalis {r}"
+ },
+ "軸椎椎間円板": {
+  "en": "Axis intervertebral disc (C2-C3)",
+  "la": "Discus intervertebralis axis"
+ },
+ "肩甲骨": {
+  "en": "Scapula",
+  "la": "Scapula"
+ },
+ "鎖骨": {
+  "en": "Clavicle",
+  "la": "Clavicula"
+ },
+ "上腕骨": {
+  "en": "Humerus",
+  "la": "Humerus"
+ },
+ "三角筋鎖骨部": {
+  "en": "Deltoid, clavicular part",
+  "la": "M. deltoideus, pars clavicularis"
+ },
+ "三角筋肩峰部": {
+  "en": "Deltoid, acromial part",
+  "la": "M. deltoideus, pars acromialis"
+ },
+ "三角筋肩甲棘部": {
+  "en": "Deltoid, spinal part",
+  "la": "M. deltoideus, pars spinalis"
+ },
+ "棘上筋": {
+  "en": "Supraspinatus",
+  "la": "Musculus supraspinatus"
+ },
+ "棘下筋": {
+  "en": "Infraspinatus",
+  "la": "Musculus infraspinatus"
+ },
+ "小円筋": {
+  "en": "Teres minor",
+  "la": "Musculus teres minor"
+ },
+ "大円筋": {
+  "en": "Teres major",
+  "la": "Musculus teres major"
+ },
+ "肩甲下筋": {
+  "en": "Subscapularis",
+  "la": "Musculus subscapularis"
+ },
+ "烏口腕筋": {
+  "en": "Coracobrachialis",
+  "la": "Musculus coracobrachialis"
+ },
+ "上腕二頭筋長頭": {
+  "en": "Biceps brachii, long head",
+  "la": "M. biceps brachii, caput longum"
+ },
+ "上腕二頭筋短頭": {
+  "en": "Biceps brachii, short head",
+  "la": "M. biceps brachii, caput breve"
+ },
+ "上腕筋": {
+  "en": "Brachialis",
+  "la": "Musculus brachialis"
+ },
+ "上腕三頭筋長頭": {
+  "en": "Triceps brachii, long head",
+  "la": "M. triceps brachii, caput longum"
+ },
+ "上腕三頭筋外側頭": {
+  "en": "Triceps brachii, lateral head",
+  "la": "M. triceps brachii, caput laterale"
+ },
+ "上腕三頭筋内側頭": {
+  "en": "Triceps brachii, medial head",
+  "la": "M. triceps brachii, caput mediale"
+ },
+ "肘筋": {
+  "en": "Anconeus",
+  "la": "Musculus anconeus"
+ },
+ "橈骨": {
+  "en": "Radius",
+  "la": "Radius"
+ },
+ "尺骨": {
+  "en": "Ulna",
+  "la": "Ulna"
+ },
+ "腕橈骨筋": {
+  "en": "Brachioradialis",
+  "la": "Musculus brachioradialis"
+ },
+ "円回内筋上腕頭": {
+  "en": "Pronator teres, humeral head",
+  "la": "M. pronator teres, caput humerale"
+ },
+ "円回内筋尺骨頭": {
+  "en": "Pronator teres, ulnar head",
+  "la": "M. pronator teres, caput ulnare"
+ },
+ "橈側手根屈筋": {
+  "en": "Flexor carpi radialis",
+  "la": "Musculus flexor carpi radialis"
+ },
+ "長掌筋": {
+  "en": "Palmaris longus",
+  "la": "Musculus palmaris longus"
+ },
+ "尺側手根屈筋上腕頭": {
+  "en": "Flexor carpi ulnaris, humeral head",
+  "la": "M. flexor carpi ulnaris, caput humerale"
+ },
+ "尺側手根屈筋尺骨頭": {
+  "en": "Flexor carpi ulnaris, ulnar head",
+  "la": "M. flexor carpi ulnaris, caput ulnare"
+ },
+ "浅指屈筋上腕尺骨頭": {
+  "en": "Flexor digitorum superficialis, humeroulnar head",
+  "la": "M. flexor digitorum superficialis, caput humeroulnare"
+ },
+ "浅指屈筋橈骨頭": {
+  "en": "Flexor digitorum superficialis, radial head",
+  "la": "M. flexor digitorum superficialis, caput radiale"
+ },
+ "深指屈筋": {
+  "en": "Flexor digitorum profundus",
+  "la": "Musculus flexor digitorum profundus"
+ },
+ "長母指屈筋": {
+  "en": "Flexor pollicis longus",
+  "la": "Musculus flexor pollicis longus"
+ },
+ "方形回内筋": {
+  "en": "Pronator quadratus",
+  "la": "Musculus pronator quadratus"
+ },
+ "長橈側手根伸筋": {
+  "en": "Extensor carpi radialis longus",
+  "la": "Musculus extensor carpi radialis longus"
+ },
+ "短橈側手根伸筋": {
+  "en": "Extensor carpi radialis brevis",
+  "la": "Musculus extensor carpi radialis brevis"
+ },
+ "総指伸筋": {
+  "en": "Extensor digitorum",
+  "la": "Musculus extensor digitorum"
+ },
+ "小指伸筋": {
+  "en": "Extensor digiti minimi",
+  "la": "Musculus extensor digiti minimi"
+ },
+ "尺側手根伸筋上腕頭": {
+  "en": "Extensor carpi ulnaris, humeral head",
+  "la": "M. extensor carpi ulnaris, caput humerale"
+ },
+ "尺側手根伸筋尺骨頭": {
+  "en": "Extensor carpi ulnaris, ulnar head",
+  "la": "M. extensor carpi ulnaris, caput ulnare"
+ },
+ "回外筋": {
+  "en": "Supinator",
+  "la": "Musculus supinator"
+ },
+ "長母指外転筋": {
+  "en": "Abductor pollicis longus",
+  "la": "Musculus abductor pollicis longus"
+ },
+ "短母指伸筋": {
+  "en": "Extensor pollicis brevis",
+  "la": "Musculus extensor pollicis brevis"
+ },
+ "長母指伸筋": {
+  "en": "Extensor pollicis longus",
+  "la": "Musculus extensor pollicis longus"
+ },
+ "示指伸筋": {
+  "en": "Extensor indicis",
+  "la": "Musculus extensor indicis"
+ },
+ "手舟状骨": {
+  "en": "Scaphoid",
+  "la": "Os scaphoideum"
+ },
+ "月状骨": {
+  "en": "Lunate",
+  "la": "Os lunatum"
+ },
+ "三角骨": {
+  "en": "Triquetrum",
+  "la": "Os triquetrum"
+ },
+ "豆状骨": {
+  "en": "Pisiform",
+  "la": "Os pisiforme"
+ },
+ "大菱形骨": {
+  "en": "Trapezium",
+  "la": "Os trapezium"
+ },
+ "小菱形骨": {
+  "en": "Trapezoid",
+  "la": "Os trapezoideum"
+ },
+ "有頭骨": {
+  "en": "Capitate",
+  "la": "Os capitatum"
+ },
+ "有鈎骨": {
+  "en": "Hamate",
+  "la": "Os hamatum"
+ },
+ "第N中手骨": {
+  "en": "{o} metacarpal",
+  "la": "Os metacarpi {r}"
+ },
+ "第N指基節骨": {
+  "en": "Proximal phalanx of {o} finger",
+  "la": "Phalanx proximalis (manus) {r}"
+ },
+ "第N指中節骨": {
+  "en": "Middle phalanx of {o} finger",
+  "la": "Phalanx media (manus) {r}"
+ },
+ "第N指末節骨": {
+  "en": "Distal phalanx of {o} finger",
+  "la": "Phalanx distalis (manus) {r}"
+ },
+ "短母指外転筋": {
+  "en": "Abductor pollicis brevis",
+  "la": "Musculus abductor pollicis brevis"
+ },
+ "短母指屈筋浅頭": {
+  "en": "Flexor pollicis brevis, superficial head",
+  "la": "M. flexor pollicis brevis, caput superficiale"
+ },
+ "短母指屈筋深頭": {
+  "en": "Flexor pollicis brevis, deep head",
+  "la": "M. flexor pollicis brevis, caput profundum"
+ },
+ "母指対立筋": {
+  "en": "Opponens pollicis",
+  "la": "Musculus opponens pollicis"
+ },
+ "母指内転筋斜頭": {
+  "en": "Adductor pollicis, oblique head",
+  "la": "M. adductor pollicis, caput obliquum"
+ },
+ "母指内転筋横頭": {
+  "en": "Adductor pollicis, transverse head",
+  "la": "M. adductor pollicis, caput transversum"
+ },
+ "小指外転筋": {
+  "en": "Abductor digiti minimi (hand)",
+  "la": "Musculus abductor digiti minimi manus"
+ },
+ "短小指屈筋": {
+  "en": "Flexor digiti minimi brevis (hand)",
+  "la": "Musculus flexor digiti minimi brevis manus"
+ },
+ "小指対立筋": {
+  "en": "Opponens digiti minimi (hand)",
+  "la": "Musculus opponens digiti minimi manus"
+ },
+ "手の背側骨間筋": {
+  "en": "Dorsal interossei of hand",
+  "la": "Musculi interossei dorsales manus"
+ },
+ "第N底側骨間筋": {
+  "en": "{o} palmar interosseous",
+  "la": "Musculus interosseus palmaris {r}"
+ },
+ "手の屈筋支帯": {
+  "en": "Flexor retinaculum of hand",
+  "la": "Retinaculum musculorum flexorum manus"
+ },
+ "種子骨": {
+  "en": "Sesamoid bone",
+  "la": "Os sesamoideum"
+ },
+ "寛骨": {
+  "en": "Hip bone",
+  "la": "Os coxae"
+ },
+ "腸骨筋": {
+  "en": "Iliacus",
+  "la": "Musculus iliacus"
+ },
+ "大腰筋": {
+  "en": "Psoas major",
+  "la": "Musculus psoas major"
+ },
+ "梨状筋": {
+  "en": "Piriformis",
+  "la": "Musculus piriformis"
+ },
+ "上双子筋": {
+  "en": "Superior gemellus",
+  "la": "Musculus gemellus superior"
+ },
+ "下双子筋": {
+  "en": "Inferior gemellus",
+  "la": "Musculus gemellus inferior"
+ },
+ "内閉鎖筋": {
+  "en": "Obturator internus",
+  "la": "Musculus obturatorius internus"
+ },
+ "外閉鎖筋": {
+  "en": "Obturator externus",
+  "la": "Musculus obturatorius externus"
+ },
+ "大腿方形筋": {
+  "en": "Quadratus femoris",
+  "la": "Musculus quadratus femoris"
+ },
+ "大殿筋": {
+  "en": "Gluteus maximus",
+  "la": "Musculus gluteus maximus"
+ },
+ "中殿筋": {
+  "en": "Gluteus medius",
+  "la": "Musculus gluteus medius"
+ },
+ "小殿筋": {
+  "en": "Gluteus minimus",
+  "la": "Musculus gluteus minimus"
+ },
+ "大腿筋膜張筋": {
+  "en": "Tensor fasciae latae",
+  "la": "Musculus tensor fasciae latae"
+ },
+ "恥骨筋": {
+  "en": "Pectineus",
+  "la": "Musculus pectineus"
+ },
+ "恥骨尾骨筋": {
+  "en": "Pubococcygeus",
+  "la": "Musculus pubococcygeus"
+ },
+ "恥骨直腸筋": {
+  "en": "Puborectalis",
+  "la": "Musculus puborectalis"
+ },
+ "腸骨尾骨筋": {
+  "en": "Iliococcygeus",
+  "la": "Musculus iliococcygeus"
+ },
+ "坐骨尾骨筋": {
+  "en": "Ischiococcygeus (coccygeus)",
+  "la": "Musculus ischiococcygeus"
+ },
+ "外肛門括約筋": {
+  "en": "External anal sphincter",
+  "la": "Musculus sphincter ani externus"
+ },
+ "肛門挙筋腱弓": {
+  "en": "Tendinous arch of levator ani",
+  "la": "Arcus tendineus musculi levatoris ani"
+ },
+ "鼡径靱帯": {
+  "en": "Inguinal ligament",
+  "la": "Ligamentum inguinale"
+ },
+ "腸頚靭帯": {
+  "en": "Iliotibial tract",
+  "la": "Tractus iliotibialis",
+  "conf": "low"
+ },
+ "大腿骨": {
+  "en": "Femur",
+  "la": "Femur"
+ },
+ "膝蓋骨": {
+  "en": "Patella",
+  "la": "Patella"
+ },
+ "縫工筋": {
+  "en": "Sartorius",
+  "la": "Musculus sartorius"
+ },
+ "大腿直筋": {
+  "en": "Rectus femoris",
+  "la": "Musculus rectus femoris"
+ },
+ "外側広筋": {
+  "en": "Vastus lateralis",
+  "la": "Musculus vastus lateralis"
+ },
+ "内側広筋": {
+  "en": "Vastus medialis",
+  "la": "Musculus vastus medialis"
+ },
+ "中間広筋": {
+  "en": "Vastus intermedius",
+  "la": "Musculus vastus intermedius"
+ },
+ "長内転筋": {
+  "en": "Adductor longus",
+  "la": "Musculus adductor longus"
+ },
+ "短内転筋": {
+  "en": "Adductor brevis",
+  "la": "Musculus adductor brevis"
+ },
+ "大内転筋": {
+  "en": "Adductor magnus",
+  "la": "Musculus adductor magnus"
+ },
+ "小内転筋": {
+  "en": "Adductor minimus",
+  "la": "Musculus adductor minimus"
+ },
+ "薄筋": {
+  "en": "Gracilis",
+  "la": "Musculus gracilis"
+ },
+ "半腱様筋": {
+  "en": "Semitendinosus",
+  "la": "Musculus semitendinosus"
+ },
+ "半膜様筋": {
+  "en": "Semimembranosus",
+  "la": "Musculus semimembranosus"
+ },
+ "大腿二頭筋長頭": {
+  "en": "Biceps femoris, long head",
+  "la": "M. biceps femoris, caput longum"
+ },
+ "大腿二頭筋短頭": {
+  "en": "Biceps femoris, short head",
+  "la": "M. biceps femoris, caput breve"
+ },
+ "脛骨": {
+  "en": "Tibia",
+  "la": "Tibia"
+ },
+ "腓骨": {
+  "en": "Fibula",
+  "la": "Fibula"
+ },
+ "前脛骨筋": {
+  "en": "Tibialis anterior",
+  "la": "Musculus tibialis anterior"
+ },
+ "長趾伸筋": {
+  "en": "Extensor digitorum longus",
+  "la": "Musculus extensor digitorum longus"
+ },
+ "長母趾伸筋": {
+  "en": "Extensor hallucis longus",
+  "la": "Musculus extensor hallucis longus"
+ },
+ "第N腓骨筋": {
+  "en": "Fibularis tertius",
+  "la": "Musculus fibularis tertius",
+  "conf": "low"
+ },
+ "長腓骨筋": {
+  "en": "Fibularis longus",
+  "la": "Musculus fibularis longus"
+ },
+ "短腓骨筋": {
+  "en": "Fibularis brevis",
+  "la": "Musculus fibularis brevis"
+ },
+ "腓腹筋内側頭": {
+  "en": "Gastrocnemius, medial head",
+  "la": "M. gastrocnemius, caput mediale"
+ },
+ "腓腹筋外側頭": {
+  "en": "Gastrocnemius, lateral head",
+  "la": "M. gastrocnemius, caput laterale"
+ },
+ "ヒラメ筋": {
+  "en": "Soleus",
+  "la": "Musculus soleus"
+ },
+ "足底筋": {
+  "en": "Plantaris",
+  "la": "Musculus plantaris"
+ },
+ "膝窩筋": {
+  "en": "Popliteus",
+  "la": "Musculus popliteus"
+ },
+ "後脛骨筋": {
+  "en": "Tibialis posterior",
+  "la": "Musculus tibialis posterior"
+ },
+ "長趾屈筋": {
+  "en": "Flexor digitorum longus",
+  "la": "Musculus flexor digitorum longus"
+ },
+ "長母趾屈筋": {
+  "en": "Flexor hallucis longus",
+  "la": "Musculus flexor hallucis longus"
+ },
+ "踵骨腱": {
+  "en": "Calcaneal tendon",
+  "la": "Tendo calcaneus"
+ },
+ "距骨": {
+  "en": "Talus",
+  "la": "Talus"
+ },
+ "踵骨": {
+  "en": "Calcaneus",
+  "la": "Calcaneus"
+ },
+ "足舟状骨": {
+  "en": "Navicular",
+  "la": "Os naviculare"
+ },
+ "立方骨": {
+  "en": "Cuboid",
+  "la": "Os cuboideum"
+ },
+ "内側楔状骨": {
+  "en": "Medial cuneiform",
+  "la": "Os cuneiforme mediale"
+ },
+ "中間楔状骨": {
+  "en": "Intermediate cuneiform",
+  "la": "Os cuneiforme intermedium"
+ },
+ "中間側楔状骨": {
+  "en": "Intermediate cuneiform",
+  "la": "Os cuneiforme intermedium",
+  "conf": "low"
+ },
+ "外側楔状骨": {
+  "en": "Lateral cuneiform",
+  "la": "Os cuneiforme laterale"
+ },
+ "第N中足骨": {
+  "en": "{o} metatarsal",
+  "la": "Os metatarsi {r}"
+ },
+ "第N趾基節骨": {
+  "en": "Proximal phalanx of {o} toe",
+  "la": "Phalanx proximalis (pedis) {r}"
+ },
+ "第N趾中節骨": {
+  "en": "Middle phalanx of {o} toe",
+  "la": "Phalanx media (pedis) {r}"
+ },
+ "第N趾末節骨": {
+  "en": "Distal phalanx of {o} toe",
+  "la": "Phalanx distalis (pedis) {r}"
+ },
+ "母趾外転筋": {
+  "en": "Abductor hallucis",
+  "la": "Musculus abductor hallucis"
+ },
+ "短母趾屈筋内側頭": {
+  "en": "Flexor hallucis brevis, medial head",
+  "la": "M. flexor hallucis brevis, caput mediale"
+ },
+ "短母趾屈筋外側頭": {
+  "en": "Flexor hallucis brevis, lateral head",
+  "la": "M. flexor hallucis brevis, caput laterale"
+ },
+ "母趾内転筋斜頭": {
+  "en": "Adductor hallucis, oblique head",
+  "la": "M. adductor hallucis, caput obliquum"
+ },
+ "母趾内転筋横頭": {
+  "en": "Adductor hallucis, transverse head",
+  "la": "M. adductor hallucis, caput transversum"
+ },
+ "短趾屈筋": {
+  "en": "Flexor digitorum brevis",
+  "la": "Musculus flexor digitorum brevis"
+ },
+ "足底方形筋": {
+  "en": "Quadratus plantae",
+  "la": "Musculus quadratus plantae"
+ },
+ "足第N虫様筋": {
+  "en": "{o} lumbrical of foot",
+  "la": "Musculus lumbricalis pedis {r}"
+ },
+ "小趾外転筋": {
+  "en": "Abductor digiti minimi (foot)",
+  "la": "Musculus abductor digiti minimi pedis"
+ },
+ "短小趾屈筋": {
+  "en": "Flexor digiti minimi brevis (foot)",
+  "la": "Musculus flexor digiti minimi brevis pedis"
+ },
+ "小趾対立筋": {
+  "en": "Opponens digiti minimi (foot)",
+  "la": "Musculus opponens digiti minimi pedis"
+ },
+ "短趾伸筋": {
+  "en": "Extensor digitorum brevis",
+  "la": "Musculus extensor digitorum brevis"
+ },
+ "短母趾伸筋": {
+  "en": "Extensor hallucis brevis",
+  "la": "Musculus extensor hallucis brevis"
+ },
+ "足の背側骨間筋": {
+  "en": "Dorsal interossei of foot",
+  "la": "Musculi interossei dorsales pedis"
+ },
+ "長足底靱帯": {
+  "en": "Long plantar ligament",
+  "la": "Ligamentum plantare longum"
+ },
+ "上大静脈": {
+  "en": "Superior vena cava",
+  "la": "Vena cava superior",
+  "conf": null
+ },
+ "下大静脈": {
+  "en": "Inferior vena cava",
+  "la": "Vena cava inferior",
+  "conf": null
+ },
+ "上行大動脈;大動脈上行部": {
+  "en": "Ascending aorta",
+  "la": "Aorta ascendens",
+  "conf": null
+ },
+ "下行大動脈;大動脈下行部": {
+  "en": "Descending aorta",
+  "la": "Aorta descendens",
+  "conf": null
+ },
+ "大動脈弓": {
+  "en": "Aortic arch",
+  "la": "Arcus aortae",
+  "conf": null
+ },
+ "上腸間膜動脈": {
+  "en": "Superior mesenteric artery",
+  "la": "Arteria mesenterica superior",
+  "conf": null
+ },
+ "上腸間膜静脈": {
+  "en": "Superior mesenteric vein",
+  "la": "Vena mesenterica superior",
+  "conf": null
+ },
+ "下腸間膜動脈": {
+  "en": "Inferior mesenteric artery",
+  "la": "Arteria mesenterica inferior",
+  "conf": null
+ },
+ "腹腔動脈": {
+  "en": "Celiac trunk",
+  "la": "Truncus coeliacus",
+  "conf": null
+ },
+ "総肝動脈": {
+  "en": "Common hepatic artery",
+  "la": "Arteria hepatica communis",
+  "conf": null
+ },
+ "脾動脈": {
+  "en": "Splenic artery",
+  "la": "Arteria splenica",
+  "conf": null
+ },
+ "脾静脈": {
+  "en": "Splenic vein",
+  "la": "Vena splenica",
+  "conf": null
+ },
+ "胃動脈": {
+  "en": "Gastric artery",
+  "la": "Arteria gastrica",
+  "conf": "low"
+ },
+ "腎動脈": {
+  "en": "Renal artery",
+  "la": "Arteria renalis",
+  "conf": null
+ },
+ "腎静脈": {
+  "en": "Renal vein",
+  "la": "Vena renalis",
+  "conf": null
+ },
+ "内腸骨動脈": {
+  "en": "Internal iliac artery",
+  "la": "Arteria iliaca interna",
+  "conf": null
+ },
+ "内腸骨静脈": {
+  "en": "Internal iliac vein",
+  "la": "Vena iliaca interna",
+  "conf": null
+ },
+ "外腸骨動脈": {
+  "en": "External iliac artery",
+  "la": "Arteria iliaca externa",
+  "conf": null
+ },
+ "外腸骨静脈": {
+  "en": "External iliac vein",
+  "la": "Vena iliaca externa",
+  "conf": null
+ },
+ "総腸骨動脈": {
+  "en": "Common iliac artery",
+  "la": "Arteria iliaca communis",
+  "conf": null
+ },
+ "総腸骨静脈": {
+  "en": "Common iliac vein",
+  "la": "Vena iliaca communis",
+  "conf": null
+ },
+ "総頚動脈": {
+  "en": "Common carotid artery",
+  "la": "Arteria carotis communis",
+  "conf": null
+ },
+ "内頚静脈": {
+  "en": "Internal jugular vein",
+  "la": "Vena jugularis interna",
+  "conf": null
+ },
+ "鎖骨下動脈": {
+  "en": "Subclavian artery",
+  "la": "Arteria subclavia",
+  "conf": null
+ },
+ "鎖骨下静脈": {
+  "en": "Subclavian vein",
+  "la": "Vena subclavia",
+  "conf": null
+ },
+ "腕頭静脈": {
+  "en": "Brachiocephalic vein",
+  "la": "Vena brachiocephalica",
+  "conf": null
+ },
+ "腕頭動脈nsn": {
+  "en": "Brachiocephalic trunk",
+  "la": "Truncus brachiocephalicus",
+  "conf": null
+ },
+ "肺動脈": {
+  "en": "Pulmonary artery",
+  "la": "Arteria pulmonalis",
+  "conf": null
+ },
+ "肺静脈": {
+  "en": "Pulmonary vein",
+  "la": "Vena pulmonalis",
+  "conf": null
+ },
+ "肺動脈弁": {
+  "en": "Pulmonary valve",
+  "la": "Valva trunci pulmonalis",
+  "conf": null
+ },
+ "冠状動脈主幹": {
+  "en": "Coronary artery (main trunk)",
+  "la": "Arteria coronaria",
+  "conf": "low"
+ },
+ "冠状動脈の回旋枝": {
+  "en": "Circumflex branch of coronary artery",
+  "la": "Ramus circumflexus",
+  "conf": "low"
+ },
+ "冠状静脈洞": {
+  "en": "Coronary sinus",
+  "la": "Sinus coronarius",
+  "conf": null
+ },
+ "大心臓静脈;大心静脈": {
+  "en": "Great cardiac vein",
+  "la": "Vena cordis magna",
+  "conf": null
+ },
+ "中心臓静脈;中心静脈;後室間静脈": {
+  "en": "Middle cardiac vein",
+  "la": "Vena cordis media",
+  "conf": null
+ },
+ "前心臓静脈;前心静脈;前右心室静脈": {
+  "en": "Anterior cardiac veins",
+  "la": "Venae cordis anteriores",
+  "conf": "low"
+ },
+ "心室後静脈;後左心室静脈": {
+  "en": "Posterior vein of left ventricle",
+  "la": "Vena ventriculi sinistri posterior",
+  "conf": "low"
+ },
+ "中隔室間枝;心室中隔枝;左冠状動脈の前中隔枝": {
+  "en": "Septal interventricular branches (LCA)",
+  "la": "Rami interventriculares septales",
+  "conf": "low"
+ },
+ "後外側枝;右冠状動脈の右後側壁枝": {
+  "en": "Posterolateral branch (RCA)",
+  "la": "Rami posterolaterales dextri",
+  "conf": "low"
+ },
+ "縁枝;鋭角縁枝;右冠状動脈の鋭縁枝": {
+  "en": "Right marginal branch (RCA)",
+  "la": "Ramus marginalis dexter",
+  "conf": "low"
+ },
+ "心室中隔枝;右冠状動脈の中隔室間枝": {
+  "en": "Septal interventricular branches (RCA)",
+  "la": "Rami interventriculares septales",
+  "conf": "low"
+ },
+ "心室中隔枝nsn;右冠状動脈の中隔室間枝nsn": {
+  "en": "Septal interventricular branch (RCA)",
+  "la": "Rami interventriculares septales",
+  "conf": "low"
+ },
+ "心室中隔枝nsn;左冠状動脈の中隔室間枝nsn": {
+  "en": "Septal interventricular branch (LCA)",
+  "la": "Rami interventriculares septales",
+  "conf": "low"
+ },
+ "心臓壁": {
+  "en": "Heart wall (myocardium)",
+  "la": "Paries cordis",
+  "conf": "low"
+ },
+ "房室弁;三尖弁": {
+  "en": "Tricuspid valve",
+  "la": "Valva tricuspidalis",
+  "conf": null
+ },
+ "房室弁;僧帽弁;二尖弁": {
+  "en": "Mitral valve",
+  "la": "Valva mitralis",
+  "conf": null
+ },
+ "心室の前乳頭筋": {
+  "en": "Anterior papillary muscle",
+  "la": "Musculus papillaris anterior",
+  "conf": "low"
+ },
+ "心室の前乳頭筋nsn": {
+  "en": "Anterior papillary muscle",
+  "la": "Musculus papillaris anterior",
+  "conf": "low"
+ },
+ "心室の後乳頭筋": {
+  "en": "Posterior papillary muscle",
+  "la": "Musculus papillaris posterior",
+  "conf": "low"
+ },
+ "心室の中隔乳頭筋": {
+  "en": "Septal papillary muscle",
+  "la": "Musculus papillaris septalis",
+  "conf": "low"
+ },
+ "肺、上葉": {
+  "en": "Upper lobe of lung",
+  "la": "Lobus superior pulmonis",
+  "conf": null
+ },
+ "肺、下葉": {
+  "en": "Lower lobe of lung",
+  "la": "Lobus inferior pulmonis",
+  "conf": null
+ },
+ "中葉［右肺の］/右肺、中葉": {
+  "en": "Middle lobe of right lung",
+  "la": "Lobus medius pulmonis dextri",
+  "conf": null
+ },
+ "肝臓": {
+  "en": "Liver",
+  "la": "Hepar",
+  "conf": null
+ },
+ "胃": {
+  "en": "Stomach",
+  "la": "Gaster",
+  "conf": null
+ },
+ "十二指腸": {
+  "en": "Duodenum",
+  "la": "Duodenum",
+  "conf": null
+ },
+ "空腸": {
+  "en": "Jejunum",
+  "la": "Jejunum",
+  "conf": null
+ },
+ "回腸": {
+  "en": "Ileum",
+  "la": "Ileum",
+  "conf": null
+ },
+ "直腸": {
+  "en": "Rectum",
+  "la": "Rectum",
+  "conf": null
+ },
+ "虫垂": {
+  "en": "Vermiform appendix",
+  "la": "Appendix vermiformis",
+  "conf": null
+ },
+ "結腸nsn": {
+  "en": "Colon",
+  "la": "Colon",
+  "conf": null
+ },
+ "胆嚢;タンノウ": {
+  "en": "Gallbladder",
+  "la": "Vesica biliaris",
+  "conf": null
+ },
+ "膵臓nsn": {
+  "en": "Pancreas",
+  "la": "Pancreas",
+  "conf": null
+ },
+ "膵管;主膵管": {
+  "en": "Pancreatic duct",
+  "la": "Ductus pancreaticus",
+  "conf": null
+ },
+ "脾臓": {
+  "en": "Spleen",
+  "la": "Splen",
+  "conf": null
+ },
+ "食道": {
+  "en": "Esophagus",
+  "la": "Oesophagus",
+  "conf": null
+ },
+ "気管": {
+  "en": "Trachea",
+  "la": "Trachea",
+  "conf": null
+ },
+ "気管支": {
+  "en": "Bronchus",
+  "la": "Bronchus",
+  "conf": null
+ },
+ "横隔膜": {
+  "en": "Diaphragm",
+  "la": "Diaphragma",
+  "conf": null
+ },
+ "大網ヒモ": {
+  "en": "Omental tenia",
+  "la": "Taenia omentalis",
+  "conf": "low"
+ },
+ "自由ヒモ": {
+  "en": "Free tenia",
+  "la": "Taenia libera",
+  "conf": "low"
+ },
+ "間膜ヒモ": {
+  "en": "Mesocolic tenia",
+  "la": "Taenia mesocolica",
+  "conf": "low"
+ },
+ "胸腺右葉": {
+  "en": "Right lobe of thymus",
+  "la": "Lobus dexter thymi",
+  "conf": null
+ },
+ "胸腺左葉": {
+  "en": "Left lobe of thymus",
+  "la": "Lobus sinister thymi",
+  "conf": null
+ },
+ "腎臓": {
+  "en": "Kidney",
+  "la": "Ren",
+  "conf": null
+ },
+ "尿管": {
+  "en": "Ureter",
+  "la": "Ureter",
+  "conf": null
+ },
+ "尿道": {
+  "en": "Urethra",
+  "la": "Urethra",
+  "conf": null
+ },
+ "膀胱": {
+  "en": "Urinary bladder",
+  "la": "Vesica urinaria",
+  "conf": null
+ },
+ "副腎": {
+  "en": "Suprarenal gland",
+  "la": "Glandula suprarenalis",
+  "conf": null
+ },
+ "下垂体": {
+  "en": "Pituitary gland",
+  "la": "Hypophysis",
+  "conf": null
+ },
+ "松果体;松果腺": {
+  "en": "Pineal gland",
+  "la": "Glandula pinealis",
+  "conf": null
+ },
+ "前立腺": {
+  "en": "Prostate",
+  "la": "Prostata",
+  "conf": null
+ },
+ "精巣": {
+  "en": "Testis",
+  "la": "Testis",
+  "conf": null
+ },
+ "精嚢": {
+  "en": "Seminal vesicle",
+  "la": "Glandula vesiculosa",
+  "conf": null
+ },
+ "精管": {
+  "en": "Ductus deferens",
+  "la": "Ductus deferens",
+  "conf": null
+ },
+ "副睾丸": {
+  "en": "Epididymis",
+  "la": "Epididymis",
+  "conf": null
+ },
+ "陰茎亀頭": {
+  "en": "Glans penis",
+  "la": "Glans penis",
+  "conf": null
+ },
+ "陰茎海綿体": {
+  "en": "Corpus cavernosum penis",
+  "la": "Corpus cavernosum penis",
+  "conf": null
+ },
+ "尿道海綿体nsn": {
+  "en": "Corpus spongiosum penis",
+  "la": "Corpus spongiosum penis",
+  "conf": null
+ },
+ "陰毛;カクシゲ": {
+  "en": "Pubic hair",
+  "la": "Pubes",
+  "conf": "low"
+ },
+ "小脳": {
+  "en": "Cerebellum",
+  "la": "Cerebellum",
+  "conf": null
+ },
+ "橋": {
+  "en": "Pons",
+  "la": "Pons",
+  "conf": null
+ },
+ "髄脳;延髄;球": {
+  "en": "Medulla oblongata",
+  "la": "Medulla oblongata",
+  "conf": null
+ },
+ "中脳nsn": {
+  "en": "Midbrain",
+  "la": "Mesencephalon",
+  "conf": null
+ },
+ "脳梁": {
+  "en": "Corpus callosum",
+  "la": "Corpus callosum",
+  "conf": null
+ },
+ "脳弓": {
+  "en": "Fornix",
+  "la": "Fornix",
+  "conf": null
+ },
+ "脳弓交連;海馬交連/海馬交連": {
+  "en": "Commissure of fornix (hippocampal commissure)",
+  "la": "Commissura fornicis",
+  "conf": "low"
+ },
+ "視床": {
+  "en": "Thalamus",
+  "la": "Thalamus",
+  "conf": null
+ },
+ "視床下部nsn": {
+  "en": "Hypothalamus",
+  "la": "Hypothalamus",
+  "conf": null
+ },
+ "視床髄条": {
+  "en": "Stria medullaris of thalamus",
+  "la": "Stria medullaris thalami",
+  "conf": "low"
+ },
+ "海馬": {
+  "en": "Hippocampus",
+  "la": "Hippocampus",
+  "conf": null
+ },
+ "海馬傍回": {
+  "en": "Parahippocampal gyrus",
+  "la": "Gyrus parahippocampalis",
+  "conf": null
+ },
+ "扁桃体": {
+  "en": "Amygdala",
+  "la": "Corpus amygdaloideum",
+  "conf": null
+ },
+ "尾状核": {
+  "en": "Caudate nucleus",
+  "la": "Nucleus caudatus",
+  "conf": null
+ },
+ "被殻": {
+  "en": "Putamen",
+  "la": "Putamen",
+  "conf": null
+ },
+ "淡蒼球": {
+  "en": "Globus pallidus",
+  "la": "Globus pallidus",
+  "conf": null
+ },
+ "島": {
+  "en": "Insula",
+  "la": "Insula",
+  "conf": null
+ },
+ "帯状回": {
+  "en": "Cingulate gyrus",
+  "la": "Gyrus cinguli",
+  "conf": null
+ },
+ "視神経": {
+  "en": "Optic nerve",
+  "la": "Nervus opticus",
+  "conf": null
+ },
+ "視索": {
+  "en": "Optic tract",
+  "la": "Tractus opticus",
+  "conf": null
+ },
+ "視神経交叉;視交叉": {
+  "en": "Optic chiasm",
+  "la": "Chiasma opticum",
+  "conf": null
+ },
+ "内側膝状体": {
+  "en": "Medial geniculate body",
+  "la": "Corpus geniculatum mediale",
+  "conf": null
+ },
+ "外側膝状体": {
+  "en": "Lateral geniculate body",
+  "la": "Corpus geniculatum laterale",
+  "conf": null
+ },
+ "上丘": {
+  "en": "Superior colliculus",
+  "la": "Colliculus superior",
+  "conf": null
+ },
+ "下丘": {
+  "en": "Inferior colliculus",
+  "la": "Colliculus inferior",
+  "conf": null
+ },
+ "上丘腕": {
+  "en": "Brachium of superior colliculus",
+  "la": "Brachium colliculi superioris",
+  "conf": "low"
+ },
+ "下丘腕": {
+  "en": "Brachium of inferior colliculus",
+  "la": "Brachium colliculi inferioris",
+  "conf": "low"
+ },
+ "乳頭体": {
+  "en": "Mammillary body",
+  "la": "Corpus mammillare",
+  "conf": null
+ },
+ "灰白隆起": {
+  "en": "Tuber cinereum",
+  "la": "Tuber cinereum",
+  "conf": "low"
+ },
+ "終板": {
+  "en": "Lamina terminalis",
+  "la": "Lamina terminalis",
+  "conf": "low"
+ },
+ "前交連": {
+  "en": "Anterior commissure",
+  "la": "Commissura anterior",
+  "conf": null
+ },
+ "後交連": {
+  "en": "Posterior commissure",
+  "la": "Commissura posterior",
+  "conf": null
+ },
+ "手綱": {
+  "en": "Habenula",
+  "la": "Habenula",
+  "conf": null
+ },
+ "透明中隔": {
+  "en": "Septum pellucidum",
+  "la": "Septum pellucidum",
+  "conf": null
+ },
+ "脚間窩": {
+  "en": "Interpeduncular fossa",
+  "la": "Fossa interpeduncularis",
+  "conf": "low"
+ },
+ "大脳脚［広義の］": {
+  "en": "Cerebral peduncle",
+  "la": "Pedunculus cerebri",
+  "conf": null
+ },
+ "室間孔": {
+  "en": "Interventricular foramen",
+  "la": "Foramen interventriculare",
+  "conf": "low"
+ },
+ "側脳室": {
+  "en": "Lateral ventricle",
+  "la": "Ventriculus lateralis",
+  "conf": null
+ },
+ "第N脳室": {
+  "en": "{o} ventricle (brain)",
+  "la": "Ventriculus {r}",
+  "conf": "low"
+ },
+ "中脳水道;脳水道": {
+  "en": "Cerebral aqueduct",
+  "la": "Aqueductus mesencephali",
+  "conf": null
+ },
+ "脊髄の中心管": {
+  "en": "Central canal of spinal cord",
+  "la": "Canalis centralis",
+  "conf": "low"
+ },
+ "分界条": {
+  "en": "Stria terminalis",
+  "la": "Stria terminalis",
+  "conf": "low"
+ },
+ "大脳半球の脈絡叢": {
+  "en": "Choroid plexus of cerebral hemisphere",
+  "la": "Plexus choroideus",
+  "conf": "low"
+ },
+ "白質（大脳半球の）": {
+  "en": "White matter (cerebral hemisphere)",
+  "la": "Substantia alba",
+  "conf": "low"
+ },
+ "内包の前脚;右内包前脚": {
+  "en": "Anterior limb of internal capsule",
+  "la": "Crus anterius capsulae internae",
+  "conf": "low"
+ },
+ "内包の前脚;左内包前脚": {
+  "en": "Anterior limb of internal capsule",
+  "la": "Crus anterius capsulae internae",
+  "conf": "low"
+ },
+ "上前頭回": {
+  "en": "Superior frontal gyrus",
+  "la": "Gyrus frontalis superior",
+  "conf": null
+ },
+ "内側前頭回/右中前頭回": {
+  "en": "Middle frontal gyrus",
+  "la": "Gyrus frontalis medius",
+  "conf": "low"
+ },
+ "内側前頭回/左中前頭回": {
+  "en": "Middle frontal gyrus",
+  "la": "Gyrus frontalis medius",
+  "conf": "low"
+ },
+ "上側頭回前部": {
+  "en": "Superior temporal gyrus, anterior part",
+  "la": "Gyrus temporalis superior",
+  "conf": "low"
+ },
+ "上側頭回後部": {
+  "en": "Superior temporal gyrus, posterior part",
+  "la": "Gyrus temporalis superior",
+  "conf": "low"
+ },
+ "中側頭回": {
+  "en": "Middle temporal gyrus",
+  "la": "Gyrus temporalis medius",
+  "conf": null
+ },
+ "下側頭回": {
+  "en": "Inferior temporal gyrus",
+  "la": "Gyrus temporalis inferior",
+  "conf": null
+ },
+ "中心前回": {
+  "en": "Precentral gyrus",
+  "la": "Gyrus precentralis",
+  "conf": null
+ },
+ "中心後回": {
+  "en": "Postcentral gyrus",
+  "la": "Gyrus postcentralis",
+  "conf": null
+ },
+ "縁上回": {
+  "en": "Supramarginal gyrus",
+  "la": "Gyrus supramarginalis",
+  "conf": null
+ },
+ "角回": {
+  "en": "Angular gyrus",
+  "la": "Gyrus angularis",
+  "conf": null
+ },
+ "後頭葉": {
+  "en": "Occipital lobe",
+  "la": "Lobus occipitalis",
+  "conf": null
+ },
+ "上頭頂小葉と楔前部": {
+  "en": "Superior parietal lobule and precuneus",
+  "la": "Lobulus parietalis superior et precuneus",
+  "conf": "low"
+ },
+ "眼窩回と直回": {
+  "en": "Orbital gyri and gyrus rectus",
+  "la": "Gyri orbitales et gyrus rectus",
+  "conf": "low"
+ },
+ "副短回": {
+  "en": "Accessory gyrus",
+  "la": "Gyrus accessorius",
+  "conf": "low"
+ },
+ "側頭葉の外側後頭側頭回": {
+  "en": "Lateral occipitotemporal gyrus",
+  "la": "Gyrus occipitotemporalis lateralis",
+  "conf": "low"
+ },
+ "下後鋸筋": {
+  "en": "Serratus posterior inferior",
+  "la": "Musculus serratus posterior inferior",
+  "conf": null
+ },
+ "肩甲挙筋": {
+  "en": "Levator scapulae",
+  "la": "Musculus levator scapulae",
+  "conf": null
+ },
+ "大菱形筋": {
+  "en": "Rhomboid major",
+  "la": "Musculus rhomboideus major",
+  "conf": null
+ },
+ "小菱形筋": {
+  "en": "Rhomboid minor",
+  "la": "Musculus rhomboideus minor",
+  "conf": null
+ },
+ "腹直筋": {
+  "en": "Rectus abdominis",
+  "la": "Musculus rectus abdominis",
+  "conf": null
+ },
+ "腹横筋": {
+  "en": "Transversus abdominis",
+  "la": "Musculus transversus abdominis",
+  "conf": null
+ },
+ "内腹斜筋": {
+  "en": "Internal oblique",
+  "la": "Musculus obliquus internus abdominis",
+  "conf": null
+ },
+ "錐体筋": {
+  "en": "Pyramidalis",
+  "la": "Musculus pyramidalis",
+  "conf": null
+ },
+ "鎖骨下筋": {
+  "en": "Subclavius",
+  "la": "Musculus subclavius",
+  "conf": null
+ },
+ "大後頭直筋": {
+  "en": "Rectus capitis posterior major",
+  "la": "Musculus rectus capitis posterior major",
+  "conf": null
+ },
+ "小後頭直筋": {
+  "en": "Rectus capitis posterior minor",
+  "la": "Musculus rectus capitis posterior minor",
+  "conf": null
+ },
+ "頭半棘筋": {
+  "en": "Semispinalis capitis",
+  "la": "Musculus semispinalis capitis",
+  "conf": null
+ },
+ "頚半棘筋": {
+  "en": "Semispinalis cervicis",
+  "la": "Musculus semispinalis cervicis",
+  "conf": null
+ },
+ "頚回旋筋": {
+  "en": "Rotatores cervicis",
+  "la": "Musculi rotatores cervicis",
+  "conf": "low"
+ },
+ "頚最長筋": {
+  "en": "Longissimus cervicis",
+  "la": "Musculus longissimus cervicis",
+  "conf": null
+ },
+ "胸腸肋筋": {
+  "en": "Iliocostalis thoracis",
+  "la": "Musculus iliocostalis thoracis",
+  "conf": null
+ },
+ "頚前横突間筋": {
+  "en": "Anterior cervical intertransversarii",
+  "la": "Musculi intertransversarii anteriores cervicis",
+  "conf": "low"
+ },
+ "頚外側後横突間筋": {
+  "en": "Posterior lateral cervical intertransversarii",
+  "la": "Musculi intertransversarii posteriores laterales cervicis",
+  "conf": "low"
+ },
+ "頚棘間筋": {
+  "en": "Interspinales cervicis",
+  "la": "Musculi interspinales cervicis",
+  "conf": "low"
+ },
+ "手の虫様筋": {
+  "en": "Lumbricals of hand",
+  "la": "Musculi lumbricales manus",
+  "conf": null
+ },
+ "掌側骨間筋": {
+  "en": "Palmar interossei",
+  "la": "Musculi interossei palmares",
+  "conf": null
+ },
+ "中間腱": {
+  "en": "Intermediate tendon",
+  "la": "Tendo intermedius",
+  "conf": "low"
+ },
+ "仙骨;仙椎[1－5]": {
+  "en": "Sacrum",
+  "la": "Os sacrum",
+  "conf": null
+ },
+ "環椎[C1];第N頚椎": {
+  "en": "Atlas (C1)",
+  "la": "Atlas",
+  "conf": null
+ },
+ "軸椎[C2];第N頚椎": {
+  "en": "Axis (C2)",
+  "la": "Axis",
+  "conf": null
+ },
+ "下腿骨間膜": {
+  "en": "Interosseous membrane of leg",
+  "la": "Membrana interossea cruris",
+  "conf": null
+ },
+ "前腕骨間膜": {
+  "en": "Interosseous membrane of forearm",
+  "la": "Membrana interossea antebrachii",
+  "conf": null
+ },
+ "種子骨(右足の）": {
+  "en": "Sesamoid bone (right foot)",
+  "la": "Os sesamoideum",
+  "conf": "low"
+ },
+ "種子骨(左足の）": {
+  "en": "Sesamoid bone (left foot)",
+  "la": "Os sesamoideum",
+  "conf": "low"
+ },
+ "上顎歯肉": {
+  "en": "Maxillary gingiva",
+  "la": "Gingiva",
+  "conf": "low"
+ },
+ "下顎歯肉": {
+  "en": "Mandibular gingiva",
+  "la": "Gingiva",
+  "conf": "low"
+ },
+ "眼球": {
+  "en": "Eyeball",
+  "la": "Bulbus oculi",
+  "conf": null
+ }
+}

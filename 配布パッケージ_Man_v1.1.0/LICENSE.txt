@@ -1,0 +1,67 @@
+================================================================
+LICENSE / ライセンス
+================================================================
+
+This 3D model ("the Work") is licensed under
+Creative Commons Attribution-ShareAlike 2.1 Japan (CC BY-SA 2.1 JP).
+
+本3Dモデル（以下「本作品」）は
+クリエイティブ・コモンズ 表示-継承 2.1 日本 (CC BY-SA 2.1 JP)
+の下で提供されます。
+
+License deed / ライセンス概要:
+  https://creativecommons.org/licenses/by-sa/2.1/jp/
+Legal code / 法的条文:
+  https://creativecommons.org/licenses/by-sa/2.1/jp/legalcode
+
+----------------------------------------------------------------
+YOU ARE FREE TO / あなたは以下を自由に行えます
+----------------------------------------------------------------
+- Share — copy and redistribute the material in any medium or format.
+- Adapt — remix, transform, and build upon the material,
+  for any purpose, even commercially.
+
+- 共有 — どんな媒体・形式でも複製・再配布できます。
+- 翻案 — 営利目的を含め、リミックス・改変・派生できます。
+
+----------------------------------------------------------------
+UNDER THE FOLLOWING TERMS / 以下の条件で
+----------------------------------------------------------------
+- Attribution (BY) / 表示:
+  You must give appropriate credit (see CREDITS.txt), provide a link
+  to the license, and indicate if changes were made.
+  適切なクレジット表示（CREDITS.txt 参照）、ライセンスへのリンク提示、
+  変更があった場合はその旨の明示が必要です。
+
+- ShareAlike (SA) / 継承:
+  If you remix, transform, or build upon the material, you must
+  distribute your contributions under the same license as the original.
+  リミックス・改変・派生した場合、その成果物を本作品と同一の
+  ライセンス (CC BY-SA 2.1 JP) で頒布しなければなりません。
+
+- No additional restrictions / 追加的制約の禁止:
+  You may not apply legal terms or technological measures that legally
+  restrict others from doing anything the license permits.
+  ライセンスが許可することを他者が行うのを法的に妨げる、独自の
+  利用規約や技術的保護手段を課してはなりません。
+
+----------------------------------------------------------------
+IMPORTANT NOTE FOR BUYERS & SELLERS / 購入者・販売者への重要事項
+----------------------------------------------------------------
+Selling this Work is permitted. However, because of the ShareAlike
+condition, anyone who obtains the Work receives the SAME CC BY-SA 2.1 JP
+rights. They may legally redistribute, resell, or modify it, and the
+seller CANNOT impose "no redistribution / no resale" type restrictions.
+
+本作品の販売は可能です。ただし継承(SA)条件により、入手した人にも
+同じ CC BY-SA 2.1 JP の権利が付与されます。購入者は合法的に再配布・
+転売・改変でき、販売者が「再配布禁止・転売禁止」等の独自制約を
+課すことはできません。
+
+================================================================
+Attribution chain / 帰属の連鎖:
+  BodyParts3D (c) DBCLS
+    -> 3DAnatomyman (always3d)
+      -> Male Anatomy Model (this Work) (c) 2026 Kabe (Kabe-Tech)
+Full attribution text: see CREDITS.txt / 詳細は CREDITS.txt
+================================================================

@@ -216,9 +216,13 @@ Blender 解剖モデル編集プロジェクト用の作業ルール。
 ### ★まず読む: 完全ランブックと再利用スクリプト（2026-06-14整備）
 - **手順書**: `出品手順_販売サイト.md`（事前準備→ローカル素材→Gumroad→BOOTH→検証チェックリスト。商品ID/配布物は `scripts/listing/config.json` が一次情報）
 - **スクリプト**（Brave を `-Profile "PC"` で起動後に実行）:
+  - `blender -b <master> -P scripts/listing/export_dist.py -- <female|male> <ver>` — **配布用4形式(blend/fbx/glb/obj)書き出し**＋出力を読み直して自動検証
+  - `python scripts/listing/make_zips.py <female|male> <ver>` — 形式別zip4本
   - `python scripts/listing/normalize_and_thumbs.py` — 背景184正規化＋サムネ3枚再生成
-  - `node scripts/listing/gumroad.js <covers|desc|thumb|verify> <female|male|set>`
+  - `node scripts/listing/gumroad.js <covers|desc|thumb|files|verify> <female|male|set>`
   - `node scripts/listing/booth.js <all|title|images|files|save|verify> <product>`
+  - `node scripts/listing/audit_dist.js [local|booth|gumroad]` — **4形式が揃っているかの監査**（欠けたら exit 1）
+- **★「配布物に4形式入ってる?」はこの監査で答える**（記憶や推測で答えない）。書き出しの罠（非表示オブジェクトの欠落・`compress=True`）と販路別のファイル差し替え作法（BOOTHは旧削除が先／Gumroadは1本ずつアップして都度保存・setはバンドル）は skill `anatomy-listing` §0.5〜0.6 と `出品手順_販売サイト.md` §2.5〜2.6 が正。
 - **★Gumroadの罠（再発防止）**: 公開メイン画像は「Description先頭画像」だが、**旧版の「Product covers」アセットが残っていると、そちらがメインを上書きする**（Male v1.0.0の残骸でメインがグレーだった事例）。`gumroad.js covers <product>` で全削除（狭VPで aria-label「Remove cover」が出る）→説明欄先頭が昇格。Female/Setは covers 0枚。
 - **★BOOTHファイルは自動アップ可**: D&Dゾーンを**クリックで一時input生成→filechooser発火**→生CDP `DOM.setFileInputFiles`（50MB制限回避）。「手動必須」は誤り。
 - **★検証**: 「完全完了」は**公開ページのメイン画像を実画面で目視**するまで報告しない（説明欄だけ見て誤判定した事故あり）。

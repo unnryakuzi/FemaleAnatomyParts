@@ -1,0 +1,65 @@
+================================================================
+CREDITS / ATTRIBUTION  —  クレジット / 帰属表示
+================================================================
+
+This model is a derivative work and MUST be distributed with the
+attribution below. (CC BY-SA 2.1 JP, Attribution requirement)
+
+本モデルは派生作品であり、以下のクレジットを付して頒布する必要が
+あります。（CC BY-SA 2.1 JP・表示義務）
+
+----------------------------------------------------------------
+REQUIRED ATTRIBUTION TEXT / 必須クレジット文
+----------------------------------------------------------------
+"Male Anatomy Model" (c) 2026 Kabe (Kabe-Tech)
+is a derivative of "3DAnatomyman" by always3d,
+which is a derivative of "BodyParts3D" (c) The Database Center
+for Life Science (DBCLS).
+Licensed under CC BY-SA 2.1 JP.
+
+「Male Anatomy Model」(c) 2026 Kabe (Kabe-Tech)
+は always3d「3DAnatomyman」の派生物であり、
+「3DAnatomyman」は DBCLS「BodyParts3D」の派生物です。
+CC BY-SA 2.1 JP ライセンスで提供されます。
+
+----------------------------------------------------------------
+SOURCES / 出典
+----------------------------------------------------------------
+- BodyParts3D (c) The Database Center for Life Science (DBCLS)
+    License: CC BY-SA 2.1 JP
+    https://lifesciencedb.jp/bp3d/  (BodyParts3D)
+- 3DAnatomyman by always3d
+    License: CC BY-SA 2.1 JP
+    https://always3d.com/freesozai-3danatomyman/
+    https://always3d.gumroad.com/l/haJWL
+- Male Anatomy Model (this derivative) (c) 2026 Kabe (Kabe-Tech)
+    https://kabe-tech.com/  (also distributed via Gumroad, BOOTH, and other marketplaces)
+    Contact: https://kabe-tech.com/contact.html
+
+----------------------------------------------------------------
+CHANGES MADE IN THIS DERIVATIVE / 本派生で加えた主な変更
+(CC BY-SA requires indicating changes / 変更明示義務に対応)
+----------------------------------------------------------------
+- Outer skin / hair removed to produce an écorché (musculature shown).
+  外皮・毛髪を除去し écorché 化（筋層を表示。眼球・帽状腱膜は保持）
+- Trilingual labels added as custom properties and index
+  (Japanese / English / Latin, TA/FMA-based) on all 931 parts.
+  全931パーツに3言語ラベル（日本語/英語/ラテン語）をカスタムプロパティ
+  ＋索引で付与
+- Heavy meshes given a non-destructive Decimate modifier for usable file
+  sizes (full resolution recoverable by disabling it).
+  重いメッシュに非破壊のDecimateを付与（無効化でフル解像度に復元可）
+- Delivered as a pure static model in A-pose (no rig).
+  純静的・A-pose で提供（リグなし）
+- Multi-format packaging (.blend / .glb / .fbx / .obj) + name index.
+  多形式パッケージ化＋解剖名索引
+
+----------------------------------------------------------------
+WHEN YOU REDISTRIBUTE OR ADAPT / 再配布・改変する場合
+----------------------------------------------------------------
+You must keep this attribution, link to the license, indicate any
+further changes, and license your result under CC BY-SA 2.1 JP.
+
+このクレジットを保持し、ライセンスへのリンクを示し、さらなる変更が
+あればその旨を明示し、成果物を CC BY-SA 2.1 JP で提供してください。
+================================================================

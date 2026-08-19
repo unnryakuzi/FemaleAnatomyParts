@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "blender": {
+      "command": "uvx",
+      "args": [
+        "blender-mcp"
+      ],
+      "env": {
+        "BLENDER_HOST": "127.0.0.1",
+        "BLENDER_PORT": "9878"
+      }
+    },
+    "blender-ai-mcp": {
+      "command": "C:/Users/abesh/AppData/Local/pypoetry/Cache/virtualenvs/blender-ai-mcp-8NC0qbxQ-py3.12/Scripts/python.exe",
+      "args": [
+        "-m",
+        "server.main"
+      ],
+      "env": {
+        "PYTHONPATH": "C:/Users/abesh/Documents/Blender/blender-ai-mcp",
+        "ROUTER_ENABLED": "true",
+        "MCP_SURFACE_PROFILE": "llm-guided",
+        "MCP_TRANSPORT_MODE": "stdio",
+        "BLENDER_RPC_HOST": "127.0.0.1",
+        "BLENDER_RPC_PORT": "8765",
+        "BLENDER_AI_TMP_INTERNAL_DIR": "C:/Users/abesh/AppData/Local/Temp/blender-ai-mcp",
+        "BLENDER_AI_TMP_EXTERNAL_DIR": "C:/Users/abesh/AppData/Local/Temp/blender-ai-mcp"
+      }
+    }
+  }
+}

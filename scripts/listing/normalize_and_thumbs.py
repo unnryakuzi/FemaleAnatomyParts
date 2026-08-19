@@ -21,8 +21,11 @@
   - ※ 1番目=正面(01)プレビューを使う。Gumroad/BOOTH のグリッド/ライブラリ用サムネ。
 
 使い方:
-  python scripts/listing/normalize_and_thumbs.py
-  （config.json の female/male previews_dir と thumbnails_dir を読む）
+  python scripts/listing/normalize_and_thumbs.py            # カラー版(previews/)
+  python scripts/listing/normalize_and_thumbs.py mq         # 無彩色マネキン版(previews_mq/)
+  python scripts/listing/normalize_and_thumbs.py sw         # 下着版(previews_sw/)
+  （config.json の female/male previews_dir と thumbnails_dir を読む。
+    バリアント指定時は previews_<variant>/ を対象にし、サムネは thumb_*_<variant>.png）
 """
 import json, os, glob, sys
 import numpy as np
@@ -75,18 +78,24 @@ def crop_figure(img, pad=20):
     return img.convert("RGB").crop((x0, y0, x1, y1))
 
 
-def make_thumbs():
-    fem_dir = os.path.join(ROOT, CFG["female"]["previews_dir"])
-    mal_dir = os.path.join(ROOT, CFG["male"]["previews_dir"])
+def variant_dir(model, variant):
+    d = CFG[model]["previews_dir"]
+    return d if not variant else d + "_" + variant
+
+
+def make_thumbs(variant=""):
+    sfx = ("_" + variant) if variant else ""
+    fem_dir = os.path.join(ROOT, variant_dir("female", variant))
+    mal_dir = os.path.join(ROOT, variant_dir("male", variant))
     fem = Image.open(os.path.join(fem_dir, CFG["female"]["preview_order"][0])).convert("RGB")
     mal = Image.open(os.path.join(mal_dir, CFG["male"]["preview_order"][0])).convert("RGB")
     out_dir = os.path.join(ROOT, CFG["thumbnails_dir"])
     os.makedirs(out_dir, exist_ok=True)
 
     tf = Image.new("RGB", (1400, 1400), (G, G, G)); tf.paste(fem, (200, 0))
-    tf.save(os.path.join(out_dir, "thumb_female.png"))
+    tf.save(os.path.join(out_dir, f"thumb_female{sfx}.png"))
     tm = Image.new("RGB", (1400, 1400), (G, G, G)); tm.paste(mal, (200, 0))
-    tm.save(os.path.join(out_dir, "thumb_male.png"))
+    tm.save(os.path.join(out_dir, f"thumb_male{sfx}.png"))
 
     # set: 人物を大きく（高さ1800px）並べる
     H = 1800; gap = 140
@@ -96,15 +105,16 @@ def make_thumbs():
     ts = Image.new("RGB", (2000, 2000), (G, G, G))
     x0 = (2000 - (fc.width + gap + mc.width)) // 2; y0 = (2000 - H) // 2
     ts.paste(fc, (x0, y0)); ts.paste(mc, (x0 + fc.width + gap, y0))
-    ts.save(os.path.join(out_dir, "thumb_set.png"))
-    print(f"  thumbnails regenerated in {out_dir}")
+    ts.save(os.path.join(out_dir, f"thumb_set{sfx}.png"))
+    print(f"  thumbnails regenerated in {out_dir} (suffix={sfx or 'none'})")
 
 
 if __name__ == "__main__":
-    print("[1/2] normalize preview backgrounds to", G)
-    nf = normalize_dir(CFG["female"]["previews_dir"])
-    nm = normalize_dir(CFG["male"]["previews_dir"])
+    VARIANT = sys.argv[1] if len(sys.argv) > 1 else ""
+    print("[1/2] normalize preview backgrounds to", G, f"variant={VARIANT or 'color'}")
+    nf = normalize_dir(variant_dir("female", VARIANT))
+    nm = normalize_dir(variant_dir("male", VARIANT))
     print(f"  female {nf} + male {nm} previews normalized")
     print("[2/2] regenerate square thumbnails")
-    make_thumbs()
+    make_thumbs(VARIANT)
     print("DONE. 確認: 各プレビュー四隅が (184,184,184)、thumb_set にシーム無し")

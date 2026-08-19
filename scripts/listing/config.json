@@ -24,11 +24,15 @@
 
   "_booth_mannequin": "BOOTHは商品ページの画像で年齢制限を判定する（事務局回答 2026-08-10）。肌色のécorché＝裸の人体と読まれてR-18固定にされたため、BOOTH掲載分だけ無彩色マネキン調に差し替える。配布物・Gumroadはカラーのまま（previews_dir）。撮影は MANNEQUIN=1 blender -b ... render_previews.py",
 
+  "_booth_swimwear": "下着版(previews_sw)。BOOTH全年齢化の第2案。無彩色にせずカラーのまま該当部位を覆う。撮影は SWIMWEAR=1 blender -b ... render_previews.py。下着は scripts/listing/swimwear_fit_<model>.blend を append するだけでマスターは無変更。フィットの再生成は blender -b <model>.blend -P scripts/listing/fit_swimwear.py -- <model>。★どちらをBOOTHに出すかは未決。previews_dir_booth はマネキン版のまま据え置いてある（2026-08-15）",
+
   "female": {
     "version": "v1.67.0",
     "previews_dir": "配布パッケージ_v1.67.0/previews",
     "previews_dir_booth": "配布パッケージ_v1.67.0/previews_mq",
+    "previews_dir_sw": "配布パッケージ_v1.67.0/previews_sw",
     "booth_thumb": "thumb_female_mq.png",
+    "booth_thumb_sw": "thumb_female_sw.png",
     "zip_dir": "配布zip_v1.67.0",
     "zip_prefix": "FemaleAnatomy_v1.67.0",
     "preview_order": ["01_front.png","02_front34.png","03_back.png","04_skeleton_front.png","05_torso_closeup.png","06_forearm_tendon.png"]
@@ -37,14 +41,18 @@
   "_male_booth_gate": "★男性の previews_dir_booth は撮影済みだが、まだBOOTHへ反映していない（2026-08-10）。07_skin.png＝肌色の全裸レンダーが最も明確なR-18要因なので preview_order_booth から外してある。生殖器13オブジェクトも AGESAFE=1 で全ショット非表示。反映と年齢制限の切替は女性(8481858)の再審査結果を見てから行う。全年齢へ切り替えて事務局にR-18固定されると自分で戻せなくなるため、順序を飛ばさない。撮影は MANNEQUIN=1 AGESAFE=1 blender -b ... render_previews.py -- male",
 
   "male": {
-    "version": "Man_v1.1.0",
-    "previews_dir": "配布パッケージ_Man_v1.1.0/previews",
-    "previews_dir_booth": "配布パッケージ_Man_v1.1.0/previews_mq",
-    "booth_thumb": "thumb_male_mq.png",
-    "zip_dir": "配布zip_Man_v1.1.0",
-    "zip_prefix": "MaleAnatomy_v1.1.0",
+    "version": "Man_v1.2.0",
+    "_booth_variant": "2026-08-18: BOOTH掲載を無彩色マネキン版(previews_mq/thumb_male_mq.png)から下着版(previews_sw)へ切替。カラーのまま該当部位を覆う版。男性から先に出し、全年齢を維持できることを確認してから女性・セットへ広げる方針（男性は現在R-18なので判断が覆っても失うものが無い）。戻すときは previews_dir_booth を previews_mq、booth_thumb を thumb_male_mq.png へ戻す",
+    "previews_dir": "配布パッケージ_Man_v1.2.0/previews",
+    "previews_dir_booth": "配布パッケージ_Man_v1.2.0/previews_sw",
+    "previews_dir_mq": "配布パッケージ_Man_v1.2.0/previews_mq",
+    "booth_thumb": "thumb_male_sw.png",
+    "booth_thumb_mq": "thumb_male_mq.png",
+    "zip_dir": "配布zip_Man_v1.2.0",
+    "zip_prefix": "MaleAnatomy_v1.2.0",
     "preview_order": ["01_muscle_front.png","02_muscle_front34.png","03_muscle_back.png","04_skeleton_front.png","05_organs.png","06_vessels_nerves.png","07_skin.png","08_torso_closeup.png"],
-    "preview_order_booth": ["01_muscle_front.png","02_muscle_front34.png","03_muscle_back.png","04_skeleton_front.png","05_organs.png","06_vessels_nerves.png","08_torso_closeup.png"]
+    "_preview_order_booth_note": "01_muscle_front.png は先頭の正方形サムネ(thumb_male_sw.png)と中身が同一なので掲載順から外している（2026-08-18）。正方形サムネは一覧の中央クロップで頭足が切れるのを防ぐための必須枚。Gumroad/配布用の preview_order は8枚のまま",
+    "preview_order_booth": ["02_muscle_front34.png","03_muscle_back.png","04_skeleton_front.png","05_organs.png","06_vessels_nerves.png","07_skin.png","08_torso_closeup.png"]
   },
 
   "set_image_order": [

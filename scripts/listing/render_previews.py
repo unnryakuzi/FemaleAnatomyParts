@@ -21,6 +21,13 @@
                肌色のécorché＝「裸の人体」と読まれるのを避ける用途（2026-08-10）。
   AGESAFE=1    全年齢版の掲載画像を撮る。生殖器(13オブジェクト)を隠し、外皮ショット
                (07_skin＝肌色の全裸レンダー)を撮らない。MANNEQUIN=1 と併用する。
+  SWIMWEAR=1   下着（男性=ブリーフ / 女性=ビキニ）を着せて撮る。カラーのまま該当部位を
+               覆う版。scripts/listing/swimwear_fit_<model>.blend を append するだけ
+               （マスター .blend は無変更）。生殖器も AGESAFE と同様に隠す。
+               下着は fit_swimwear/swimwear_fit_lib で**筋肉面**に合わせてあるので、
+               体表が写るショット(muscle)にだけ出す。骨格・臓器・血管ショットでは
+               浮いてしまうので出さない。フィットの作り直しは:
+                 blender <model>.blend  → MCP で swimwear_fit_lib.fit()/write_out()
 """
 import bpy, sys, os, json, math
 from mathutils import Vector, Quaternion
@@ -34,6 +41,7 @@ MODEL = argv[0] if argv else "female"
 SHOT_FILTER = argv[1] if len(argv) > 1 else None
 MANNEQUIN = os.environ.get("MANNEQUIN") == "1"
 AGESAFE = os.environ.get("AGESAFE") == "1"
+SWIMWEAR = os.environ.get("SWIMWEAR") == "1"
 
 # 可視化プリセット: shot_type -> 表示するコレクション名の集合（他は hide_render=True）
 PRESETS = {
@@ -55,6 +63,19 @@ ALWAYS_HIDE = {"_RenderSetup", "_ガイドライン"}
 AGESAFE_HIDE = {"生殖器"}
 # AGESAFE=1 で撮らないショット preset（外皮＝全裸の肌色レンダー。全年齢版では出せない）
 AGESAFE_DROP_PRESETS = {"skin"}
+# SWIMWEAR=1 で下着を出す preset。下着は筋肉面に合わせてあるので、骨格・臓器・血管の
+# ショットでは体表が無く宙に浮くため出さない。skin は下着では覆えない（外性器が皮膚
+# メッシュに造形されており、覆うと股間が膨らんで逆効果）ので出さない＝撮らない。
+SWIMWEAR_PRESETS = {"muscle"}
+# skin(外皮)ショットは体表が皮膚なので、筋肉面に合わせた掲載用ブリーフでは埋まって見えない。
+# 皮膚に合わせた別ファイルを使う（無ければ従来どおり撮らない）。
+SWIMWEAR_SKIN_BLEND = {"male": "swimwear_fit_male_dist.blend"}
+SWIMWEAR_SKIN_PRESETS = {"skin"}
+# SWIMWEAR=1 のとき追加で隠すコレクション。
+#  以前は female の 女性外皮(Breast_Base) を隠していた。元のビキニトップはカップが小さく
+#  乳房を8割しか覆えず肌色が残ったため。→ ブラを体表から生成する方式に変えて被覆100%に
+#  なったので不要になった（2026-08-16）。乳房は商品の造形なので消さない。
+SWIMWEAR_HIDE = {"male": set(), "female": set()}
 
 # ショット定義: 出力ファイル名 -> (preset, camera, closeup_target)
 # camera: front / front34 / back。closeup_target: None=全身, 'torso'/'forearm'=寄り
@@ -97,7 +118,36 @@ def collection_map(scene):
     return m
 
 
-def set_visibility(scene, show_cols):
+def append_swimwear():
+    """swimwear_fit_<model>.blend の下着を append する。マスター側は一切変更しない。"""
+    path = os.path.join(HERE, f"swimwear_fit_{MODEL}.blend")
+    if not os.path.exists(path):
+        raise SystemExit(f"SWIMWEAR=1 but not found: {path}")
+    with bpy.data.libraries.load(path) as (df, dt):
+        dt.objects = [n for n in df.objects if n.startswith("Swimwear_")]
+    names = []
+    for o in dt.objects:
+        if o is None:
+            continue
+        bpy.context.scene.collection.objects.link(o)
+        names.append(o.name)
+    print(f"  SWIMWEAR: appended {names} from {os.path.basename(path)}")
+    skin = set()
+    sb = SWIMWEAR_SKIN_BLEND.get(MODEL)
+    if sb and os.path.exists(os.path.join(HERE, sb)):
+        with bpy.data.libraries.load(os.path.join(HERE, sb)) as (df, dt):
+            dt.objects = [n for n in df.objects if n.startswith("Swimwear_")]
+        for o in dt.objects:
+            if o is None:
+                continue
+            o.name = o.name + "_skin"      # 掲載用と名前が衝突するので改名
+            bpy.context.scene.collection.objects.link(o)
+            skin.add(o.name)
+        print(f"  SWIMWEAR: appended {sorted(skin)} from {sb} (skinショット用)")
+    return set(names), skin
+
+
+def set_visibility(scene, show_cols, preset=None, swim=frozenset(), swim_skin=frozenset()):
     cmap = collection_map(scene)
     show_objs = set()
     for cn in show_cols:
@@ -108,15 +158,25 @@ def set_visibility(scene, show_cols):
                 # CURRENT_左広頚筋接触ライン が黄色い線として写り込んだ 2026-07-13）
                 if o.type == 'MESH':
                     show_objs.add(o.name)
-    if AGESAFE:
+    hide_cols = set()
+    if AGESAFE or SWIMWEAR:
+        hide_cols |= AGESAFE_HIDE
+    if SWIMWEAR:
+        hide_cols |= SWIMWEAR_HIDE.get(MODEL, set())
+    if hide_cols:
         hidden = set()
-        for cn in AGESAFE_HIDE:
+        for cn in hide_cols:
             c = cmap.get(cn)
             if c:
                 hidden |= {o.name for o in c.all_objects if o.type == 'MESH'}
-        if hidden:
-            show_objs -= hidden
-        print(f"  AGESAFE: hid {len(hidden)} objects from {sorted(AGESAFE_HIDE)}")
+        show_objs -= hidden
+        print(f"  hid {len(hidden)} objects from {sorted(hide_cols)}")
+    if swim and preset in SWIMWEAR_PRESETS:
+        show_objs |= swim
+        print(f"  SWIMWEAR: showing {sorted(swim)}")
+    elif swim_skin and preset in SWIMWEAR_SKIN_PRESETS:
+        show_objs |= swim_skin
+        print(f"  SWIMWEAR: showing {sorted(swim_skin)} (皮膚に合わせた版)")
     for o in scene.objects:
         o.hide_render = o.name not in show_objs
     return show_objs
@@ -191,6 +251,7 @@ def main():
 
     out_dir = os.environ.get("PREVIEW_OUT") or os.path.join(ROOT, CFG[MODEL]["previews_dir"])
     os.makedirs(out_dir, exist_ok=True)
+    swim, swim_skin = append_swimwear() if SWIMWEAR else (frozenset(), frozenset())
 
     for fname, preset, cam, closeup in SHOTS[MODEL]:
         if SHOT_FILTER and SHOT_FILTER not in fname:
@@ -198,8 +259,11 @@ def main():
         if AGESAFE and preset in AGESAFE_DROP_PRESETS:
             print(f"SKIPPED {fname} (AGESAFE: preset={preset})")
             continue
+        if SWIMWEAR and preset in SWIMWEAR_SKIN_PRESETS and not swim_skin:
+            print(f"SKIPPED {fname} (SWIMWEAR: preset={preset})")
+            continue
         show_cols = PRESETS[MODEL][preset]
-        names = set_visibility(scene, show_cols)
+        names = set_visibility(scene, show_cols, preset, swim, swim_skin)
         mn, mx = visible_bbox(scene, names)
         dims = mx - mn
         center = (mn + mx) / 2.0

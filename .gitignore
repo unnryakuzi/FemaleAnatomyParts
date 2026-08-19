@@ -47,3 +47,13 @@ __pycache__/
 *.pyc
 *.pyo
 .tmp/
+
+# 配布成果物（書き出しで再生成できる。手順は skill anatomy-listing / 出品手順_販売サイト.md）
+配布zip_*/
+配布パッケージ_*/models/
+
+# 中間バイナリ
+*.npz
+
+# ブラウザプロファイルの取り込み跡（誤コミット防止）
+UsersabeshAppDataLocalBraveSoftwareBrave-BrowserUser Data/
