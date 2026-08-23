@@ -1,0 +1,9391 @@
+{
+ "transform": {
+  "perm": [
+   0,
+   2,
+   1
+  ],
+  "signs": [
+   1,
+   1,
+   -1
+  ],
+  "scale": 0.000972653607186207,
+  "translate": [
+   -0.0006945541070381492,
+   0.04498334449218022,
+   0.004348388199185482
+  ],
+  "rms": 0.015749479248657716
+ },
+ "matched": [
+  {
+   "name": "下大静脈(かだいじょうみゃく)",
+   "en": "Inferior vena cava",
+   "bp_file": "FJ3441.obj",
+   "bp": "BP10311",
+   "fma": "FMA10951",
+   "verts_product": 3980,
+   "faces_product": 7686,
+   "center_dist": 0.07559,
+   "size_ratio": [
+    1.0675,
+    1.3407,
+    2.5803
+   ]
+  },
+  {
+   "name": "上腸間膜動脈(じょうちょうかんまくどうみゃく)",
+   "en": "Superior mesenteric artery",
+   "bp_file": "FJ1928.obj",
+   "bp": "BP6193",
+   "fma": "FMA14749",
+   "verts_product": 198,
+   "faces_product": 350,
+   "center_dist": 0.06534,
+   "size_ratio": [
+    0.2357,
+    0.4066,
+    0.2609
+   ]
+  },
+  {
+   "name": "上腸間膜静脈(じょうちょうかんまくじょうみゃく)",
+   "en": "Superior mesenteric vein",
+   "bp_file": "FJ3647.obj",
+   "bp": "BP10291",
+   "fma": "FMA14332",
+   "verts_product": 164,
+   "faces_product": 202,
+   "center_dist": 0.05845,
+   "size_ratio": [
+    0.246,
+    0.4121,
+    0.1643
+   ]
+  },
+  {
+   "name": "肛門挙筋腱弓(こうもんきょきんけんきゅう)",
+   "en": "Tendinous arch of levator ani",
+   "bp_file": "FJ1465M.obj",
+   "bp": "BP9016",
+   "fma": "FMA46442",
+   "verts_product": 3873,
+   "faces_product": 6844,
+   "center_dist": 0.04164,
+   "size_ratio": [
+    1.3802,
+    2.0538,
+    1.3944
+   ]
+  },
+  {
+   "name": "左胃動脈(さいどうみゃく)",
+   "en": "Left Gastric artery",
+   "bp_file": "FJ3499.obj",
+   "bp": "BP10363",
+   "fma": "FMA14768",
+   "verts_product": 148,
+   "faces_product": 232,
+   "center_dist": 0.03591,
+   "size_ratio": [
+    0.3835,
+    0.2798,
+    0.2774
+   ]
+  },
+  {
+   "name": "右短腓骨筋(みぎたんひこつきん)",
+   "en": "Right Fibularis brevis",
+   "bp_file": "FJ1409.obj",
+   "bp": "BP5015",
+   "fma": "FMA22554",
+   "verts_product": 22646,
+   "faces_product": 35734,
+   "center_dist": 0.03443,
+   "size_ratio": [
+    0.7655,
+    1.0395,
+    1.0963
+   ]
+  },
+  {
+   "name": "左踵骨腱(ひだりしょうこつけん)",
+   "en": "Left Calcaneal tendon",
+   "bp_file": "FJ1405M.obj",
+   "bp": "BP8739",
+   "fma": "FMA264844",
+   "verts_product": 29609,
+   "faces_product": 47238,
+   "center_dist": 0.03433,
+   "size_ratio": [
+    0.8664,
+    1.1073,
+    1.0238
+   ]
+  },
+  {
+   "name": "左短腓骨筋(ひだりたんひこつきん)",
+   "en": "Left Fibularis brevis",
+   "bp_file": "FJ1409M.obj",
+   "bp": "BP8977",
+   "fma": "FMA22555",
+   "verts_product": 20283,
+   "faces_product": 35814,
+   "center_dist": 0.03428,
+   "size_ratio": [
+    0.7668,
+    1.0363,
+    1.0931
+   ]
+  },
+  {
+   "name": "右踵骨腱(みぎしょうこつけん)",
+   "en": "Right Calcaneal tendon",
+   "bp_file": "FJ1405.obj",
+   "bp": "BP5098",
+   "fma": "FMA258847",
+   "verts_product": 31397,
+   "faces_product": 46410,
+   "center_dist": 0.03424,
+   "size_ratio": [
+    0.8676,
+    1.1068,
+    1.025
+   ]
+  },
+  {
+   "name": "右胸鎖乳突筋(みぎきょうさにゅうとつきん)",
+   "en": "Right Sternocleidomastoid",
+   "bp_file": "FJ1595.obj",
+   "bp": "BP4909",
+   "fma": "FMA13408",
+   "verts_product": 34681,
+   "faces_product": 51314,
+   "center_dist": 0.03266,
+   "size_ratio": [
+    0.4804,
+    0.9106,
+    0.9589
+   ]
+  },
+  {
+   "name": "大心臓静脈;大心静脈(だいしんぞうじょうみゃく)",
+   "en": "Great cardiac vein",
+   "bp_file": "FJ2656.obj",
+   "bp": "BP8933",
+   "fma": "FMA4707",
+   "verts_product": 4222,
+   "faces_product": 7476,
+   "center_dist": 0.03148,
+   "size_ratio": [
+    4.3247,
+    1.9093,
+    2.0802
+   ]
+  },
+  {
+   "name": "右短母趾屈筋内側頭(みぎたんぼしくっきんないそくとう)",
+   "en": "Right Flexor hallucis brevis, medial head",
+   "bp_file": "FJ1396.obj",
+   "bp": "BP5546",
+   "fma": "FMA45971",
+   "verts_product": 6406,
+   "faces_product": 7672,
+   "center_dist": 0.02971,
+   "size_ratio": [
+    0.4866,
+    1.048,
+    1.0864
+   ]
+  },
+  {
+   "name": "左短母趾屈筋内側頭(ひだりたんぼしくっきんないそくとう)",
+   "en": "Left Flexor hallucis brevis, medial head",
+   "bp_file": "FJ1396M.obj",
+   "bp": "BP8945",
+   "fma": "FMA45972",
+   "verts_product": 5127,
+   "faces_product": 7438,
+   "center_dist": 0.02956,
+   "size_ratio": [
+    0.4857,
+    1.0471,
+    1.0759
+   ]
+  },
+  {
+   "name": "胸腺右葉(きょうせんうよう)",
+   "en": "Right lobe of thymus",
+   "bp_file": "FJ3151.obj",
+   "bp": "BP9220",
+   "fma": "FMA71194",
+   "verts_product": 16883,
+   "faces_product": 32268,
+   "center_dist": 0.02949,
+   "size_ratio": [
+    2.1203,
+    1.7802,
+    1.494
+   ]
+  },
+  {
+   "name": "食道(しょくどう)",
+   "en": "Esophagus",
+   "bp_file": "FJ2563.obj",
+   "bp": "BP9222",
+   "fma": "FMA7131",
+   "verts_product": 1431,
+   "faces_product": 2642,
+   "center_dist": 0.02947,
+   "size_ratio": [
+    0.8221,
+    0.7986,
+    0.9343
+   ]
+  },
+  {
+   "name": "右短母趾屈筋外側頭(みぎたんぼしくっきんがいそくとう)",
+   "en": "Right Flexor hallucis brevis, lateral head",
+   "bp_file": "FJ1393.obj",
+   "bp": "BP5548",
+   "fma": "FMA45973",
+   "verts_product": 9578,
+   "faces_product": 10992,
+   "center_dist": 0.02874,
+   "size_ratio": [
+    0.5774,
+    1.0333,
+    1.0884
+   ]
+  },
+  {
+   "name": "左短母趾屈筋外側頭(ひだりたんぼしくっきんがいそくとう)",
+   "en": "Left Flexor hallucis brevis, lateral head",
+   "bp_file": "FJ1393M.obj",
+   "bp": "BP8361",
+   "fma": "FMA45974",
+   "verts_product": 7583,
+   "faces_product": 10772,
+   "center_dist": 0.02867,
+   "size_ratio": [
+    0.5758,
+    1.0312,
+    1.0836
+   ]
+  },
+  {
+   "name": "右腸骨尾骨筋(みぎちょうこつびこつきん)",
+   "en": "Right Iliococcygeus",
+   "bp_file": "FJ2549.obj",
+   "bp": "BP8874",
+   "fma": "FMA45858",
+   "verts_product": 12793,
+   "faces_product": 18478,
+   "center_dist": 0.02832,
+   "size_ratio": [
+    0.9783,
+    0.6252,
+    0.8089
+   ]
+  },
+  {
+   "name": "左距骨(ひだりきょこつ)",
+   "en": "Left Talus",
+   "bp_file": "FJ3280.obj",
+   "bp": "BP9187",
+   "fma": "FMA24483",
+   "verts_product": 3048,
+   "faces_product": 5924,
+   "center_dist": 0.02828,
+   "size_ratio": [
+    1.038,
+    1.036,
+    1.0389
+   ]
+  },
+  {
+   "name": "右距骨(みぎきょこつ)",
+   "en": "Right Talus",
+   "bp_file": "FJ3385.obj",
+   "bp": "BP8033",
+   "fma": "FMA24482",
+   "verts_product": 3184,
+   "faces_product": 5962,
+   "center_dist": 0.02817,
+   "size_ratio": [
+    1.0422,
+    1.0389,
+    1.0402
+   ]
+  },
+  {
+   "name": "右母趾内転筋横頭(みぎぼしないてんきんおうとう)",
+   "en": "Right Adductor hallucis, transverse head",
+   "bp_file": "FJ1445.obj",
+   "bp": "BP5580",
+   "fma": "FMA46020",
+   "verts_product": 4971,
+   "faces_product": 4180,
+   "center_dist": 0.02762,
+   "size_ratio": [
+    1.0344,
+    0.7235,
+    1.1433
+   ]
+  },
+  {
+   "name": "左母趾内転筋横頭(ひだりぼしないてんきんおうとう)",
+   "en": "Left Adductor hallucis, transverse head",
+   "bp_file": "FJ1445M.obj",
+   "bp": "BP8394",
+   "fma": "FMA46021",
+   "verts_product": 3270,
+   "faces_product": 3936,
+   "center_dist": 0.02759,
+   "size_ratio": [
+    1.0054,
+    0.7214,
+    1.1397
+   ]
+  },
+  {
+   "name": "小脳(しょうのう)",
+   "en": "Cerebellum",
+   "bp_file": "FJ1781.obj",
+   "bp": "BP5696",
+   "fma": "FMA67944",
+   "verts_product": 120498,
+   "faces_product": 238506,
+   "center_dist": 0.02733,
+   "size_ratio": [
+    0.9704,
+    1.0252,
+    1.8362
+   ]
+  },
+  {
+   "name": "左踵骨(ひだりしょうこつ)",
+   "en": "Left Calcaneus",
+   "bp_file": "FJ3256.obj",
+   "bp": "BP8533",
+   "fma": "FMA24498",
+   "verts_product": 2896,
+   "faces_product": 5652,
+   "center_dist": 0.0273,
+   "size_ratio": [
+    0.9555,
+    0.9177,
+    1.0777
+   ]
+  },
+  {
+   "name": "右踵骨(みぎしょうこつ)",
+   "en": "Right Calcaneus",
+   "bp_file": "FJ3360.obj",
+   "bp": "BP9040",
+   "fma": "FMA24497",
+   "verts_product": 2930,
+   "faces_product": 5448,
+   "center_dist": 0.02729,
+   "size_ratio": [
+    0.9574,
+    0.915,
+    1.0744
+   ]
+  },
+  {
+   "name": "右腓腹筋内側頭(みぎひふくきんないそくとう)",
+   "en": "Right Gastrocnemius, medial head",
+   "bp_file": "FJ1397.obj",
+   "bp": "BP5539",
+   "fma": "FMA45957",
+   "verts_product": 38495,
+   "faces_product": 64772,
+   "center_dist": 0.02694,
+   "size_ratio": [
+    0.9648,
+    1.0823,
+    0.9647
+   ]
+  },
+  {
+   "name": "左腓腹筋内側頭(ひだりひふくきんないそくとう)",
+   "en": "Left Gastrocnemius, medial head",
+   "bp_file": "FJ1397M.obj",
+   "bp": "BP9217",
+   "fma": "FMA45958",
+   "verts_product": 35251,
+   "faces_product": 65138,
+   "center_dist": 0.0269,
+   "size_ratio": [
+    0.9699,
+    1.0817,
+    0.9635
+   ]
+  },
+  {
+   "name": "左腓腹筋外側頭(ひだりひふくきんがいそくとう)",
+   "en": "Left Gastrocnemius, lateral head",
+   "bp_file": "FJ1394M.obj",
+   "bp": "BP7939",
+   "fma": "FMA45961",
+   "verts_product": 25504,
+   "faces_product": 48710,
+   "center_dist": 0.02689,
+   "size_ratio": [
+    0.9642,
+    1.0344,
+    0.9228
+   ]
+  },
+  {
+   "name": "右腸骨筋(みぎちょうこつきん)",
+   "en": "Right Iliacus",
+   "bp_file": "FJ1422.obj",
+   "bp": "BP5085",
+   "fma": "FMA22322",
+   "verts_product": 25919,
+   "faces_product": 44402,
+   "center_dist": 0.02687,
+   "size_ratio": [
+    1.0244,
+    1.0313,
+    1.0296
+   ]
+  },
+  {
+   "name": "左腸骨筋(ひだりちょうこつきん)",
+   "en": "Left Iliacus",
+   "bp_file": "FJ1422M.obj",
+   "bp": "BP8312",
+   "fma": "FMA22323",
+   "verts_product": 24566,
+   "faces_product": 44306,
+   "center_dist": 0.02678,
+   "size_ratio": [
+    1.0263,
+    1.0312,
+    1.0283
+   ]
+  },
+  {
+   "name": "左母趾外転筋(ひだりぼしがいてんきん)",
+   "en": "Left Abductor hallucis",
+   "bp_file": "FJ1400M.obj",
+   "bp": "BP9193",
+   "fma": "FMA37460",
+   "verts_product": 10248,
+   "faces_product": 17098,
+   "center_dist": 0.02678,
+   "size_ratio": [
+    0.7784,
+    0.7608,
+    1.059
+   ]
+  },
+  {
+   "name": "右母趾外転筋(みぎぼしがいてんきん)",
+   "en": "Right Abductor hallucis",
+   "bp_file": "FJ1400.obj",
+   "bp": "BP5054",
+   "fma": "FMA37459",
+   "verts_product": 12295,
+   "faces_product": 17158,
+   "center_dist": 0.02677,
+   "size_ratio": [
+    0.7796,
+    0.7619,
+    1.0604
+   ]
+  },
+  {
+   "name": "右腓腹筋外側頭(みぎひふくきんがいそくとう)",
+   "en": "Right Gastrocnemius, lateral head",
+   "bp_file": "FJ1394.obj",
+   "bp": "BP5541",
+   "fma": "FMA45960",
+   "verts_product": 27026,
+   "faces_product": 49104,
+   "center_dist": 0.02672,
+   "size_ratio": [
+    0.9609,
+    1.0355,
+    0.9226
+   ]
+  },
+  {
+   "name": "左短母趾伸筋(ひだりたんぼししんきん)",
+   "en": "Left Extensor hallucis brevis",
+   "bp_file": "FJ1407M.obj",
+   "bp": "BP8118",
+   "fma": "FMA51145",
+   "verts_product": 7192,
+   "faces_product": 10778,
+   "center_dist": 0.02668,
+   "size_ratio": [
+    2.4043,
+    1.0394,
+    1.0107
+   ]
+  },
+  {
+   "name": "右短母趾伸筋(みぎたんぼししんきん)",
+   "en": "Right Extensor hallucis brevis",
+   "bp_file": "FJ1407.obj",
+   "bp": "BP5059",
+   "fma": "FMA51144",
+   "verts_product": 9259,
+   "faces_product": 11234,
+   "center_dist": 0.0266,
+   "size_ratio": [
+    2.3786,
+    1.0315,
+    1.0121
+   ]
+  },
+  {
+   "name": "右長母趾伸筋(みぎちょうぼししんきん)",
+   "en": "Right Extensor hallucis longus",
+   "bp_file": "FJ1408.obj",
+   "bp": "BP5022",
+   "fma": "FMA22546",
+   "verts_product": 16607,
+   "faces_product": 23802,
+   "center_dist": 0.02649,
+   "size_ratio": [
+    1.5344,
+    0.9814,
+    1.0255
+   ]
+  },
+  {
+   "name": "左長母趾伸筋(ひだりちょうぼししんきん)",
+   "en": "Left Extensor hallucis longus",
+   "bp_file": "FJ1408M.obj",
+   "bp": "BP7858",
+   "fma": "FMA22547",
+   "verts_product": 13673,
+   "faces_product": 23146,
+   "center_dist": 0.02638,
+   "size_ratio": [
+    1.5409,
+    0.9801,
+    1.0239
+   ]
+  },
+  {
+   "name": "右母趾内転筋斜頭(みぎぼしないてんきんしゃとう)",
+   "en": "Right Adductor hallucis, oblique head",
+   "bp_file": "FJ1398.obj",
+   "bp": "BP5578",
+   "fma": "FMA46018",
+   "verts_product": 7215,
+   "faces_product": 9480,
+   "center_dist": 0.02603,
+   "size_ratio": [
+    1.5727,
+    1.0368,
+    1.0023
+   ]
+  },
+  {
+   "name": "左母趾内転筋斜頭(ひだりぼしないてんきんしゃとう)",
+   "en": "Left Adductor hallucis, oblique head",
+   "bp_file": "FJ1398M.obj",
+   "bp": "BP8542",
+   "fma": "FMA46019",
+   "verts_product": 6338,
+   "faces_product": 9792,
+   "center_dist": 0.026,
+   "size_ratio": [
+    1.5643,
+    1.0306,
+    1.0
+   ]
+  },
+  {
+   "name": "右精巣(みぎせいそう)",
+   "en": "Right Testis",
+   "bp_file": "FJ3142.obj",
+   "bp": "BP9204",
+   "fma": "FMA7211",
+   "verts_product": 141,
+   "faces_product": 278,
+   "center_dist": 0.02599,
+   "size_ratio": [
+    1.0488,
+    1.0451,
+    1.0539
+   ]
+  },
+  {
+   "name": "左精巣(ひだりせいそう)",
+   "en": "Left Testis",
+   "bp_file": "FJ3138.obj",
+   "bp": "BP8578",
+   "fma": "FMA7212",
+   "verts_product": 142,
+   "faces_product": 280,
+   "center_dist": 0.02577,
+   "size_ratio": [
+    1.057,
+    1.0505,
+    1.0345
+   ]
+  },
+  {
+   "name": "左大腿筋膜張筋(ひだりだいたいきんまくちょうきん)",
+   "en": "Left Tensor fasciae latae",
+   "bp_file": "FJ1438M.obj",
+   "bp": "BP9184",
+   "fma": "FMA22426",
+   "verts_product": 10602,
+   "faces_product": 18514,
+   "center_dist": 0.02546,
+   "size_ratio": [
+    1.1023,
+    0.9893,
+    1.0105
+   ]
+  },
+  {
+   "name": "左冠状動脈の回旋枝(ひだりかんじょうどうみゃくかいせんし)",
+   "en": "Left Circumflex branch of coronary artery",
+   "bp_file": "FJ2649.obj",
+   "bp": "BP8397",
+   "fma": "FMA3895",
+   "verts_product": 2378,
+   "faces_product": 3542,
+   "center_dist": 0.02546,
+   "size_ratio": [
+    2.7231,
+    1.6942,
+    2.0141
+   ]
+  },
+  {
+   "name": "左副睾丸(ひだりふくこうがん)",
+   "en": "Left Epididymis",
+   "bp_file": "FJ3136.obj",
+   "bp": "BP8772",
+   "fma": "FMA18257",
+   "verts_product": 330,
+   "faces_product": 484,
+   "center_dist": 0.02543,
+   "size_ratio": [
+    1.0396,
+    1.0281,
+    1.037
+   ]
+  },
+  {
+   "name": "右大腿筋膜張筋(みぎだいたいきんまくちょうきん)",
+   "en": "Right Tensor fasciae latae",
+   "bp_file": "FJ1438.obj",
+   "bp": "BP5072",
+   "fma": "FMA22425",
+   "verts_product": 12200,
+   "faces_product": 18688,
+   "center_dist": 0.02542,
+   "size_ratio": [
+    1.0866,
+    0.9773,
+    1.0115
+   ]
+  },
+  {
+   "name": "右副睾丸(みぎふくこうがん)",
+   "en": "Right Epididymis",
+   "bp_file": "FJ3141.obj",
+   "bp": "BP8141",
+   "fma": "FMA18256",
+   "verts_product": 151,
+   "faces_product": 120,
+   "center_dist": 0.02535,
+   "size_ratio": [
+    1.1902,
+    1.072,
+    1.0412
+   ]
+  },
+  {
+   "name": "陰茎亀頭(きとう)",
+   "en": "Glans penis",
+   "bp_file": "FJ3134.obj",
+   "bp": "BP8793",
+   "fma": "FMA18247",
+   "verts_product": 3024,
+   "faces_product": 5252,
+   "center_dist": 0.02522,
+   "size_ratio": [
+    1.0347,
+    1.0329,
+    1.0302
+   ]
+  },
+  {
+   "name": "胸腺左葉(きょうせんさよう)",
+   "en": "Left lobe of thymus",
+   "bp_file": "FJ3150.obj",
+   "bp": "BP8666",
+   "fma": "FMA71195",
+   "verts_product": 23204,
+   "faces_product": 45944,
+   "center_dist": 0.02508,
+   "size_ratio": [
+    2.2978,
+    1.907,
+    1.8641
+   ]
+  },
+  {
+   "name": "右腎臓(みぎじんぞう)",
+   "en": "Right Kidney",
+   "bp_file": "FJ3147.obj",
+   "bp": "BP8907",
+   "fma": "FMA7204",
+   "verts_product": 6211,
+   "faces_product": 12394,
+   "center_dist": 0.02495,
+   "size_ratio": [
+    1.1572,
+    1.0806,
+    1.0064
+   ]
+  },
+  {
+   "name": "右長足底靱帯(みぎちょうそくていじんたい)",
+   "en": "Right Long plantar ligament",
+   "bp_file": "FJ1424.obj",
+   "bp": "BP5093",
+   "fma": "FMA44249",
+   "verts_product": 21487,
+   "faces_product": 35464,
+   "center_dist": 0.0249,
+   "size_ratio": [
+    1.0289,
+    0.8662,
+    1.0248
+   ]
+  },
+  {
+   "name": "左長足底靱帯(ひだりちょうそくていじんたい)",
+   "en": "Left Long plantar ligament",
+   "bp_file": "FJ1424M.obj",
+   "bp": "BP9273",
+   "fma": "FMA44250",
+   "verts_product": 20164,
+   "faces_product": 35210,
+   "center_dist": 0.02479,
+   "size_ratio": [
+    1.0268,
+    0.8661,
+    1.0248
+   ]
+  },
+  {
+   "name": "尿道海綿体nsn(にょうどうかいめんたいnsn)",
+   "en": "Corpus spongiosum penis",
+   "bp_file": "FJ3133.obj",
+   "bp": "BP8470",
+   "fma": "FMA19617",
+   "verts_product": 1105,
+   "faces_product": 2202,
+   "center_dist": 0.02459,
+   "size_ratio": [
+    1.0504,
+    1.031,
+    1.0304
+   ]
+  },
+  {
+   "name": "陰茎海綿体(いんけいかいめんたい)",
+   "en": "Corpus cavernosum penis",
+   "bp_file": "FJ3132.obj",
+   "bp": "BP9224",
+   "fma": "FMA19618",
+   "verts_product": 2901,
+   "faces_product": 4860,
+   "center_dist": 0.02438,
+   "size_ratio": [
+    1.0343,
+    1.0318,
+    1.0291
+   ]
+  },
+  {
+   "name": "前立腺(ぜんりつせん)",
+   "en": "Prostate",
+   "bp_file": "FJ3139.obj",
+   "bp": "BP8469",
+   "fma": "FMA9600",
+   "verts_product": 879,
+   "faces_product": 1754,
+   "center_dist": 0.02431,
+   "size_ratio": [
+    1.1452,
+    1.02,
+    1.04
+   ]
+  },
+  {
+   "name": "右ヒラメ筋(みぎひらめきん)",
+   "en": "Right Soleus",
+   "bp_file": "FJ1437.obj",
+   "bp": "BP4999",
+   "fma": "FMA22558",
+   "verts_product": 40945,
+   "faces_product": 68566,
+   "center_dist": 0.0239,
+   "size_ratio": [
+    0.93,
+    1.0566,
+    0.8414
+   ]
+  },
+  {
+   "name": "左ヒラメ筋(ひだりひらめきん)",
+   "en": "Left Soleus",
+   "bp_file": "FJ1437M.obj",
+   "bp": "BP8819",
+   "fma": "FMA22559",
+   "verts_product": 38019,
+   "faces_product": 69368,
+   "center_dist": 0.0239,
+   "size_ratio": [
+    0.9335,
+    1.0568,
+    0.8412
+   ]
+  },
+  {
+   "name": "左中殿筋(ひだりちゅうでんきん)",
+   "en": "Left Gluteus medius",
+   "bp_file": "FJ1419M.obj",
+   "bp": "BP9213",
+   "fma": "FMA22331",
+   "verts_product": 31378,
+   "faces_product": 50630,
+   "center_dist": 0.02363,
+   "size_ratio": [
+    1.0471,
+    1.0129,
+    1.0309
+   ]
+  },
+  {
+   "name": "右中殿筋(みぎちゅうでんきん)",
+   "en": "Right Gluteus medius",
+   "bp_file": "FJ1419.obj",
+   "bp": "BP5063",
+   "fma": "FMA22330",
+   "verts_product": 37621,
+   "faces_product": 51818,
+   "center_dist": 0.02356,
+   "size_ratio": [
+    1.0421,
+    1.011,
+    1.0317
+   ]
+  },
+  {
+   "name": "左短趾屈筋(ひだりたんしょうくっきん)",
+   "en": "Left Flexor digitorum brevis",
+   "bp_file": "FJ1413M.obj",
+   "bp": "BP9215",
+   "fma": "FMA37462",
+   "verts_product": 21180,
+   "faces_product": 34126,
+   "center_dist": 0.02336,
+   "size_ratio": [
+    1.0593,
+    0.7363,
+    1.0849
+   ]
+  },
+  {
+   "name": "右短趾屈筋(みぎたんしょうくっきん)",
+   "en": "Right Flexor digitorum brevis",
+   "bp_file": "FJ1413.obj",
+   "bp": "BP5048",
+   "fma": "FMA37461",
+   "verts_product": 23429,
+   "faces_product": 32548,
+   "center_dist": 0.02327,
+   "size_ratio": [
+    1.0369,
+    0.7375,
+    1.086
+   ]
+  },
+  {
+   "name": "左腰腸肋筋(ひだりようちょうろくきん)",
+   "en": "Left Iliocostalis lumborum",
+   "bp_file": "FJ1527M.obj",
+   "bp": "BP8937",
+   "fma": "FMA22741",
+   "verts_product": 62183,
+   "faces_product": 109692,
+   "center_dist": 0.02322,
+   "size_ratio": [
+    1.0565,
+    0.9919,
+    0.9497
+   ]
+  },
+  {
+   "name": "右腰腸肋筋(みぎようちょうろくきん)",
+   "en": "Right Iliocostalis lumborum",
+   "bp_file": "FJ1527.obj",
+   "bp": "BP4753",
+   "fma": "FMA22740",
+   "verts_product": 68677,
+   "faces_product": 107548,
+   "center_dist": 0.02318,
+   "size_ratio": [
+    1.0564,
+    0.9698,
+    0.9503
+   ]
+  },
+  {
+   "name": "左精嚢(ひだりせいのう)",
+   "en": "Left Seminal vesicle",
+   "bp_file": "FJ3137.obj",
+   "bp": "BP9064",
+   "fma": "FMA19388",
+   "verts_product": 575,
+   "faces_product": 1080,
+   "center_dist": 0.0231,
+   "size_ratio": [
+    1.0537,
+    1.0377,
+    1.035
+   ]
+  },
+  {
+   "name": "右恥骨尾骨筋(みぎちこつびこつきん)",
+   "en": "Right Pubococcygeus",
+   "bp_file": "FJ2550.obj",
+   "bp": "BP9143",
+   "fma": "FMA45854",
+   "verts_product": 14180,
+   "faces_product": 23080,
+   "center_dist": 0.02307,
+   "size_ratio": [
+    0.7,
+    0.7555,
+    1.0353
+   ]
+  },
+  {
+   "name": "右精嚢(みぎせいのう)",
+   "en": "Right Seminal vesicle",
+   "bp_file": "FJ3143.obj",
+   "bp": "BP8530",
+   "fma": "FMA19387",
+   "verts_product": 593,
+   "faces_product": 1084,
+   "center_dist": 0.02307,
+   "size_ratio": [
+    1.0342,
+    1.0388,
+    1.0327
+   ]
+  },
+  {
+   "name": "尿道(にょうどう)",
+   "en": "Urethra",
+   "bp_file": "FJ3148.obj",
+   "bp": "BP9098",
+   "fma": "FMA19667",
+   "verts_product": 746,
+   "faces_product": 1186,
+   "center_dist": 0.02294,
+   "size_ratio": [
+    8.8159,
+    1.3913,
+    1.2078
+   ]
+  },
+  {
+   "name": "右短小趾屈筋(みぎたんしょうしくっきん)",
+   "en": "Right Flexor digiti minimi brevis (foot)",
+   "bp_file": "FJ1391.obj",
+   "bp": "BP5050",
+   "fma": "FMA37471",
+   "verts_product": 4317,
+   "faces_product": 5004,
+   "center_dist": 0.02254,
+   "size_ratio": [
+    1.0363,
+    0.7047,
+    1.178
+   ]
+  },
+  {
+   "name": "左短小趾屈筋(ひだりたんしょうしくっきん)",
+   "en": "Left Flexor digiti minimi brevis (foot)",
+   "bp_file": "FJ1391M.obj",
+   "bp": "BP8065",
+   "fma": "FMA37472",
+   "verts_product": 3529,
+   "faces_product": 5124,
+   "center_dist": 0.0225,
+   "size_ratio": [
+    1.0335,
+    0.7023,
+    1.1751
+   ]
+  },
+  {
+   "name": "右恥骨直腸筋(みぎちこつちょうくちょうきん)",
+   "en": "Right Puborectalis",
+   "bp_file": "FJ2551.obj",
+   "bp": "BP8202",
+   "fma": "FMA45856",
+   "verts_product": 12965,
+   "faces_product": 17924,
+   "center_dist": 0.02241,
+   "size_ratio": [
+    1.0442,
+    0.5304,
+    1.0321
+   ]
+  },
+  {
+   "name": "下腸間膜動脈(かちょうかんまくどうみゃく)",
+   "en": "Inferior mesenteric artery",
+   "bp_file": "FJ3442.obj",
+   "bp": "BP10321",
+   "fma": "FMA14750",
+   "verts_product": 347,
+   "faces_product": 602,
+   "center_dist": 0.02221,
+   "size_ratio": [
+    0.7551,
+    1.0495,
+    0.6399
+   ]
+  },
+  {
+   "name": "外肛門括約筋(がいこうもんかつやくきん)",
+   "en": "External anal sphincter",
+   "bp_file": "FJ1450M.obj",
+   "bp": "BP8934",
+   "fma": "FMA21930",
+   "verts_product": 2009,
+   "faces_product": 3668,
+   "center_dist": 0.02172,
+   "size_ratio": [
+    1.8837,
+    1.0759,
+    1.1005
+   ]
+  },
+  {
+   "name": "右小趾対立筋(みぎしょうしたいりつきん)",
+   "en": "Right Opponens digiti minimi (foot)",
+   "bp_file": "FJ1399.obj",
+   "bp": "BP5046",
+   "fma": "FMA86034",
+   "verts_product": 1980,
+   "faces_product": 2424,
+   "center_dist": 0.02168,
+   "size_ratio": [
+    1.0281,
+    0.7643,
+    1.1766
+   ]
+  },
+  {
+   "name": "左小趾対立筋(ひだりしょうしたいりつきん)",
+   "en": "Left Opponens digiti minimi (foot)",
+   "bp_file": "FJ1399M.obj",
+   "bp": "BP9018",
+   "fma": "FMA86035",
+   "verts_product": 1736,
+   "faces_product": 2522,
+   "center_dist": 0.02157,
+   "size_ratio": [
+    1.0343,
+    0.7583,
+    1.1684
+   ]
+  },
+  {
+   "name": "右小趾外転筋(みぎしょうしがいてんきん)",
+   "en": "Right Abductor digiti minimi (foot)",
+   "bp_file": "FJ1390.obj",
+   "bp": "BP5056",
+   "fma": "FMA37463",
+   "verts_product": 9592,
+   "faces_product": 13230,
+   "center_dist": 0.02131,
+   "size_ratio": [
+    1.0358,
+    0.7583,
+    1.1636
+   ]
+  },
+  {
+   "name": "左小趾外転筋(ひだりしょうしがいてんきん)",
+   "en": "Left Abductor digiti minimi (foot)",
+   "bp_file": "FJ1390M.obj",
+   "bp": "BP9182",
+   "fma": "FMA37464",
+   "verts_product": 9014,
+   "faces_product": 13906,
+   "center_dist": 0.02124,
+   "size_ratio": [
+    1.0344,
+    0.7565,
+    1.1612
+   ]
+  },
+  {
+   "name": "右腎静脈(みぎじんじょうみゃく)",
+   "en": "Right Renal vein",
+   "bp_file": "FJ3577.obj",
+   "bp": "BP10256",
+   "fma": "FMA14335",
+   "verts_product": 939,
+   "faces_product": 1538,
+   "center_dist": 0.02082,
+   "size_ratio": [
+    1.5664,
+    2.1159,
+    2.1336
+   ]
+  },
+  {
+   "name": "右第三腓骨筋(みぎだいさんひこつきん)",
+   "en": "Right Fibularis tertius",
+   "bp_file": "FJ1411.obj",
+   "bp": "BP5020",
+   "fma": "FMA22550",
+   "verts_product": 4418,
+   "faces_product": 6324,
+   "center_dist": 0.02055,
+   "size_ratio": [
+    0.8457,
+    1.3796,
+    0.9213
+   ]
+  },
+  {
+   "name": "左第三腓骨筋(ひだりだいさんひこつきん)",
+   "en": "Left Fibularis tertius",
+   "bp_file": "FJ1411M.obj",
+   "bp": "BP9228",
+   "fma": "FMA22551",
+   "verts_product": 3893,
+   "faces_product": 6116,
+   "center_dist": 0.02049,
+   "size_ratio": [
+    0.8482,
+    1.3784,
+    0.9202
+   ]
+  },
+  {
+   "name": "右長母趾屈筋(みぎちょうぼしくっきん)",
+   "en": "Right Flexor hallucis longus",
+   "bp_file": "FJ1415.obj",
+   "bp": "BP5008",
+   "fma": "FMA65014",
+   "verts_product": 33378,
+   "faces_product": 58876,
+   "center_dist": 0.02028,
+   "size_ratio": [
+    0.8555,
+    1.0338,
+    0.9794
+   ]
+  },
+  {
+   "name": "左腸骨尾骨筋(ひだりちょうこつびこつきん)",
+   "en": "Left Iliococcygeus",
+   "bp_file": "FJ1453M.obj",
+   "bp": "BP8007",
+   "fma": "FMA45859",
+   "verts_product": 11905,
+   "faces_product": 18342,
+   "center_dist": 0.02019,
+   "size_ratio": [
+    0.9766,
+    0.9423,
+    1.0282
+   ]
+  },
+  {
+   "name": "左長母趾屈筋(ひだりちょうぼしくっきん)",
+   "en": "Left Flexor hallucis longus",
+   "bp_file": "FJ1415M.obj",
+   "bp": "BP7949",
+   "fma": "FMA65015",
+   "verts_product": 31934,
+   "faces_product": 59858,
+   "center_dist": 0.02017,
+   "size_ratio": [
+    0.8578,
+    1.0348,
+    0.9787
+   ]
+  },
+  {
+   "name": "右大腿方形筋(みぎだいたいほうけいきん)",
+   "en": "Right Quadratus femoris",
+   "bp_file": "FJ1432.obj",
+   "bp": "BP5074",
+   "fma": "FMA22338",
+   "verts_product": 10351,
+   "faces_product": 16770,
+   "center_dist": 0.02009,
+   "size_ratio": [
+    1.0312,
+    0.9841,
+    0.9684
+   ]
+  },
+  {
+   "name": "右外腸骨動脈(みぎがいちょうこつどうみゃく)",
+   "en": "Right External iliac artery",
+   "bp_file": "FJ3567.obj",
+   "bp": "BP10614",
+   "fma": "FMA18806",
+   "verts_product": 722,
+   "faces_product": 1344,
+   "center_dist": 0.02006,
+   "size_ratio": [
+    0.7913,
+    0.8842,
+    0.8919
+   ]
+  },
+  {
+   "name": "左小殿筋(ひだりしょうでんきん)",
+   "en": "Left Gluteus minimus",
+   "bp_file": "FJ1420M.obj",
+   "bp": "BP8623",
+   "fma": "FMA22333",
+   "verts_product": 36458,
+   "faces_product": 62686,
+   "center_dist": 0.02005,
+   "size_ratio": [
+    1.0822,
+    1.0647,
+    0.9547
+   ]
+  },
+  {
+   "name": "左大腿方形筋(ひだりだいたいほうけいきん)",
+   "en": "Left Quadratus femoris",
+   "bp_file": "FJ1432M.obj",
+   "bp": "BP8661",
+   "fma": "FMA22339",
+   "verts_product": 10245,
+   "faces_product": 16760,
+   "center_dist": 0.02004,
+   "size_ratio": [
+    1.0512,
+    0.9858,
+    0.9689
+   ]
+  },
+  {
+   "name": "右小殿筋(みぎしょうでんきん)",
+   "en": "Right Gluteus minimus",
+   "bp_file": "FJ1420.obj",
+   "bp": "BP5083",
+   "fma": "FMA22332",
+   "verts_product": 40207,
+   "faces_product": 63110,
+   "center_dist": 0.02002,
+   "size_ratio": [
+    1.0815,
+    1.0648,
+    0.9563
+   ]
+  },
+  {
+   "name": "左恥骨直腸筋(ひだりちこつちょうくちょうきん)",
+   "en": "Left Puborectalis",
+   "bp_file": "FJ1458M.obj",
+   "bp": "BP8228",
+   "fma": "FMA45857",
+   "verts_product": 11738,
+   "faces_product": 17838,
+   "center_dist": 0.01976,
+   "size_ratio": [
+    1.0444,
+    1.0258,
+    1.0266
+   ]
+  },
+  {
+   "name": "左恥骨尾骨筋(ひだりちこつびこつきん)",
+   "en": "Left Pubococcygeus",
+   "bp_file": "FJ1457M.obj",
+   "bp": "BP7791",
+   "fma": "FMA45855",
+   "verts_product": 13181,
+   "faces_product": 23362,
+   "center_dist": 0.01962,
+   "size_ratio": [
+    1.023,
+    1.0113,
+    1.0341
+   ]
+  },
+  {
+   "name": "左膝窩筋(ひだりしつかきん)",
+   "en": "Left Popliteus",
+   "bp_file": "FJ1430M.obj",
+   "bp": "BP9241",
+   "fma": "FMA22592",
+   "verts_product": 6432,
+   "faces_product": 11178,
+   "center_dist": 0.01955,
+   "size_ratio": [
+    0.7914,
+    1.1163,
+    0.859
+   ]
+  },
+  {
+   "name": "直腸(ちょくちょう)",
+   "en": "Rectum",
+   "bp_file": "FJ2571.obj",
+   "bp": "BP9212",
+   "fma": "FMA14544",
+   "verts_product": 4424,
+   "faces_product": 8824,
+   "center_dist": 0.01949,
+   "size_ratio": [
+    0.7172,
+    1.0024,
+    1.1653
+   ]
+  },
+  {
+   "name": "右大殿筋(みぎだいでんきん)",
+   "en": "Right Gluteus maximus",
+   "bp_file": "FJ1418.obj",
+   "bp": "BP5065",
+   "fma": "FMA22328",
+   "verts_product": 21903,
+   "faces_product": 34226,
+   "center_dist": 0.01932,
+   "size_ratio": [
+    0.9841,
+    0.9832,
+    1.0137
+   ]
+  },
+  {
+   "name": "右膝窩筋(みぎしつかきん)",
+   "en": "Right Popliteus",
+   "bp_file": "FJ1430.obj",
+   "bp": "BP5006",
+   "fma": "FMA22591",
+   "verts_product": 7890,
+   "faces_product": 11446,
+   "center_dist": 0.01927,
+   "size_ratio": [
+    0.7905,
+    1.1083,
+    0.8609
+   ]
+  },
+  {
+   "name": "腹腔動脈(ふくくうどうみゃく)",
+   "en": "Celiac trunk",
+   "bp_file": "FJ3421.obj",
+   "bp": "BP10622",
+   "fma": "FMA14812",
+   "verts_product": 232,
+   "faces_product": 454,
+   "center_dist": 0.01927,
+   "size_ratio": [
+    0.974,
+    1.1345,
+    1.0606
+   ]
+  },
+  {
+   "name": "左大殿筋(ひだりだいでんきん)",
+   "en": "Left Gluteus maximus",
+   "bp_file": "FJ1418M.obj",
+   "bp": "BP8401",
+   "fma": "FMA22329",
+   "verts_product": 19355,
+   "faces_product": 33008,
+   "center_dist": 0.01923,
+   "size_ratio": [
+    0.987,
+    0.9837,
+    1.0127
+   ]
+  },
+  {
+   "name": "右脛骨(みぎけいこつ)",
+   "en": "Right Tibia",
+   "bp_file": "FJ3387.obj",
+   "bp": "BP8031",
+   "fma": "FMA24477",
+   "verts_product": 3468,
+   "faces_product": 6850,
+   "center_dist": 0.019,
+   "size_ratio": [
+    1.0815,
+    1.055,
+    0.9381
+   ]
+  },
+  {
+   "name": "左脛骨(ひだりけいこつ)",
+   "en": "Left Tibia",
+   "bp_file": "FJ3282.obj",
+   "bp": "BP9202",
+   "fma": "FMA24478",
+   "verts_product": 3428,
+   "faces_product": 6822,
+   "center_dist": 0.01891,
+   "size_ratio": [
+    1.0848,
+    1.0499,
+    0.9378
+   ]
+  },
+  {
+   "name": "左内腸骨静脈(ひだりないちょうこつじょうみゃく)",
+   "en": "Left Internal iliac vein",
+   "bp_file": "FJ3469.obj",
+   "bp": "BP10309",
+   "fma": "FMA18888",
+   "verts_product": 256,
+   "faces_product": 478,
+   "center_dist": 0.01866,
+   "size_ratio": [
+    1.0518,
+    1.033,
+    1.0393
+   ]
+  },
+  {
+   "name": "左足底筋(ひだりそくていきん)",
+   "en": "Left Plantaris",
+   "bp_file": "FJ1429M.obj",
+   "bp": "BP8852",
+   "fma": "FMA22561",
+   "verts_product": 25314,
+   "faces_product": 46702,
+   "center_dist": 0.01852,
+   "size_ratio": [
+    0.8893,
+    1.2525,
+    0.9429
+   ]
+  },
+  {
+   "name": "右足底筋(みぎそくていきん)",
+   "en": "Right Plantaris",
+   "bp_file": "FJ1429.obj",
+   "bp": "BP5001",
+   "fma": "FMA22560",
+   "verts_product": 27926,
+   "faces_product": 47020,
+   "center_dist": 0.01847,
+   "size_ratio": [
+    0.885,
+    1.2496,
+    0.9429
+   ]
+  },
+  {
+   "name": "右寛骨(みぎかんこつ)",
+   "en": "Right Hip bone",
+   "bp_file": "FJ3152.obj",
+   "bp": "BP8768",
+   "fma": "FMA16586",
+   "verts_product": 4956,
+   "faces_product": 9716,
+   "center_dist": 0.01811,
+   "size_ratio": [
+    0.9525,
+    1.0017,
+    1.0388
+   ]
+  },
+  {
+   "name": "右外閉鎖筋(みぎがいへいさきん)",
+   "en": "Right Obturator externus",
+   "bp_file": "FJ1425.obj",
+   "bp": "BP5081",
+   "fma": "FMA22326",
+   "verts_product": 8421,
+   "faces_product": 11760,
+   "center_dist": 0.01806,
+   "size_ratio": [
+    1.0409,
+    1.0669,
+    0.9509
+   ]
+  },
+  {
+   "name": "左外閉鎖筋(ひだりがいへいさきん)",
+   "en": "Left Obturator externus",
+   "bp_file": "FJ1425M.obj",
+   "bp": "BP8506",
+   "fma": "FMA22327",
+   "verts_product": 7072,
+   "faces_product": 11562,
+   "center_dist": 0.01805,
+   "size_ratio": [
+    1.05,
+    1.0688,
+    0.9517
+   ]
+  },
+  {
+   "name": "左梨状筋(ひだりりじょうきん)",
+   "en": "Left Piriformis",
+   "bp_file": "FJ1428M.obj",
+   "bp": "BP8131",
+   "fma": "FMA22341",
+   "verts_product": 9333,
+   "faces_product": 14248,
+   "center_dist": 0.01781,
+   "size_ratio": [
+    0.9822,
+    0.9516,
+    0.9808
+   ]
+  },
+  {
+   "name": "膀胱(ぼうこう)",
+   "en": "Urinary bladder",
+   "bp_file": "FJ3149.obj",
+   "bp": "BP8497",
+   "fma": "FMA15900",
+   "verts_product": 2016,
+   "faces_product": 4016,
+   "center_dist": 0.01769,
+   "size_ratio": [
+    1.3169,
+    1.1176,
+    1.1875
+   ]
+  },
+  {
+   "name": "右梨状筋(みぎりじょうきん)",
+   "en": "Right Piriformis",
+   "bp_file": "FJ1428.obj",
+   "bp": "BP5076",
+   "fma": "FMA22340",
+   "verts_product": 10970,
+   "faces_product": 15100,
+   "center_dist": 0.01763,
+   "size_ratio": [
+    0.9838,
+    0.9527,
+    0.9819
+   ]
+  },
+  {
+   "name": "左後脛骨筋(ひだりこうけいこつきん)",
+   "en": "Left Tibialis posterior",
+   "bp_file": "FJ1440M.obj",
+   "bp": "BP9159",
+   "fma": "FMA65019",
+   "verts_product": 34397,
+   "faces_product": 58062,
+   "center_dist": 0.01762,
+   "size_ratio": [
+    0.9421,
+    1.1008,
+    0.9046
+   ]
+  },
+  {
+   "name": "右後脛骨筋(みぎこうけいこつきん)",
+   "en": "Right Tibialis posterior",
+   "bp_file": "FJ1440.obj",
+   "bp": "BP5004",
+   "fma": "FMA65018",
+   "verts_product": 40063,
+   "faces_product": 60452,
+   "center_dist": 0.01757,
+   "size_ratio": [
+    0.9409,
+    1.1032,
+    0.905
+   ]
+  },
+  {
+   "name": "右内閉鎖筋(みぎないへいさきん)",
+   "en": "Right Obturator internus",
+   "bp_file": "FJ1426.obj",
+   "bp": "BP5079",
+   "fma": "FMA22324",
+   "verts_product": 22005,
+   "faces_product": 37770,
+   "center_dist": 0.01747,
+   "size_ratio": [
+    1.0422,
+    1.0439,
+    0.9986
+   ]
+  },
+  {
+   "name": "左内閉鎖筋(ひだりないへいさきん)",
+   "en": "Left Obturator internus",
+   "bp_file": "FJ1426M.obj",
+   "bp": "BP7986",
+   "fma": "FMA22325",
+   "verts_product": 20054,
+   "faces_product": 35424,
+   "center_dist": 0.01735,
+   "size_ratio": [
+    1.0419,
+    1.0441,
+    0.998
+   ]
+  },
+  {
+   "name": "右長趾屈筋(みぎちょうしくっきん)",
+   "en": "Right Flexor digitorum longus",
+   "bp_file": "FJ1414.obj",
+   "bp": "BP5010",
+   "fma": "FMA65016",
+   "verts_product": 47732,
+   "faces_product": 69914,
+   "center_dist": 0.01733,
+   "size_ratio": [
+    0.7438,
+    1.1275,
+    0.9421
+   ]
+  },
+  {
+   "name": "左長趾屈筋(ひだりちょうしくっきん)",
+   "en": "Left Flexor digitorum longus",
+   "bp_file": "FJ1414M.obj",
+   "bp": "BP8888",
+   "fma": "FMA65017",
+   "verts_product": 41859,
+   "faces_product": 71366,
+   "center_dist": 0.01731,
+   "size_ratio": [
+    0.7439,
+    1.1281,
+    0.9417
+   ]
+  },
+  {
+   "name": "右恥骨筋(みぎちこつきん)",
+   "en": "Right Pectineus",
+   "bp_file": "FJ1427.obj",
+   "bp": "BP4978",
+   "fma": "FMA22450",
+   "verts_product": 14037,
+   "faces_product": 20150,
+   "center_dist": 0.01721,
+   "size_ratio": [
+    1.0625,
+    1.0877,
+    0.929
+   ]
+  },
+  {
+   "name": "左恥骨筋(ひだりちこつきん)",
+   "en": "Left Pectineus",
+   "bp_file": "FJ1427M.obj",
+   "bp": "BP8998",
+   "fma": "FMA22451",
+   "verts_product": 12942,
+   "faces_product": 20614,
+   "center_dist": 0.01721,
+   "size_ratio": [
+    1.0628,
+    1.0832,
+    0.9283
+   ]
+  },
+  {
+   "name": "左大腰筋(ひだりだいようきん)",
+   "en": "Left Psoas major",
+   "bp_file": "FJ1431M.obj",
+   "bp": "BP8373",
+   "fma": "FMA22343",
+   "verts_product": 32832,
+   "faces_product": 55766,
+   "center_dist": 0.01715,
+   "size_ratio": [
+    1.1707,
+    0.9367,
+    1.0402
+   ]
+  },
+  {
+   "name": "左寛骨(ひだりかんこつ)",
+   "en": "Left Hip bone",
+   "bp_file": "FJ3288.obj",
+   "bp": "BP8950",
+   "fma": "FMA16587",
+   "verts_product": 4805,
+   "faces_product": 9470,
+   "center_dist": 0.01714,
+   "size_ratio": [
+    0.9533,
+    1.0017,
+    1.0366
+   ]
+  },
+  {
+   "name": "右大腰筋(みぎだいようきん)",
+   "en": "Right Psoas major",
+   "bp_file": "FJ1431.obj",
+   "bp": "BP4701",
+   "fma": "FMA22342",
+   "verts_product": 39977,
+   "faces_product": 56614,
+   "center_dist": 0.0169,
+   "size_ratio": [
+    1.1657,
+    0.9371,
+    1.041
+   ]
+  },
+  {
+   "name": "仙骨;仙椎[1－5](せんこつ)",
+   "en": "Sacrum",
+   "bp_file": "FJ3393.obj",
+   "bp": "BP9174",
+   "fma": "FMA16202",
+   "verts_product": 22500,
+   "faces_product": 44416,
+   "center_dist": 0.0166,
+   "size_ratio": [
+    1.0315,
+    1.0672,
+    1.0349
+   ]
+  },
+  {
+   "name": "右母指内転筋横頭(みぎぼしないてんきんおうとう)",
+   "en": "Right Adductor pollicis, transverse head",
+   "bp_file": "FJ1515.obj",
+   "bp": "BP5543",
+   "fma": "FMA46123",
+   "verts_product": 6980,
+   "faces_product": 10192,
+   "center_dist": 0.01655,
+   "size_ratio": [
+    1.0377,
+    1.035,
+    1.0347
+   ]
+  },
+  {
+   "name": "左母指内転筋横頭(ひだりぼしないてんきんおうとう)",
+   "en": "Left Adductor pollicis, transverse head",
+   "bp_file": "FJ1515M.obj",
+   "bp": "BP8885",
+   "fma": "FMA46124",
+   "verts_product": 5458,
+   "faces_product": 9282,
+   "center_dist": 0.01654,
+   "size_ratio": [
+    1.0334,
+    1.0315,
+    1.033
+   ]
+  },
+  {
+   "name": "右下双子筋(みぎかそうしきん)",
+   "en": "Right Inferior gemellus",
+   "bp_file": "FJ1416.obj",
+   "bp": "BP5070",
+   "fma": "FMA22336",
+   "verts_product": 5967,
+   "faces_product": 9778,
+   "center_dist": 0.0164,
+   "size_ratio": [
+    1.0466,
+    1.0028,
+    1.0297
+   ]
+  },
+  {
+   "name": "左下双子筋(ひだりかそうしきん)",
+   "en": "Left Inferior gemellus",
+   "bp_file": "FJ1416M.obj",
+   "bp": "BP8454",
+   "fma": "FMA22337",
+   "verts_product": 5345,
+   "faces_product": 9424,
+   "center_dist": 0.01632,
+   "size_ratio": [
+    1.0539,
+    1.0042,
+    1.0292
+   ]
+  },
+  {
+   "name": "左半膜様筋(ひだりはんまくようきん)",
+   "en": "Left Semimembranosus",
+   "bp_file": "FJ1435M.obj",
+   "bp": "BP7829",
+   "fma": "FMA22449",
+   "verts_product": 40550,
+   "faces_product": 72126,
+   "center_dist": 0.01629,
+   "size_ratio": [
+    0.9506,
+    0.9595,
+    0.9479
+   ]
+  },
+  {
+   "name": "左腓骨(ひだりひこつ)",
+   "en": "Left Fibula",
+   "bp_file": "FJ3260.obj",
+   "bp": "BP8251",
+   "fma": "FMA24481",
+   "verts_product": 2289,
+   "faces_product": 4544,
+   "center_dist": 0.01622,
+   "size_ratio": [
+    1.1116,
+    0.9698,
+    0.939
+   ]
+  },
+  {
+   "name": "右半膜様筋(みぎはんまくようきん)",
+   "en": "Right Semimembranosus",
+   "bp_file": "FJ1435.obj",
+   "bp": "BP4989",
+   "fma": "FMA22448",
+   "verts_product": 49838,
+   "faces_product": 74564,
+   "center_dist": 0.01622,
+   "size_ratio": [
+    0.9464,
+    0.9555,
+    0.9479
+   ]
+  },
+  {
+   "name": "右腓骨(みぎひこつ)",
+   "en": "Right Fibula",
+   "bp_file": "FJ3366.obj",
+   "bp": "BP8009",
+   "fma": "FMA24480",
+   "verts_product": 2329,
+   "faces_product": 4622,
+   "center_dist": 0.01621,
+   "size_ratio": [
+    1.1087,
+    0.9641,
+    0.9388
+   ]
+  },
+  {
+   "name": "左中間広筋(ひだりちゅうかんこうきん)",
+   "en": "Left Vastus intermedius",
+   "bp_file": "FJ1441M.obj",
+   "bp": "BP9207",
+   "fma": "FMA38935",
+   "verts_product": 33556,
+   "faces_product": 61374,
+   "center_dist": 0.01621,
+   "size_ratio": [
+    0.8383,
+    0.9567,
+    0.9512
+   ]
+  },
+  {
+   "name": "右上双子筋(みぎじょうそうしきん)",
+   "en": "Right Superior gemellus",
+   "bp_file": "FJ1417.obj",
+   "bp": "BP5068",
+   "fma": "FMA22334",
+   "verts_product": 3532,
+   "faces_product": 4512,
+   "center_dist": 0.01619,
+   "size_ratio": [
+    1.0043,
+    1.0088,
+    1.0453
+   ]
+  },
+  {
+   "name": "左示指伸筋(ひだりしじしんきん)",
+   "en": "Left Extensor indicis",
+   "bp_file": "FJ1493M.obj",
+   "bp": "BP8779",
+   "fma": "FMA38526",
+   "verts_product": 6753,
+   "faces_product": 11518,
+   "center_dist": 0.01618,
+   "size_ratio": [
+    1.029,
+    1.0306,
+    1.0282
+   ]
+  },
+  {
+   "name": "右示指伸筋(みぎしじしんきん)",
+   "en": "Right Extensor indicis",
+   "bp_file": "FJ1493.obj",
+   "bp": "BP4812",
+   "fma": "FMA38525",
+   "verts_product": 7726,
+   "faces_product": 11670,
+   "center_dist": 0.01613,
+   "size_ratio": [
+    1.0289,
+    1.0317,
+    1.0286
+   ]
+  },
+  {
+   "name": "左上双子筋(ひだりじょうそうしきん)",
+   "en": "Left Superior gemellus",
+   "bp_file": "FJ1417M.obj",
+   "bp": "BP8028",
+   "fma": "FMA22335",
+   "verts_product": 3001,
+   "faces_product": 4306,
+   "center_dist": 0.0161,
+   "size_ratio": [
+    1.0063,
+    1.0138,
+    1.0402
+   ]
+  },
+  {
+   "name": "左母指内転筋斜頭(ひだりぼしないてんきんしゃとう)",
+   "en": "Left Adductor pollicis, oblique head",
+   "bp_file": "FJ1481M.obj",
+   "bp": "BP8248",
+   "fma": "FMA46122",
+   "verts_product": 2842,
+   "faces_product": 4322,
+   "center_dist": 0.01608,
+   "size_ratio": [
+    1.022,
+    1.0275,
+    1.0262
+   ]
+  },
+  {
+   "name": "右母指内転筋斜頭(みぎぼしないてんきんしゃとう)",
+   "en": "Right Adductor pollicis, oblique head",
+   "bp_file": "FJ1481.obj",
+   "bp": "BP5560",
+   "fma": "FMA46121",
+   "verts_product": 3648,
+   "faces_product": 4692,
+   "center_dist": 0.01605,
+   "size_ratio": [
+    1.0305,
+    1.0281,
+    1.0302
+   ]
+  },
+  {
+   "name": "右中間広筋(みぎちゅうかんこうきん)",
+   "en": "Right Vastus intermedius",
+   "bp_file": "FJ1441.obj",
+   "bp": "BP5604",
+   "fma": "FMA38934",
+   "verts_product": 36143,
+   "faces_product": 61866,
+   "center_dist": 0.01602,
+   "size_ratio": [
+    0.8375,
+    0.9557,
+    0.9523
+   ]
+  },
+  {
+   "name": "右短母指屈筋浅頭(みぎたんぼしくっきんせんとう)",
+   "en": "Right Flexor pollicis brevis, superficial head",
+   "bp_file": "FJ1514.obj",
+   "bp": "BP5556",
+   "fma": "FMA65198",
+   "verts_product": 3654,
+   "faces_product": 4262,
+   "center_dist": 0.01594,
+   "size_ratio": [
+    1.0302,
+    1.03,
+    1.0338
+   ]
+  },
+  {
+   "name": "左内腸骨動脈(ひだりないちょうこつどうみゃく)",
+   "en": "Left Internal iliac artery",
+   "bp_file": "FJ3468.obj",
+   "bp": "BP10328",
+   "fma": "FMA18810",
+   "verts_product": 290,
+   "faces_product": 500,
+   "center_dist": 0.01593,
+   "size_ratio": [
+    1.3452,
+    1.0416,
+    1.036
+   ]
+  },
+  {
+   "name": "右前頭直筋(みぎぜんとうちょくきん)",
+   "en": "Right Rectus capitis anterior",
+   "bp_file": "FJ1588.obj",
+   "bp": "BP4708",
+   "fma": "FMA46313",
+   "verts_product": 3132,
+   "faces_product": 4034,
+   "center_dist": 0.01591,
+   "size_ratio": [
+    0.6899,
+    0.9713,
+    0.5083
+   ]
+  },
+  {
+   "name": "右短母指外転筋(みぎたんぼしがいてんきん)",
+   "en": "Right Abductor pollicis brevis",
+   "bp_file": "FJ1483.obj",
+   "bp": "BP4855",
+   "fma": "FMA37386",
+   "verts_product": 4767,
+   "faces_product": 6352,
+   "center_dist": 0.01588,
+   "size_ratio": [
+    1.0333,
+    1.0322,
+    1.033
+   ]
+  },
+  {
+   "name": "左短母指外転筋(ひだりたんぼしがいてんきん)",
+   "en": "Left Abductor pollicis brevis",
+   "bp_file": "FJ1483M.obj",
+   "bp": "BP8706",
+   "fma": "FMA37387",
+   "verts_product": 3861,
+   "faces_product": 6040,
+   "center_dist": 0.01586,
+   "size_ratio": [
+    1.031,
+    1.0339,
+    1.0312
+   ]
+  },
+  {
+   "name": "右短小指屈筋(みぎたんしょうしくっきん)",
+   "en": "Right Flexor digiti minimi brevis (hand)",
+   "bp_file": "FJ1470.obj",
+   "bp": "BP4858",
+   "fma": "FMA37398",
+   "verts_product": 2221,
+   "faces_product": 3144,
+   "center_dist": 0.01582,
+   "size_ratio": [
+    1.029,
+    1.0286,
+    1.0284
+   ]
+  },
+  {
+   "name": "左短母指屈筋浅頭(ひだりたんぼしくっきんせんとう)",
+   "en": "Left Flexor pollicis brevis, superficial head",
+   "bp_file": "FJ1514M.obj",
+   "bp": "BP8722",
+   "fma": "FMA65199",
+   "verts_product": 2621,
+   "faces_product": 3764,
+   "center_dist": 0.01581,
+   "size_ratio": [
+    0.9657,
+    1.0241,
+    1.0287
+   ]
+  },
+  {
+   "name": "右小指対立筋(みぎしょうしたいりつきん)",
+   "en": "Right Opponens digiti minimi (hand)",
+   "bp_file": "FJ1482.obj",
+   "bp": "BP4860",
+   "fma": "FMA37400",
+   "verts_product": 3380,
+   "faces_product": 4664,
+   "center_dist": 0.01576,
+   "size_ratio": [
+    1.0284,
+    1.0317,
+    1.0286
+   ]
+  },
+  {
+   "name": "右小菱形骨(みぎしょうりょうけいこつ)",
+   "en": "Right Trapezoid",
+   "bp_file": "FJ3389.obj",
+   "bp": "BP7880",
+   "fma": "FMA23725",
+   "verts_product": 410,
+   "faces_product": 616,
+   "center_dist": 0.01575,
+   "size_ratio": [
+    1.0484,
+    1.0504,
+    1.0486
+   ]
+  },
+  {
+   "name": "左母指対立筋(ひだりぼしたいりつきん)",
+   "en": "Left Opponens pollicis",
+   "bp_file": "FJ1501M.obj",
+   "bp": "BP8596",
+   "fma": "FMA37391",
+   "verts_product": 4593,
+   "faces_product": 7582,
+   "center_dist": 0.01575,
+   "size_ratio": [
+    1.039,
+    1.027,
+    1.0245
+   ]
+  },
+  {
+   "name": "左小菱形骨(ひだりしょうりょうけいこつ)",
+   "en": "Left Trapezoid",
+   "bp_file": "FJ3284.obj",
+   "bp": "BP9272",
+   "fma": "FMA24445",
+   "verts_product": 380,
+   "faces_product": 612,
+   "center_dist": 0.01573,
+   "size_ratio": [
+    1.0474,
+    1.0401,
+    1.0403
+   ]
+  },
+  {
+   "name": "左上後鋸筋(ひだりじょうこうきょきん)",
+   "en": "Left Serratus posterior superior",
+   "bp_file": "FJ1542M.obj",
+   "bp": "BP8298",
+   "fma": "FMA13404",
+   "verts_product": 33776,
+   "faces_product": 58308,
+   "center_dist": 0.01573,
+   "size_ratio": [
+    1.0218,
+    1.0018,
+    0.9546
+   ]
+  },
+  {
+   "name": "右母指対立筋(みぎぼしたいりつきん)",
+   "en": "Right Opponens pollicis",
+   "bp_file": "FJ1501.obj",
+   "bp": "BP4853",
+   "fma": "FMA37390",
+   "verts_product": 5437,
+   "faces_product": 7904,
+   "center_dist": 0.01572,
+   "size_ratio": [
+    1.0372,
+    1.0287,
+    1.0281
+   ]
+  },
+  {
+   "name": "左前脛骨筋(ひだりぜんけいこつきん)",
+   "en": "Left Tibialis anterior",
+   "bp_file": "FJ1439M.obj",
+   "bp": "BP8720",
+   "fma": "FMA22545",
+   "verts_product": 22029,
+   "faces_product": 34522,
+   "center_dist": 0.01568,
+   "size_ratio": [
+    1.2167,
+    0.951,
+    0.9308
+   ]
+  },
+  {
+   "name": "左下腿骨間膜(ひだりかたいこつかんまく)",
+   "en": "Left Interosseous membrane of leg",
+   "bp_file": "FJ1392M.obj",
+   "bp": "BP8481",
+   "fma": "FMA35193",
+   "verts_product": 39679,
+   "faces_product": 63546,
+   "center_dist": 0.01565,
+   "size_ratio": [
+    1.1398,
+    0.9412,
+    0.9138
+   ]
+  },
+  {
+   "name": "左大菱形骨(ひだりだいりょうけいこつ)",
+   "en": "Left Trapezium",
+   "bp_file": "FJ3283.obj",
+   "bp": "BP9024",
+   "fma": "FMA24444",
+   "verts_product": 548,
+   "faces_product": 1058,
+   "center_dist": 0.01564,
+   "size_ratio": [
+    1.0397,
+    1.0357,
+    1.0298
+   ]
+  },
+  {
+   "name": "右小指外転筋(みぎしょうしがいてんきん)",
+   "en": "Right Abductor digiti minimi (hand)",
+   "bp_file": "FJ1466.obj",
+   "bp": "BP7569",
+   "fma": "FMA37396",
+   "verts_product": 5252,
+   "faces_product": 7074,
+   "center_dist": 0.01564,
+   "size_ratio": [
+    1.0428,
+    1.0422,
+    1.0296
+   ]
+  },
+  {
+   "name": "左小指外転筋(ひだりしょうしがいてんきん)",
+   "en": "Left Abductor digiti minimi (hand)",
+   "bp_file": "FJ1466M.obj",
+   "bp": "BP8737",
+   "fma": "FMA37397",
+   "verts_product": 4191,
+   "faces_product": 6870,
+   "center_dist": 0.01561,
+   "size_ratio": [
+    1.0423,
+    1.0457,
+    1.0177
+   ]
+  },
+  {
+   "name": "右外腸骨静脈(みぎがいちょうこつじょうみゃく)",
+   "en": "Right External iliac vein",
+   "bp_file": "FJ3568.obj",
+   "bp": "BP10294",
+   "fma": "FMA18885",
+   "verts_product": 719,
+   "faces_product": 1326,
+   "center_dist": 0.0156,
+   "size_ratio": [
+    0.7977,
+    0.7181,
+    0.8498
+   ]
+  },
+  {
+   "name": "右下腿骨間膜(みぎかたいこつかんまく)",
+   "en": "Right Interosseous membrane of leg",
+   "bp_file": "FJ1392.obj",
+   "bp": "BP4649",
+   "fma": "FMA35192",
+   "verts_product": 43935,
+   "faces_product": 64356,
+   "center_dist": 0.01559,
+   "size_ratio": [
+    1.1357,
+    0.9417,
+    0.9145
+   ]
+  },
+  {
+   "name": "右前脛骨筋(みぎぜんけいこつきん)",
+   "en": "Right Tibialis anterior",
+   "bp_file": "FJ1439.obj",
+   "bp": "BP5018",
+   "fma": "FMA22544",
+   "verts_product": 27955,
+   "faces_product": 35914,
+   "center_dist": 0.01557,
+   "size_ratio": [
+    1.2119,
+    0.9517,
+    0.9315
+   ]
+  },
+  {
+   "name": "左外腸骨動脈(ひだりがいちょうこつどうみゃく)",
+   "en": "Left External iliac artery",
+   "bp_file": "FJ3466.obj",
+   "bp": "BP10599",
+   "fma": "FMA18807",
+   "verts_product": 720,
+   "faces_product": 1288,
+   "center_dist": 0.01557,
+   "size_ratio": [
+    0.7035,
+    0.8524,
+    0.9159
+   ]
+  },
+  {
+   "name": "右大菱形骨(みぎだいりょうけいこつ)",
+   "en": "Right Trapezium",
+   "bp_file": "FJ3388.obj",
+   "bp": "BP8566",
+   "fma": "FMA24443",
+   "verts_product": 585,
+   "faces_product": 1026,
+   "center_dist": 0.01556,
+   "size_ratio": [
+    1.0458,
+    1.0477,
+    1.0393
+   ]
+  },
+  {
+   "name": "左小指対立筋(ひだりしょうしたいりつきん)",
+   "en": "Left Opponens digiti minimi (hand)",
+   "bp_file": "FJ1482M.obj",
+   "bp": "BP8204",
+   "fma": "FMA37401",
+   "verts_product": 2760,
+   "faces_product": 4570,
+   "center_dist": 0.01554,
+   "size_ratio": [
+    1.0271,
+    1.0239,
+    1.0096
+   ]
+  },
+  {
+   "name": "右長趾伸筋(みぎちょうししんきん)",
+   "en": "Right Extensor digitorum longus",
+   "bp_file": "FJ1406.obj",
+   "bp": "BP5024",
+   "fma": "FMA22548",
+   "verts_product": 39785,
+   "faces_product": 62574,
+   "center_dist": 0.01553,
+   "size_ratio": [
+    0.7363,
+    1.0358,
+    0.9495
+   ]
+  },
+  {
+   "name": "左短小指屈筋(ひだりたんしょうしくっきん)",
+   "en": "Left Flexor digiti minimi brevis (hand)",
+   "bp_file": "FJ1470M.obj",
+   "bp": "BP8516",
+   "fma": "FMA37399",
+   "verts_product": 1797,
+   "faces_product": 3044,
+   "center_dist": 0.01552,
+   "size_ratio": [
+    1.0458,
+    1.0269,
+    1.0185
+   ]
+  },
+  {
+   "name": "左有頭骨(ひだりゆうとうこつ)",
+   "en": "Left Capitate",
+   "bp_file": "FJ3257.obj",
+   "bp": "BP7959",
+   "fma": "FMA24447",
+   "verts_product": 671,
+   "faces_product": 1278,
+   "center_dist": 0.0155,
+   "size_ratio": [
+    1.0601,
+    1.0761,
+    1.0399
+   ]
+  },
+  {
+   "name": "左有鈎骨(ひだりゆうこうこつ)",
+   "en": "Left Hamate",
+   "bp_file": "FJ3261.obj",
+   "bp": "BP8883",
+   "fma": "FMA24449",
+   "verts_product": 622,
+   "faces_product": 1130,
+   "center_dist": 0.01548,
+   "size_ratio": [
+    1.0884,
+    1.0343,
+    1.0353
+   ]
+  },
+  {
+   "name": "右有頭骨(みぎゆうとうこつ)",
+   "en": "Right Capitate",
+   "bp_file": "FJ3361.obj",
+   "bp": "BP8528",
+   "fma": "FMA24446",
+   "verts_product": 735,
+   "faces_product": 1284,
+   "center_dist": 0.01548,
+   "size_ratio": [
+    1.038,
+    1.0636,
+    1.0429
+   ]
+  },
+  {
+   "name": "右上後鋸筋(みぎじょうこうきょきん)",
+   "en": "Right Serratus posterior superior",
+   "bp_file": "FJ1542.obj",
+   "bp": "BP4766",
+   "fma": "FMA13403",
+   "verts_product": 38571,
+   "faces_product": 58938,
+   "center_dist": 0.01545,
+   "size_ratio": [
+    1.0226,
+    1.0128,
+    0.9571
+   ]
+  },
+  {
+   "name": "左長趾伸筋(ひだりちょうししんきん)",
+   "en": "Left Extensor digitorum longus",
+   "bp_file": "FJ1406M.obj",
+   "bp": "BP8162",
+   "fma": "FMA22549",
+   "verts_product": 35707,
+   "faces_product": 62008,
+   "center_dist": 0.01542,
+   "size_ratio": [
+    0.7365,
+    1.0349,
+    0.9487
+   ]
+  },
+  {
+   "name": "右有鈎骨(みぎゆうこうこつ)",
+   "en": "Right Hamate",
+   "bp_file": "FJ3367.obj",
+   "bp": "BP9266",
+   "fma": "FMA24448",
+   "verts_product": 689,
+   "faces_product": 1150,
+   "center_dist": 0.0154,
+   "size_ratio": [
+    1.0639,
+    1.0385,
+    1.0395
+   ]
+  },
+  {
+   "name": "右手舟状骨(みぎてせんじょうこつ)",
+   "en": "Right Scaphoid",
+   "bp_file": "FJ3383.obj",
+   "bp": "BP8724",
+   "fma": "FMA24435",
+   "verts_product": 562,
+   "faces_product": 1074,
+   "center_dist": 0.01537,
+   "size_ratio": [
+    1.0527,
+    1.0472,
+    1.0328
+   ]
+  },
+  {
+   "name": "左手舟状骨(ひだりてせんじょうこつ)",
+   "en": "Left Scaphoid",
+   "bp_file": "FJ3278.obj",
+   "bp": "BP8122",
+   "fma": "FMA24436",
+   "verts_product": 547,
+   "faces_product": 1070,
+   "center_dist": 0.01528,
+   "size_ratio": [
+    1.0635,
+    1.0453,
+    1.0413
+   ]
+  },
+  {
+   "name": "左豆状骨(ひだりとうじょうこつ)",
+   "en": "Left Pisiform",
+   "bp_file": "FJ3276.obj",
+   "bp": "BP8957",
+   "fma": "FMA24442",
+   "verts_product": 205,
+   "faces_product": 396,
+   "center_dist": 0.01514,
+   "size_ratio": [
+    1.0693,
+    1.0471,
+    1.0581
+   ]
+  },
+  {
+   "name": "右月状骨(みぎげつじょうこつ)",
+   "en": "Right Lunate",
+   "bp_file": "FJ3374.obj",
+   "bp": "BP9284",
+   "fma": "FMA24437",
+   "verts_product": 490,
+   "faces_product": 864,
+   "center_dist": 0.01511,
+   "size_ratio": [
+    1.0824,
+    1.0549,
+    1.0438
+   ]
+  },
+  {
+   "name": "左月状骨(ひだりげつじょうこつ)",
+   "en": "Left Lunate",
+   "bp_file": "FJ3268.obj",
+   "bp": "BP8493",
+   "fma": "FMA24438",
+   "verts_product": 464,
+   "faces_product": 866,
+   "center_dist": 0.01505,
+   "size_ratio": [
+    1.0532,
+    1.0415,
+    1.042
+   ]
+  },
+  {
+   "name": "右豆状骨(みぎとうじょうこつ)",
+   "en": "Right Pisiform",
+   "bp_file": "FJ3382.obj",
+   "bp": "BP8770",
+   "fma": "FMA24441",
+   "verts_product": 211,
+   "faces_product": 396,
+   "center_dist": 0.01503,
+   "size_ratio": [
+    1.0652,
+    1.07,
+    1.044
+   ]
+  },
+  {
+   "name": "左短母指伸筋(ひだりたんぼししんきん)",
+   "en": "Left Extensor pollicis brevis",
+   "bp_file": "FJ1494M.obj",
+   "bp": "BP9253",
+   "fma": "FMA38520",
+   "verts_product": 6685,
+   "faces_product": 11624,
+   "center_dist": 0.01489,
+   "size_ratio": [
+    1.0278,
+    1.0283,
+    1.028
+   ]
+  },
+  {
+   "name": "右僧帽筋上行部(みぎそうぼうきんじょうこうぶ)",
+   "en": "Right Trapezius, ascending part",
+   "bp_file": "FJ1520.obj",
+   "bp": "BP5638",
+   "fma": "FMA33581",
+   "verts_product": 49466,
+   "faces_product": 69632,
+   "center_dist": 0.01488,
+   "size_ratio": [
+    0.8521,
+    0.9112,
+    1.0133
+   ]
+  },
+  {
+   "name": "左腎臓(ひだりじんぞう)",
+   "en": "Left Kidney",
+   "bp_file": "FJ3145.obj",
+   "bp": "BP9289",
+   "fma": "FMA7205",
+   "verts_product": 7681,
+   "faces_product": 15358,
+   "center_dist": 0.01486,
+   "size_ratio": [
+    1.1168,
+    1.0822,
+    0.9991
+   ]
+  },
+  {
+   "name": "左長母指伸筋(ひだりちょうぼししんきん)",
+   "en": "Left Extensor pollicis longus",
+   "bp_file": "FJ1495M.obj",
+   "bp": "BP8191",
+   "fma": "FMA38523",
+   "verts_product": 9805,
+   "faces_product": 16072,
+   "center_dist": 0.01481,
+   "size_ratio": [
+    1.0257,
+    1.0316,
+    1.0292
+   ]
+  },
+  {
+   "name": "右短母指伸筋(みぎたんぼししんきん)",
+   "en": "Right Extensor pollicis brevis",
+   "bp_file": "FJ1494.obj",
+   "bp": "BP4818",
+   "fma": "FMA38519",
+   "verts_product": 7447,
+   "faces_product": 11732,
+   "center_dist": 0.0148,
+   "size_ratio": [
+    1.03,
+    1.0289,
+    1.0314
+   ]
+  },
+  {
+   "name": "右小内転筋(みぎしょうないてんきん)",
+   "en": "Right Adductor minimus",
+   "bp_file": "FJ1404.obj",
+   "bp": "BP4980",
+   "fma": "FMA43886",
+   "verts_product": 6526,
+   "faces_product": 9486,
+   "center_dist": 0.01472,
+   "size_ratio": [
+    0.9115,
+    0.9337,
+    0.8558
+   ]
+  },
+  {
+   "name": "左小内転筋(ひだりしょうないてんきん)",
+   "en": "Left Adductor minimus",
+   "bp_file": "FJ1404M.obj",
+   "bp": "BP8832",
+   "fma": "FMA43887",
+   "verts_product": 6157,
+   "faces_product": 9702,
+   "center_dist": 0.01469,
+   "size_ratio": [
+    0.914,
+    0.9343,
+    0.8563
+   ]
+  },
+  {
+   "name": "右長母指伸筋(みぎちょうぼししんきん)",
+   "en": "Right Extensor pollicis longus",
+   "bp_file": "FJ1495.obj",
+   "bp": "BP4816",
+   "fma": "FMA38522",
+   "verts_product": 11271,
+   "faces_product": 16234,
+   "center_dist": 0.01467,
+   "size_ratio": [
+    1.0284,
+    1.0321,
+    1.0306
+   ]
+  },
+  {
+   "name": "左方形回内筋(ひだりほうけいかいないきん)",
+   "en": "Left Pronator quadratus",
+   "bp_file": "FJ1503M.obj",
+   "bp": "BP7957",
+   "fma": "FMA38455",
+   "verts_product": 8885,
+   "faces_product": 14436,
+   "center_dist": 0.0146,
+   "size_ratio": [
+    1.046,
+    1.0194,
+    1.0356
+   ]
+  },
+  {
+   "name": "左内側広筋(ひだりないそくこうきん)",
+   "en": "Left Vastus medialis",
+   "bp_file": "FJ1443M.obj",
+   "bp": "BP9128",
+   "fma": "FMA38933",
+   "verts_product": 36222,
+   "faces_product": 64980,
+   "center_dist": 0.01459,
+   "size_ratio": [
+    1.1807,
+    1.0116,
+    1.0201
+   ]
+  },
+  {
+   "name": "左僧帽筋上行部(ひだりそうぼうきんじょうこうぶ)",
+   "en": "Left Trapezius, ascending part",
+   "bp_file": "FJ1520M.obj",
+   "bp": "BP8225",
+   "fma": "FMA33583",
+   "verts_product": 40288,
+   "faces_product": 68048,
+   "center_dist": 0.01456,
+   "size_ratio": [
+    0.851,
+    0.9102,
+    1.0133
+   ]
+  },
+  {
+   "name": "右内側広筋(みぎないそくこうきん)",
+   "en": "Right Vastus medialis",
+   "bp_file": "FJ1443.obj",
+   "bp": "BP5600",
+   "fma": "FMA38932",
+   "verts_product": 40659,
+   "faces_product": 65814,
+   "center_dist": 0.01456,
+   "size_ratio": [
+    1.1792,
+    1.0105,
+    1.0205
+   ]
+  },
+  {
+   "name": "右方形回内筋(みぎほうけいかいないきん)",
+   "en": "Right Pronator quadratus",
+   "bp_file": "FJ1503.obj",
+   "bp": "BP4846",
+   "fma": "FMA38454",
+   "verts_product": 10611,
+   "faces_product": 14666,
+   "center_dist": 0.01449,
+   "size_ratio": [
+    1.0331,
+    1.0369,
+    1.0383
+   ]
+  },
+  {
+   "name": "右長母指屈筋(みぎちょうぼしくっきん)",
+   "en": "Right Flexor pollicis longus",
+   "bp_file": "FJ1498.obj",
+   "bp": "BP4844",
+   "fma": "FMA38482",
+   "verts_product": 12407,
+   "faces_product": 19048,
+   "center_dist": 0.01444,
+   "size_ratio": [
+    1.0281,
+    1.0286,
+    1.0286
+   ]
+  },
+  {
+   "name": "左深指屈筋(ひだりしんしくっきん)",
+   "en": "Left Flexor digitorum profundus",
+   "bp_file": "FJ1497M.obj",
+   "bp": "BP7826",
+   "fma": "FMA38480",
+   "verts_product": 42819,
+   "faces_product": 72594,
+   "center_dist": 0.01442,
+   "size_ratio": [
+    1.0288,
+    1.0302,
+    1.0283
+   ]
+  },
+  {
+   "name": "左長母指屈筋(ひだりちょうぼしくっきん)",
+   "en": "Left Flexor pollicis longus",
+   "bp_file": "FJ1498M.obj",
+   "bp": "BP9106",
+   "fma": "FMA38484",
+   "verts_product": 12012,
+   "faces_product": 18698,
+   "center_dist": 0.01441,
+   "size_ratio": [
+    1.0256,
+    1.0268,
+    1.0283
+   ]
+  },
+  {
+   "name": "右深指屈筋(みぎしんしくっきん)",
+   "en": "Right Flexor digitorum profundus",
+   "bp_file": "FJ1497.obj",
+   "bp": "BP4848",
+   "fma": "FMA38479",
+   "verts_product": 43985,
+   "faces_product": 71294,
+   "center_dist": 0.01438,
+   "size_ratio": [
+    1.0291,
+    1.0314,
+    1.0283
+   ]
+  },
+  {
+   "name": "右内腸骨動脈(みぎないちょうこつどうみゃく)",
+   "en": "Right Internal iliac artery",
+   "bp_file": "FJ3569.obj",
+   "bp": "BP10316",
+   "fma": "FMA18809",
+   "verts_product": 260,
+   "faces_product": 458,
+   "center_dist": 0.01433,
+   "size_ratio": [
+    1.3561,
+    1.0577,
+    1.0034
+   ]
+  },
+  {
+   "name": "右薄筋(みぎはくきん)",
+   "en": "Right Gracilis",
+   "bp_file": "FJ1421.obj",
+   "bp": "BP4976",
+   "fma": "FMA43883",
+   "verts_product": 31856,
+   "faces_product": 49262,
+   "center_dist": 0.01429,
+   "size_ratio": [
+    0.9155,
+    1.3424,
+    0.9555
+   ]
+  },
+  {
+   "name": "左薄筋(ひだりはくきん)",
+   "en": "Left Gracilis",
+   "bp_file": "FJ1421M.obj",
+   "bp": "BP8926",
+   "fma": "FMA43884",
+   "verts_product": 28041,
+   "faces_product": 49194,
+   "center_dist": 0.01422,
+   "size_ratio": [
+    0.9144,
+    1.3423,
+    0.9543
+   ]
+  },
+  {
+   "name": "左総指伸筋(ひだりそうししんきん)",
+   "en": "Left Extensor digitorum",
+   "bp_file": "FJ1492M.obj",
+   "bp": "BP8560",
+   "fma": "FMA38502",
+   "verts_product": 36213,
+   "faces_product": 63656,
+   "center_dist": 0.0142,
+   "size_ratio": [
+    1.0277,
+    1.0276,
+    1.0275
+   ]
+  },
+  {
+   "name": "右総指伸筋(みぎそうししんきん)",
+   "en": "Right Extensor digitorum",
+   "bp_file": "FJ1492.obj",
+   "bp": "BP4827",
+   "fma": "FMA38501",
+   "verts_product": 42176,
+   "faces_product": 64444,
+   "center_dist": 0.01408,
+   "size_ratio": [
+    1.0282,
+    1.0287,
+    1.0281
+   ]
+  },
+  {
+   "name": "左長母指外転筋(ひだりちょうぼしがいてんきん)",
+   "en": "Left Abductor pollicis longus",
+   "bp_file": "FJ1484M.obj",
+   "bp": "BP9144",
+   "fma": "FMA38517",
+   "verts_product": 13334,
+   "faces_product": 23666,
+   "center_dist": 0.014,
+   "size_ratio": [
+    1.0273,
+    1.0306,
+    1.027
+   ]
+  },
+  {
+   "name": "右内腸骨静脈(みぎないちょうこつじょうみゃく)",
+   "en": "Right Internal iliac vein",
+   "bp_file": "FJ3570.obj",
+   "bp": "BP10327",
+   "fma": "FMA18887",
+   "verts_product": 310,
+   "faces_product": 530,
+   "center_dist": 0.01392,
+   "size_ratio": [
+    1.0613,
+    1.0298,
+    1.0356
+   ]
+  },
+  {
+   "name": "右長母指外転筋(みぎちょうぼしがいてんきん)",
+   "en": "Right Abductor pollicis longus",
+   "bp_file": "FJ1484.obj",
+   "bp": "BP4820",
+   "fma": "FMA38516",
+   "verts_product": 16011,
+   "faces_product": 24766,
+   "center_dist": 0.01388,
+   "size_ratio": [
+    1.0293,
+    1.0298,
+    1.0291
+   ]
+  },
+  {
+   "name": "右長腓骨筋(みぎちょうひこつきん)",
+   "en": "Right Fibularis longus",
+   "bp_file": "FJ1410.obj",
+   "bp": "BP5013",
+   "fma": "FMA22552",
+   "verts_product": 37999,
+   "faces_product": 58214,
+   "center_dist": 0.01363,
+   "size_ratio": [
+    1.3231,
+    0.9315,
+    0.9327
+   ]
+  },
+  {
+   "name": "左長腓骨筋(ひだりちょうひこつきん)",
+   "en": "Left Fibularis longus",
+   "bp_file": "FJ1410M.obj",
+   "bp": "BP8846",
+   "fma": "FMA22553",
+   "verts_product": 33198,
+   "faces_product": 58314,
+   "center_dist": 0.01361,
+   "size_ratio": [
+    1.3295,
+    0.9311,
+    0.9325
+   ]
+  },
+  {
+   "name": "橋(きょう)",
+   "en": "Pons",
+   "bp_file": "FJ1775.obj",
+   "bp": "BP6545",
+   "fma": "FMA67943",
+   "verts_product": 49024,
+   "faces_product": 90072,
+   "center_dist": 0.01349,
+   "size_ratio": [
+    1.316,
+    1.1666,
+    1.1898
+   ]
+  },
+  {
+   "name": "左小指伸筋(ひだりしょうししんきん)",
+   "en": "Left Extensor digiti minimi",
+   "bp_file": "FJ1491M.obj",
+   "bp": "BP8489",
+   "fma": "FMA38505",
+   "verts_product": 11561,
+   "faces_product": 21510,
+   "center_dist": 0.01342,
+   "size_ratio": [
+    1.0309,
+    1.0309,
+    1.0292
+   ]
+  },
+  {
+   "name": "十二指腸(じゅうにしちょう)",
+   "en": "Duodenum",
+   "bp_file": "FJ2573.obj",
+   "bp": "BP8646",
+   "fma": "FMA7206",
+   "verts_product": 6006,
+   "faces_product": 11950,
+   "center_dist": 0.01334,
+   "size_ratio": [
+    1.0763,
+    1.0957,
+    1.2554
+   ]
+  },
+  {
+   "name": "白線(はくせん)",
+   "en": "Linea alba",
+   "bp_file": "FJ1448.obj",
+   "bp": "BP6616",
+   "fma": "FMA11336",
+   "verts_product": 4944,
+   "faces_product": 9516,
+   "center_dist": 0.01331,
+   "size_ratio": [
+    1.0381,
+    0.7582,
+    1.0119
+   ]
+  },
+  {
+   "name": "左前腕骨間膜(ひだりぜんわんこつかんまく)",
+   "en": "Left Interosseous membrane of forearm",
+   "bp_file": "FJ1476M.obj",
+   "bp": "BP8263",
+   "fma": "FMA23708",
+   "verts_product": 8389,
+   "faces_product": 13808,
+   "center_dist": 0.01328,
+   "size_ratio": [
+    1.0289,
+    1.0287,
+    1.0277
+   ]
+  },
+  {
+   "name": "右小指伸筋(みぎしょうししんきん)",
+   "en": "Right Extensor digiti minimi",
+   "bp_file": "FJ1491.obj",
+   "bp": "BP4825",
+   "fma": "FMA38504",
+   "verts_product": 12490,
+   "faces_product": 21540,
+   "center_dist": 0.01325,
+   "size_ratio": [
+    1.0313,
+    1.0282,
+    1.0296
+   ]
+  },
+  {
+   "name": "右前腕骨間膜(みぎぜんわんこつかんまく)",
+   "en": "Right Interosseous membrane of forearm",
+   "bp_file": "FJ1476.obj",
+   "bp": "BP4651",
+   "fma": "FMA23707",
+   "verts_product": 10123,
+   "faces_product": 14414,
+   "center_dist": 0.01323,
+   "size_ratio": [
+    1.0332,
+    1.0302,
+    1.0285
+   ]
+  },
+  {
+   "name": "右甲状舌骨筋(みぎこうじょうぜつこつきん)",
+   "en": "Right Thyrohyoid",
+   "bp_file": "FJ1599.obj",
+   "bp": "BP4920",
+   "fma": "FMA13352",
+   "verts_product": 4935,
+   "faces_product": 7288,
+   "center_dist": 0.01322,
+   "size_ratio": [
+    0.4661,
+    0.8099,
+    0.8155
+   ]
+  },
+  {
+   "name": "左橈骨(ひだりとうこつ)",
+   "en": "Left Radius",
+   "bp_file": "FJ3277.obj",
+   "bp": "BP9059",
+   "fma": "FMA23465",
+   "verts_product": 1384,
+   "faces_product": 2714,
+   "center_dist": 0.01321,
+   "size_ratio": [
+    1.0377,
+    1.0416,
+    1.0302
+   ]
+  },
+  {
+   "name": "左短橈側手根伸筋(ひだりたんとうそくしゅこんしんきん)",
+   "en": "Left Extensor carpi radialis brevis",
+   "bp_file": "FJ1489M.obj",
+   "bp": "BP9287",
+   "fma": "FMA38499",
+   "verts_product": 19252,
+   "faces_product": 33894,
+   "center_dist": 0.01307,
+   "size_ratio": [
+    1.0302,
+    1.0316,
+    1.0281
+   ]
+  },
+  {
+   "name": "右長掌筋(みぎちょうしょうきん)",
+   "en": "Right Palmaris longus",
+   "bp_file": "FJ1502.obj",
+   "bp": "BP4839",
+   "fma": "FMA38463",
+   "verts_product": 29645,
+   "faces_product": 44410,
+   "center_dist": 0.01305,
+   "size_ratio": [
+    1.0281,
+    1.03,
+    1.0283
+   ]
+  },
+  {
+   "name": "左腎静脈(ひだりじんじょうみゃく)",
+   "en": "Left Renal vein",
+   "bp_file": "FJ3477.obj",
+   "bp": "BP10330",
+   "fma": "FMA14336",
+   "verts_product": 396,
+   "faces_product": 574,
+   "center_dist": 0.01304,
+   "size_ratio": [
+    1.5497,
+    1.2906,
+    1.3723
+   ]
+  },
+  {
+   "name": "右小菱形筋(みぎしょうりょうけいきん)",
+   "en": "Right Rhomboid minor",
+   "bp_file": "FJ1537.obj",
+   "bp": "BP4784",
+   "fma": "FMA13383",
+   "verts_product": 10778,
+   "faces_product": 15092,
+   "center_dist": 0.01303,
+   "size_ratio": [
+    1.1009,
+    1.0384,
+    0.9422
+   ]
+  },
+  {
+   "name": "左長掌筋(ひだりちょうしょうきん)",
+   "en": "Left Palmaris longus",
+   "bp_file": "FJ1502M.obj",
+   "bp": "BP7781",
+   "fma": "FMA38464",
+   "verts_product": 25718,
+   "faces_product": 43062,
+   "center_dist": 0.01303,
+   "size_ratio": [
+    1.0274,
+    1.0303,
+    1.0281
+   ]
+  },
+  {
+   "name": "右短橈側手根伸筋(みぎたんとうそくしゅこんしんきん)",
+   "en": "Right Extensor carpi radialis brevis",
+   "bp_file": "FJ1489.obj",
+   "bp": "BP4823",
+   "fma": "FMA38498",
+   "verts_product": 19494,
+   "faces_product": 31496,
+   "center_dist": 0.01295,
+   "size_ratio": [
+    1.0286,
+    1.0295,
+    1.0284
+   ]
+  },
+  {
+   "name": "右橈骨(みぎとうこつ)",
+   "en": "Right Radius",
+   "bp_file": "FJ3349.obj",
+   "bp": "BP8464",
+   "fma": "FMA23464",
+   "verts_product": 1430,
+   "faces_product": 2804,
+   "center_dist": 0.0128,
+   "size_ratio": [
+    1.0317,
+    1.043,
+    1.0291
+   ]
+  },
+  {
+   "name": "左長橈側手根伸筋(ひだりちょうとうそくしゅこんしんきん)",
+   "en": "Left Extensor carpi radialis longus",
+   "bp_file": "FJ1490M.obj",
+   "bp": "BP9280",
+   "fma": "FMA38496",
+   "verts_product": 20904,
+   "faces_product": 38276,
+   "center_dist": 0.01273,
+   "size_ratio": [
+    1.027,
+    1.0303,
+    1.0277
+   ]
+  },
+  {
+   "name": "左大腿直筋(ひだりだいたいちょくきん)",
+   "en": "Left Rectus femoris",
+   "bp_file": "FJ1433M.obj",
+   "bp": "BP8094",
+   "fma": "FMA38929",
+   "verts_product": 46082,
+   "faces_product": 82050,
+   "center_dist": 0.01269,
+   "size_ratio": [
+    1.0041,
+    0.8857,
+    0.9754
+   ]
+  },
+  {
+   "name": "右長橈側手根伸筋(みぎちょうとうそくしゅこんしんきん)",
+   "en": "Right Extensor carpi radialis longus",
+   "bp_file": "FJ1490.obj",
+   "bp": "BP4831",
+   "fma": "FMA38495",
+   "verts_product": 21932,
+   "faces_product": 37140,
+   "center_dist": 0.01264,
+   "size_ratio": [
+    1.0287,
+    1.0282,
+    1.0286
+   ]
+  },
+  {
+   "name": "右橈側手根屈筋(みぎとうそくしゅこんくっきん)",
+   "en": "Right Flexor carpi radialis",
+   "bp_file": "FJ1496.obj",
+   "bp": "BP4841",
+   "fma": "FMA38460",
+   "verts_product": 10970,
+   "faces_product": 16722,
+   "center_dist": 0.01263,
+   "size_ratio": [
+    1.0288,
+    1.0281,
+    1.0293
+   ]
+  },
+  {
+   "name": "右大腿直筋(みぎだいたいちょくきん)",
+   "en": "Right Rectus femoris",
+   "bp_file": "FJ1433.obj",
+   "bp": "BP5598",
+   "fma": "FMA38928",
+   "verts_product": 53144,
+   "faces_product": 82990,
+   "center_dist": 0.01262,
+   "size_ratio": [
+    1.0066,
+    0.8874,
+    0.9754
+   ]
+  },
+  {
+   "name": "右尺骨(みぎしゃくこつ)",
+   "en": "Right Ulna",
+   "bp_file": "FJ3391.obj",
+   "bp": "BP8233",
+   "fma": "FMA23467",
+   "verts_product": 1862,
+   "faces_product": 3592,
+   "center_dist": 0.01259,
+   "size_ratio": [
+    1.04,
+    1.04,
+    1.0298
+   ]
+  },
+  {
+   "name": "右口蓋骨(みぎこうがいこつ)",
+   "en": "Right Palatine bone",
+   "bp_file": "FJ3379.obj",
+   "bp": "BP8406",
+   "fma": "FMA53655",
+   "verts_product": 2411,
+   "faces_product": 3592,
+   "center_dist": 0.01259,
+   "size_ratio": [
+    0.9098,
+    0.8173,
+    0.8577
+   ]
+  },
+  {
+   "name": "左半腱様筋(ひだりはんけんようきん)",
+   "en": "Left Semitendinosus",
+   "bp_file": "FJ1436M.obj",
+   "bp": "BP9066",
+   "fma": "FMA22359",
+   "verts_product": 24513,
+   "faces_product": 42538,
+   "center_dist": 0.01257,
+   "size_ratio": [
+    0.8669,
+    0.7841,
+    0.9518
+   ]
+  },
+  {
+   "name": "右肩甲下筋(みぎけんこうかきん)",
+   "en": "Right Subscapularis",
+   "bp_file": "FJ1504.obj",
+   "bp": "BP4795",
+   "fma": "FMA13414",
+   "verts_product": 19572,
+   "faces_product": 30620,
+   "center_dist": 0.01256,
+   "size_ratio": [
+    1.074,
+    1.0162,
+    0.8811
+   ]
+  },
+  {
+   "name": "左肩甲下筋(ひだりけんこうかきん)",
+   "en": "Left Subscapularis",
+   "bp_file": "FJ1504M.obj",
+   "bp": "BP8214",
+   "fma": "FMA13415",
+   "verts_product": 18908,
+   "faces_product": 30670,
+   "center_dist": 0.01256,
+   "size_ratio": [
+    1.0739,
+    1.0143,
+    0.88
+   ]
+  },
+  {
+   "name": "右短内転筋(みぎたんないてんきん)",
+   "en": "Right Adductor brevis",
+   "bp_file": "FJ1401.obj",
+   "bp": "BP4986",
+   "fma": "FMA22452",
+   "verts_product": 16594,
+   "faces_product": 21608,
+   "center_dist": 0.0125,
+   "size_ratio": [
+    1.0149,
+    1.0445,
+    0.8913
+   ]
+  },
+  {
+   "name": "左尺骨(ひだりしゃくこつ)",
+   "en": "Left Ulna",
+   "bp_file": "FJ3286.obj",
+   "bp": "BP9070",
+   "fma": "FMA23468",
+   "verts_product": 1843,
+   "faces_product": 3538,
+   "center_dist": 0.01248,
+   "size_ratio": [
+    1.0402,
+    1.0393,
+    1.0289
+   ]
+  },
+  {
+   "name": "右尺側手根屈筋上腕頭(みぎしゃくそくしゅこんくっきんじょうわんとう)",
+   "en": "Right Flexor carpi ulnaris, humeral head",
+   "bp_file": "FJ1473.obj",
+   "bp": "BP5570",
+   "fma": "FMA38617",
+   "verts_product": 23320,
+   "faces_product": 39130,
+   "center_dist": 0.01248,
+   "size_ratio": [
+    1.0281,
+    1.0295,
+    1.0292
+   ]
+  },
+  {
+   "name": "左腎動脈(ひだりじんどうみゃく)",
+   "en": "Left Renal artery",
+   "bp_file": "FJ2046.obj",
+   "bp": "BP7672",
+   "fma": "FMA14753",
+   "verts_product": 786,
+   "faces_product": 1308,
+   "center_dist": 0.01247,
+   "size_ratio": [
+    2.1492,
+    1.8459,
+    1.3354
+   ]
+  },
+  {
+   "name": "右大菱形筋(みぎだいりょうけいきん)",
+   "en": "Right Rhomboid major",
+   "bp_file": "FJ1536.obj",
+   "bp": "BP4780",
+   "fma": "FMA13381",
+   "verts_product": 33461,
+   "faces_product": 48254,
+   "center_dist": 0.01246,
+   "size_ratio": [
+    1.0926,
+    0.9763,
+    1.0331
+   ]
+  },
+  {
+   "name": "左視神経(ひだりししんけい)",
+   "en": "Left Optic nerve",
+   "bp_file": "FJ1313.obj",
+   "bp": "BP5709",
+   "fma": "FMA50878",
+   "verts_product": 5196,
+   "faces_product": 10302,
+   "center_dist": 0.01246,
+   "size_ratio": [
+    0.8958,
+    1.0331,
+    1.1912
+   ]
+  },
+  {
+   "name": "左短内転筋(ひだりたんないてんきん)",
+   "en": "Left Adductor brevis",
+   "bp_file": "FJ1401M.obj",
+   "bp": "BP9099",
+   "fma": "FMA22454",
+   "verts_product": 14537,
+   "faces_product": 21726,
+   "center_dist": 0.01245,
+   "size_ratio": [
+    1.0156,
+    1.0446,
+    0.8911
+   ]
+  },
+  {
+   "name": "右視神経(みぎししんけい)",
+   "en": "Right Optic nerve",
+   "bp_file": "FJ1364.obj",
+   "bp": "BP5708",
+   "fma": "FMA50875",
+   "verts_product": 5235,
+   "faces_product": 10310,
+   "center_dist": 0.01242,
+   "size_ratio": [
+    0.8954,
+    1.0336,
+    1.1923
+   ]
+  },
+  {
+   "name": "左尺側手根屈筋上腕頭(ひだりしゃくそくしゅこんくっきんじょうわんとう)",
+   "en": "Left Flexor carpi ulnaris, humeral head",
+   "bp_file": "FJ1473M.obj",
+   "bp": "BP8144",
+   "fma": "FMA38618",
+   "verts_product": 22306,
+   "faces_product": 40366,
+   "center_dist": 0.01241,
+   "size_ratio": [
+    1.0288,
+    1.0307,
+    1.0281
+   ]
+  },
+  {
+   "name": "右半腱様筋(みぎはんけんようきん)",
+   "en": "Right Semitendinosus",
+   "bp_file": "FJ1436.obj",
+   "bp": "BP4991",
+   "fma": "FMA22358",
+   "verts_product": 28545,
+   "faces_product": 43550,
+   "center_dist": 0.01239,
+   "size_ratio": [
+    0.8638,
+    0.7859,
+    0.9533
+   ]
+  },
+  {
+   "name": "左橈側手根屈筋(ひだりとうそくしゅこんくっきん)",
+   "en": "Left Flexor carpi radialis",
+   "bp_file": "FJ1496M.obj",
+   "bp": "BP8940",
+   "fma": "FMA38461",
+   "verts_product": 9116,
+   "faces_product": 15930,
+   "center_dist": 0.01238,
+   "size_ratio": [
+    1.0246,
+    1.0271,
+    1.0275
+   ]
+  },
+  {
+   "name": "左総腸骨静脈(ひだりそうちょうこつじょうみゃく)",
+   "en": "Left Common iliac vein",
+   "bp_file": "FJ3465.obj",
+   "bp": "BP10352",
+   "fma": "FMA21388",
+   "verts_product": 534,
+   "faces_product": 992,
+   "center_dist": 0.01234,
+   "size_ratio": [
+    0.8513,
+    0.9486,
+    1.0269
+   ]
+  },
+  {
+   "name": "左前頭直筋(ひだりぜんとうちょくきん)",
+   "en": "Left Rectus capitis anterior",
+   "bp_file": "FJ1566.obj",
+   "bp": "BP7586",
+   "fma": "FMA46314",
+   "verts_product": 3118,
+   "faces_product": 3986,
+   "center_dist": 0.01225,
+   "size_ratio": [
+    0.6423,
+    0.9386,
+    0.9679
+   ]
+  },
+  {
+   "name": "左小菱形筋(ひだりしょうりょうけいきん)",
+   "en": "Left Rhomboid minor",
+   "bp_file": "FJ1537M.obj",
+   "bp": "BP8585",
+   "fma": "FMA13384",
+   "verts_product": 10890,
+   "faces_product": 15062,
+   "center_dist": 0.01223,
+   "size_ratio": [
+    1.1924,
+    1.0245,
+    0.9402
+   ]
+  },
+  {
+   "name": "右尺側手根屈筋尺骨頭(みぎしゃくそくしゅこんくっきんしゃくこつとう)",
+   "en": "Right Flexor carpi ulnaris, ulnar head",
+   "bp_file": "FJ1518.obj",
+   "bp": "BP5554",
+   "fma": "FMA38619",
+   "verts_product": 10441,
+   "faces_product": 15216,
+   "center_dist": 0.01221,
+   "size_ratio": [
+    1.0281,
+    1.0287,
+    1.0285
+   ]
+  },
+  {
+   "name": "左小胸筋(ひだりしょうきょうきん)",
+   "en": "Left Pectoralis minor",
+   "bp_file": "FJ1456M.obj",
+   "bp": "BP9038",
+   "fma": "FMA13376",
+   "verts_product": 28626,
+   "faces_product": 44798,
+   "center_dist": 0.01219,
+   "size_ratio": [
+    0.9701,
+    1.0228,
+    0.9519
+   ]
+  },
+  {
+   "name": "左尺側手根屈筋尺骨頭(ひだりしゃくそくしゅこんくっきんしゃくこつとう)",
+   "en": "Left Flexor carpi ulnaris, ulnar head",
+   "bp_file": "FJ1518M.obj",
+   "bp": "BP8540",
+   "fma": "FMA38620",
+   "verts_product": 8849,
+   "faces_product": 14676,
+   "center_dist": 0.01219,
+   "size_ratio": [
+    1.0256,
+    1.0212,
+    1.0276
+   ]
+  },
+  {
+   "name": "右鎖骨下筋(みぎさこつかきん)",
+   "en": "Right Subclavius",
+   "bp_file": "FJ1460.obj",
+   "bp": "BP4773",
+   "fma": "FMA13412",
+   "verts_product": 6148,
+   "faces_product": 8154,
+   "center_dist": 0.01209,
+   "size_ratio": [
+    0.886,
+    1.008,
+    1.06
+   ]
+  },
+  {
+   "name": "左口蓋骨(ひだりこうがいこつ)",
+   "en": "Left Palatine bone",
+   "bp_file": "FJ3273.obj",
+   "bp": "BP7930",
+   "fma": "FMA53656",
+   "verts_product": 2536,
+   "faces_product": 3642,
+   "center_dist": 0.01206,
+   "size_ratio": [
+    0.9147,
+    0.9066,
+    0.8539
+   ]
+  },
+  {
+   "name": "胆嚢;タンノウ(たんのう)",
+   "en": "Gallbladder",
+   "bp_file": "FJ2817.obj",
+   "bp": "BP9029",
+   "fma": "FMA7202",
+   "verts_product": 6970,
+   "faces_product": 13846,
+   "center_dist": 0.01206,
+   "size_ratio": [
+    1.0123,
+    1.1079,
+    0.9778
+   ]
+  },
+  {
+   "name": "左鎖骨下筋(ひだりさこつかきん)",
+   "en": "Left Subclavius",
+   "bp_file": "FJ1460M.obj",
+   "bp": "BP8460",
+   "fma": "FMA13411",
+   "verts_product": 6076,
+   "faces_product": 8154,
+   "center_dist": 0.01202,
+   "size_ratio": [
+    0.8869,
+    1.0096,
+    1.06
+   ]
+  },
+  {
+   "name": "左鎖骨(ひだりさこつ)",
+   "en": "Left Clavicle",
+   "bp_file": "FJ3237.obj",
+   "bp": "BP8841",
+   "fma": "FMA13323",
+   "verts_product": 2572,
+   "faces_product": 5140,
+   "center_dist": 0.012,
+   "size_ratio": [
+    0.7725,
+    1.1038,
+    1.0508
+   ]
+  },
+  {
+   "name": "右小胸筋(みぎしょうきょうきん)",
+   "en": "Right Pectoralis minor",
+   "bp_file": "FJ1456.obj",
+   "bp": "BP4775",
+   "fma": "FMA13375",
+   "verts_product": 33001,
+   "faces_product": 45360,
+   "center_dist": 0.01196,
+   "size_ratio": [
+    0.97,
+    1.0236,
+    0.9551
+   ]
+  },
+  {
+   "name": "右広頚筋(みぎこうけいきん)",
+   "en": "Right Platysma",
+   "bp_file": "FJ1587.obj",
+   "bp": "BP4912",
+   "fma": "FMA45739",
+   "verts_product": 36671,
+   "faces_product": 65580,
+   "center_dist": 0.01186,
+   "size_ratio": [
+    1.0003,
+    0.9504,
+    0.9556
+   ]
+  },
+  {
+   "name": "左外側頭長筋(ひだりがいそくとうちょうきん)",
+   "en": "Left Rectus capitis lateralis",
+   "bp_file": "FJ1569.obj",
+   "bp": "BP7589",
+   "fma": "FMA46318",
+   "verts_product": 2895,
+   "faces_product": 3596,
+   "center_dist": 0.01186,
+   "size_ratio": [
+    0.8751,
+    1.0879,
+    0.9273
+   ]
+  },
+  {
+   "name": "髄脳;延髄;球(えんずい)",
+   "en": "Medulla oblongata",
+   "bp_file": "FJ1769.obj",
+   "bp": "BP5693",
+   "fma": "FMA62004",
+   "verts_product": 27327,
+   "faces_product": 52760,
+   "center_dist": 0.01185,
+   "size_ratio": [
+    1.9398,
+    0.9703,
+    0.9702
+   ]
+  },
+  {
+   "name": "左腕橈骨筋(ひだりわんとうこつきん)",
+   "en": "Left Brachioradialis",
+   "bp_file": "FJ1487M.obj",
+   "bp": "BP8244",
+   "fma": "FMA38487",
+   "verts_product": 40275,
+   "faces_product": 73558,
+   "center_dist": 0.01184,
+   "size_ratio": [
+    1.0292,
+    1.0241,
+    1.0277
+   ]
+  },
+  {
+   "name": "右腕橈骨筋(みぎわんとうこつきん)",
+   "en": "Right Brachioradialis",
+   "bp_file": "FJ1487.obj",
+   "bp": "BP4833",
+   "fma": "FMA38486",
+   "verts_product": 43485,
+   "faces_product": 73160,
+   "center_dist": 0.01175,
+   "size_ratio": [
+    1.0293,
+    1.0281,
+    1.0281
+   ]
+  },
+  {
+   "name": "左上頭斜筋(ひだりじょうとうしゃきん)",
+   "en": "Left Obliquus capitis superior",
+   "bp_file": "FJ1564.obj",
+   "bp": "BP7584",
+   "fma": "FMA32535",
+   "verts_product": 5247,
+   "faces_product": 7136,
+   "center_dist": 0.01168,
+   "size_ratio": [
+    1.0452,
+    0.9287,
+    0.9822
+   ]
+  },
+  {
+   "name": "左回外筋(ひだりかいがいきん)",
+   "en": "Left Supinator",
+   "bp_file": "FJ1505M.obj",
+   "bp": "BP8499",
+   "fma": "FMA38514",
+   "verts_product": 15383,
+   "faces_product": 26072,
+   "center_dist": 0.01164,
+   "size_ratio": [
+    1.0344,
+    1.0332,
+    1.0258
+   ]
+  },
+  {
+   "name": "左広頚筋(ひだりこうけいきん)",
+   "en": "Left Platysma",
+   "bp_file": "FJ1558.obj",
+   "bp": "BP7577",
+   "fma": "FMA45740",
+   "verts_product": 34436,
+   "faces_product": 64516,
+   "center_dist": 0.01163,
+   "size_ratio": [
+    1.0005,
+    0.9611,
+    0.9501
+   ]
+  },
+  {
+   "name": "右円回内筋尺骨頭(みぎえんかいないきんしゃくこつとう)",
+   "en": "Right Pronator teres, ulnar head",
+   "bp_file": "FJ1516.obj",
+   "bp": "BP5552",
+   "fma": "FMA38562",
+   "verts_product": 6908,
+   "faces_product": 11374,
+   "center_dist": 0.01161,
+   "size_ratio": [
+    1.0418,
+    1.029,
+    1.0283
+   ]
+  },
+  {
+   "name": "左小後頭直筋(ひだりしょうこうとうちょくきん)",
+   "en": "Left Rectus capitis posterior minor",
+   "bp_file": "FJ1568.obj",
+   "bp": "BP7588",
+   "fma": "FMA32533",
+   "verts_product": 2926,
+   "faces_product": 4302,
+   "center_dist": 0.01159,
+   "size_ratio": [
+    0.9699,
+    0.9752,
+    0.9708
+   ]
+  },
+  {
+   "name": "左大後頭直筋(ひだりだいこうとうちょくきん)",
+   "en": "Left Rectus capitis posterior major",
+   "bp_file": "FJ1567.obj",
+   "bp": "BP7587",
+   "fma": "FMA32531",
+   "verts_product": 4938,
+   "faces_product": 7838,
+   "center_dist": 0.01158,
+   "size_ratio": [
+    0.9699,
+    0.9699,
+    0.9699
+   ]
+  },
+  {
+   "name": "右回外筋(みぎかいがいきん)",
+   "en": "Right Supinator",
+   "bp_file": "FJ1505.obj",
+   "bp": "BP4814",
+   "fma": "FMA38513",
+   "verts_product": 18703,
+   "faces_product": 27650,
+   "center_dist": 0.01157,
+   "size_ratio": [
+    1.0318,
+    1.0281,
+    1.0286
+   ]
+  },
+  {
+   "name": "左棘上筋(ひだりきょくじょうきん)",
+   "en": "Left Supraspinatus",
+   "bp_file": "FJ1506M.obj",
+   "bp": "BP8376",
+   "fma": "FMA32545",
+   "verts_product": 8515,
+   "faces_product": 14820,
+   "center_dist": 0.01155,
+   "size_ratio": [
+    0.9283,
+    1.0696,
+    0.9972
+   ]
+  },
+  {
+   "name": "右大後頭直筋(みぎだいこうとうちょくきん)",
+   "en": "Right Rectus capitis posterior major",
+   "bp_file": "FJ1589.obj",
+   "bp": "BP4736",
+   "fma": "FMA32530",
+   "verts_product": 5443,
+   "faces_product": 7892,
+   "center_dist": 0.01148,
+   "size_ratio": [
+    0.9699,
+    0.9482,
+    0.9789
+   ]
+  },
+  {
+   "name": "左頚長筋上斜線維(ひだりけいちょうきんじょうしゃせんい)",
+   "en": "Left Longus colli, superior oblique part",
+   "bp_file": "FJ1600.obj",
+   "bp": "BP5595",
+   "fma": "FMA46284",
+   "verts_product": 6557,
+   "faces_product": 10648,
+   "center_dist": 0.01147,
+   "size_ratio": [
+    0.811,
+    0.9104,
+    0.9822
+   ]
+  },
+  {
+   "name": "脾臓(ひぞう)",
+   "en": "Spleen",
+   "bp_file": "FJ2561.obj",
+   "bp": "BP8804",
+   "fma": "FMA7196",
+   "verts_product": 4536,
+   "faces_product": 9016,
+   "center_dist": 0.01146,
+   "size_ratio": [
+    1.3051,
+    1.2249,
+    1.0736
+   ]
+  },
+  {
+   "name": "左三角筋肩峰部(ひだりさんかくきんけんほうぶ)",
+   "en": "Left Deltoid, acromial part",
+   "bp_file": "FJ1467M.obj",
+   "bp": "BP9075",
+   "fma": "FMA34683",
+   "verts_product": 15678,
+   "faces_product": 29076,
+   "center_dist": 0.01145,
+   "size_ratio": [
+    1.0117,
+    0.9285,
+    1.0196
+   ]
+  },
+  {
+   "name": "左肘筋(ひだりちゅうきん)",
+   "en": "Left Anconeus",
+   "bp_file": "FJ1485M.obj",
+   "bp": "BP8962",
+   "fma": "FMA37706",
+   "verts_product": 8588,
+   "faces_product": 14182,
+   "center_dist": 0.01139,
+   "size_ratio": [
+    1.033,
+    1.0322,
+    1.0242
+   ]
+  },
+  {
+   "name": "右三角筋肩峰部(みぎさんかくきんけんほうぶ)",
+   "en": "Right Deltoid, acromial part",
+   "bp_file": "FJ1467.obj",
+   "bp": "BP7571",
+   "fma": "FMA34682",
+   "verts_product": 17168,
+   "faces_product": 29682,
+   "center_dist": 0.01138,
+   "size_ratio": [
+    1.0021,
+    0.9287,
+    1.0165
+   ]
+  },
+  {
+   "name": "右肘筋(みぎちゅうきん)",
+   "en": "Right Anconeus",
+   "bp_file": "FJ1485.obj",
+   "bp": "BP4802",
+   "fma": "FMA37705",
+   "verts_product": 10015,
+   "faces_product": 14436,
+   "center_dist": 0.01138,
+   "size_ratio": [
+    1.0346,
+    1.0308,
+    1.0288
+   ]
+  },
+  {
+   "name": "右棘上筋(みぎきょくじょうきん)",
+   "en": "Right Supraspinatus",
+   "bp_file": "FJ1506.obj",
+   "bp": "BP4791",
+   "fma": "FMA32544",
+   "verts_product": 8982,
+   "faces_product": 14318,
+   "center_dist": 0.01136,
+   "size_ratio": [
+    0.9204,
+    1.0716,
+    0.9998
+   ]
+  },
+  {
+   "name": "左胸鎖乳突筋(ひだりきょうさにゅうとつきん)",
+   "en": "Left Sternocleidomastoid",
+   "bp_file": "FJ1573.obj",
+   "bp": "BP4910",
+   "fma": "FMA13409",
+   "verts_product": 29735,
+   "faces_product": 50290,
+   "center_dist": 0.01133,
+   "size_ratio": [
+    0.9391,
+    0.9464,
+    0.9591
+   ]
+  },
+  {
+   "name": "左大菱形筋(ひだりだいりょうけいきん)",
+   "en": "Left Rhomboid major",
+   "bp_file": "FJ1536M.obj",
+   "bp": "BP9245",
+   "fma": "FMA13382",
+   "verts_product": 34652,
+   "faces_product": 48398,
+   "center_dist": 0.01131,
+   "size_ratio": [
+    1.1986,
+    0.974,
+    1.0321
+   ]
+  },
+  {
+   "name": "右腎動脈(みぎじんどうみゃく)",
+   "en": "Right Renal artery",
+   "bp_file": "FJ2038.obj",
+   "bp": "BP7655",
+   "fma": "FMA14752",
+   "verts_product": 1004,
+   "faces_product": 1754,
+   "center_dist": 0.01128,
+   "size_ratio": [
+    1.0311,
+    1.8724,
+    1.3702
+   ]
+  },
+  {
+   "name": "右円回内筋上腕頭(みぎえんかいないきんじょうわんとう)",
+   "en": "Right Pronator teres, humeral head",
+   "bp_file": "FJ1474.obj",
+   "bp": "BP5568",
+   "fma": "FMA38560",
+   "verts_product": 15864,
+   "faces_product": 25978,
+   "center_dist": 0.01125,
+   "size_ratio": [
+    1.0291,
+    1.0301,
+    1.0281
+   ]
+  },
+  {
+   "name": "右鎖骨(みぎさこつ)",
+   "en": "Right Clavicle",
+   "bp_file": "FJ3362.obj",
+   "bp": "BP9271",
+   "fma": "FMA13322",
+   "verts_product": 2558,
+   "faces_product": 5112,
+   "center_dist": 0.01122,
+   "size_ratio": [
+    0.7708,
+    1.106,
+    1.0507
+   ]
+  },
+  {
+   "name": "中脳nsn(ちゅうのうnsn)",
+   "en": "Midbrain",
+   "bp_file": "FJ1770.obj",
+   "bp": "BP5695",
+   "fma": "FMA61993",
+   "verts_product": 31011,
+   "faces_product": 56314,
+   "center_dist": 0.01119,
+   "size_ratio": [
+    1.1265,
+    1.6708,
+    0.9708
+   ]
+  },
+  {
+   "name": "右上頭斜筋(みぎじょうとうしゃきん)",
+   "en": "Right Obliquus capitis superior",
+   "bp_file": "FJ1585.obj",
+   "bp": "BP4738",
+   "fma": "FMA32534",
+   "verts_product": 5604,
+   "faces_product": 7184,
+   "center_dist": 0.01112,
+   "size_ratio": [
+    1.0298,
+    0.9996,
+    0.9769
+   ]
+  },
+  {
+   "name": "左円回内筋尺骨頭(ひだりえんかいないきんしゃくこつとう)",
+   "en": "Left Pronator teres, ulnar head",
+   "bp_file": "FJ1516M.obj",
+   "bp": "BP9043",
+   "fma": "FMA38563",
+   "verts_product": 6361,
+   "faces_product": 11406,
+   "center_dist": 0.01109,
+   "size_ratio": [
+    1.043,
+    1.0269,
+    1.0108
+   ]
+  },
+  {
+   "name": "右外側頭長筋(みぎがいそくとうちょうきん)",
+   "en": "Right Rectus capitis lateralis",
+   "bp_file": "FJ1591.obj",
+   "bp": "BP4706",
+   "fma": "FMA46317",
+   "verts_product": 2975,
+   "faces_product": 3616,
+   "center_dist": 0.01104,
+   "size_ratio": [
+    0.9354,
+    1.0661,
+    0.9954
+   ]
+  },
+  {
+   "name": "右小後頭直筋(みぎしょうこうとうちょくきん)",
+   "en": "Right Rectus capitis posterior minor",
+   "bp_file": "FJ1590.obj",
+   "bp": "BP4734",
+   "fma": "FMA32532",
+   "verts_product": 3329,
+   "faces_product": 4396,
+   "center_dist": 0.01103,
+   "size_ratio": [
+    0.9828,
+    0.9374,
+    0.955
+   ]
+  },
+  {
+   "name": "左頚半棘筋(ひだりけいはんきょくきん)",
+   "en": "Left Semispinalis cervicis",
+   "bp_file": "FJ1539M.obj",
+   "bp": "BP8930",
+   "fma": "FMA22875",
+   "verts_product": 16364,
+   "faces_product": 25156,
+   "center_dist": 0.01095,
+   "size_ratio": [
+    1.0718,
+    1.2123,
+    0.9409
+   ]
+  },
+  {
+   "name": "右上腕二頭筋長頭(みぎじょうわんにとうきんちょうとう)",
+   "en": "Right Biceps brachii, long head",
+   "bp_file": "FJ1478.obj",
+   "bp": "BP5566",
+   "fma": "FMA37686",
+   "verts_product": 21191,
+   "faces_product": 32266,
+   "center_dist": 0.01091,
+   "size_ratio": [
+    1.1867,
+    1.0034,
+    1.0289
+   ]
+  },
+  {
+   "name": "左外腸骨静脈(ひだりがいちょうこつじょうみゃく)",
+   "en": "Left External iliac vein",
+   "bp_file": "FJ3484.obj",
+   "bp": "BP10318",
+   "fma": "FMA18886",
+   "verts_product": 778,
+   "faces_product": 1448,
+   "center_dist": 0.01089,
+   "size_ratio": [
+    0.7149,
+    0.8713,
+    0.9143
+   ]
+  },
+  {
+   "name": "鋤骨(じょこつ)",
+   "en": "Vomer",
+   "bp_file": "FJ3395.obj",
+   "bp": "BP8776",
+   "fma": "FMA9710",
+   "verts_product": 1504,
+   "faces_product": 2422,
+   "center_dist": 0.01088,
+   "size_ratio": [
+    0.9117,
+    0.5516,
+    1.1052
+   ]
+  },
+  {
+   "name": "胃(い)",
+   "en": "Stomach",
+   "bp_file": "FJ2564.obj",
+   "bp": "BP7926",
+   "fma": "FMA7148",
+   "verts_product": 4694,
+   "faces_product": 9384,
+   "center_dist": 0.01085,
+   "size_ratio": [
+    1.0494,
+    1.0561,
+    1.0837
+   ]
+  },
+  {
+   "name": "左上腕二頭筋長頭(ひだりじょうわんにとうきんちょうとう)",
+   "en": "Left Biceps brachii, long head",
+   "bp_file": "FJ1478M.obj",
+   "bp": "BP8816",
+   "fma": "FMA37687",
+   "verts_product": 19095,
+   "faces_product": 32906,
+   "center_dist": 0.01079,
+   "size_ratio": [
+    1.1883,
+    1.0021,
+    1.0282
+   ]
+  },
+  {
+   "name": "右腸頚靭帯(みぎちょうけいじんたい)",
+   "en": "Right Iliotibial tract",
+   "bp_file": "FJ1423.obj",
+   "bp": "BP5628",
+   "fma": "FMA58776",
+   "verts_product": 126539,
+   "faces_product": 243308,
+   "center_dist": 0.01075,
+   "size_ratio": [
+    1.0041,
+    1.006,
+    0.9549
+   ]
+  },
+  {
+   "name": "左円回内筋上腕頭(ひだりえんかいないきんじょうわんとう)",
+   "en": "Left Pronator teres, humeral head",
+   "bp_file": "FJ1474M.obj",
+   "bp": "BP8015",
+   "fma": "FMA38561",
+   "verts_product": 14223,
+   "faces_product": 25376,
+   "center_dist": 0.01074,
+   "size_ratio": [
+    1.0272,
+    1.0295,
+    1.0157
+   ]
+  },
+  {
+   "name": "左腸頚靭帯(ひだりちょうけいじんたい)",
+   "en": "Left Iliotibial tract",
+   "bp_file": "FJ1423M.obj",
+   "bp": "BP8856",
+   "fma": "FMA58777",
+   "verts_product": 125612,
+   "faces_product": 244884,
+   "center_dist": 0.01074,
+   "size_ratio": [
+    1.005,
+    1.006,
+    0.9549
+   ]
+  },
+  {
+   "name": "脊髄の中心管(せきずいのちゅうしんかん)",
+   "en": "Central canal of spinal cord",
+   "bp_file": "FJ1737.obj",
+   "bp": "BP5511",
+   "fma": "FMA78497",
+   "verts_product": 1711,
+   "faces_product": 3162,
+   "center_dist": 0.0107,
+   "size_ratio": [
+    0.9785,
+    0.9699,
+    0.9698
+   ]
+  },
+  {
+   "name": "左総腸骨動脈(ひだりそうちょうこつどうみゃく)",
+   "en": "Left Common iliac artery",
+   "bp_file": "FJ3464.obj",
+   "bp": "BP10347",
+   "fma": "FMA14766",
+   "verts_product": 433,
+   "faces_product": 806,
+   "center_dist": 0.01066,
+   "size_ratio": [
+    0.6777,
+    1.0188,
+    1.0392
+   ]
+  },
+  {
+   "name": "左大胸筋胸肋部(ひだりだいきょうきんきょうろくぶ)",
+   "en": "Left Pectoralis major, sternocostal part",
+   "bp_file": "FJ1464M.obj",
+   "bp": "BP8323",
+   "fma": "FMA79980",
+   "verts_product": 23253,
+   "faces_product": 35798,
+   "center_dist": 0.01063,
+   "size_ratio": [
+    1.0255,
+    1.0471,
+    1.0338
+   ]
+  },
+  {
+   "name": "右後頭葉(みぎこうとうよう)",
+   "en": "Right Occipital lobe",
+   "bp_file": "FJ1792.obj",
+   "bp": "BP10440",
+   "fma": "FMA72975",
+   "verts_product": 9506,
+   "faces_product": 18762,
+   "center_dist": 0.01063,
+   "size_ratio": [
+    0.9722,
+    0.978,
+    0.9713
+   ]
+  },
+  {
+   "name": "左尿管(ひだりにょうかん)",
+   "en": "Left Ureter",
+   "bp_file": "FJ3144.obj",
+   "bp": "BP8750",
+   "fma": "FMA15572",
+   "verts_product": 1284,
+   "faces_product": 2226,
+   "center_dist": 0.01063,
+   "size_ratio": [
+    1.0293,
+    1.304,
+    1.1575
+   ]
+  },
+  {
+   "name": "右長内転筋(みぎちょうないてんきん)",
+   "en": "Right Adductor longus",
+   "bp_file": "FJ1402.obj",
+   "bp": "BP4984",
+   "fma": "FMA22456",
+   "verts_product": 20949,
+   "faces_product": 37142,
+   "center_dist": 0.01056,
+   "size_ratio": [
+    1.2505,
+    1.0658,
+    0.9109
+   ]
+  },
+  {
+   "name": "左下頭斜筋(ひだりかとうしゃきん)",
+   "en": "Left Obliquus capitis inferior",
+   "bp_file": "FJ1563.obj",
+   "bp": "BP7583",
+   "fma": "FMA32537",
+   "verts_product": 3241,
+   "faces_product": 5228,
+   "center_dist": 0.01054,
+   "size_ratio": [
+    0.9487,
+    1.054,
+    0.9151
+   ]
+  },
+  {
+   "name": "左長内転筋(ひだりちょうないてんきん)",
+   "en": "Left Adductor longus",
+   "bp_file": "FJ1402M.obj",
+   "bp": "BP8604",
+   "fma": "FMA22457",
+   "verts_product": 20038,
+   "faces_product": 37878,
+   "center_dist": 0.01053,
+   "size_ratio": [
+    1.2501,
+    1.0728,
+    0.9105
+   ]
+  },
+  {
+   "name": "右大胸筋胸肋部(みぎだいきょうきんきょうろくぶ)",
+   "en": "Right Pectoralis major, sternocostal part",
+   "bp_file": "FJ1464.obj",
+   "bp": "BP5613",
+   "fma": "FMA79979",
+   "verts_product": 24958,
+   "faces_product": 36014,
+   "center_dist": 0.01051,
+   "size_ratio": [
+    1.0234,
+    1.0462,
+    1.0339
+   ]
+  },
+  {
+   "name": "左オトガイ舌骨筋(ひだりおとがいぜつこつきん)",
+   "en": "Left Geniohyoid",
+   "bp_file": "FJ1559.obj",
+   "bp": "BP7578",
+   "fma": "FMA46327",
+   "verts_product": 2968,
+   "faces_product": 5190,
+   "center_dist": 0.01051,
+   "size_ratio": [
+    1.3227,
+    0.8058,
+    1.0144
+   ]
+  },
+  {
+   "name": "左後頭葉(ひだりこうとうよう)",
+   "en": "Left Occipital lobe",
+   "bp_file": "FJ1791.obj",
+   "bp": "BP10477",
+   "fma": "FMA72976",
+   "verts_product": 9498,
+   "faces_product": 18746,
+   "center_dist": 0.01051,
+   "size_ratio": [
+    0.9722,
+    0.976,
+    0.971
+   ]
+  },
+  {
+   "name": "左大円筋(ひだりだいえんきん)",
+   "en": "Left Teres major",
+   "bp_file": "FJ1507M.obj",
+   "bp": "BP8287",
+   "fma": "FMA32552",
+   "verts_product": 9578,
+   "faces_product": 17112,
+   "center_dist": 0.01049,
+   "size_ratio": [
+    1.0982,
+    1.0366,
+    0.9937
+   ]
+  },
+  {
+   "name": "膵臓nsn(すいぞうnsn)",
+   "en": "Pancreas",
+   "bp_file": "FJ1895.obj",
+   "bp": "BP4631",
+   "fma": "FMA7198",
+   "verts_product": 7874,
+   "faces_product": 11414,
+   "center_dist": 0.01049,
+   "size_ratio": [
+    0.7862,
+    1.0054,
+    0.9621
+   ]
+  },
+  {
+   "name": "後頭/後頭骨(こうとうこつ)",
+   "en": "Occipital bone",
+   "bp_file": "FJ3309.obj",
+   "bp": "BP9177",
+   "fma": "FMA52735",
+   "verts_product": 17612,
+   "faces_product": 27812,
+   "center_dist": 0.01048,
+   "size_ratio": [
+    0.974,
+    0.9716,
+    0.9719
+   ]
+  },
+  {
+   "name": "右肩甲舌骨筋(みぎけんこうぜつこつきん)",
+   "en": "Right Omohyoid",
+   "bp_file": "FJ1586.obj",
+   "bp": "BP4915",
+   "fma": "FMA13348",
+   "verts_product": 16219,
+   "faces_product": 27096,
+   "center_dist": 0.01048,
+   "size_ratio": [
+    0.9713,
+    0.9699,
+    0.9699
+   ]
+  },
+  {
+   "name": "左頭半棘筋(ひだりとうはんきょくきん)",
+   "en": "Left Semispinalis capitis",
+   "bp_file": "FJ1538M.obj",
+   "bp": "BP8700",
+   "fma": "FMA22877",
+   "verts_product": 17553,
+   "faces_product": 27382,
+   "center_dist": 0.01044,
+   "size_ratio": [
+    1.0282,
+    1.0761,
+    1.0341
+   ]
+  },
+  {
+   "name": "右角回(みぎかくかい)",
+   "en": "Right Angular gyrus",
+   "bp_file": "FJ1733.obj",
+   "bp": "BP10465",
+   "fma": "FMA72669",
+   "verts_product": 6744,
+   "faces_product": 13172,
+   "center_dist": 0.01044,
+   "size_ratio": [
+    0.9731,
+    0.9726,
+    0.9712
+   ]
+  },
+  {
+   "name": "右頚半棘筋(みぎけいはんきょくきん)",
+   "en": "Right Semispinalis cervicis",
+   "bp_file": "FJ1539.obj",
+   "bp": "BP4715",
+   "fma": "FMA22874",
+   "verts_product": 20624,
+   "faces_product": 26166,
+   "center_dist": 0.01043,
+   "size_ratio": [
+    1.1051,
+    1.1389,
+    0.9547
+   ]
+  },
+  {
+   "name": "右大円筋(みぎだいえんきん)",
+   "en": "Right Teres major",
+   "bp_file": "FJ1507.obj",
+   "bp": "BP4789",
+   "fma": "FMA32551",
+   "verts_product": 10604,
+   "faces_product": 17148,
+   "center_dist": 0.01042,
+   "size_ratio": [
+    1.0995,
+    1.0384,
+    0.9954
+   ]
+  },
+  {
+   "name": "左角回(ひだりかくかい)",
+   "en": "Left Angular gyrus",
+   "bp_file": "FJ1732.obj",
+   "bp": "BP10462",
+   "fma": "FMA72670",
+   "verts_product": 6723,
+   "faces_product": 13164,
+   "center_dist": 0.01035,
+   "size_ratio": [
+    0.9742,
+    0.9747,
+    0.9704
+   ]
+  },
+  {
+   "name": "左小円筋(ひだりしょうえんきん)",
+   "en": "Left Teres minor",
+   "bp_file": "FJ1508M.obj",
+   "bp": "BP9197",
+   "fma": "FMA32554",
+   "verts_product": 8156,
+   "faces_product": 15150,
+   "center_dist": 0.01034,
+   "size_ratio": [
+    1.1115,
+    1.0451,
+    0.9913
+   ]
+  },
+  {
+   "name": "左肩甲舌骨筋(ひだりけんこうぜつこつきん)",
+   "en": "Left Omohyoid",
+   "bp_file": "FJ1565.obj",
+   "bp": "BP7585",
+   "fma": "FMA13349",
+   "verts_product": 15420,
+   "faces_product": 26960,
+   "center_dist": 0.01029,
+   "size_ratio": [
+    0.9698,
+    0.9704,
+    0.9695
+   ]
+  },
+  {
+   "name": "右オトガイ舌骨筋(みぎおとがいぜつこつきん)",
+   "en": "Right Geniohyoid",
+   "bp_file": "FJ1580.obj",
+   "bp": "BP4906",
+   "fma": "FMA46326",
+   "verts_product": 3402,
+   "faces_product": 5320,
+   "center_dist": 0.01025,
+   "size_ratio": [
+    1.3284,
+    0.8043,
+    1.0158
+   ]
+  },
+  {
+   "name": "右大腿二頭筋短頭(みぎだいたいにとうきんたんとう)",
+   "en": "Right Biceps femoris, short head",
+   "bp_file": "FJ1444.obj",
+   "bp": "BP5573",
+   "fma": "FMA45891",
+   "verts_product": 16164,
+   "faces_product": 25478,
+   "center_dist": 0.01023,
+   "size_ratio": [
+    1.0041,
+    1.1279,
+    0.9421
+   ]
+  },
+  {
+   "name": "左大腿二頭筋短頭(ひだりだいたいにとうきんたんとう)",
+   "en": "Left Biceps femoris, short head",
+   "bp_file": "FJ1444M.obj",
+   "bp": "BP8616",
+   "fma": "FMA45892",
+   "verts_product": 14215,
+   "faces_product": 24698,
+   "center_dist": 0.01022,
+   "size_ratio": [
+    1.005,
+    1.1322,
+    0.9399
+   ]
+  },
+  {
+   "name": "右小円筋(みぎしょうえんきん)",
+   "en": "Right Teres minor",
+   "bp_file": "FJ1508.obj",
+   "bp": "BP4793",
+   "fma": "FMA32553",
+   "verts_product": 9118,
+   "faces_product": 15224,
+   "center_dist": 0.01021,
+   "size_ratio": [
+    1.1113,
+    1.0441,
+    0.9925
+   ]
+  },
+  {
+   "name": "左三角筋肩甲棘部(ひだりさんかくきんけんこうきょくぶ)",
+   "en": "Left Deltoid, spinal part",
+   "bp_file": "FJ1513M.obj",
+   "bp": "BP8151",
+   "fma": "FMA34685",
+   "verts_product": 23728,
+   "faces_product": 44628,
+   "center_dist": 0.01015,
+   "size_ratio": [
+    1.0402,
+    0.9962,
+    1.0228
+   ]
+  },
+  {
+   "name": "左内側膝状体(ひだりないそくしつじょうたい)",
+   "en": "Left Medial geniculate body",
+   "bp_file": "FJ1816M.obj",
+   "bp": "BP9165",
+   "fma": "FMA73310",
+   "verts_product": 102,
+   "faces_product": 200,
+   "center_dist": 0.01009,
+   "size_ratio": [
+    0.8196,
+    1.0166,
+    1.1167
+   ]
+  },
+  {
+   "name": "右下鼻甲介(みぎかびこうかい)",
+   "en": "Right Inferior nasal concha",
+   "bp_file": "FJ3369.obj",
+   "bp": "BP8413",
+   "fma": "FMA54737",
+   "verts_product": 1139,
+   "faces_product": 1616,
+   "center_dist": 0.00997,
+   "size_ratio": [
+    1.0603,
+    1.1229,
+    0.9484
+   ]
+  },
+  {
+   "name": "左烏口腕筋(ひだりうこうわんきん)",
+   "en": "Left Coracobrachialis",
+   "bp_file": "FJ1488M.obj",
+   "bp": "BP9055",
+   "fma": "FMA37666",
+   "verts_product": 6091,
+   "faces_product": 11112,
+   "center_dist": 0.00993,
+   "size_ratio": [
+    0.8859,
+    1.0183,
+    1.0016
+   ]
+  },
+  {
+   "name": "左肩甲骨(ひだりけんこうこつ)",
+   "en": "Left Scapula",
+   "bp_file": "FJ3279.obj",
+   "bp": "BP9121",
+   "fma": "FMA13396",
+   "verts_product": 60949,
+   "faces_product": 121816,
+   "center_dist": 0.00991,
+   "size_ratio": [
+    1.0419,
+    1.0378,
+    0.9812
+   ]
+  },
+  {
+   "name": "右三角筋肩甲棘部(みぎさんかくきんけんこうきょくぶ)",
+   "en": "Right Deltoid, spinal part",
+   "bp_file": "FJ1513.obj",
+   "bp": "BP5607",
+   "fma": "FMA34684",
+   "verts_product": 25134,
+   "faces_product": 44010,
+   "center_dist": 0.00989,
+   "size_ratio": [
+    1.0416,
+    0.9959,
+    1.0244
+   ]
+  },
+  {
+   "name": "右肩甲骨(みぎけんこうこつ)",
+   "en": "Right Scapula",
+   "bp_file": "FJ3384.obj",
+   "bp": "BP9101",
+   "fma": "FMA13395",
+   "verts_product": 56704,
+   "faces_product": 113256,
+   "center_dist": 0.00988,
+   "size_ratio": [
+    1.0417,
+    1.0377,
+    0.9813
+   ]
+  },
+  {
+   "name": "右烏口腕筋(みぎうこうわんきん)",
+   "en": "Right Coracobrachialis",
+   "bp_file": "FJ1488.obj",
+   "bp": "BP4805",
+   "fma": "FMA37665",
+   "verts_product": 6801,
+   "faces_product": 11648,
+   "center_dist": 0.00987,
+   "size_ratio": [
+    0.885,
+    1.0205,
+    1.0041
+   ]
+  },
+  {
+   "name": "右下頭斜筋(みぎかとうしゃきん)",
+   "en": "Right Obliquus capitis inferior",
+   "bp_file": "FJ1584.obj",
+   "bp": "BP4740",
+   "fma": "FMA32536",
+   "verts_product": 3962,
+   "faces_product": 5412,
+   "center_dist": 0.00987,
+   "size_ratio": [
+    0.9262,
+    1.0116,
+    0.9907
+   ]
+  },
+  {
+   "name": "左頭長筋(ひだりとうちょうきん)",
+   "en": "Left Longus capitis",
+   "bp_file": "FJ1561.obj",
+   "bp": "BP7581",
+   "fma": "FMA46310",
+   "verts_product": 11155,
+   "faces_product": 19300,
+   "center_dist": 0.00986,
+   "size_ratio": [
+    0.9826,
+    0.9892,
+    0.9865
+   ]
+  },
+  {
+   "name": "右側頭骨(みぎそくとうこつ)",
+   "en": "Right Temporal bone",
+   "bp_file": "FJ3386.obj",
+   "bp": "BP8875",
+   "fma": "FMA52738",
+   "verts_product": 6921,
+   "faces_product": 11274,
+   "center_dist": 0.00985,
+   "size_ratio": [
+    0.9867,
+    0.9772,
+    0.9731
+   ]
+  },
+  {
+   "name": "気管(きかん)",
+   "en": "Trachea",
+   "bp_file": "FJ2541.obj",
+   "bp": "BP7849",
+   "fma": "FMA7394",
+   "verts_product": 8642,
+   "faces_product": 13870,
+   "center_dist": 0.00984,
+   "size_ratio": [
+    1.0226,
+    1.3213,
+    1.0973
+   ]
+  },
+  {
+   "name": "右頭長筋(みぎとうちょうきん)",
+   "en": "Right Longus capitis",
+   "bp_file": "FJ1582.obj",
+   "bp": "BP4703",
+   "fma": "FMA46309",
+   "verts_product": 12968,
+   "faces_product": 19800,
+   "center_dist": 0.00981,
+   "size_ratio": [
+    0.9796,
+    0.9903,
+    0.9867
+   ]
+  },
+  {
+   "name": "右頭半棘筋(みぎとうはんきょくきん)",
+   "en": "Right Semispinalis capitis",
+   "bp_file": "FJ1538.obj",
+   "bp": "BP4717",
+   "fma": "FMA22876",
+   "verts_product": 19197,
+   "faces_product": 27454,
+   "center_dist": 0.00978,
+   "size_ratio": [
+    1.0289,
+    1.004,
+    1.0346
+   ]
+  },
+  {
+   "name": "左側頭骨(ひだりそくとうこつ)",
+   "en": "Left Temporal bone",
+   "bp_file": "FJ3281.obj",
+   "bp": "BP7991",
+   "fma": "FMA52739",
+   "verts_product": 6689,
+   "faces_product": 11208,
+   "center_dist": 0.00974,
+   "size_ratio": [
+    0.9919,
+    0.9766,
+    0.9735
+   ]
+  },
+  {
+   "name": "右上側頭回後部(うじょうそくとうかいこうぶ)",
+   "en": "Right Superior temporal gyrus, posterior part",
+   "bp_file": "FJ1840.obj",
+   "bp": "BP10433",
+   "fma": "FMA72804",
+   "verts_product": 5255,
+   "faces_product": 10472,
+   "center_dist": 0.0097,
+   "size_ratio": [
+    0.9746,
+    0.9728,
+    0.9707
+   ]
+  },
+  {
+   "name": "剣状突起(けんじょうとっき)",
+   "en": "Xiphoid process",
+   "bp_file": "FJ3153.obj",
+   "bp": "BP7865",
+   "fma": "FMA7488",
+   "verts_product": 2104,
+   "faces_product": 4086,
+   "center_dist": 0.00963,
+   "size_ratio": [
+    1.033,
+    1.0565,
+    1.083
+   ]
+  },
+  {
+   "name": "右中側頭回(みぎちゅうそくとうかい)",
+   "en": "Right Middle temporal gyrus",
+   "bp_file": "FJ1790.obj",
+   "bp": "BP10448",
+   "fma": "FMA72685",
+   "verts_product": 6513,
+   "faces_product": 12926,
+   "center_dist": 0.00961,
+   "size_ratio": [
+    0.9871,
+    0.9778,
+    0.9713
+   ]
+  },
+  {
+   "name": "右頭頂骨(みぎとうちょうこつ)",
+   "en": "Right Parietal bone",
+   "bp_file": "FJ3380.obj",
+   "bp": "BP9057",
+   "fma": "FMA52788",
+   "verts_product": 21181,
+   "faces_product": 29734,
+   "center_dist": 0.00959,
+   "size_ratio": [
+    0.9807,
+    0.9722,
+    0.9719
+   ]
+  },
+  {
+   "name": "右下側頭回(みぎかそくとうかい)",
+   "en": "Right Inferior temporal gyrus",
+   "bp_file": "FJ1747.obj",
+   "bp": "BP10483",
+   "fma": "FMA72687",
+   "verts_product": 6627,
+   "faces_product": 13056,
+   "center_dist": 0.00953,
+   "size_ratio": [
+    0.972,
+    0.985,
+    0.9704
+   ]
+  },
+  {
+   "name": "下顎骨(かがくこつ)",
+   "en": "Mandible",
+   "bp_file": "FJ3289.obj",
+   "bp": "BP8107",
+   "fma": "FMA52748",
+   "verts_product": 10980,
+   "faces_product": 21658,
+   "center_dist": 0.00951,
+   "size_ratio": [
+    0.9716,
+    0.9719,
+    0.9707
+   ]
+  },
+  {
+   "name": "左頚最長筋(ひだりけいさいちょうきん)",
+   "en": "Left Longissimus cervicis",
+   "bp_file": "FJ1534M.obj",
+   "bp": "BP9126",
+   "fma": "FMA22758",
+   "verts_product": 11539,
+   "faces_product": 18070,
+   "center_dist": 0.00951,
+   "size_ratio": [
+    0.8672,
+    1.2151,
+    0.9619
+   ]
+  },
+  {
+   "name": "右下丘(みぎかきゅう)",
+   "en": "Right Inferior colliculus",
+   "bp_file": "FJ1810.obj",
+   "bp": "BP10427",
+   "fma": "FMA73434",
+   "verts_product": 137,
+   "faces_product": 270,
+   "center_dist": 0.00947,
+   "size_ratio": [
+    0.9691,
+    0.9699,
+    0.9699
+   ]
+  },
+  {
+   "name": "左上側頭回後部(さじょうそくとうかいこうぶ)",
+   "en": "Left Superior temporal gyrus, posterior part",
+   "bp_file": "FJ1839.obj",
+   "bp": "BP10444",
+   "fma": "FMA72805",
+   "verts_product": 5249,
+   "faces_product": 10472,
+   "center_dist": 0.00946,
+   "size_ratio": [
+    0.9799,
+    0.9709,
+    0.9725
+   ]
+  },
+  {
+   "name": "右下丘腕(みぎかきゅうわん)",
+   "en": "Right Brachium of inferior colliculus",
+   "bp_file": "FJ1809.obj",
+   "bp": "BP10454",
+   "fma": "FMA73463",
+   "verts_product": 345,
+   "faces_product": 686,
+   "center_dist": 0.00943,
+   "size_ratio": [
+    0.9789,
+    0.9754,
+    0.9699
+   ]
+  },
+  {
+   "name": "左下側頭回(ひだりかそくとうかい)",
+   "en": "Left Inferior temporal gyrus",
+   "bp_file": "FJ1746.obj",
+   "bp": "BP10437",
+   "fma": "FMA72688",
+   "verts_product": 6597,
+   "faces_product": 13040,
+   "center_dist": 0.00942,
+   "size_ratio": [
+    0.9705,
+    0.9741,
+    0.9704
+   ]
+  },
+  {
+   "name": "左下丘(ひだりかきゅう)",
+   "en": "Left Inferior colliculus",
+   "bp_file": "FJ1762.obj",
+   "bp": "BP10479",
+   "fma": "FMA73435",
+   "verts_product": 137,
+   "faces_product": 270,
+   "center_dist": 0.00942,
+   "size_ratio": [
+    0.9735,
+    0.97,
+    0.9795
+   ]
+  },
+  {
+   "name": "右縁上回(みぎえんじょうかい)",
+   "en": "Right Supramarginal gyrus",
+   "bp_file": "FJ1842.obj",
+   "bp": "BP10469",
+   "fma": "FMA72667",
+   "verts_product": 4974,
+   "faces_product": 9782,
+   "center_dist": 0.00941,
+   "size_ratio": [
+    0.9724,
+    0.9821,
+    0.9764
+   ]
+  },
+  {
+   "name": "左上丘腕(ひだりじょうきゅうわん)",
+   "en": "Left Brachium of superior colliculus",
+   "bp_file": "FJ1735.obj",
+   "bp": "BP6569",
+   "fma": "FMA73462",
+   "verts_product": 359,
+   "faces_product": 714,
+   "center_dist": 0.0094,
+   "size_ratio": [
+    0.9929,
+    0.9902,
+    0.9699
+   ]
+  },
+  {
+   "name": "左中側頭回(ひだりちゅうそくとうかい)",
+   "en": "Left Middle temporal gyrus",
+   "bp_file": "FJ1789.obj",
+   "bp": "BP10446",
+   "fma": "FMA72686",
+   "verts_product": 6509,
+   "faces_product": 12918,
+   "center_dist": 0.00939,
+   "size_ratio": [
+    0.9705,
+    0.9723,
+    0.9707
+   ]
+  },
+  {
+   "name": "右海馬傍回(みぎかいばぼうかい)",
+   "en": "Right Parahippocampal gyrus",
+   "bp_file": "FJ1786.obj",
+   "bp": "BP10447",
+   "fma": "FMA72705",
+   "verts_product": 1742,
+   "faces_product": 3454,
+   "center_dist": 0.00938,
+   "size_ratio": [
+    0.9715,
+    0.972,
+    0.9703
+   ]
+  },
+  {
+   "name": "左頭頂骨(ひだりとうちょうこつ)",
+   "en": "Left Parietal bone",
+   "bp_file": "FJ3274.obj",
+   "bp": "BP9209",
+   "fma": "FMA52789",
+   "verts_product": 21398,
+   "faces_product": 30250,
+   "center_dist": 0.00937,
+   "size_ratio": [
+    0.9836,
+    0.9718,
+    0.9727
+   ]
+  },
+  {
+   "name": "灰白隆起(はいはくりゅうき)",
+   "en": "Tuber cinereum",
+   "bp_file": "FJ1780.obj",
+   "bp": "BP6548",
+   "fma": "FMA62327",
+   "verts_product": 4879,
+   "faces_product": 6974,
+   "center_dist": 0.00937,
+   "size_ratio": [
+    1.0813,
+    1.1269,
+    1.5143
+   ]
+  },
+  {
+   "name": "右上丘(みぎじょうきゅう)",
+   "en": "Right Superior colliculus",
+   "bp_file": "FJ1826.obj",
+   "bp": "BP10470",
+   "fma": "FMA73422",
+   "verts_product": 104,
+   "faces_product": 204,
+   "center_dist": 0.00936,
+   "size_ratio": [
+    0.9699,
+    0.9691,
+    0.97
+   ]
+  },
+  {
+   "name": "左下丘腕(ひだりかきゅうわん)",
+   "en": "Left Brachium of inferior colliculus",
+   "bp_file": "FJ1761.obj",
+   "bp": "BP10441",
+   "fma": "FMA73464",
+   "verts_product": 338,
+   "faces_product": 672,
+   "center_dist": 0.00935,
+   "size_ratio": [
+    0.9739,
+    0.9728,
+    0.9699
+   ]
+  },
+  {
+   "name": "左上腕三頭筋外側頭(ひだりじょうわんさんとうきんがいそくとう)",
+   "en": "Left Triceps brachii, lateral head",
+   "bp_file": "FJ1477M.obj",
+   "bp": "BP8525",
+   "fma": "FMA37698",
+   "verts_product": 19267,
+   "faces_product": 35974,
+   "center_dist": 0.00934,
+   "size_ratio": [
+    1.0342,
+    1.0438,
+    1.0286
+   ]
+  },
+  {
+   "name": "左上丘(ひだりじょうきゅう)",
+   "en": "Left Superior colliculus",
+   "bp_file": "FJ1779.obj",
+   "bp": "BP10424",
+   "fma": "FMA73423",
+   "verts_product": 105,
+   "faces_product": 204,
+   "center_dist": 0.00934,
+   "size_ratio": [
+    0.9699,
+    0.9693,
+    0.97
+   ]
+  },
+  {
+   "name": "右外側膝状体(みぎがいそくしつじょうたい)",
+   "en": "Right Lateral geniculate body",
+   "bp_file": "FJ1813.obj",
+   "bp": "BP10429",
+   "fma": "FMA73303",
+   "verts_product": 1312,
+   "faces_product": 2620,
+   "center_dist": 0.00932,
+   "size_ratio": [
+    0.9722,
+    0.9715,
+    0.97
+   ]
+  },
+  {
+   "name": "右内側膝状体(みぎないそくしつじょうたい)",
+   "en": "Right Medial geniculate body",
+   "bp_file": "FJ1816.obj",
+   "bp": "BP7746",
+   "fma": "FMA73309",
+   "verts_product": 107,
+   "faces_product": 208,
+   "center_dist": 0.00931,
+   "size_ratio": [
+    0.9698,
+    0.97,
+    0.9693
+   ]
+  },
+  {
+   "name": "手綱(たずな)",
+   "en": "Habenula",
+   "bp_file": "FJ1743.obj",
+   "bp": "BP6549",
+   "fma": "FMA62032",
+   "verts_product": 267,
+   "faces_product": 384,
+   "center_dist": 0.0093,
+   "size_ratio": [
+    0.9714,
+    0.9698,
+    0.9698
+   ]
+  },
+  {
+   "name": "左膝蓋骨(ひだりしつがいこつ)",
+   "en": "Left Patella",
+   "bp_file": "FJ3275.obj",
+   "bp": "BP8378",
+   "fma": "FMA24487",
+   "verts_product": 680,
+   "faces_product": 1338,
+   "center_dist": 0.00929,
+   "size_ratio": [
+    1.0495,
+    1.0384,
+    1.0357
+   ]
+  },
+  {
+   "name": "右膝蓋骨(みぎしつがいこつ)",
+   "en": "Right Patella",
+   "bp_file": "FJ3381.obj",
+   "bp": "BP8390",
+   "fma": "FMA24486",
+   "verts_product": 684,
+   "faces_product": 1334,
+   "center_dist": 0.00929,
+   "size_ratio": [
+    1.0555,
+    1.0393,
+    1.0361
+   ]
+  },
+  {
+   "name": "左海馬傍回(ひだりかいばぼうかい)",
+   "en": "Left Parahippocampal gyrus",
+   "bp_file": "FJ1785.obj",
+   "bp": "BP10439",
+   "fma": "FMA72706",
+   "verts_product": 1744,
+   "faces_product": 3452,
+   "center_dist": 0.00929,
+   "size_ratio": [
+    0.9706,
+    0.9741,
+    0.9699
+   ]
+  },
+  {
+   "name": "右上丘腕(みぎじょうきゅうわん)",
+   "en": "Right Brachium of superior colliculus",
+   "bp_file": "FJ1736.obj",
+   "bp": "BP6570",
+   "fma": "FMA73461",
+   "verts_product": 367,
+   "faces_product": 730,
+   "center_dist": 0.00929,
+   "size_ratio": [
+    0.9848,
+    0.9706,
+    0.9727
+   ]
+  },
+  {
+   "name": "中脳水道;脳水道(ちゅうのうすいどう)",
+   "en": "Cerebral aqueduct",
+   "bp_file": "FJ1738.obj",
+   "bp": "BP5516",
+   "fma": "FMA78467",
+   "verts_product": 1208,
+   "faces_product": 2252,
+   "center_dist": 0.00928,
+   "size_ratio": [
+    0.975,
+    0.97,
+    0.9701
+   ]
+  },
+  {
+   "name": "右上腕三頭筋外側頭(みぎじょうわんさんとうきんがいそくとう)",
+   "en": "Right Triceps brachii, lateral head",
+   "bp_file": "FJ1477.obj",
+   "bp": "BP5550",
+   "fma": "FMA37697",
+   "verts_product": 21347,
+   "faces_product": 36312,
+   "center_dist": 0.00927,
+   "size_ratio": [
+    1.0304,
+    1.0383,
+    1.0283
+   ]
+  },
+  {
+   "name": "右中心後回(みぎちゅうしんこうかい)",
+   "en": "Right Postcentral gyrus",
+   "bp_file": "FJ1798.obj",
+   "bp": "BP10480",
+   "fma": "FMA72665",
+   "verts_product": 8563,
+   "faces_product": 16862,
+   "center_dist": 0.00925,
+   "size_ratio": [
+    0.9722,
+    0.972,
+    0.9731
+   ]
+  },
+  {
+   "name": "左外側膝状体(ひだりがいそくしつじょうたい)",
+   "en": "Left Lateral geniculate body",
+   "bp_file": "FJ1766.obj",
+   "bp": "BP10443",
+   "fma": "FMA73304",
+   "verts_product": 346,
+   "faces_product": 686,
+   "center_dist": 0.00925,
+   "size_ratio": [
+    0.9764,
+    0.9728,
+    0.9811
+   ]
+  },
+  {
+   "name": "右肩甲挙筋(みぎけんこうきょきん)",
+   "en": "Right Levator scapulae",
+   "bp_file": "FJ1532.obj",
+   "bp": "BP4786",
+   "fma": "FMA32540",
+   "verts_product": 19627,
+   "faces_product": 31336,
+   "center_dist": 0.00922,
+   "size_ratio": [
+    1.0197,
+    1.2134,
+    0.9554
+   ]
+  },
+  {
+   "name": "右頚最長筋(みぎけいさいちょうきん)",
+   "en": "Right Longissimus cervicis",
+   "bp_file": "FJ1534.obj",
+   "bp": "BP4746",
+   "fma": "FMA22757",
+   "verts_product": 14230,
+   "faces_product": 18764,
+   "center_dist": 0.00922,
+   "size_ratio": [
+    0.9468,
+    1.2125,
+    0.9637
+   ]
+  },
+  {
+   "name": "後交連(こうこうれん)",
+   "en": "Posterior commissure",
+   "bp_file": "FJ1799.obj",
+   "bp": "BP6553",
+   "fma": "FMA62072",
+   "verts_product": 1895,
+   "faces_product": 3786,
+   "center_dist": 0.00922,
+   "size_ratio": [
+    0.9669,
+    0.9718,
+    0.9706
+   ]
+  },
+  {
+   "name": "左縁上回(ひだりえんじょうかい)",
+   "en": "Left Supramarginal gyrus",
+   "bp_file": "FJ1841.obj",
+   "bp": "BP10438",
+   "fma": "FMA72668",
+   "verts_product": 4940,
+   "faces_product": 9778,
+   "center_dist": 0.0092,
+   "size_ratio": [
+    0.9721,
+    0.9723,
+    0.9734
+   ]
+  },
+  {
+   "name": "左上腕筋(ひだりじょうわんきん)",
+   "en": "Left Brachialis",
+   "bp_file": "FJ1486M.obj",
+   "bp": "BP8684",
+   "fma": "FMA37669",
+   "verts_product": 18945,
+   "faces_product": 34686,
+   "center_dist": 0.00919,
+   "size_ratio": [
+    1.0658,
+    1.0326,
+    1.0278
+   ]
+  },
+  {
+   "name": "右海馬(みぎかいば)",
+   "en": "Right Hippocampus",
+   "bp_file": "FJ1807.obj",
+   "bp": "BP10432",
+   "fma": "FMA72713",
+   "verts_product": 2230,
+   "faces_product": 4452,
+   "center_dist": 0.00919,
+   "size_ratio": [
+    0.9709,
+    0.9703,
+    0.9704
+   ]
+  },
+  {
+   "name": "右側脳室(みぎそくのうしつ)",
+   "en": "Right Lateral ventricle",
+   "bp_file": "FJ1814.obj",
+   "bp": "BP10436",
+   "fma": "FMA78449",
+   "verts_product": 39111,
+   "faces_product": 78218,
+   "center_dist": 0.00917,
+   "size_ratio": [
+    0.97,
+    0.9702,
+    0.9699
+   ]
+  },
+  {
+   "name": "右上腕三頭筋内側頭(みぎじょうわんさんとうきんないそくとう)",
+   "en": "Right Triceps brachii, medial head",
+   "bp_file": "FJ1480.obj",
+   "bp": "BP5562",
+   "fma": "FMA37695",
+   "verts_product": 14881,
+   "faces_product": 26880,
+   "center_dist": 0.0091,
+   "size_ratio": [
+    1.0359,
+    1.0347,
+    1.0289
+   ]
+  },
+  {
+   "name": "左上腕三頭筋内側頭(ひだりじょうわんさんとうきんないそくとう)",
+   "en": "Left Triceps brachii, medial head",
+   "bp_file": "FJ1480M.obj",
+   "bp": "BP8257",
+   "fma": "FMA37696",
+   "verts_product": 13964,
+   "faces_product": 26226,
+   "center_dist": 0.0091,
+   "size_ratio": [
+    1.0401,
+    1.0373,
+    1.028
+   ]
+  },
+  {
+   "name": "左海馬(ひだりかいば)",
+   "en": "Left Hippocampus",
+   "bp_file": "FJ1759.obj",
+   "bp": "BP10455",
+   "fma": "FMA72714",
+   "verts_product": 2142,
+   "faces_product": 4280,
+   "center_dist": 0.00909,
+   "size_ratio": [
+    0.9711,
+    0.9702,
+    0.9708
+   ]
+  },
+  {
+   "name": "左側脳室(ひだりそくのうしつ)",
+   "en": "Left Lateral ventricle",
+   "bp_file": "FJ1767.obj",
+   "bp": "BP10468",
+   "fma": "FMA78450",
+   "verts_product": 39007,
+   "faces_product": 78010,
+   "center_dist": 0.00909,
+   "size_ratio": [
+    0.9702,
+    0.9698,
+    0.9699
+   ]
+  },
+  {
+   "name": "脾動脈(ひどうみゃく)",
+   "en": "Splenic artery",
+   "bp_file": "FJ2562.obj",
+   "bp": "BP8474",
+   "fma": "FMA14773",
+   "verts_product": 1898,
+   "faces_product": 3326,
+   "center_dist": 0.00908,
+   "size_ratio": [
+    1.3377,
+    1.1189,
+    0.9179
+   ]
+  },
+  {
+   "name": "視床下部nsn(ししょうかぶnsn)",
+   "en": "Hypothalamus",
+   "bp_file": "FJ1760.obj",
+   "bp": "BP6496",
+   "fma": "FMA62008",
+   "verts_product": 9341,
+   "faces_product": 17690,
+   "center_dist": 0.00907,
+   "size_ratio": [
+    1.9394,
+    0.9699,
+    0.9702
+   ]
+  },
+  {
+   "name": "左中心後回(ひだりちゅうしんこうかい)",
+   "en": "Left Postcentral gyrus",
+   "bp_file": "FJ1797.obj",
+   "bp": "BP10473",
+   "fma": "FMA72666",
+   "verts_product": 8585,
+   "faces_product": 16858,
+   "center_dist": 0.00907,
+   "size_ratio": [
+    0.9703,
+    0.9702,
+    0.9724
+   ]
+  },
+  {
+   "name": "右上腕筋(みぎじょうわんきん)",
+   "en": "Right Brachialis",
+   "bp_file": "FJ1486.obj",
+   "bp": "BP4807",
+   "fma": "FMA37668",
+   "verts_product": 21731,
+   "faces_product": 34988,
+   "center_dist": 0.00902,
+   "size_ratio": [
+    1.0525,
+    1.0336,
+    1.0285
+   ]
+  },
+  {
+   "name": "視神経交叉;視交叉(ししんけいこうさ；しこうさ)",
+   "en": "Optic chiasm",
+   "bp_file": "FJ1771.obj",
+   "bp": "BP5710",
+   "fma": "FMA62045",
+   "verts_product": 3882,
+   "faces_product": 7752,
+   "center_dist": 0.00896,
+   "size_ratio": [
+    1.0806,
+    1.2342,
+    1.3749
+   ]
+  },
+  {
+   "name": "右視索(みぎしさく)",
+   "en": "Right Optic tract",
+   "bp_file": "FJ1820.obj",
+   "bp": "BP10467",
+   "fma": "FMA62382",
+   "verts_product": 5157,
+   "faces_product": 10110,
+   "center_dist": 0.00895,
+   "size_ratio": [
+    0.9701,
+    0.9705,
+    0.9702
+   ]
+  },
+  {
+   "name": "右上側頭回前部(うじょうそくとうかいぜんぶ)",
+   "en": "Right Superior temporal gyrus, anterior part",
+   "bp_file": "FJ1838.obj",
+   "bp": "BP10484",
+   "fma": "FMA72800",
+   "verts_product": 4242,
+   "faces_product": 8348,
+   "center_dist": 0.00895,
+   "size_ratio": [
+    0.9721,
+    0.9699,
+    0.9702
+   ]
+  },
+  {
+   "name": "右視床(みぎししょう)",
+   "en": "Right Thalamus",
+   "bp_file": "FJ1827.obj",
+   "bp": "BP10434",
+   "fma": "FMA258714",
+   "verts_product": 1651,
+   "faces_product": 3298,
+   "center_dist": 0.00894,
+   "size_ratio": [
+    0.9718,
+    0.9708,
+    0.9711
+   ]
+  },
+  {
+   "name": "上行大動脈;大動脈上行部(じょうこうだいどうみゃく)",
+   "en": "Ascending aorta",
+   "bp_file": "FJ3413.obj",
+   "bp": "BP10329",
+   "fma": "FMA3736",
+   "verts_product": 1270,
+   "faces_product": 2156,
+   "center_dist": 0.00892,
+   "size_ratio": [
+    1.1385,
+    0.9974,
+    1.0993
+   ]
+  },
+  {
+   "name": "左視床(ひだりししょう)",
+   "en": "Left Thalamus",
+   "bp_file": "FJ1782.obj",
+   "bp": "BP10487",
+   "fma": "FMA258716",
+   "verts_product": 3700,
+   "faces_product": 7396,
+   "center_dist": 0.00891,
+   "size_ratio": [
+    0.9699,
+    0.9699,
+    0.9699
+   ]
+  },
+  {
+   "name": "左視索(ひだりしさく)",
+   "en": "Left Optic tract",
+   "bp_file": "FJ1773.obj",
+   "bp": "BP10451",
+   "fma": "FMA67936",
+   "verts_product": 5088,
+   "faces_product": 10122,
+   "center_dist": 0.0089,
+   "size_ratio": [
+    0.9717,
+    0.9707,
+    0.9699
+   ]
+  },
+  {
+   "name": "乳頭体(にゅうとうたい)",
+   "en": "Mammillary body",
+   "bp_file": "FJ1768.obj",
+   "bp": "BP6596",
+   "fma": "FMA74877",
+   "verts_product": 837,
+   "faces_product": 1666,
+   "center_dist": 0.00886,
+   "size_ratio": [
+    1.1325,
+    1.0765,
+    1.5909
+   ]
+  },
+  {
+   "name": "左三角筋鎖骨部(ひだりさんかくきんさこつぶ)",
+   "en": "Left Deltoid, clavicular part",
+   "bp_file": "FJ1468M.obj",
+   "bp": "BP8259",
+   "fma": "FMA34681",
+   "verts_product": 15349,
+   "faces_product": 28486,
+   "center_dist": 0.00885,
+   "size_ratio": [
+    1.1827,
+    1.0903,
+    1.016
+   ]
+  },
+  {
+   "name": "右総腸骨静脈(みぎそうちょうこつじょうみゃく)",
+   "en": "Right Common iliac vein",
+   "bp_file": "FJ3566.obj",
+   "bp": "BP10313",
+   "fma": "FMA21387",
+   "verts_product": 480,
+   "faces_product": 886,
+   "center_dist": 0.00885,
+   "size_ratio": [
+    0.9425,
+    0.9066,
+    1.0152
+   ]
+  },
+  {
+   "name": "右扁桃体(みぎへんとうたい)",
+   "en": "Right Amygdala",
+   "bp_file": "FJ1829.obj",
+   "bp": "BP10478",
+   "fma": "FMA72832",
+   "verts_product": 881,
+   "faces_product": 1744,
+   "center_dist": 0.00884,
+   "size_ratio": [
+    0.9748,
+    0.9791,
+    0.9736
+   ]
+  },
+  {
+   "name": "左分界条(ひだりぶんかいじょう)",
+   "en": "Left Stria terminalis",
+   "bp_file": "FJ1778.obj",
+   "bp": "BP10422",
+   "fma": "FMA72940",
+   "verts_product": 1888,
+   "faces_product": 3026,
+   "center_dist": 0.00883,
+   "size_ratio": [
+    0.9717,
+    0.9711,
+    0.9709
+   ]
+  },
+  {
+   "name": "蝶形骨(ちょうけいこつ)",
+   "en": "Sphenoid bone",
+   "bp_file": "FJ3394.obj",
+   "bp": "BP8498",
+   "fma": "FMA52736",
+   "verts_product": 8975,
+   "faces_product": 15322,
+   "center_dist": 0.00882,
+   "size_ratio": [
+    0.9767,
+    0.9762,
+    0.9721
+   ]
+  },
+  {
+   "name": "右視床髄条(みぎししょうずいじょう)",
+   "en": "Right Stria medullaris of thalamus",
+   "bp_file": "FJ1824.obj",
+   "bp": "BP10431",
+   "fma": "FMA73413",
+   "verts_product": 1962,
+   "faces_product": 3852,
+   "center_dist": 0.00882,
+   "size_ratio": [
+    0.9838,
+    0.9756,
+    0.97
+   ]
+  },
+  {
+   "name": "右中心前回(みぎちゅうしんぜんかい)",
+   "en": "Right Precentral gyrus",
+   "bp_file": "FJ1801.obj",
+   "bp": "BP10459",
+   "fma": "FMA72661",
+   "verts_product": 9745,
+   "faces_product": 18838,
+   "center_dist": 0.0088,
+   "size_ratio": [
+    0.9708,
+    0.9732,
+    0.972
+   ]
+  },
+  {
+   "name": "右三角筋鎖骨部(みぎさんかくきんさこつぶ)",
+   "en": "Right Deltoid, clavicular part",
+   "bp_file": "FJ1468.obj",
+   "bp": "BP7573",
+   "fma": "FMA34680",
+   "verts_product": 17059,
+   "faces_product": 29082,
+   "center_dist": 0.00879,
+   "size_ratio": [
+    1.1827,
+    1.0909,
+    1.0264
+   ]
+  },
+  {
+   "name": "左視床髄条(ひだりししょうずいじょう)",
+   "en": "Left Stria medullaris of thalamus",
+   "bp_file": "FJ1777.obj",
+   "bp": "BP10435",
+   "fma": "FMA73414",
+   "verts_product": 1992,
+   "faces_product": 3870,
+   "center_dist": 0.00879,
+   "size_ratio": [
+    0.9855,
+    0.9709,
+    0.9712
+   ]
+  },
+  {
+   "name": "脚間窩(きゃっかんか)",
+   "en": "Interpeduncular fossa",
+   "bp_file": "FJ1763.obj",
+   "bp": "BP6669",
+   "fma": "FMA83740",
+   "verts_product": 453,
+   "faces_product": 426,
+   "center_dist": 0.00875,
+   "size_ratio": [
+    1.0097,
+    1.0042,
+    1.9563
+   ]
+  },
+  {
+   "name": "左上側頭回前部(さじょうそくとうかいぜんぶ)",
+   "en": "Left Superior temporal gyrus, anterior part",
+   "bp_file": "FJ1837.obj",
+   "bp": "BP10464",
+   "fma": "FMA72801",
+   "verts_product": 4232,
+   "faces_product": 8338,
+   "center_dist": 0.00875,
+   "size_ratio": [
+    0.9707,
+    0.9703,
+    0.9705
+   ]
+  },
+  {
+   "name": "右中間腱(みぎちゅうかんけん)",
+   "en": "Right Intermediate tendon",
+   "bp_file": "FJ1581.obj",
+   "bp": "BP6514",
+   "fma": "FMA258850",
+   "verts_product": 2061,
+   "faces_product": 2518,
+   "center_dist": 0.00868,
+   "size_ratio": [
+    1.1308,
+    1.1422,
+    0.9875
+   ]
+  },
+  {
+   "name": "下垂体(かすいたい)",
+   "en": "Pituitary gland",
+   "bp_file": "FJ1796.obj",
+   "bp": "BP4630",
+   "fma": "FMA13889",
+   "verts_product": 2570,
+   "faces_product": 5052,
+   "center_dist": 0.00867,
+   "size_ratio": [
+    0.97,
+    0.9726,
+    0.971
+   ]
+  },
+  {
+   "name": "左扁桃体(ひだりへんとうたい)",
+   "en": "Left Amygdala",
+   "bp_file": "FJ1753.obj",
+   "bp": "BP10428",
+   "fma": "FMA72833",
+   "verts_product": 876,
+   "faces_product": 1736,
+   "center_dist": 0.00865,
+   "size_ratio": [
+    0.9739,
+    0.9747,
+    0.9744
+   ]
+  },
+  {
+   "name": "脳梁(のうりょう)",
+   "en": "Corpus callosum",
+   "bp_file": "FJ1742.obj",
+   "bp": "BP6576",
+   "fma": "FMA86464",
+   "verts_product": 70486,
+   "faces_product": 132552,
+   "center_dist": 0.00865,
+   "size_ratio": [
+    0.9704,
+    0.9699,
+    0.9701
+   ]
+  },
+  {
+   "name": "左中心前回(ひだりちゅうしんぜんかい)",
+   "en": "Left Precentral gyrus",
+   "bp_file": "FJ1800.obj",
+   "bp": "BP10466",
+   "fma": "FMA72662",
+   "verts_product": 9706,
+   "faces_product": 18836,
+   "center_dist": 0.00864,
+   "size_ratio": [
+    0.973,
+    0.971,
+    0.9715
+   ]
+  },
+  {
+   "name": "右頬骨(みぎきょうこつ)",
+   "en": "Right Zygomatic bone",
+   "bp_file": "FJ3392.obj",
+   "bp": "BP8777",
+   "fma": "FMA52892",
+   "verts_product": 2562,
+   "faces_product": 4612,
+   "center_dist": 0.00863,
+   "size_ratio": [
+    0.9785,
+    0.9775,
+    0.9756
+   ]
+  },
+  {
+   "name": "右尾状核(みぎびじょうかく)",
+   "en": "Right Caudate nucleus",
+   "bp_file": "FJ1802.obj",
+   "bp": "BP10425",
+   "fma": "FMA72826",
+   "verts_product": 5668,
+   "faces_product": 11272,
+   "center_dist": 0.00862,
+   "size_ratio": [
+    0.9709,
+    0.9702,
+    0.9704
+   ]
+  },
+  {
+   "name": "右淡蒼球(みぎたんそうきゅう)",
+   "en": "Right Globus pallidus",
+   "bp_file": "FJ1805.obj",
+   "bp": "BP10481",
+   "fma": "FMA72830",
+   "verts_product": 11605,
+   "faces_product": 23206,
+   "center_dist": 0.00861,
+   "size_ratio": [
+    0.97,
+    0.9704,
+    0.9703
+   ]
+  },
+  {
+   "name": "右帯状回(みぎたいじょうかい)",
+   "en": "Right Cingulate gyrus",
+   "bp_file": "FJ1740.obj",
+   "bp": "BP10488",
+   "fma": "FMA72717",
+   "verts_product": 5899,
+   "faces_product": 11716,
+   "center_dist": 0.00861,
+   "size_ratio": [
+    0.9756,
+    0.971,
+    0.9715
+   ]
+  },
+  {
+   "name": "左帯状回(ひだりたいじょうかい)",
+   "en": "Left Cingulate gyrus",
+   "bp_file": "FJ1739.obj",
+   "bp": "BP10471",
+   "fma": "FMA72718",
+   "verts_product": 5908,
+   "faces_product": 11724,
+   "center_dist": 0.00856,
+   "size_ratio": [
+    0.9701,
+    0.9711,
+    0.9713
+   ]
+  },
+  {
+   "name": "右被殻(みぎひかく)",
+   "en": "Right Putamen",
+   "bp_file": "FJ1823.obj",
+   "bp": "BP10426",
+   "fma": "FMA72828",
+   "verts_product": 15762,
+   "faces_product": 30670,
+   "center_dist": 0.00853,
+   "size_ratio": [
+    0.97,
+    0.9702,
+    0.9701
+   ]
+  },
+  {
+   "name": "左尾状核(ひだりびじょうかく)",
+   "en": "Left Caudate nucleus",
+   "bp_file": "FJ1754.obj",
+   "bp": "BP10482",
+   "fma": "FMA72827",
+   "verts_product": 5616,
+   "faces_product": 11160,
+   "center_dist": 0.00853,
+   "size_ratio": [
+    0.9709,
+    0.9705,
+    0.9699
+   ]
+  },
+  {
+   "name": "右島(みぎとう)",
+   "en": "Right Insula",
+   "bp_file": "FJ1749.obj",
+   "bp": "BP10476",
+   "fma": "FMA72977",
+   "verts_product": 6161,
+   "faces_product": 12240,
+   "center_dist": 0.00852,
+   "size_ratio": [
+    0.9708,
+    0.9724,
+    0.9706
+   ]
+  },
+  {
+   "name": "左淡蒼球(ひだりたんそうきゅう)",
+   "en": "Left Globus pallidus",
+   "bp_file": "FJ1757.obj",
+   "bp": "BP10485",
+   "fma": "FMA72831",
+   "verts_product": 15371,
+   "faces_product": 30738,
+   "center_dist": 0.00851,
+   "size_ratio": [
+    0.97,
+    0.97,
+    0.9699
+   ]
+  },
+  {
+   "name": "室間孔(しつかんこう)",
+   "en": "Interventricular foramen",
+   "bp_file": "FJ1752.obj",
+   "bp": "BP6671",
+   "fma": "FMA75351",
+   "verts_product": 2325,
+   "faces_product": 4642,
+   "center_dist": 0.00844,
+   "size_ratio": [
+    0.9705,
+    0.9707,
+    0.9723
+   ]
+  },
+  {
+   "name": "左前鋸筋(ひだりぜんきょきん)",
+   "en": "Left Serratus anterior",
+   "bp_file": "FJ1459M.obj",
+   "bp": "BP8760",
+   "fma": "FMA13399",
+   "verts_product": 132545,
+   "faces_product": 248234,
+   "center_dist": 0.0084,
+   "size_ratio": [
+    0.9923,
+    1.0518,
+    1.0118
+   ]
+  },
+  {
+   "name": "左被殻(ひだりひかく)",
+   "en": "Left Putamen",
+   "bp_file": "FJ1776.obj",
+   "bp": "BP10474",
+   "fma": "FMA72829",
+   "verts_product": 15530,
+   "faces_product": 30636,
+   "center_dist": 0.0084,
+   "size_ratio": [
+    0.9701,
+    0.9701,
+    0.97
+   ]
+  },
+  {
+   "name": "右上顎骨(みぎじょうがくこつ)",
+   "en": "Right Maxilla",
+   "bp_file": "FJ3375.obj",
+   "bp": "BP8309",
+   "fma": "FMA53649",
+   "verts_product": 8565,
+   "faces_product": 14148,
+   "center_dist": 0.00838,
+   "size_ratio": [
+    0.9812,
+    0.9799,
+    0.973
+   ]
+  },
+  {
+   "name": "終板(しゅうばん)",
+   "en": "Lamina terminalis",
+   "bp_file": "FJ1764.obj",
+   "bp": "BP6558",
+   "fma": "FMA61975",
+   "verts_product": 1644,
+   "faces_product": 2448,
+   "center_dist": 0.00838,
+   "size_ratio": [
+    1.9382,
+    0.9721,
+    0.9703
+   ]
+  },
+  {
+   "name": "左頬骨(ひだりきょうこつ)",
+   "en": "Left Zygomatic bone",
+   "bp_file": "FJ3287.obj",
+   "bp": "BP8495",
+   "fma": "FMA52893",
+   "verts_product": 2687,
+   "faces_product": 4560,
+   "center_dist": 0.00837,
+   "size_ratio": [
+    0.9794,
+    0.9782,
+    0.9744
+   ]
+  },
+  {
+   "name": "左島(ひだりとう)",
+   "en": "Left Insula",
+   "bp_file": "FJ1748.obj",
+   "bp": "BP10486",
+   "fma": "FMA72978",
+   "verts_product": 6161,
+   "faces_product": 12242,
+   "center_dist": 0.00837,
+   "size_ratio": [
+    0.9704,
+    0.9714,
+    0.9716
+   ]
+  },
+  {
+   "name": "右前鋸筋(みぎぜんきょきん)",
+   "en": "Right Serratus anterior",
+   "bp_file": "FJ1459.obj",
+   "bp": "BP4782",
+   "fma": "FMA13398",
+   "verts_product": 136041,
+   "faces_product": 248640,
+   "center_dist": 0.00835,
+   "size_ratio": [
+    0.9912,
+    1.0523,
+    1.012
+   ]
+  },
+  {
+   "name": "前交連(ぜんんこうれん)",
+   "en": "Anterior commissure",
+   "bp_file": "FJ1734.obj",
+   "bp": "BP6578",
+   "fma": "FMA61961",
+   "verts_product": 1847,
+   "faces_product": 3690,
+   "center_dist": 0.00835,
+   "size_ratio": [
+    0.981,
+    0.9735,
+    0.9706
+   ]
+  },
+  {
+   "name": "左上腕骨(ひだりじょうわんこつ)",
+   "en": "Left Humerus",
+   "bp_file": "FJ3262.obj",
+   "bp": "BP9191",
+   "fma": "FMA23131",
+   "verts_product": 8473,
+   "faces_product": 16492,
+   "center_dist": 0.00831,
+   "size_ratio": [
+    1.0357,
+    1.0303,
+    1.0287
+   ]
+  },
+  {
+   "name": "左上顎骨(ひだりじょうがくこつ)",
+   "en": "Left Maxilla",
+   "bp_file": "FJ3269.obj",
+   "bp": "BP9046",
+   "fma": "FMA53650",
+   "verts_product": 8678,
+   "faces_product": 14506,
+   "center_dist": 0.0083,
+   "size_ratio": [
+    0.9825,
+    0.9767,
+    0.9756
+   ]
+  },
+  {
+   "name": "右大腿骨(みぎだいたいこつ)",
+   "en": "Right Femur",
+   "bp_file": "FJ3365.obj",
+   "bp": "BP8920",
+   "fma": "FMA24474",
+   "verts_product": 6571,
+   "faces_product": 12990,
+   "center_dist": 0.00828,
+   "size_ratio": [
+    1.2407,
+    0.968,
+    0.971
+   ]
+  },
+  {
+   "name": "左大腿骨(ひだりだいたいこつ)",
+   "en": "Left Femur",
+   "bp_file": "FJ3259.obj",
+   "bp": "BP9042",
+   "fma": "FMA24475",
+   "verts_product": 6626,
+   "faces_product": 13202,
+   "center_dist": 0.00825,
+   "size_ratio": [
+    1.2376,
+    0.9674,
+    0.9709
+   ]
+  },
+  {
+   "name": "右上腕骨(みぎじょうわんこつ)",
+   "en": "Right Humerus",
+   "bp_file": "FJ3368.obj",
+   "bp": "BP9206",
+   "fma": "FMA23130",
+   "verts_product": 8707,
+   "faces_product": 16268,
+   "center_dist": 0.00823,
+   "size_ratio": [
+    1.0356,
+    1.0297,
+    1.0286
+   ]
+  },
+  {
+   "name": "左胸腸肋筋(ひだりきょうちょうろくきん)",
+   "en": "Left Iliocostalis thoracis",
+   "bp_file": "FJ1528M.obj",
+   "bp": "BP8748",
+   "fma": "FMA22743",
+   "verts_product": 31744,
+   "faces_product": 56256,
+   "center_dist": 0.00822,
+   "size_ratio": [
+    1.0851,
+    1.0405,
+    1.0344
+   ]
+  },
+  {
+   "name": "右胸腸肋筋(みぎきょうちょうろくきん)",
+   "en": "Right Iliocostalis thoracis",
+   "bp_file": "FJ1528.obj",
+   "bp": "BP4751",
+   "fma": "FMA22742",
+   "verts_product": 37704,
+   "faces_product": 57922,
+   "center_dist": 0.00819,
+   "size_ratio": [
+    1.0847,
+    1.0414,
+    1.0348
+   ]
+  },
+  {
+   "name": "左胸半棘筋(ひだりきょうはんきょくきん)",
+   "en": "Left Semispinalis thoracis",
+   "bp_file": "FJ1540M.obj",
+   "bp": "BP8316",
+   "fma": "FMA22873",
+   "verts_product": 29611,
+   "faces_product": 48504,
+   "center_dist": 0.00812,
+   "size_ratio": [
+    0.9936,
+    0.9612,
+    1.0178
+   ]
+  },
+  {
+   "name": "左頚腸肋筋(ひだりけいちょうろくきん)",
+   "en": "Left Iliocostalis cervicis",
+   "bp_file": "FJ1526M.obj",
+   "bp": "BP8048",
+   "fma": "FMA22745",
+   "verts_product": 12372,
+   "faces_product": 19848,
+   "center_dist": 0.00804,
+   "size_ratio": [
+    0.9687,
+    1.1542,
+    0.9755
+   ]
+  },
+  {
+   "name": "左上腕三頭筋長頭(ひだりじょうわんさんとうきんちょうとう)",
+   "en": "Left Triceps brachii, long head",
+   "bp_file": "FJ1479M.obj",
+   "bp": "BP8344",
+   "fma": "FMA37700",
+   "verts_product": 20373,
+   "faces_product": 38128,
+   "center_dist": 0.00799,
+   "size_ratio": [
+    1.0391,
+    1.1157,
+    1.0201
+   ]
+  },
+  {
+   "name": "左下鼻甲介(ひだりかびこうかい)",
+   "en": "Left Inferior nasal concha",
+   "bp_file": "FJ3263.obj",
+   "bp": "BP9034",
+   "fma": "FMA54738",
+   "verts_product": 1009,
+   "faces_product": 1484,
+   "center_dist": 0.00798,
+   "size_ratio": [
+    0.9086,
+    1.0094,
+    0.9817
+   ]
+  },
+  {
+   "name": "左涙骨(ひだりるいこつ)",
+   "en": "Left Lacrimal bone",
+   "bp_file": "FJ3265.obj",
+   "bp": "BP8103",
+   "fma": "FMA53646",
+   "verts_product": 637,
+   "faces_product": 1152,
+   "center_dist": 0.00795,
+   "size_ratio": [
+    1.0101,
+    1.0057,
+    0.982
+   ]
+  },
+  {
+   "name": "左肩甲挙筋(ひだりけんこうきょきん)",
+   "en": "Left Levator scapulae",
+   "bp_file": "FJ1532M.obj",
+   "bp": "BP8746",
+   "fma": "FMA32541",
+   "verts_product": 17061,
+   "faces_product": 30384,
+   "center_dist": 0.00794,
+   "size_ratio": [
+    1.0203,
+    1.2135,
+    0.9337
+   ]
+  },
+  {
+   "name": "右頚腸肋筋(みぎけいちょうろくきん)",
+   "en": "Right Iliocostalis cervicis",
+   "bp_file": "FJ1526.obj",
+   "bp": "BP4755",
+   "fma": "FMA22744",
+   "verts_product": 15332,
+   "faces_product": 20728,
+   "center_dist": 0.00793,
+   "size_ratio": [
+    0.9829,
+    1.1545,
+    0.9767
+   ]
+  },
+  {
+   "name": "右上腕三頭筋長頭(みぎじょうわんさんとうきんちょうとう)",
+   "en": "Right Triceps brachii, long head",
+   "bp_file": "FJ1479.obj",
+   "bp": "BP5564",
+   "fma": "FMA37699",
+   "verts_product": 23123,
+   "faces_product": 39514,
+   "center_dist": 0.00793,
+   "size_ratio": [
+    1.035,
+    1.1093,
+    1.0203
+   ]
+  },
+  {
+   "name": "右頭最長筋(みぎとうさいちょうきん)",
+   "en": "Right Longissimus capitis",
+   "bp_file": "FJ1533.obj",
+   "bp": "BP4748",
+   "fma": "FMA22754",
+   "verts_product": 11703,
+   "faces_product": 15852,
+   "center_dist": 0.00788,
+   "size_ratio": [
+    0.9642,
+    1.1879,
+    0.9479
+   ]
+  },
+  {
+   "name": "膵管;主膵管(すいかん)",
+   "en": "Pancreatic duct",
+   "bp_file": "FJ1896.obj",
+   "bp": "BP5645",
+   "fma": "FMA10419",
+   "verts_product": 4443,
+   "faces_product": 4128,
+   "center_dist": 0.00788,
+   "size_ratio": [
+    0.8705,
+    1.1624,
+    1.0821
+   ]
+  },
+  {
+   "name": "左頚長筋下斜線維(ひだりけいちょうきんかしゃせんい)",
+   "en": "Left Longus colli, inferior oblique part",
+   "bp_file": "FJ1557.obj",
+   "bp": "BP7685",
+   "fma": "FMA46288",
+   "verts_product": 6623,
+   "faces_product": 10618,
+   "center_dist": 0.0077,
+   "size_ratio": [
+    1.0008,
+    1.0465,
+    0.9475
+   ]
+  },
+  {
+   "name": "右上前頭回(みぎじょうぜんとうかい)",
+   "en": "Right Superior frontal gyrus",
+   "bp_file": "FJ1834.obj",
+   "bp": "BP10457",
+   "fma": "FMA72653",
+   "verts_product": 15581,
+   "faces_product": 30448,
+   "center_dist": 0.0077,
+   "size_ratio": [
+    0.9728,
+    0.9711,
+    0.9705
+   ]
+  },
+  {
+   "name": "右涙骨(みぎるいこつ)",
+   "en": "Right Lacrimal bone",
+   "bp_file": "FJ3371.obj",
+   "bp": "BP8741",
+   "fma": "FMA53645",
+   "verts_product": 701,
+   "faces_product": 1114,
+   "center_dist": 0.00761,
+   "size_ratio": [
+    1.0043,
+    1.0059,
+    0.9837
+   ]
+  },
+  {
+   "name": "右内側前頭回/右中前頭回(みぎないそくぜんとうかい/みぎちゅうぜんとうかい)",
+   "en": "Right Middle frontal gyrus",
+   "bp_file": "FJ1788.obj",
+   "bp": "BP10461",
+   "fma": "FMA72655",
+   "verts_product": 7907,
+   "faces_product": 15558,
+   "center_dist": 0.00761,
+   "size_ratio": [
+    0.9705,
+    0.9739,
+    0.9721
+   ]
+  },
+  {
+   "name": "左上前頭回(ひだりじょうぜんとうかい)",
+   "en": "Left Superior frontal gyrus",
+   "bp_file": "FJ1833.obj",
+   "bp": "BP10453",
+   "fma": "FMA72654",
+   "verts_product": 15544,
+   "faces_product": 30450,
+   "center_dist": 0.0076,
+   "size_ratio": [
+    0.9772,
+    0.9717,
+    0.9705
+   ]
+  },
+  {
+   "name": "右鼻骨(みぎびこつ)",
+   "en": "Right Nasal bone",
+   "bp_file": "FJ3378.obj",
+   "bp": "BP9060",
+   "fma": "FMA53647",
+   "verts_product": 681,
+   "faces_product": 1024,
+   "center_dist": 0.00743,
+   "size_ratio": [
+    1.0155,
+    0.9835,
+    0.9751
+   ]
+  },
+  {
+   "name": "左鼻骨(ひだりびこつ)",
+   "en": "Left Nasal bone",
+   "bp_file": "FJ3272.obj",
+   "bp": "BP8558",
+   "fma": "FMA53648",
+   "verts_product": 653,
+   "faces_product": 1124,
+   "center_dist": 0.00736,
+   "size_ratio": [
+    1.0296,
+    0.9825,
+    0.9764
+   ]
+  },
+  {
+   "name": "左内側前頭回/左中前頭回(ひだりないそくぜんとうかい/ひだりちゅうぜんとうかい)",
+   "en": "Left Middle frontal gyrus",
+   "bp_file": "FJ1787.obj",
+   "bp": "BP10463",
+   "fma": "FMA72656",
+   "verts_product": 7890,
+   "faces_product": 15544,
+   "center_dist": 0.00733,
+   "size_ratio": [
+    0.9708,
+    0.9709,
+    0.9747
+   ]
+  },
+  {
+   "name": "前頭骨(ぜんとうこつ)",
+   "en": "Frontal bone",
+   "bp_file": "FJ3200.obj",
+   "bp": "BP8209",
+   "fma": "FMA52734",
+   "verts_product": 21120,
+   "faces_product": 33062,
+   "center_dist": 0.00717,
+   "size_ratio": [
+    0.9734,
+    0.9731,
+    0.9717
+   ]
+  },
+  {
+   "name": "右総腸骨動脈(みぎそうちょうこつどうみゃく)",
+   "en": "Right Common iliac artery",
+   "bp_file": "FJ3565.obj",
+   "bp": "BP10297",
+   "fma": "FMA14765",
+   "verts_product": 485,
+   "faces_product": 896,
+   "center_dist": 0.00717,
+   "size_ratio": [
+    0.8377,
+    1.0729,
+    1.0096
+   ]
+  },
+  {
+   "name": "右胸半棘筋(みぎきょうはんきょくきん)",
+   "en": "Right Semispinalis thoracis",
+   "bp_file": "FJ1540.obj",
+   "bp": "BP4713",
+   "fma": "FMA22872",
+   "verts_product": 35865,
+   "faces_product": 50598,
+   "center_dist": 0.00701,
+   "size_ratio": [
+    1.0352,
+    0.9634,
+    1.0145
+   ]
+  },
+  {
+   "name": "左顎舌骨筋(ひだりがくぜつこつきん)",
+   "en": "Left Mylohyoid",
+   "bp_file": "FJ1562.obj",
+   "bp": "BP7582",
+   "fma": "FMA46322",
+   "verts_product": 7267,
+   "faces_product": 11162,
+   "center_dist": 0.007,
+   "size_ratio": [
+    1.0312,
+    1.0305,
+    1.03
+   ]
+  },
+  {
+   "name": "左頭板状筋(ひだりとうばんじょうきん)",
+   "en": "Left Splenius capitis",
+   "bp_file": "FJ1545M.obj",
+   "bp": "BP8022",
+   "fma": "FMA22729",
+   "verts_product": 33775,
+   "faces_product": 53242,
+   "center_dist": 0.00697,
+   "size_ratio": [
+    0.9638,
+    1.1338,
+    1.0049
+   ]
+  },
+  {
+   "name": "右顎舌骨筋(みぎがくぜつこつきん)",
+   "en": "Right Mylohyoid",
+   "bp_file": "FJ1583.obj",
+   "bp": "BP4904",
+   "fma": "FMA46321",
+   "verts_product": 7804,
+   "faces_product": 11258,
+   "center_dist": 0.00695,
+   "size_ratio": [
+    1.04,
+    1.0316,
+    1.0289
+   ]
+  },
+  {
+   "name": "左上腕二頭筋短頭(ひだりじょうわんにとうきんたんとう)",
+   "en": "Left Biceps brachii, short head",
+   "bp_file": "FJ1512M.obj",
+   "bp": "BP9153",
+   "fma": "FMA37685",
+   "verts_product": 17279,
+   "faces_product": 28708,
+   "center_dist": 0.00688,
+   "size_ratio": [
+    1.0352,
+    1.0513,
+    1.0286
+   ]
+  },
+  {
+   "name": "右頭板状筋(みぎとうばんじょうきん)",
+   "en": "Right Splenius capitis",
+   "bp_file": "FJ1545.obj",
+   "bp": "BP4758",
+   "fma": "FMA22728",
+   "verts_product": 34059,
+   "faces_product": 53260,
+   "center_dist": 0.00684,
+   "size_ratio": [
+    0.9626,
+    1.1326,
+    1.0045
+   ]
+  },
+  {
+   "name": "左胸横筋(ひだりきょうおうきん)",
+   "en": "Left Transversus thoracis",
+   "bp_file": "FJ1461M.obj",
+   "bp": "BP9030",
+   "fma": "FMA9762",
+   "verts_product": 15729,
+   "faces_product": 17396,
+   "center_dist": 0.00683,
+   "size_ratio": [
+    0.9334,
+    0.9724,
+    1.0244
+   ]
+  },
+  {
+   "name": "右胸横筋(みぎきょうおうきん)",
+   "en": "Right Transversus thoracis",
+   "bp_file": "FJ1461.obj",
+   "bp": "BP4963",
+   "fma": "FMA9761",
+   "verts_product": 16508,
+   "faces_product": 17528,
+   "center_dist": 0.00679,
+   "size_ratio": [
+    0.9331,
+    0.9761,
+    1.0246
+   ]
+  },
+  {
+   "name": "左僧帽筋下行部(ひだりそうぼうきんかこうぶ)",
+   "en": "Left Trapezius, descending part",
+   "bp_file": "FJ1521M.obj",
+   "bp": "BP8267",
+   "fma": "FMA33587",
+   "verts_product": 27315,
+   "faces_product": 44902,
+   "center_dist": 0.00658,
+   "size_ratio": [
+    0.9854,
+    0.982,
+    0.9567
+   ]
+  },
+  {
+   "name": "左僧帽筋水平部(ひだりそうぼうきんすいへいぶ)",
+   "en": "Left Trapezius, transverse part",
+   "bp_file": "FJ1554M.obj",
+   "bp": "BP8252",
+   "fma": "FMA33585",
+   "verts_product": 19812,
+   "faces_product": 30294,
+   "center_dist": 0.00651,
+   "size_ratio": [
+    1.0174,
+    1.0103,
+    1.0069
+   ]
+  },
+  {
+   "name": "右茎突舌骨筋(みぎけいとつぜつこつきん)",
+   "en": "Right Stylohyoid",
+   "bp_file": "FJ1598.obj",
+   "bp": "BP4901",
+   "fma": "FMA45826",
+   "verts_product": 5736,
+   "faces_product": 7378,
+   "center_dist": 0.00646,
+   "size_ratio": [
+    1.0368,
+    1.0327,
+    1.0433
+   ]
+  },
+  {
+   "name": "左茎突舌骨筋(ひだりけいとつぜつこつきん)",
+   "en": "Left Stylohyoid",
+   "bp_file": "FJ1576.obj",
+   "bp": "BP4902",
+   "fma": "FMA45827",
+   "verts_product": 4403,
+   "faces_product": 7132,
+   "center_dist": 0.00644,
+   "size_ratio": [
+    1.0327,
+    1.029,
+    1.0306
+   ]
+  },
+  {
+   "name": "右僧帽筋下行部(みぎそうぼうきんかこうぶ)",
+   "en": "Right Trapezius, descending part",
+   "bp_file": "FJ1521.obj",
+   "bp": "BP5636",
+   "fma": "FMA33586",
+   "verts_product": 29828,
+   "faces_product": 46450,
+   "center_dist": 0.00629,
+   "size_ratio": [
+    0.9863,
+    1.0045,
+    0.9573
+   ]
+  },
+  {
+   "name": "右大胸筋鎖骨部(みぎだいきょうきんさこつぶ)",
+   "en": "Right Pectoralis major, clavicular part",
+   "bp_file": "FJ1447.obj",
+   "bp": "BP5582",
+   "fma": "FMA34690",
+   "verts_product": 7483,
+   "faces_product": 9330,
+   "center_dist": 0.00623,
+   "size_ratio": [
+    1.033,
+    1.0415,
+    1.0308
+   ]
+  },
+  {
+   "name": "左心室後静脈;後左心室静脈(さしんしつこうじょうみゃく)",
+   "en": "Left Posterior vein of left ventricle",
+   "bp_file": "FJ2701.obj",
+   "bp": "BP8014",
+   "fma": "FMA4712",
+   "verts_product": 3653,
+   "faces_product": 4318,
+   "center_dist": 0.00623,
+   "size_ratio": [
+    1.9476,
+    1.4671,
+    1.1478
+   ]
+  },
+  {
+   "name": "左頭最長筋(ひだりとうさいちょうきん)",
+   "en": "Left Longissimus capitis",
+   "bp_file": "FJ1533M.obj",
+   "bp": "BP9081",
+   "fma": "FMA22756",
+   "verts_product": 9874,
+   "faces_product": 15374,
+   "center_dist": 0.00621,
+   "size_ratio": [
+    0.9612,
+    1.1543,
+    0.9638
+   ]
+  },
+  {
+   "name": "左胸骨舌骨筋(ひだりきょうこつぜつこつきん)",
+   "en": "Left Sternohyoid",
+   "bp_file": "FJ1574.obj",
+   "bp": "BP4918",
+   "fma": "FMA13347",
+   "verts_product": 7744,
+   "faces_product": 13764,
+   "center_dist": 0.00619,
+   "size_ratio": [
+    0.8225,
+    0.7947,
+    0.9309
+   ]
+  },
+  {
+   "name": "舌骨(ぜつこつ)",
+   "en": "Hyoid bone",
+   "bp_file": "FJ2772.obj",
+   "bp": "BP8836",
+   "fma": "FMA52749",
+   "verts_product": 2788,
+   "faces_product": 5534,
+   "center_dist": 0.00609,
+   "size_ratio": [
+    1.0515,
+    1.036,
+    1.1403
+   ]
+  },
+  {
+   "name": "左大胸筋鎖骨部(ひだりだいきょうきんさこつぶ)",
+   "en": "Left Pectoralis major, clavicular part",
+   "bp_file": "FJ1447M.obj",
+   "bp": "BP9095",
+   "fma": "FMA34691",
+   "verts_product": 6541,
+   "faces_product": 9212,
+   "center_dist": 0.00609,
+   "size_ratio": [
+    1.0334,
+    1.0343,
+    1.0297
+   ]
+  },
+  {
+   "name": "左甲状舌骨筋(ひだりこうじょうぜつこつきん)",
+   "en": "Left Thyrohyoid",
+   "bp_file": "FJ1577.obj",
+   "bp": "BP4921",
+   "fma": "FMA13353",
+   "verts_product": 4355,
+   "faces_product": 7244,
+   "center_dist": 0.00602,
+   "size_ratio": [
+    0.9856,
+    0.947,
+    0.9935
+   ]
+  },
+  {
+   "name": "右胸骨舌骨筋(みぎきょうこつぜつこつきん)",
+   "en": "Right Sternohyoid",
+   "bp_file": "FJ1596.obj",
+   "bp": "BP4917",
+   "fma": "FMA13346",
+   "verts_product": 8577,
+   "faces_product": 13946,
+   "center_dist": 0.00601,
+   "size_ratio": [
+    0.8228,
+    0.7909,
+    0.931
+   ]
+  },
+  {
+   "name": "左下後鋸筋(ひだりかこうきょきん)",
+   "en": "Left Serratus posterior inferior",
+   "bp_file": "FJ1541M.obj",
+   "bp": "BP9048",
+   "fma": "FMA13406",
+   "verts_product": 54211,
+   "faces_product": 90014,
+   "center_dist": 0.00593,
+   "size_ratio": [
+    0.9031,
+    1.0241,
+    1.0939
+   ]
+  },
+  {
+   "name": "左大胸筋腹部(ひだりだいきょうきんふくぶ)",
+   "en": "Left Pectoralis major, abdominal part",
+   "bp_file": "FJ1446M.obj",
+   "bp": "BP7862",
+   "fma": "FMA45875",
+   "verts_product": 4631,
+   "faces_product": 7468,
+   "center_dist": 0.00591,
+   "size_ratio": [
+    1.0027,
+    0.998,
+    1.0151
+   ]
+  },
+  {
+   "name": "右大胸筋腹部(みぎだいきょうきんふくぶ)",
+   "en": "Right Pectoralis major, abdominal part",
+   "bp_file": "FJ1446.obj",
+   "bp": "BP5615",
+   "fma": "FMA45874",
+   "verts_product": 5316,
+   "faces_product": 7546,
+   "center_dist": 0.00586,
+   "size_ratio": [
+    1.0019,
+    0.9981,
+    1.0166
+   ]
+  },
+  {
+   "name": "右上腕二頭筋短頭(みぎじょうわんにとうきんたんとう)",
+   "en": "Right Biceps brachii, short head",
+   "bp_file": "FJ1512.obj",
+   "bp": "BP5558",
+   "fma": "FMA37684",
+   "verts_product": 19086,
+   "faces_product": 27840,
+   "center_dist": 0.00585,
+   "size_ratio": [
+    1.0311,
+    1.1127,
+    1.0358
+   ]
+  },
+  {
+   "name": "右尿管(みぎにょうかん)",
+   "en": "Right Ureter",
+   "bp_file": "FJ3146.obj",
+   "bp": "BP8912",
+   "fma": "FMA15571",
+   "verts_product": 1297,
+   "faces_product": 2210,
+   "center_dist": 0.00574,
+   "size_ratio": [
+    1.046,
+    1.1549,
+    1.1591
+   ]
+  },
+  {
+   "name": "左胸骨甲状筋(ひだりきょうこつこうじょうきん)",
+   "en": "Left Sternothyroid",
+   "bp_file": "FJ1575.obj",
+   "bp": "BP4924",
+   "fma": "FMA13351",
+   "verts_product": 6150,
+   "faces_product": 10918,
+   "center_dist": 0.00573,
+   "size_ratio": [
+    0.945,
+    0.6665,
+    0.8644
+   ]
+  },
+  {
+   "name": "右縫工筋(みぎほうこうきん)",
+   "en": "Right Sartorius",
+   "bp_file": "FJ1434.obj",
+   "bp": "BP4994",
+   "fma": "FMA22354",
+   "verts_product": 31822,
+   "faces_product": 52418,
+   "center_dist": 0.00573,
+   "size_ratio": [
+    1.568,
+    0.9285,
+    0.9522
+   ]
+  },
+  {
+   "name": "甲状軟骨(こうじょうなんこつ)",
+   "en": "Thyroid cartilage",
+   "bp_file": "FJ2808.obj",
+   "bp": "BP7901",
+   "fma": "FMA55099",
+   "verts_product": 11584,
+   "faces_product": 23146,
+   "center_dist": 0.00571,
+   "size_ratio": [
+    1.0544,
+    0.9376,
+    1.0038
+   ]
+  },
+  {
+   "name": "左縫工筋(ひだりほうこうきん)",
+   "en": "Left Sartorius",
+   "bp_file": "FJ1434M.obj",
+   "bp": "BP8876",
+   "fma": "FMA22355",
+   "verts_product": 28783,
+   "faces_product": 51474,
+   "center_dist": 0.00566,
+   "size_ratio": [
+    1.5736,
+    0.9284,
+    0.9517
+   ]
+  },
+  {
+   "name": "右胸骨甲状筋(みぎきょうこつこうじょうきん)",
+   "en": "Right Sternothyroid",
+   "bp_file": "FJ1597.obj",
+   "bp": "BP4923",
+   "fma": "FMA13350",
+   "verts_product": 6685,
+   "faces_product": 11104,
+   "center_dist": 0.00558,
+   "size_ratio": [
+    0.944,
+    0.6692,
+    0.8635
+   ]
+  },
+  {
+   "name": "右僧帽筋水平部(みぎそうぼうきんすいへいぶ)",
+   "en": "Right Trapezius, transverse part",
+   "bp_file": "FJ1554.obj",
+   "bp": "BP5610",
+   "fma": "FMA33584",
+   "verts_product": 20072,
+   "faces_product": 30584,
+   "center_dist": 0.00536,
+   "size_ratio": [
+    1.0157,
+    1.0051,
+    1.0279
+   ]
+  },
+  {
+   "name": "右下後鋸筋(みぎかこうきょきん)",
+   "en": "Right Serratus posterior inferior",
+   "bp_file": "FJ1541.obj",
+   "bp": "BP4768",
+   "fma": "FMA13405",
+   "verts_product": 55468,
+   "faces_product": 90336,
+   "center_dist": 0.00509,
+   "size_ratio": [
+    0.9002,
+    1.0402,
+    1.0939
+   ]
+  },
+  {
+   "name": "左頚板状筋(ひだりけいばんじょうきん)",
+   "en": "Left Splenius cervicis",
+   "bp_file": "FJ1546M.obj",
+   "bp": "BP8241",
+   "fma": "FMA22727",
+   "verts_product": 30584,
+   "faces_product": 44544,
+   "center_dist": 0.00438,
+   "size_ratio": [
+    1.0172,
+    1.1216,
+    1.0096
+   ]
+  },
+  {
+   "name": "右外側広筋(みぎがいそくこうきん)",
+   "en": "Right Vastus lateralis",
+   "bp_file": "FJ1442.obj",
+   "bp": "BP5602",
+   "fma": "FMA38930",
+   "verts_product": 59856,
+   "faces_product": 95564,
+   "center_dist": 0.0043,
+   "size_ratio": [
+    0.9848,
+    0.991,
+    0.968
+   ]
+  },
+  {
+   "name": "右頚板状筋(みぎけいばんじょうきん)",
+   "en": "Right Splenius cervicis",
+   "bp_file": "FJ1546.obj",
+   "bp": "BP4760",
+   "fma": "FMA22726",
+   "verts_product": 30803,
+   "faces_product": 44544,
+   "center_dist": 0.00423,
+   "size_ratio": [
+    1.0165,
+    1.1205,
+    1.0093
+   ]
+  },
+  {
+   "name": "左胸棘筋(ひだりきょうきょくきん)",
+   "en": "Left Spinalis thoracis",
+   "bp_file": "FJ1544M.obj",
+   "bp": "BP8979",
+   "fma": "FMA22780",
+   "verts_product": 32110,
+   "faces_product": 54008,
+   "center_dist": 0.00417,
+   "size_ratio": [
+    0.8524,
+    1.044,
+    1.0346
+   ]
+  },
+  {
+   "name": "左外側広筋(ひだりがいそくこうきん)",
+   "en": "Left Vastus lateralis",
+   "bp_file": "FJ1442M.obj",
+   "bp": "BP8754",
+   "fma": "FMA38931",
+   "verts_product": 52800,
+   "faces_product": 94474,
+   "center_dist": 0.00415,
+   "size_ratio": [
+    0.9755,
+    0.9925,
+    0.968
+   ]
+  },
+  {
+   "name": "左鎖骨下静脈(ひだりさこつかじょうみゃく)",
+   "en": "Left Subclavian vein",
+   "bp_file": "FJ3486.obj",
+   "bp": "BP10345",
+   "fma": "FMA4763",
+   "verts_product": 629,
+   "faces_product": 1112,
+   "center_dist": 0.00392,
+   "size_ratio": [
+    1.0547,
+    1.0339,
+    1.032
+   ]
+  },
+  {
+   "name": "中心臓静脈;中心静脈;後室間静脈(ちゅうしんぞうじょうみゃく)",
+   "en": "Middle cardiac vein",
+   "bp_file": "FJ2678.obj",
+   "bp": "BP7983",
+   "fma": "FMA4713",
+   "verts_product": 3616,
+   "faces_product": 4326,
+   "center_dist": 0.00391,
+   "size_ratio": [
+    1.0975,
+    1.1102,
+    1.0289
+   ]
+  },
+  {
+   "name": "左鎖骨下動脈(ひだりさこつかどうみゃく)",
+   "en": "Left Subclavian artery",
+   "bp_file": "FJ3479.obj",
+   "bp": "BP10308",
+   "fma": "FMA4694",
+   "verts_product": 1718,
+   "faces_product": 3234,
+   "center_dist": 0.00388,
+   "size_ratio": [
+    1.031,
+    1.0308,
+    1.0311
+   ]
+  },
+  {
+   "name": "左内頚静脈(ひだりないけいじょうみゃく)",
+   "en": "Left Internal jugular vein",
+   "bp_file": "FJ3485.obj",
+   "bp": "BP10367",
+   "fma": "FMA4762",
+   "verts_product": 385,
+   "faces_product": 720,
+   "center_dist": 0.00387,
+   "size_ratio": [
+    1.0583,
+    1.0626,
+    1.0341
+   ]
+  },
+  {
+   "name": "横隔膜(おうかくまく)",
+   "en": "Diaphragm",
+   "bp_file": "FJ3131.obj",
+   "bp": "BP8798",
+   "fma": "FMA13295",
+   "verts_product": 109915,
+   "faces_product": 210666,
+   "center_dist": 0.00386,
+   "size_ratio": [
+    0.9411,
+    1.0755,
+    1.029
+   ]
+  },
+  {
+   "name": "右内頚静脈(みぎないけいじょうみゃく)",
+   "en": "Right Internal jugular vein",
+   "bp_file": "FJ3585.obj",
+   "bp": "BP10334",
+   "fma": "FMA4754",
+   "verts_product": 332,
+   "faces_product": 580,
+   "center_dist": 0.00368,
+   "size_ratio": [
+    1.0622,
+    1.0649,
+    1.0291
+   ]
+  },
+  {
+   "name": "右鎖骨下動脈(みぎさこつかどうみゃく)",
+   "en": "Right Subclavian artery",
+   "bp_file": "FJ3579.obj",
+   "bp": "BP10281",
+   "fma": "FMA3953",
+   "verts_product": 1142,
+   "faces_product": 2260,
+   "center_dist": 0.00358,
+   "size_ratio": [
+    1.0509,
+    1.0509,
+    1.0304
+   ]
+  },
+  {
+   "name": "脾静脈(ひじょうみゃく)",
+   "en": "Splenic vein",
+   "bp_file": "FJ3641.obj",
+   "bp": "BP10265",
+   "fma": "FMA14331",
+   "verts_product": 798,
+   "faces_product": 1352,
+   "center_dist": 0.00357,
+   "size_ratio": [
+    0.8135,
+    1.18,
+    0.9919
+   ]
+  },
+  {
+   "name": "右総頚動脈(みぎそうけいどうみゃく)",
+   "en": "Right Common carotid artery",
+   "bp_file": "FJ3564.obj",
+   "bp": "BP10288",
+   "fma": "FMA3941",
+   "verts_product": 2216,
+   "faces_product": 4424,
+   "center_dist": 0.00351,
+   "size_ratio": [
+    1.0342,
+    1.0361,
+    1.0295
+   ]
+  },
+  {
+   "name": "左総頚動脈(ひだりそうけいどうみゃく)",
+   "en": "Left Common carotid artery",
+   "bp_file": "FJ3483.obj",
+   "bp": "BP10326",
+   "fma": "FMA4058",
+   "verts_product": 380,
+   "faces_product": 698,
+   "center_dist": 0.00347,
+   "size_ratio": [
+    1.0897,
+    1.0404,
+    1.0281
+   ]
+  },
+  {
+   "name": "右大内転筋(みぎだいないてんきん)",
+   "en": "Right Adductor magnus",
+   "bp_file": "FJ1403.obj",
+   "bp": "BP4982",
+   "fma": "FMA22459",
+   "verts_product": 51352,
+   "faces_product": 81974,
+   "center_dist": 0.00345,
+   "size_ratio": [
+    0.8862,
+    0.9838,
+    0.8965
+   ]
+  },
+  {
+   "name": "左大内転筋(ひだりだいないてんきん)",
+   "en": "Left Adductor magnus",
+   "bp_file": "FJ1403M.obj",
+   "bp": "BP8972",
+   "fma": "FMA22460",
+   "verts_product": 47270,
+   "faces_product": 82490,
+   "center_dist": 0.00345,
+   "size_ratio": [
+    0.8919,
+    0.987,
+    0.8955
+   ]
+  },
+  {
+   "name": "右鎖骨下静脈(みぎさこつかじょうみゃく)",
+   "en": "Right Subclavian vein",
+   "bp_file": "FJ3587.obj",
+   "bp": "BP10356",
+   "fma": "FMA4755",
+   "verts_product": 515,
+   "faces_product": 946,
+   "center_dist": 0.0033,
+   "size_ratio": [
+    1.0638,
+    1.0415,
+    1.0288
+   ]
+  },
+  {
+   "name": "右大腿二頭筋長頭(みぎだいたいにとうきんちょうとう)",
+   "en": "Right Biceps femoris, long head",
+   "bp_file": "FJ1395.obj",
+   "bp": "BP5575",
+   "fma": "FMA45888",
+   "verts_product": 48763,
+   "faces_product": 73098,
+   "center_dist": 0.00325,
+   "size_ratio": [
+    1.0294,
+    0.9987,
+    0.9719
+   ]
+  },
+  {
+   "name": "右胸棘筋(みぎきょうきょくきん)",
+   "en": "Right Spinalis thoracis",
+   "bp_file": "FJ1544.obj",
+   "bp": "BP4763",
+   "fma": "FMA22779",
+   "verts_product": 38256,
+   "faces_product": 55980,
+   "center_dist": 0.00324,
+   "size_ratio": [
+    0.8757,
+    1.0546,
+    1.0421
+   ]
+  },
+  {
+   "name": "左大腿二頭筋長頭(ひだりだいたいにとうきんちょうとう)",
+   "en": "Left Biceps femoris, long head",
+   "bp_file": "FJ1395M.obj",
+   "bp": "BP8331",
+   "fma": "FMA45889",
+   "verts_product": 42411,
+   "faces_product": 74180,
+   "center_dist": 0.00318,
+   "size_ratio": [
+    1.0299,
+    0.9988,
+    0.9704
+   ]
+  },
+  {
+   "name": "胸骨体(きょうこつたい)",
+   "en": "Body of sternum",
+   "bp_file": "FJ3178.obj",
+   "bp": "BP8989",
+   "fma": "FMA7487",
+   "verts_product": 11861,
+   "faces_product": 19916,
+   "center_dist": 0.00313,
+   "size_ratio": [
+    0.9022,
+    0.9888,
+    1.08
+   ]
+  },
+  {
+   "name": "冠状静脈洞(かんじょうじょうみゃくどう)",
+   "en": "Coronary sinus",
+   "bp_file": "FJ2655.obj",
+   "bp": "BP9086",
+   "fma": "FMA4706",
+   "verts_product": 988,
+   "faces_product": 1922,
+   "center_dist": 0.00285,
+   "size_ratio": [
+    1.0378,
+    1.0344,
+    1.0291
+   ]
+  },
+  {
+   "name": "下行大動脈;大動脈下行部(かこうだいどうみゃく)",
+   "en": "Descending aorta",
+   "bp_file": "FJ3427.obj",
+   "bp": "BP10248",
+   "fma": "FMA3784",
+   "verts_product": 12146,
+   "faces_product": 23808,
+   "center_dist": 0.00282,
+   "size_ratio": [
+    0.8554,
+    1.0027,
+    1.0532
+   ]
+  },
+  {
+   "name": "左腕頭静脈(ひだりわんとうじょうみゃく)",
+   "en": "Left Brachiocephalic vein",
+   "bp_file": "FJ3482.obj",
+   "bp": "BP10267",
+   "fma": "FMA4761",
+   "verts_product": 961,
+   "faces_product": 1918,
+   "center_dist": 0.00276,
+   "size_ratio": [
+    1.0354,
+    1.0298,
+    1.0299
+   ]
+  },
+  {
+   "name": "右腕頭静脈(みぎわんとうじょうみゃく)",
+   "en": "Right Brachiocephalic vein",
+   "bp_file": "FJ3583.obj",
+   "bp": "BP10354",
+   "fma": "FMA4751",
+   "verts_product": 702,
+   "faces_product": 1400,
+   "center_dist": 0.00272,
+   "size_ratio": [
+    1.0441,
+    1.0408,
+    1.0321
+   ]
+  },
+  {
+   "name": "左胸最長筋(ひだりきょうさいちょうきん)",
+   "en": "Left Longissimus thoracis",
+   "bp_file": "FJ1535M.obj",
+   "bp": "BP8985",
+   "fma": "FMA22753",
+   "verts_product": 65311,
+   "faces_product": 105196,
+   "center_dist": 0.00226,
+   "size_ratio": [
+    1.0079,
+    0.9918,
+    1.0458
+   ]
+  },
+  {
+   "name": "総肝動脈(そうかんどうみゃく)",
+   "en": "Common hepatic artery",
+   "bp_file": "FJ3078.obj",
+   "bp": "BP8522",
+   "fma": "FMA14771",
+   "verts_product": 465,
+   "faces_product": 808,
+   "center_dist": 0.00208,
+   "size_ratio": [
+    1.7327,
+    1.3324,
+    1.5013
+   ]
+  },
+  {
+   "name": "右胸最長筋(みぎきょうさいちょうきん)",
+   "en": "Right Longissimus thoracis",
+   "bp_file": "FJ1535.obj",
+   "bp": "BP4744",
+   "fma": "FMA22751",
+   "verts_product": 75920,
+   "faces_product": 107160,
+   "center_dist": 0.00203,
+   "size_ratio": [
+    1.0336,
+    0.9919,
+    1.0471
+   ]
+  },
+  {
+   "name": "上大静脈(じょうだいじょうみゃく)",
+   "en": "Superior vena cava",
+   "bp_file": "FJ3645.obj",
+   "bp": "BP10292",
+   "fma": "FMA4720",
+   "verts_product": 785,
+   "faces_product": 1532,
+   "center_dist": 0.0014,
+   "size_ratio": [
+    1.0346,
+    1.0328,
+    1.0319
+   ]
+  },
+  {
+   "name": "左外腹斜筋(ひだりがいふくしゃきん)",
+   "en": "Left External oblique",
+   "bp_file": "FJ1452M.obj",
+   "bp": "BP8154",
+   "fma": "FMA13337",
+   "verts_product": 291654,
+   "faces_product": 546370,
+   "center_dist": 0.00128,
+   "size_ratio": [
+    1.0204,
+    1.0182,
+    1.0294
+   ]
+  },
+  {
+   "name": "右外腹斜筋(みぎがいふくしゃきん)",
+   "en": "Right External oblique",
+   "bp_file": "FJ1452.obj",
+   "bp": "BP4967",
+   "fma": "FMA13336",
+   "verts_product": 311421,
+   "faces_product": 549294,
+   "center_dist": 0.00107,
+   "size_ratio": [
+    1.02,
+    1.0178,
+    1.0302
+   ]
+  }
+ ],
+ "unmatched": [
+  [
+   "左第五指中節骨(ひだりだいごしちゅうせつこつ)",
+   "BP3Dに対応名なし: Left Middle phalanx of 5th finger"
+  ],
+  [
+   "右第六肋軟骨(みぎだいろくろくなんこつ)",
+   "BP3Dに対応名なし: Right 6th costal cartilage"
+  ],
+  [
+   "右第十二肋骨(みぎだいじゅうにろっこつ)",
+   "BP3Dに対応名なし: Right 12th rib"
+  ],
+  [
+   "左第三肋軟骨(ひだりだいさんろくなんこつ)",
+   "BP3Dに対応名なし: Left 3rd costal cartilage"
+  ],
+  [
+   "右第五趾末節骨(みぎだいごしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 5th toe"
+  ],
+  [
+   "右第五中足骨(みぎだいごちゅうそくこつ)",
+   "BP3Dに対応名なし: Right 5th metatarsal"
+  ],
+  [
+   "右第五肋軟骨(みぎだいごろくなんこつ)",
+   "BP3Dに対応名なし: Right 5th costal cartilage"
+  ],
+  [
+   "右第四中手骨(みぎだいよんちゅうしゅこつ)",
+   "BP3Dに対応名なし: Right 4th metacarpal"
+  ],
+  [
+   "第五頚椎(だいごけいつい)",
+   "BP3Dに対応名なし: 5th cervical vertebra (C5)"
+  ],
+  [
+   "右肋軟骨(みぎろくなんこつ)",
+   "BP3Dに対応名なし: Right Costal cartilage"
+  ],
+  [
+   "右第二中足骨(みぎだいにちゅうそくこつ)",
+   "BP3Dに対応名なし: Right 2nd metatarsal"
+  ],
+  [
+   "左第五肋骨(ひだりだいごろっこつ)",
+   "BP3Dに対応名なし: Left 5th rib"
+  ],
+  [
+   "第八胸椎椎間円板(だいはちきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 8th thoracic intervertebral disc"
+  ],
+  [
+   "右第七肋骨(みぎだいななろっこつ)",
+   "BP3Dに対応名なし: Right 7th rib"
+  ],
+  [
+   "左第一趾基節骨(ひだりだいいっしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 1st toe"
+  ],
+  [
+   "第十胸椎(だいじゅうきょうつい)",
+   "BP3Dに対応名なし: 10th thoracic vertebra (T10)"
+  ],
+  [
+   "右第五指末節骨(みぎだいごしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 5th finger"
+  ],
+  [
+   "左第四肋軟骨(ひだりだいよんろくなんこつ)",
+   "BP3Dに対応名なし: Left 4th costal cartilage"
+  ],
+  [
+   "第三頚椎椎間円板(だいさんけいついついかんえんばん)",
+   "BP3Dに対応名なし: 3rd cervical intervertebral disc"
+  ],
+  [
+   "第四腰椎(だいよんようつい)",
+   "BP3Dに対応名なし: 4th lumbar vertebra (L4)"
+  ],
+  [
+   "左足舟状骨(ひだりあしせんじょうこつ)",
+   "BP3Dに対応名なし: Left Navicular"
+  ],
+  [
+   "左第三趾中節骨(ひだりだいさんしちゅうせつこつ)",
+   "BP3Dに対応名なし: Left Middle phalanx of 3rd toe"
+  ],
+  [
+   "軸椎椎間円板(じくついついかんえんばん)",
+   "BP3Dに対応名なし: Axis intervertebral disc (C2-C3)"
+  ],
+  [
+   "右第三趾末節骨(みぎだいさんしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 3rd toe"
+  ],
+  [
+   "右第二中手骨(みぎだいにちゅうしゅこつ)",
+   "BP3Dに対応名なし: Right 2nd metacarpal"
+  ],
+  [
+   "左第五趾中節骨(ひだりだいごしちゅうせつこつ)",
+   "BP3Dに対応名なし: Left Middle phalanx of 5th toe"
+  ],
+  [
+   "左第三肋骨(ひだりだいいちろっこつ)",
+   "BP3Dに対応名なし: Left 3rd rib"
+  ],
+  [
+   "右第三肋骨(みぎだいさんろっこつ)",
+   "BP3Dに対応名なし: Right 3rd rib"
+  ],
+  [
+   "第四胸椎椎間円板(だいよんきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 4th thoracic intervertebral disc"
+  ],
+  [
+   "第十一胸椎(だいじゅういちきょうつい)",
+   "BP3Dに対応名なし: 11th thoracic vertebra (T11)"
+  ],
+  [
+   "右第三指中節骨(みぎだいさんしちゅうせつこつ)",
+   "BP3Dに対応名なし: Right Middle phalanx of 3rd finger"
+  ],
+  [
+   "右第一指末節骨(みぎだいいっしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 1st finger"
+  ],
+  [
+   "第五胸椎(だいごきょうつい)",
+   "BP3Dに対応名なし: 5th thoracic vertebra (T5)"
+  ],
+  [
+   "左第四指末節骨(ひだりだいよんしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 4th finger"
+  ],
+  [
+   "左内側楔状骨(ひだりないそくけつじょうこつ)",
+   "BP3Dに対応名なし: Left Medial cuneiform"
+  ],
+  [
+   "左第五中手骨(ひだりだいごちゅうしゅこつ)",
+   "BP3Dに対応名なし: Left 5th metacarpal"
+  ],
+  [
+   "左第一肋軟骨(ひだりだいいちろくなんこつ)",
+   "BP3Dに対応名なし: Left 1st costal cartilage"
+  ],
+  [
+   "左第五指末節骨(ひだりだいごしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 5th finger"
+  ],
+  [
+   "左第五趾基節骨(ひだりだいごしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 5th toe"
+  ],
+  [
+   "右第一趾末節骨(みぎだいいっしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 1st toe"
+  ],
+  [
+   "種子骨(左足の）(しゅしこつ（ひだりあしの）)",
+   "索引に無い"
+  ],
+  [
+   "第二胸椎(だいにきょうつい)",
+   "BP3Dに対応名なし: 2nd thoracic vertebra (T2)"
+  ],
+  [
+   "左第七肋軟骨(ひだりだいななろくなんこつ)",
+   "BP3Dに対応名なし: Left 7th costal cartilage"
+  ],
+  [
+   "環椎[C1];第一頚椎(だいいちけいつい)",
+   "BP3Dに対応名なし: Atlas (C1)"
+  ],
+  [
+   "左外側楔状骨(ひだりがいそくけいじょうこつ)",
+   "BP3Dに対応名なし: Left Lateral cuneiform"
+  ],
+  [
+   "第七頚椎椎間円板(だいななけいついついかんえんばん)",
+   "BP3Dに対応名なし: 7th cervical intervertebral disc"
+  ],
+  [
+   "右第三指基節骨(みぎだいさんしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 3rd finger"
+  ],
+  [
+   "隆椎;第七頚椎(だいななけいつい)",
+   "BP3Dに対応名なし: Vertebra prominens (C7)"
+  ],
+  [
+   "左第一中手骨(ひだりだいいちちゅうしゅこつ)",
+   "BP3Dに対応名なし: Left 1st metacarpal"
+  ],
+  [
+   "右第三中足骨(みぎだいさんちゅうそくこつ)",
+   "BP3Dに対応名なし: Right 3rd metatarsal"
+  ],
+  [
+   "左第四趾末節骨(ひだりだいよんしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 4th toe"
+  ],
+  [
+   "左第四中足骨(ひだりだいよんちゅうそっこつ)",
+   "BP3Dに対応名なし: Left 4th metatarsal"
+  ],
+  [
+   "左第三中手骨(ひだりだいさんちゅうしゅこつ)",
+   "BP3Dに対応名なし: Left 3rd metacarpal"
+  ],
+  [
+   "第三頚椎(だいさんけいつい)",
+   "BP3Dに対応名なし: 3rd cervical vertebra (C3)"
+  ],
+  [
+   "左第二指中節骨(ひだりだいにしちゅうせつこつ)",
+   "BP3Dに対応名なし: Left Middle phalanx of 2nd finger"
+  ],
+  [
+   "右第三肋軟骨(みぎだいさんろくなんこつ)",
+   "BP3Dに対応名なし: Right 3rd costal cartilage"
+  ],
+  [
+   "左第二指末節骨(ひだりだいにしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 2nd finger"
+  ],
+  [
+   "第七胸椎椎間円板(だいななきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 7th thoracic intervertebral disc"
+  ],
+  [
+   "右第七肋軟骨(みぎだいななろくなんこつ)",
+   "BP3Dに対応名なし: Right 7th costal cartilage"
+  ],
+  [
+   "右第二肋骨(みぎだいにろっこつ)",
+   "BP3Dに対応名なし: Right 2nd rib"
+  ],
+  [
+   "篩骨(しこつ)",
+   "BP3Dに対応名なし: Ethmoid bone"
+  ],
+  [
+   "右第四指末節骨(みぎだいよんしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 4th finger"
+  ],
+  [
+   "左第四肋骨(ひだりだいいちろっこつ)",
+   "BP3Dに対応名なし: Left 4th rib"
+  ],
+  [
+   "第五腰椎(だいごようつい)",
+   "BP3Dに対応名なし: 5th lumbar vertebra (L5)"
+  ],
+  [
+   "第十一胸椎椎間円板(だいじゅういちきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 11th thoracic intervertebral disc"
+  ],
+  [
+   "右第二指基節骨(みぎだいにしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 2nd finger"
+  ],
+  [
+   "右第三趾中節骨(みぎだいさんしちゅうせつこつ)",
+   "BP3Dに対応名なし: Right Middle phalanx of 3rd toe"
+  ],
+  [
+   "左第二趾末節骨(ひだりだいにしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 2nd toe"
+  ],
+  [
+   "右第五肋骨(みぎだいごろっこつ)",
+   "BP3Dに対応名なし: Right 5th rib"
+  ],
+  [
+   "右第四肋骨(みぎだいよんろっこつ)",
+   "BP3Dに対応名なし: Right 4th rib"
+  ],
+  [
+   "右第五趾中節骨(みぎだいごしちゅうせつこつ)",
+   "BP3Dに対応名なし: Right Middle phalanx of 5th toe"
+  ],
+  [
+   "第四頚椎(だいよんけいつい)",
+   "BP3Dに対応名なし: 4th cervical vertebra (C4)"
+  ],
+  [
+   "第三胸椎椎間円板(だいさんきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 3rd thoracic intervertebral disc"
+  ],
+  [
+   "左第六肋軟骨(ひだりだいろくろくなんこつ)",
+   "BP3Dに対応名なし: Left 6th costal cartilage"
+  ],
+  [
+   "右第一趾基節骨(みぎだいいっしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 1st toe"
+  ],
+  [
+   "左第四指中節骨(ひだりだいよんしちゅうせつこつ)",
+   "BP3Dに対応名なし: Left Middle phalanx of 4th finger"
+  ],
+  [
+   "左第十肋骨(ひだりだいじゅうろっこつ)",
+   "BP3Dに対応名なし: Left 10th rib"
+  ],
+  [
+   "右第二指中節骨(みぎだいにしちゅうせつこつ)",
+   "BP3Dに対応名なし: Right Middle phalanx of 2nd finger"
+  ],
+  [
+   "右第九肋骨(みぎだいきゅうろっこつ)",
+   "BP3Dに対応名なし: Right 9th rib"
+  ],
+  [
+   "胸骨柄(きょうこつへい)",
+   "BP3Dに対応名なし: Manubrium of sternum"
+  ],
+  [
+   "右第五指中節骨(みぎだいごしちゅうせつこつ)",
+   "BP3Dに対応名なし: Right Middle phalanx of 5th finger"
+  ],
+  [
+   "右内側楔状骨(みぎないそくけいじょうこつ)",
+   "BP3Dに対応名なし: Right Medial cuneiform"
+  ],
+  [
+   "鼻軟骨(びなんこつ)",
+   "BP3Dに対応名なし: Nasal cartilage"
+  ],
+  [
+   "右第五中手骨(みぎだいごちゅうしゅこつ)",
+   "BP3Dに対応名なし: Right 5th metacarpal"
+  ],
+  [
+   "左第五趾末節骨(ひだりだいごしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 5th toe"
+  ],
+  [
+   "第四胸椎(だいよんきょうつい)",
+   "BP3Dに対応名なし: 4th thoracic vertebra (T4)"
+  ],
+  [
+   "左立方骨(ひだりりっぽうこつ)",
+   "BP3Dに対応名なし: Left Cuboid"
+  ],
+  [
+   "右第十肋骨(みぎだいじゅうろっこつ)",
+   "BP3Dに対応名なし: Right 10th rib"
+  ],
+  [
+   "左第七肋骨(ひだりだいななろっこつ)",
+   "BP3Dに対応名なし: Left 7th rib"
+  ],
+  [
+   "左第二趾基節骨(ひだりだいにしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 2nd toe"
+  ],
+  [
+   "第七胸椎(だいななきょうつい)",
+   "BP3Dに対応名なし: 7th thoracic vertebra (T7)"
+  ],
+  [
+   "左第二肋軟骨(ひだりだいにろくなんこつ)",
+   "BP3Dに対応名なし: Left 2nd costal cartilage"
+  ],
+  [
+   "右第二肋軟骨(みぎだいにろくなんこつ)",
+   "BP3Dに対応名なし: Right 2nd costal cartilage"
+  ],
+  [
+   "第六頚椎椎間円板(だいろくけいついついかんえんばん)",
+   "BP3Dに対応名なし: 6th cervical intervertebral disc"
+  ],
+  [
+   "左第一指基節骨(ひだりだいいっしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 1st finger"
+  ],
+  [
+   "第二腰椎(だいにようつい)",
+   "BP3Dに対応名なし: 2nd lumbar vertebra (L2)"
+  ],
+  [
+   "第八胸椎(だいはちきょうつい��)",
+   "BP3Dに対応名なし: 8th thoracic vertebra (T8)"
+  ],
+  [
+   "第十二胸椎(だいじゅうにきょうつい)",
+   "BP3Dに対応名なし: 12th thoracic vertebra (T12)"
+  ],
+  [
+   "右第一肋骨(みぎだいいちろっこつ)",
+   "BP3Dに対応名なし: Right 1st rib"
+  ],
+  [
+   "左第三指基節骨(ひだりだいさんしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 3rd finger"
+  ],
+  [
+   "右足舟状骨(みぎあしせんじょうこつ)",
+   "BP3Dに対応名なし: Right Navicular"
+  ],
+  [
+   "左第一中足骨(ひだりだいいちちゅしゅつこつ)",
+   "BP3Dに対応名なし: Left 1st metatarsal"
+  ],
+  [
+   "右第十一肋骨(みぎだいじゅういちろっこつ)",
+   "BP3Dに対応名なし: Right 11th rib"
+  ],
+  [
+   "左第四趾中節骨(ひだりだいよんしちゅうせつこつ)",
+   "BP3Dに対応名なし: Left Middle phalanx of 4th toe"
+  ],
+  [
+   "右第四趾末節骨(みぎだいよんしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 4th toe"
+  ],
+  [
+   "右第四中足骨(みぎだいよんちゅうそくこつ)",
+   "BP3Dに対応名なし: Right 4th metatarsal"
+  ],
+  [
+   "右第三中手骨(みぎだいさんちゅうしゅこつ)",
+   "BP3Dに対応名なし: Right 3rd metacarpal"
+  ],
+  [
+   "軸椎[C2];第二頚椎(だいにけいつい)",
+   "BP3Dに対応名なし: Axis (C2)"
+  ],
+  [
+   "第一腰椎椎間円板(だいいちようついついかんえんばん)",
+   "BP3Dに対応名なし: 1st lumbar intervertebral disc"
+  ],
+  [
+   "第十二胸椎椎間円板(だいじゅうにきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 12th thoracic intervertebral disc"
+  ],
+  [
+   "第一胸椎(だいいちきょうつい)",
+   "BP3Dに対応名なし: 1st thoracic vertebra (T1)"
+  ],
+  [
+   "第六胸椎椎間円板(だいろくきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 6th thoracic intervertebral disc"
+  ],
+  [
+   "種子骨(右足の）(しゅしこつ（みぎあしの）)",
+   "索引に無い"
+  ],
+  [
+   "右外側楔状骨(みぎがいそくけいじょうこつ)",
+   "BP3Dに対応名なし: Right Lateral cuneiform"
+  ],
+  [
+   "右第四指基節骨(みぎだいよんしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 4th finger"
+  ],
+  [
+   "左第十二肋骨(ひだりだいじゅうにろっこつ)",
+   "BP3Dに対応名なし: Left 12th rib"
+  ],
+  [
+   "右第三指末節骨(みぎだいさんしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 3rd finger"
+  ],
+  [
+   "左第五肋軟骨(ひだりだいごろくなんこつ)",
+   "BP3Dに対応名なし: Left 5th costal cartilage"
+  ],
+  [
+   "左中間楔状骨(ひだりちゅうかんけつじょうこつ)",
+   "BP3Dに対応名なし: Left Intermediate cuneiform"
+  ],
+  [
+   "第一胸椎椎間円板(だいいちきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 1st thoracic intervertebral disc"
+  ],
+  [
+   "左第一肋骨(ひだりだいいちろっこつ)",
+   "BP3Dに対応名なし: Left 1st rib"
+  ],
+  [
+   "第六頚椎(だいろくけいつい)",
+   "BP3Dに対応名なし: 6th cervical vertebra (C6)"
+  ],
+  [
+   "左第二趾中節骨(ひだりだいにしちゅうせつこつ)",
+   "BP3Dに対応名なし: Left Middle phalanx of 2nd toe"
+  ],
+  [
+   "右第二趾末節骨(みぎだいにしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 2nd toe"
+  ],
+  [
+   "左第二中足骨(ひだりだいにちゅうそくこつ)",
+   "BP3Dに対応名なし: Left 2nd metatarsal"
+  ],
+  [
+   "第五頚椎椎間円板(だいごけいついついかんえんばん)",
+   "BP3Dに対応名なし: 5th cervical intervertebral disc"
+  ],
+  [
+   "左第八肋骨(ひだりだいはちろっこつ)",
+   "BP3Dに対応名なし: Left 8th rib"
+  ],
+  [
+   "右第四趾基節骨(みぎだいよんしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 4th toe"
+  ],
+  [
+   "左第十一肋骨(ひだりだいじゅういちろっこつ)",
+   "BP3Dに対応名なし: Left 11th rib"
+  ],
+  [
+   "左第二指基節骨(ひだりだいにしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 2nd finger"
+  ],
+  [
+   "左第一指末節骨(ひだりだいいっしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 1st finger"
+  ],
+  [
+   "第二胸椎椎間円板(だいにきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 2nd thoracic intervertebral disc"
+  ],
+  [
+   "左第六肋骨(ひだりだいろくろっこつ)",
+   "BP3Dに対応名なし: Left 6th rib"
+  ],
+  [
+   "右第五指基節骨(みぎだいごしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 5th finger"
+  ],
+  [
+   "第四腰椎椎間円板(だいよんようついついかんえんばん)",
+   "BP3Dに対応名なし: 4th lumbar intervertebral disc"
+  ],
+  [
+   "第四頚椎椎間円板(だいよんけいついついかんえんばん)",
+   "BP3Dに対応名なし: 4th cervical intervertebral disc"
+  ],
+  [
+   "右第四指中節骨(みぎだいよんしちゅうせつこつ)",
+   "BP3Dに対応名なし: Right Middle phalanx of 4th finger"
+  ],
+  [
+   "左第五中足骨(ひだりだいごちゅうそくこつ)",
+   "BP3Dに対応名なし: Left 5th metatarsal"
+  ],
+  [
+   "左第四中手骨(ひだりだいよんちゅうしゅこつ)",
+   "BP3Dに対応名なし: Left 4th metacarpal"
+  ],
+  [
+   "左第四趾基節骨(ひだりだいよんしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 4th toe"
+  ],
+  [
+   "第九胸椎椎間円板(だいきゅうきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 9th thoracic intervertebral disc"
+  ],
+  [
+   "右第二趾基節骨(みぎだいにしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 2nd toe"
+  ],
+  [
+   "右第三趾基節骨(みぎだいさんしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 3rd toe"
+  ],
+  [
+   "左第四指基節骨(ひだりだいよんしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 4th finger"
+  ],
+  [
+   "左三角骨(ひだりさんかくこつ)",
+   "BP3Dに対応名なし: Left Triquetrum"
+  ],
+  [
+   "右第一中手骨(みぎだいいちちゅうしゅこつ)",
+   "BP3Dに対応名なし: Right 1st metacarpal"
+  ],
+  [
+   "右第六肋骨(みぎだいろくろっこつ)",
+   "BP3Dに対応名なし: Right 6th rib"
+  ],
+  [
+   "左第三指中節骨(ひだりだいさんしちゅうせつこつ)",
+   "BP3Dに対応名なし: Left Middle phalanx of 3rd finger"
+  ],
+  [
+   "右第一指基節骨(みぎだいいっしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 1st finger"
+  ],
+  [
+   "右第一中足骨(みぎだいいちちゅうそくこつ)",
+   "BP3Dに対応名なし: Right 1st metatarsal"
+  ],
+  [
+   "右第四趾中節骨(みぎだいよんしちゅうせつこつ)",
+   "BP3Dに対応名なし: Right Middle phalanx of 4th toe"
+  ],
+  [
+   "左第三趾末節骨(ひだりだいさんしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 3rd toe"
+  ],
+  [
+   "左第三中足骨(ひだりだいさんちゅうそくこつ)",
+   "BP3Dに対応名なし: Left 3rd metatarsal"
+  ],
+  [
+   "第三腰椎椎間円板(だいさんようついついかんえんばん)",
+   "BP3Dに対応名なし: 3rd lumbar intervertebral disc"
+  ],
+  [
+   "左第五指基節骨(ひだりだいごしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 5th finger"
+  ],
+  [
+   "左第二中手骨(ひだりだいにちゅうしゅこつ)",
+   "BP3Dに対応名なし: Left 2nd metacarpal"
+  ],
+  [
+   "第三胸椎(だいさんきょうつい)",
+   "BP3Dに対応名なし: 3rd thoracic vertebra (T3)"
+  ],
+  [
+   "第五腰椎椎間円板(だいごようついついかんえんばん)",
+   "BP3Dに対応名なし: 5th lumbar intervertebral disc"
+  ],
+  [
+   "左第九肋骨(ひだりだいきゅうろっこつ)",
+   "BP3Dに対応名なし: Left 9th rib"
+  ],
+  [
+   "右立方骨(みぎりっぽうこつ)",
+   "BP3Dに対応名なし: Right Cuboid"
+  ],
+  [
+   "右第五趾基節骨(みぎだいごしきせつこつ)",
+   "BP3Dに対応名なし: Right Proximal phalanx of 5th toe"
+  ],
+  [
+   "第十胸椎椎間円板(だいじゅうきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 10th thoracic intervertebral disc"
+  ],
+  [
+   "第五胸椎椎間円板(だいごきょうついついかんえんばん)",
+   "BP3Dに対応名なし: 5th thoracic intervertebral disc"
+  ],
+  [
+   "左肋軟骨(ひだりろくなんこつ)",
+   "BP3Dに対応名なし: Left Costal cartilage"
+  ],
+  [
+   "第六胸椎(だいろくきょうつい)",
+   "BP3Dに対応名なし: 6th thoracic vertebra (T6)"
+  ],
+  [
+   "左第二肋骨(ひだりだいいちろっこつ)",
+   "BP3Dに対応名なし: Left 2nd rib"
+  ],
+  [
+   "右第一肋軟骨(みぎだいいちろくなんこつ)",
+   "BP3Dに対応名なし: Right 1st costal cartilage"
+  ],
+  [
+   "第三腰椎(だいさんようつい)",
+   "BP3Dに対応名なし: 3rd lumbar vertebra (L3)"
+  ],
+  [
+   "第一腰椎(だいいちようつい)",
+   "BP3Dに対応名なし: 1st lumbar vertebra (L1)"
+  ],
+  [
+   "右第二指末節骨(みぎだいにしまっせつこつ)",
+   "BP3Dに対応名なし: Right Distal phalanx of 2nd finger"
+  ],
+  [
+   "右中間側楔状骨(みぎちゅうかんそくけいじょうこつ)",
+   "BP3Dに対応名なし: Right Intermediate cuneiform"
+  ],
+  [
+   "第二腰椎椎間円板(だいにようついついかんえんばん)",
+   "BP3Dに対応名なし: 2nd lumbar intervertebral disc"
+  ],
+  [
+   "右第二趾中節骨(みぎだいにしちゅうせつこつ)",
+   "BP3Dに対応名なし: Right Middle phalanx of 2nd toe"
+  ],
+  [
+   "左第一趾末節骨(ひだりだいいっしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 1st toe"
+  ],
+  [
+   "右第四肋軟骨(みぎだいよんろくなんこつ)",
+   "BP3Dに対応名なし: Right 4th costal cartilage"
+  ],
+  [
+   "左第三指末節骨(ひだりだいさんしまっせつこつ)",
+   "BP3Dに対応名なし: Left Distal phalanx of 3rd finger"
+  ],
+  [
+   "右第八肋骨(みぎだいはちろっこつ)",
+   "BP3Dに対応名なし: Right 8th rib"
+  ],
+  [
+   "左第三趾基節骨(ひだりだいさんしきせつこつ)",
+   "BP3Dに対応名なし: Left Proximal phalanx of 3rd toe"
+  ],
+  [
+   "右三角骨(みぎさんかくこつ)",
+   "BP3Dに対応名なし: Right Triquetrum"
+  ],
+  [
+   "第九胸椎(だいきゅうきょうつい)",
+   "BP3Dに対応名なし: 9th thoracic vertebra (T9)"
+  ],
+  [
+   "右口角下制筋(みぎこうかくかせいきん)",
+   "BP3Dに対応名なし: Right Depressor anguli oris"
+  ],
+  [
+   "左口角下制筋(ひだりこうかくかせいきん)",
+   "BP3Dに対応名なし: Left Depressor anguli oris"
+  ],
+  [
+   "左咬筋深部(ひだりこうきんしんぶ)",
+   "BP3Dに対応名なし: Left Masseter, deep part"
+  ],
+  [
+   "右後頭筋(みぎこうとうきん)",
+   "BP3Dに対応名なし: Right Occipitalis"
+  ],
+  [
+   "右眼輪筋眼窩部(みぎがんりんきんがんかぶ)",
+   "BP3Dに対応名なし: Right Orbicularis oculi, orbital part"
+  ],
+  [
+   "左咬筋浅部(ひだりこうきんせんぶ)",
+   "BP3Dに対応名なし: Left Masseter, superficial part"
+  ],
+  [
+   "左口角挙筋(ひだりこうかくきょきん)",
+   "BP3Dに対応名なし: Left Levator anguli oris"
+  ],
+  [
+   "左上唇鼻翼挙筋(ひだりじょうしんびよくきょきん)",
+   "BP3Dに対応名なし: Left Levator labii superioris alaeque nasi"
+  ],
+  [
+   "左後頭筋(ひだりこうとうきん)",
+   "BP3Dに対応名なし: Left Occipitalis"
+  ],
+  [
+   "右前斜角筋(みぎぜんしゃかくきん)",
+   "BP3Dに対応名なし: Right Anterior scalene"
+  ],
+  [
+   "左眼輪筋眼瞼部(ひだりがんりんきんがんけんぶ)",
+   "BP3Dに対応名なし: Left Orbicularis oculi, palpebral part"
+  ],
+  [
+   "左中斜角筋(ひだりちゅうしゃかくきん)",
+   "BP3Dに対応名なし: Left Middle scalene"
+  ],
+  [
+   "口輪筋(こうりんきん)",
+   "BP3Dに対応名なし: Orbicularis oris"
+  ],
+  [
+   "右咬筋浅部(みぎこうきんせんぶ)",
+   "BP3Dに対応名なし: Right Masseter, superficial part"
+  ],
+  [
+   "左側頭筋(ひだりそくとうきん)",
+   "BP3Dに対応名なし: Left Temporalis"
+  ],
+  [
+   "左前頭筋(ひだりぜんとうきん)",
+   "BP3Dに対応名なし: Left Frontalis"
+  ],
+  [
+   "右口角挙筋(みぎこうかくきょきん)",
+   "BP3Dに対応名なし: Right Levator anguli oris"
+  ],
+  [
+   "右上唇鼻翼挙筋(みぎじょうしんびよくきょきん)",
+   "BP3Dに対応名なし: Right Levator labii superioris alaeque nasi"
+  ],
+  [
+   "右咬筋深部(みぎこうきんしんぶ)",
+   "BP3Dに対応名なし: Right Masseter, deep part"
+  ],
+  [
+   "右眼輪筋眼瞼部(みぎがんりんきんがんけんぶ)",
+   "BP3Dに対応名なし: Right Orbicularis oculi, palpebral part"
+  ],
+  [
+   "右中斜角筋(みぎちゅうしゃかくきん)",
+   "BP3Dに対応名なし: Right Middle scalene"
+  ],
+  [
+   "左オトガイ筋(ひだりおとがいきん)",
+   "BP3Dに対応名なし: Left Mentalis"
+  ],
+  [
+   "右鼻筋(みぎびきん)",
+   "BP3Dに対応名なし: Right Nasalis"
+  ],
+  [
+   "右前頭筋(みぎぜんとうきん)",
+   "BP3Dに対応名なし: Right Frontalis"
+  ],
+  [
+   "右後斜角筋(みぎこうしゃかくきん)",
+   "BP3Dに対応名なし: Right Posterior scalene"
+  ],
+  [
+   "左下唇下制筋(ひだりかしんかせいきん)",
+   "BP3Dに対応名なし: Left Depressor labii inferioris"
+  ],
+  [
+   "右側頭筋(みぎそくとうきん)",
+   "BP3Dに対応名なし: Right Temporalis"
+  ],
+  [
+   "左頬筋(ひだりきょうきん)",
+   "BP3Dに対応名なし: Left Buccinator"
+  ],
+  [
+   "左前斜角筋(ひだりぜんしゃかくきん)",
+   "BP3Dに対応名なし: Left Anterior scalene"
+  ],
+  [
+   "右頬筋(みぎきょうきん)",
+   "BP3Dに対応名なし: Right Buccinator"
+  ],
+  [
+   "右上唇挙筋(みぎじょうしんきょきん)",
+   "BP3Dに対応名なし: Right Levator labii superioris"
+  ],
+  [
+   "左上唇挙筋(ひだりじょうしんきょきん)",
+   "BP3Dに対応名なし: Left Levator labii superioris"
+  ],
+  [
+   "左眼輪筋眼窩部(ひだりがんりんきんがんかぶ)",
+   "BP3Dに対応名なし: Left Orbicularis oculi, orbital part"
+  ],
+  [
+   "左後斜角筋(ひだりこうしゃかくきん)",
+   "BP3Dに対応名なし: Left Posterior scalene"
+  ],
+  [
+   "右笑筋(みぎしょうきん)",
+   "BP3Dに対応名なし: Right Risorius"
+  ],
+  [
+   "右オトガイ筋(みぎおとがいきん)",
+   "BP3Dに対応名なし: Right Mentalis"
+  ],
+  [
+   "左笑筋(ひだりしょうきん)",
+   "BP3Dに対応名なし: Left Risorius"
+  ],
+  [
+   "右下唇下制筋(みぎかしんかせいきん)",
+   "BP3Dに対応名なし: Right Depressor labii inferioris"
+  ],
+  [
+   "左鼻筋(ひだりびきん)",
+   "BP3Dに対応名なし: Left Nasalis"
+  ],
+  [
+   "右大頬骨筋(みぎだいきょうこつきん)",
+   "BP3Dに対応名なし: Right Zygomaticus major"
+  ],
+  [
+   "左小頬骨筋(ひだりしょうきょうこつきん)",
+   "BP3Dに対応名なし: Left Zygomaticus minor"
+  ],
+  [
+   "左鼻根筋(ひだりびこんきん)",
+   "BP3Dに対応名なし: Left Procerus"
+  ],
+  [
+   "右鼻中隔下制筋(みぎびちゅうかくかせいきん)",
+   "BP3Dに対応名なし: Right Depressor septi nasi"
+  ],
+  [
+   "左側頭頭頂筋(ひだりそくとうとうちょうきん)",
+   "BP3Dに対応名なし: Left Temporoparietalis"
+  ],
+  [
+   "左大頬骨筋(ひだりだいきょうこつきん)",
+   "BP3Dに対応名なし: Left Zygomaticus major"
+  ],
+  [
+   "右小頬骨筋(みぎしょうきょうこつきん)",
+   "BP3Dに対応名なし: Right Zygomaticus minor"
+  ],
+  [
+   "左皺眉筋(ひだりしゅうびきん)",
+   "BP3Dに対応名なし: Left Corrugator supercilii"
+  ],
+  [
+   "右側頭頭頂筋(みぎそくとうとうちょうきん)",
+   "BP3Dに対応名なし: Right Temporoparietalis"
+  ],
+  [
+   "右鼻根筋(みぎびこんきん)",
+   "BP3Dに対応名なし: Right Procerus"
+  ],
+  [
+   "左鼻中隔下制筋(ひだりびちゅうかくかせいきん)",
+   "BP3Dに対応名なし: Left Depressor septi nasi"
+  ],
+  [
+   "右皺眉筋(みぎしゅうびきん)",
+   "BP3Dに対応名なし: Right Corrugator supercilii"
+  ],
+  [
+   "右広背筋(みぎこうはいきん)",
+   "BP3Dに対応名なし: Right Latissimus dorsi"
+  ],
+  [
+   "左内腹斜筋(ひだりないふくしゃきん)",
+   "BP3Dに対応名なし: Left Internal oblique"
+  ],
+  [
+   "左腹横筋(ひだりふくおうきん)",
+   "BP3Dに対応名なし: Left Transversus abdominis"
+  ],
+  [
+   "右腹直筋(みぎふくちょくきん)",
+   "BP3Dに対応名なし: Right Rectus abdominis"
+  ],
+  [
+   "左腹直筋(ひだりふくちょくきん)",
+   "BP3Dに対応名なし: Left Rectus abdominis"
+  ],
+  [
+   "左広背筋(ひだりこうはいきん)",
+   "BP3Dに対応名なし: Left Latissimus dorsi"
+  ],
+  [
+   "右内腹斜筋(みぎないふくしゃきん)",
+   "BP3Dに対応名なし: Right Internal oblique"
+  ],
+  [
+   "右腹横筋(みぎふくおうきん)",
+   "BP3Dに対応名なし: Right Transversus abdominis"
+  ],
+  [
+   "右腰方形筋(みぎようほうけいきん)",
+   "BP3Dに対応名なし: Right Quadratus lumborum"
+  ],
+  [
+   "左錐体筋(ひだりすいたいきん)",
+   "BP3Dに対応名なし: Left Pyramidalis"
+  ],
+  [
+   "右錐体筋(みぎすいたいきん)",
+   "BP3Dに対応名なし: Right Pyramidalis"
+  ],
+  [
+   "左腰方形筋(ひだりようほうけいきん)",
+   "BP3Dに対応名なし: Left Quadratus lumborum"
+  ],
+  [
+   "右尺側手根伸筋尺骨頭(みぎしゃくそくしゅこんしんきんしゃくこつとう)",
+   "BP3Dに対応名なし: Right Extensor carpi ulnaris, ulnar head"
+  ],
+  [
+   "右尺側手根伸筋上腕頭(みぎしゃくそくしゅこんしんきんじょうわんとう)",
+   "BP3Dに対応名なし: Right Extensor carpi ulnaris, humeral head"
+  ],
+  [
+   "右浅指屈筋上腕尺骨頭(みぎせんしくっきんじょうわんしゃっこつとう)",
+   "BP3Dに対応名なし: Right Flexor digitorum superficialis, humeroulnar head"
+  ],
+  [
+   "右浅指屈筋橈骨頭(みぎせんしくっきんとうこつとう)",
+   "BP3Dに対応名なし: Right Flexor digitorum superficialis, radial head"
+  ],
+  [
+   "左尺側手根伸筋尺骨頭(ひだりしゃくそくしゅこんしんきんしゃくこつとう)",
+   "BP3Dに対応名なし: Left Extensor carpi ulnaris, ulnar head"
+  ],
+  [
+   "左尺側手根伸筋上腕頭(ひだりしゃくそくしゅこんしんきんじょうわんとう)",
+   "BP3Dに対応名なし: Left Extensor carpi ulnaris, humeral head"
+  ],
+  [
+   "左浅指屈筋橈骨頭(ひだりせんしくっきんとうこつとう)",
+   "BP3Dに対応名なし: Left Flexor digitorum superficialis, radial head"
+  ],
+  [
+   "左浅指屈筋上腕尺骨頭(ひだりせんしくっきんじょうわんしゃっこつとう)",
+   "BP3Dに対応名なし: Left Flexor digitorum superficialis, humeroulnar head"
+  ],
+  [
+   "右手の屈筋支帯(みぎてのくっきんしたい)",
+   "BP3Dに対応名なし: Right Flexor retinaculum of hand"
+  ],
+  [
+   "左手の屈筋支帯(ひだりてのくっきんしたい)",
+   "BP3Dに対応名なし: Left Flexor retinaculum of hand"
+  ],
+  [
+   "右足底方形筋(みぎそくていほうけいきん)",
+   "BP3Dに対応名なし: Right Quadratus plantae"
+  ],
+  [
+   "左足底方形筋(ひだりそくていほうけいきん)",
+   "BP3Dに対応名なし: Left Quadratus plantae"
+  ],
+  [
+   "右坐骨尾骨筋(みぎざこつびこつきん)",
+   "BP3Dに対応名なし: Right Ischiococcygeus (coccygeus)"
+  ],
+  [
+   "左坐骨尾骨筋(ひだりざこつびこつきん)",
+   "BP3Dに対応名なし: Left Ischiococcygeus (coccygeus)"
+  ],
+  [
+   "右外側翼突筋下頭(みぎがいそくよくとつきんかとう)",
+   "BP3Dに対応名なし: Right Lateral pterygoid, inferior head"
+  ],
+  [
+   "左顎二腹筋前腹(ひだりがくにふくきんぜんぷく)",
+   "BP3Dに対応名なし: Left Digastric, anterior belly"
+  ],
+  [
+   "左外側翼突筋上頭(ひだりがいそくよくとつきんじょうとう)",
+   "BP3Dに対応名なし: Left Lateral pterygoid, superior head"
+  ],
+  [
+   "右外側翼突筋上頭(みぎがいそくよくとつきんじょうとう)",
+   "BP3Dに対応名なし: Right Lateral pterygoid, superior head"
+  ],
+  [
+   "右内側翼突筋(みぎないそくよくとつきん)",
+   "BP3Dに対応名なし: Right Medial pterygoid"
+  ],
+  [
+   "左内側翼突筋(ひだりないそくよくとつきん)",
+   "BP3Dに対応名なし: Left Medial pterygoid"
+  ],
+  [
+   "右顎二腹筋前腹(みぎがくにふくきんぜんぷく)",
+   "BP3Dに対応名なし: Right Digastric, anterior belly"
+  ],
+  [
+   "左顎二腹筋後腹(ひだりがくにふくきんこうふく)",
+   "BP3Dに対応名なし: Left Digastric, posterior belly"
+  ],
+  [
+   "左外側翼突筋下頭(ひだりがいそくよくとつきんかとう)",
+   "BP3Dに対応名なし: Left Lateral pterygoid, inferior head"
+  ],
+  [
+   "右顎二腹筋後腹(みぎがくにふくきんこうふく)",
+   "BP3Dに対応名なし: Right Digastric, posterior belly"
+  ],
+  [
+   "右頚長筋下斜線維(みぎけいちょうきんかしゃせんい)",
+   "BP3Dに対応名なし: Right Longus colli, inferior oblique part"
+  ],
+  [
+   "右頚長筋上斜線維(みぎけいちょうきんじょうしゃせんい)",
+   "BP3Dに対応名なし: Right Longus colli, superior oblique part"
+  ],
+  [
+   "左頚長筋垂直線維(ひだりけいちょうきんすいちょくせんい)",
+   "BP3Dに対応名なし: Left Longus colli, vertical part"
+  ],
+  [
+   "右頚長筋垂直線維(みぎけいちょうきんすいちょくせんい)",
+   "BP3Dに対応名なし: Right Longus colli, vertical part"
+  ],
+  [
+   "外肋間筋_下部(がいろっかんきん_かぶ)",
+   "BP3Dに対応名なし: External intercostals, lower part"
+  ],
+  [
+   "左多裂筋(ひだりたれつきん)",
+   "BP3Dに対応名なし: Left Multifidus"
+  ],
+  [
+   "右頚棘筋(みぎけいきょくきん)",
+   "BP3Dに対応名なし: Right Spinalis cervicis"
+  ],
+  [
+   "胸回旋筋(きょうかいせんきん)",
+   "BP3Dに対応名なし: Rotatores thoracis"
+  ],
+  [
+   "左頚回旋筋(ひだりけいかいせんきん)",
+   "BP3Dに対応名なし: Left Rotatores cervicis"
+  ],
+  [
+   "左頚棘筋(ひだりけいきょくきん)",
+   "BP3Dに対応名なし: Left Spinalis cervicis"
+  ],
+  [
+   "頚棘間筋(けいきょくかんきん)",
+   "BP3Dに対応名なし: Interspinales cervicis"
+  ],
+  [
+   "右頚回旋筋(みぎけいかいせんきん)",
+   "BP3Dに対応名なし: Right Rotatores cervicis"
+  ],
+  [
+   "最内肋間筋_下部(さいないろっかんきん_かぶ)",
+   "BP3Dに対応名なし: Innermost intercostals, lower part"
+  ],
+  [
+   "腰外側横突間筋(ようぶがいそくおうとつかんきん)",
+   "BP3Dに対応名なし: Lateral intertransversarii lumborum"
+  ],
+  [
+   "頚外側後横突間筋(けいがいこうおうとつかんきん)",
+   "BP3Dに対応名なし: Posterior lateral cervical intertransversarii"
+  ],
+  [
+   "内肋間筋_下部(ないろっかんきん_かぶ)",
+   "BP3Dに対応名なし: Internal intercostals, lower part"
+  ],
+  [
+   "胸棘間筋(きょうきょくかんきん)",
+   "BP3Dに対応名なし: Interspinales thoracis"
+  ],
+  [
+   "右多裂筋(みぎたれつきん)",
+   "BP3Dに対応名なし: Right Multifidus"
+  ],
+  [
+   "左腰回旋筋(ひだりようかいせんきん)",
+   "BP3Dに対応名なし: Left Rotatores lumborum"
+  ],
+  [
+   "頚前横突間筋(けいぜんおうとつかんきん)",
+   "BP3Dに対応名なし: Anterior cervical intertransversarii"
+  ],
+  [
+   "腰棘間筋(ようきょくかんきん)",
+   "BP3Dに対応名なし: Interspinales lumborum"
+  ],
+  [
+   "右腰回旋筋(みぎようかいせんきん)",
+   "BP3Dに対応名なし: Right Rotatores lumborum"
+  ],
+  [
+   "腰内側横突間筋(ようないそくおうとつかんきん)",
+   "BP3Dに対応名なし: Medial intertransversarii lumborum"
+  ],
+  [
+   "右長肋骨挙筋(みぎちょうろっこつきょきん)",
+   "BP3Dに対応名なし: Right Levatores costarum longi"
+  ],
+  [
+   "右短肋骨挙筋(みぎたんろっこつきょきん)",
+   "BP3Dに対応名なし: Right Levatores costarum breves"
+  ],
+  [
+   "左長肋骨挙筋(ひだりちょうろっこつきょきん)",
+   "BP3Dに対応名なし: Left Levatores costarum longi"
+  ],
+  [
+   "左短肋骨挙筋(ひだりたんろっこつきょきん)",
+   "BP3Dに対応名なし: Left Levatores costarum breves"
+  ],
+  [
+   "外肋間筋_上部(がいろっかんきん_じょうぶ)",
+   "BP3Dに対応名なし: External intercostals, upper part"
+  ],
+  [
+   "内肋間筋_上部(ないろっかんきん_じょうぶ)",
+   "BP3Dに対応名なし: Internal intercostals, upper part"
+  ],
+  [
+   "最内肋間筋_上部(さいないろっかんきん_じょうぶ)",
+   "BP3Dに対応名なし: Innermost intercostals, upper part"
+  ],
+  [
+   "右棘下筋(みぎきょくかきん)",
+   "BP3Dに対応名なし: Right Infraspinatus"
+  ],
+  [
+   "左棘下筋(ひだりきょくかきん)",
+   "BP3Dに対応名なし: Left Infraspinatus"
+  ],
+  [
+   "右手の背側骨間筋(みぎてのはいそくこっかんきん)",
+   "BP3Dに対応名なし: Right Dorsal interossei of hand"
+  ],
+  [
+   "右短母指屈筋深頭(みぎたんぼしくっきんしんとう)",
+   "BP3Dに対応名なし: Right Flexor pollicis brevis, deep head"
+  ],
+  [
+   "右手の虫様筋(みぎてのちゅうようきん)",
+   "BP3Dに対応名なし: Right Lumbricals of hand"
+  ],
+  [
+   "左手の背側骨間筋(ひだりてのはいそくこっかんきん)",
+   "BP3Dに対応名なし: Left Dorsal interossei of hand"
+  ],
+  [
+   "左手の虫様筋(ひだりてのちゅうようきん)",
+   "BP3Dに対応名なし: Left Lumbricals of hand"
+  ],
+  [
+   "左短母指屈筋深頭(ひだりたんぼしくっきんしんとう)",
+   "BP3Dに対応名なし: Left Flexor pollicis brevis, deep head"
+  ],
+  [
+   "右足第一虫様筋(みぎあしだいいちちゅうようきん)",
+   "BP3Dに対応名なし: Right 1st lumbrical of foot"
+  ],
+  [
+   "右足第四虫様筋(みぎあしだいよんちゅうようきん)",
+   "BP3Dに対応名なし: Right 4th lumbrical of foot"
+  ],
+  [
+   "右足の背側骨間筋(みぎあしのはいそくこっかんきん)",
+   "BP3Dに対応名なし: Right Dorsal interossei of foot"
+  ],
+  [
+   "右足第二虫様筋(みぎあしだいにちゅうようきん)",
+   "BP3Dに対応名なし: Right 2nd lumbrical of foot"
+  ],
+  [
+   "右足第三虫様筋(みぎあしだいさんちゅうようきん)",
+   "BP3Dに対応名なし: Right 3rd lumbrical of foot"
+  ],
+  [
+   "右短趾伸筋(みぎたんししんきん)",
+   "BP3Dに対応名なし: Right Extensor digitorum brevis"
+  ],
+  [
+   "左足第三虫様筋(ひだりあしだいさんちゅうようきん)",
+   "BP3Dに対応名なし: Left 3rd lumbrical of foot"
+  ],
+  [
+   "左短趾伸筋(ひだりたんししんきん)",
+   "BP3Dに対応名なし: Left Extensor digitorum brevis"
+  ],
+  [
+   "左足第一虫様筋(ひだりあしだいいちちゅうようきん)",
+   "BP3Dに対応名なし: Left 1st lumbrical of foot"
+  ],
+  [
+   "左足第四虫様筋(ひだりあしだいよんちゅうようきん)",
+   "BP3Dに対応名なし: Left 4th lumbrical of foot"
+  ],
+  [
+   "左足の背側骨間筋(ひだりあしのはいそくこっかんきん)",
+   "BP3Dに対応名なし: Left Dorsal interossei of foot"
+  ],
+  [
+   "左足第二虫様筋(ひだりあしだいにちゅうようきん)",
+   "BP3Dに対応名なし: Left 2nd lumbrical of foot"
+  ],
+  [
+   "左第二底側骨間筋(ひだりだいにていそくこつかんきん)",
+   "BP3Dに対応名なし: Left 2nd palmar interosseous"
+  ],
+  [
+   "右掌側骨間筋(みぎしょうそくこつかんきん)",
+   "BP3Dに対応名なし: Right Palmar interossei"
+  ],
+  [
+   "右第二底側骨間筋(みぎだいにていそくこつかんきん)",
+   "BP3Dに対応名なし: Right 2nd palmar interosseous"
+  ],
+  [
+   "左第一底側骨間筋(ひだりだいいちていそくこつかんきん)",
+   "BP3Dに対応名なし: Left 1st palmar interosseous"
+  ],
+  [
+   "左第三底側骨間筋(ひだりだいさんていそくこつかんきん)",
+   "BP3Dに対応名なし: Left 3rd palmar interosseous"
+  ],
+  [
+   "右第一底側骨間筋(みぎだいいちていそくこつかんきん)",
+   "BP3Dに対応名なし: Right 1st palmar interosseous"
+  ],
+  [
+   "右第三底側骨間筋(みぎだいさんていそくこつかんきん)",
+   "BP3Dに対応名なし: Right 3rd palmar interosseous"
+  ],
+  [
+   "左掌側骨間筋(ひだりしょうそくこつかんきん)",
+   "BP3Dに対応名なし: Left Palmar interossei"
+  ],
+  [
+   "左冠状動脈主幹(ひだりかんじょうどうみゃくしゅかん)",
+   "BP3Dに対応名なし: Left Coronary artery (main trunk)"
+  ],
+  [
+   "心室中隔枝nsn;右冠状動脈の中隔室間枝nsn(しんしつちゅうかくしnsn；ちゅうかくしつかんし（うかんじょうどうみゃくの）nsn)",
+   "BP3Dに対応名なし: Septal interventricular branch (RCA)"
+  ],
+  [
+   "大動脈弓(だいどうみゃくきゅう)",
+   "BP3Dに対応名なし: Aortic arch"
+  ],
+  [
+   "中隔室間枝;心室中隔枝;左冠状動脈の前中隔枝(さかんじょうどうみゃくしんしつちゅうかくし)",
+   "BP3Dに対応名なし: Septal interventricular branches (LCA)"
+  ],
+  [
+   "心室中隔枝nsn;左冠状動脈の中隔室間枝nsn(しんしつちゅうかくしnsn；ちゅうかくしつかんし（さかんじょうどうみゃくの）nsn)",
+   "BP3Dに対応名なし: Septal interventricular branch (LCA)"
+  ],
+  [
+   "腕頭動脈nsn(わんとうどうみゃくnsn)",
+   "BP3Dに対応名なし: Brachiocephalic trunk"
+  ],
+  [
+   "肺動脈(はいどうみゃく)",
+   "BP3Dに対応名なし: Pulmonary artery"
+  ],
+  [
+   "右縁枝;鋭角縁枝;右冠状動脈の鋭縁枝(うえんし)",
+   "BP3Dに対応名なし: Right Right marginal branch (RCA)"
+  ],
+  [
+   "前心臓静脈;前心静脈;前右心室静脈(ぜんしんぞうじょうみゃく)",
+   "BP3Dに対応名なし: Anterior cardiac veins"
+  ],
+  [
+   "右後外側枝;右冠状動脈の右後側壁枝(うかんじょうどうみゃくうこうがいそくし)",
+   "BP3Dに対応名なし: Right Posterolateral branch (RCA)"
+  ],
+  [
+   "肺静脈(はいじょうみゃく)",
+   "BP3Dに対応名なし: Pulmonary vein"
+  ],
+  [
+   "右冠状動脈主幹(みぎかんじょうどうみゃくしゅかん)",
+   "BP3Dに対応名なし: Right Coronary artery (main trunk)"
+  ],
+  [
+   "心室中隔枝;右冠状動脈の中隔室間枝(うかんじょうどうみゃくしんしつちゅうかくし)",
+   "BP3Dに対応名なし: Septal interventricular branches (RCA)"
+  ],
+  [
+   "肺動脈弁(はいどうみゃくべん)",
+   "BP3Dに対応名なし: Pulmonary valve"
+  ],
+  [
+   "右脳弓(みぎのうきゅう)",
+   "BP3Dに対応名なし: Right Fornix"
+  ],
+  [
+   "左副短回(ひだりふくたんかい)",
+   "BP3Dに対応名なし: Left Accessory gyrus"
+  ],
+  [
+   "左上頭頂小葉と楔前部(ひだりじょうとうちょうようとけつぜんぶ)",
+   "BP3Dに対応名なし: Left Superior parietal lobule and precuneus"
+  ],
+  [
+   "左脳弓(ひだりのうきゅう)",
+   "BP3Dに対応名なし: Left Fornix"
+  ],
+  [
+   "右上頭頂小葉と楔前部(みぎじょうとうちょうようとけつぜんぶ)",
+   "BP3Dに対応名なし: Right Superior parietal lobule and precuneus"
+  ],
+  [
+   "右副短回(みぎふくたんかい)",
+   "BP3Dに対応名なし: Right Accessory gyrus"
+  ],
+  [
+   "第三脳室(だいさんのうしつ)",
+   "BP3Dに対応名なし: 3rd ventricle (brain)"
+  ],
+  [
+   "左大脳半球の脈絡叢(ひだりだいのうはんきゅうのみゃくらくそう)",
+   "BP3Dに対応名なし: Left Choroid plexus of cerebral hemisphere"
+  ],
+  [
+   "右分界条(みぎぶんかいじょう)",
+   "BP3Dに対応名なし: Right Stria terminalis"
+  ],
+  [
+   "白質（大脳半球の）(はくしつ（だいのうはんきゅうの）)",
+   "BP3Dに対応名なし: White matter (cerebral hemisphere)"
+  ],
+  [
+   "透明中隔(とうめいちゅうかく)",
+   "BP3Dに対応名なし: Septum pellucidum"
+  ],
+  [
+   "右大脳半球の脈絡叢(みぎだいのうはんきゅうのみゃくらくそう)",
+   "BP3Dに対応名なし: Right Choroid plexus of cerebral hemisphere"
+  ],
+  [
+   "眼窩回と直回(がんかかいとちょっかい)",
+   "BP3Dに対応名なし: Orbital gyri and gyrus rectus"
+  ],
+  [
+   "第四脳室(だいよんのうしつ)",
+   "BP3Dに対応名なし: 4th ventricle (brain)"
+  ],
+  [
+   "左内包の前脚;左内包前脚(ひだりないほうのぜんきゃく；ひだりないほうぜんきゃく)",
+   "BP3Dに対応名なし: Left Anterior limb of internal capsule"
+  ],
+  [
+   "左側頭葉の外側後頭側頭回(がいそくこうとうそくとうかい（ひだりそくとうようの）)",
+   "BP3Dに対応名なし: Left Lateral occipitotemporal gyrus"
+  ],
+  [
+   "松果体;松果腺(しょうかたい)",
+   "BP3Dに対応名なし: Pineal gland"
+  ],
+  [
+   "右側頭葉の外側後頭側頭回(がいそくこうとうそくとうかい（みぎそくとうようの）)",
+   "BP3Dに対応名なし: Right Lateral occipitotemporal gyrus"
+  ],
+  [
+   "大脳脚［広義の］(だいのうきゃく（こうぎの）)",
+   "BP3Dに対応名なし: Cerebral peduncle"
+  ],
+  [
+   "右内包の前脚;右内包前脚(みぎないほうのぜんきゃく；みぎないほうぜんきゃく)",
+   "BP3Dに対応名なし: Right Anterior limb of internal capsule"
+  ],
+  [
+   "脳弓交連;海馬交連/海馬交連(のうきゅうこうれん；かいばこうれん)",
+   "BP3Dに対応名なし: Commissure of fornix (hippocampal commissure)"
+  ],
+  [
+   "右副腎(みぎふくじん)",
+   "BP3Dに対応名なし: Right Suprarenal gland"
+  ],
+  [
+   "肝臓(かんぞう)",
+   "BP3Dに対応名なし: Liver"
+  ],
+  [
+   "中葉［右肺の］/右肺、中葉(うはいちゅうよう)",
+   "BP3Dに対応名なし: Middle lobe of right lung"
+  ],
+  [
+   "右肺、下葉(うはいかよう)",
+   "BP3Dに対応名なし: Right Lower lobe of lung"
+  ],
+  [
+   "右房室弁;三尖弁(さんせんべん)",
+   "BP3Dに対応名なし: Right Tricuspid valve"
+  ],
+  [
+   "大網ヒモ(たいもうひも)",
+   "BP3Dに対応名なし: Omental tenia"
+  ],
+  [
+   "心臓壁(しんそうへき)",
+   "BP3Dに対応名なし: Heart wall (myocardium)"
+  ],
+  [
+   "左肺、下葉(さはい、かよう)",
+   "BP3Dに対応名なし: Left Lower lobe of lung"
+  ],
+  [
+   "左副腎(ひだりふくじん)",
+   "BP3Dに対応名なし: Left Suprarenal gland"
+  ],
+  [
+   "虫垂(ちゅうすい)",
+   "BP3Dに対応名なし: Vermiform appendix"
+  ],
+  [
+   "回腸(かいちょう)",
+   "BP3Dに対応名なし: Ileum"
+  ],
+  [
+   "左房室弁;僧帽弁;二尖弁(そうぼうべん)",
+   "BP3Dに対応名なし: Left Mitral valve"
+  ],
+  [
+   "気管支(きかんし)",
+   "BP3Dに対応名なし: Bronchus"
+  ],
+  [
+   "結腸nsn(けっちょうnsn)",
+   "BP3Dに対応名なし: Colon"
+  ],
+  [
+   "左肺、上葉(さはいじょうよう)",
+   "BP3Dに対応名なし: Left Upper lobe of lung"
+  ],
+  [
+   "空腸(くうちょう)",
+   "BP3Dに対応名なし: Jejunum"
+  ],
+  [
+   "間膜ヒモ(かんまくひも)",
+   "BP3Dに対応名なし: Mesocolic tenia"
+  ],
+  [
+   "右肺、上葉(うはい、じょうよう)",
+   "BP3Dに対応名なし: Right Upper lobe of lung"
+  ],
+  [
+   "右心室の前乳頭筋(うしんしつのぜんにゅうとうきん)",
+   "BP3Dに対応名なし: Right Anterior papillary muscle"
+  ],
+  [
+   "左心室の前乳頭筋nsn(さいんしうのぜんきゅうとうきんnsn)",
+   "BP3Dに対応名なし: Left Anterior papillary muscle"
+  ],
+  [
+   "左心室の後乳頭筋(さしんしつのこうにゅうとうきん)",
+   "BP3Dに対応名なし: Left Posterior papillary muscle"
+  ],
+  [
+   "右心室の後乳頭筋(うしんしつのこうにゅうとうきん)",
+   "BP3Dに対応名なし: Right Posterior papillary muscle"
+  ],
+  [
+   "右心室の中隔乳頭筋(うしんしつのちゅうかくにゅうとうきん)",
+   "BP3Dに対応名なし: Right Septal papillary muscle"
+  ],
+  [
+   "陰毛;カクシゲ(かくしげ)",
+   "索引に無い"
+  ],
+  [
+   "右精管(みぎせいかん)",
+   "BP3Dに対応名なし: Right Ductus deferens"
+  ],
+  [
+   "左精管(ひだりせいかん)",
+   "BP3Dに対応名なし: Left Ductus deferens"
+  ],
+  [
+   "右上犬歯(みぎうえけんし)",
+   "BP3Dに対応名なし: Right Maxillary canine"
+  ],
+  [
+   "右下第二小臼歯(みぎしただいにしょうきゅうし)",
+   "BP3Dに対応名なし: Right Mandibular 2nd premolar"
+  ],
+  [
+   "左上側切歯(ひだりじょうそくせっし)",
+   "BP3Dに対応名なし: Left Maxillary lateral incisor"
+  ],
+  [
+   "左下犬歯(ひだりしたけんし)",
+   "BP3Dに対応名なし: Left Mandibular canine"
+  ],
+  [
+   "右上第一小臼歯(みぎうえだいいちしょうきゅうし)",
+   "BP3Dに対応名なし: Right Maxillary 1st premolar"
+  ],
+  [
+   "下顎歯肉(かがくしにく)",
+   "BP3Dに対応名なし: Mandibular gingiva"
+  ],
+  [
+   "左下第一大臼歯(ひだりしただいいちだいきゅうし)",
+   "BP3Dに対応名なし: Left Mandibular 1st molar"
+  ],
+  [
+   "右下第一小臼歯(みぎしただいいちしょうきゅうし)",
+   "BP3Dに対応名なし: Right Mandibular 1st premolar"
+  ],
+  [
+   "左下第二小臼歯(ひだりしただいにしょうきゅうし)",
+   "BP3Dに対応名なし: Left Mandibular 2nd premolar"
+  ],
+  [
+   "右上側切歯(みぎじょうそくせっし)",
+   "BP3Dに対応名なし: Right Maxillary lateral incisor"
+  ],
+  [
+   "左上犬歯(ひだりうえけんし)",
+   "BP3Dに対応名なし: Left Maxillary canine"
+  ],
+  [
+   "右上第一大臼歯(みぎうえだいいちだいきゅうし)",
+   "BP3Dに対応名なし: Right Maxillary 1st molar"
+  ],
+  [
+   "左下側切歯(ひだりかそくせっし)",
+   "BP3Dに対応名なし: Left Mandibular lateral incisor"
+  ],
+  [
+   "上顎歯肉(じょうがくしにく)",
+   "BP3Dに対応名なし: Maxillary gingiva"
+  ],
+  [
+   "左下第二大臼歯(ひだりしただいにだいきゅうし)",
+   "BP3Dに対応名なし: Left Mandibular 2nd molar"
+  ],
+  [
+   "左上第二小臼歯(ひだりうえだいにしょうきゅうし)",
+   "BP3Dに対応名なし: Left Maxillary 2nd premolar"
+  ],
+  [
+   "左下中切歯(ひだりしたちゅうせっし)",
+   "BP3Dに対応名なし: Left Mandibular central incisor"
+  ],
+  [
+   "右下第二大臼歯(みぎしただいにだいきゅうし)",
+   "BP3Dに対応名なし: Right Mandibular 2nd molar"
+  ],
+  [
+   "右下側切歯(みぎかそくせっし)",
+   "BP3Dに対応名なし: Right Mandibular lateral incisor"
+  ],
+  [
+   "右上第二大臼歯(みぎうえだいにだいきゅうし)",
+   "BP3Dに対応名なし: Right Maxillary 2nd molar"
+  ],
+  [
+   "右下犬歯(みぎしたけんし)",
+   "BP3Dに対応名なし: Right Mandibular canine"
+  ],
+  [
+   "右下第一大臼歯(みぎしただいいちだいきゅうし)",
+   "BP3Dに対応名なし: Right Mandibular 1st molar"
+  ],
+  [
+   "左下第一小臼歯(ひだりしただいいちしょうきゅうし)",
+   "BP3Dに対応名なし: Left Mandibular 1st premolar"
+  ],
+  [
+   "右上中切歯(みぎうえちゅうせっし)",
+   "BP3Dに対応名なし: Right Maxillary central incisor"
+  ],
+  [
+   "左上第一大臼歯(ひだりうえだいいちだいきゅうし)",
+   "BP3Dに対応名なし: Left Maxillary 1st molar"
+  ],
+  [
+   "左上第二大臼歯(ひだりうえだいにだいきゅうし)",
+   "BP3Dに対応名なし: Left Maxillary 2nd molar"
+  ],
+  [
+   "左上中切歯(ひだりうえちゅうせっし)",
+   "BP3Dに対応名なし: Left Maxillary central incisor"
+  ],
+  [
+   "右上第二小臼歯(みぎうえだいにしょうきゅうし)",
+   "BP3Dに対応名なし: Right Maxillary 2nd premolar"
+  ],
+  [
+   "左上第一小臼歯(ひだりうえだいいちしょうきゅうし)",
+   "BP3Dに対応名なし: Left Maxillary 1st premolar"
+  ],
+  [
+   "右下中切歯(みぎしたちゅうせっし)",
+   "BP3Dに対応名なし: Right Mandibular central incisor"
+  ],
+  [
+   "左鼡径靱帯(ひだりそけいじんたい)",
+   "BP3Dに対応名なし: Left Inguinal ligament"
+  ],
+  [
+   "右鼡径靱帯(みぎそけいじんたい)",
+   "BP3Dに対応名なし: Right Inguinal ligament"
+  ],
+  [
+   "眉毛;マユゲ(まゆげ)",
+   "索引に無い"
+  ],
+  [
+   "眼球(がんきゅう)",
+   "BP3Dに対応名なし: Eyeball"
+  ],
+  [
+   "帽状腱膜;上頭蓋腱膜;頭外被腱膜(ぼうじょうけんまく)",
+   "BP3Dに対応名なし: Galea aponeurotica (epicranial aponeurosis)"
+  ],
+  [
+   "皮膚(ひふ)",
+   "索引に無い"
+  ],
+  [
+   "耳/耳;ミミ(みみ)",
+   "索引に無い"
+  ],
+  [
+   "口唇nsn;クチビルnsn(こうしんnsn；くちびるnsn)",
+   "索引に無い"
+  ],
+  [
+   "頭毛;カミノケ(かみのけ)",
+   "索引に無い"
+  ],
+  [
+   "左中間腱(ひだりちゅうかんけん)",
+   "BP3Dに対応名なし: Left Intermediate tendon"
+  ],
+  [
+   "自由ヒモ(じゆうひも)",
+   "BP3Dに対応名なし: Free tenia"
+  ],
+  [
+   "下着_筋肉用(Brief_muscle)",
+   "索引に無い"
+  ],
+  [
+   "下着_皮膚用(Brief_skin)",
+   "索引に無い"
+  ]
+ ]
+}

@@ -1,0 +1,82 @@
+================================================================
+BodyParts3D v4.0 一次データ取得の証跡 / Provenance record
+================================================================
+
+取得者: Kabe (Kabe-Tech)
+取得日: 2026-08-22
+取得元: NBDC LSDB Archive (生命科学系データベースアーカイブ)
+        https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html
+
+----------------------------------------------------------------
+1. 取得時点で提示されていたライセンス
+----------------------------------------------------------------
+ページ: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html
+        https://dbarchive.biosciencedbc.jp/jp/bodyparts3d/lic.html
+Last updated: 2025/02/27
+
+英語版 原文（保存: lic_en.html）:
+  "The license for this database is specified in the Creative Commons
+   Attribution 4.0 International. If you use data from this database,
+   please be sure attribute this database as follows: "BodyParts3D,
+   (c) The Database Center for Life Science licensed under CC Attribution
+   4.0 International"."
+  条件: "You must attribute this database in the manner specified by the
+   author or licensor when distributing part or whole of this database or
+   any adapted material."
+  → 継承(ShareAlike)条項なし。派生物(adapted material)の配布可。
+
+日本語版 原文（保存: lic_jp.html）:
+  「クリエイティブ・コモンズ 表示 4.0 国際」
+  必須クレジット:
+   "BodyParts3D (c) ライフサイエンス統合データベースセンター
+    licensed under CC表示 4.0 国際"
+
+----------------------------------------------------------------
+2. ライセンス変更の公式記録（決定的証拠）
+----------------------------------------------------------------
+ページ: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/update.html
+        （保存: hist_update.html）
+
+  2025/02/27   "License" is updated.       ← CC BY-SA 2.1 JP から CC BY 4.0 へ
+  2013/06/19   3D data (Release 4.0) is updated.   ← データ本体の最終更新
+  2011/09/15   3D data (Release 3.0) is updated.
+  2011/08/25   "License" is updated.
+  2010/08/16   3D data (Release 2.0) is updated.
+  2009/02/09   3D data (Release 1.0) is updated.
+  2008/08/12   BodyParts3D released.
+
+→ 3Dデータ本体は 2013/06/19 以降変更なし。ライセンスのみ 2025/02/27 に更新された。
+
+----------------------------------------------------------------
+3. ⚠ 注意: 古いライセンス表記が2箇所に残存している
+----------------------------------------------------------------
+(a) OBJファイル内のヘッダコメント（全2234ファイル）:
+    "# The license for this database is specified in the Creative Commons
+       Attribution-Share Alike 2.1 Japan. ..."
+    "# http://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html"
+    → 2013年に生成されたファイルのため旧表記のまま。ただし参照先URLは
+      上記(1)の CC BY 4.0 ページを指している。
+
+(b) 旧本家サイト https://lifesciencedb.jp/bp3d/info/license/index.html
+    → 現在も「クリエイティブ・コモンズ 表示-継承2.1 日本」と記載。
+
+→ (1)(2) の一次配布元の記載が現行と解釈するが、DBCLS への書面照会で確定させること。
+   照会記録: ../../ライセンス照会_DBCLS.md
+
+----------------------------------------------------------------
+4. 取得ファイルとチェックサム
+----------------------------------------------------------------
+（checksums.sha256 を参照）
+  isa_BP3D_4.0_obj_99.zip      142,903,898 bytes  OBJ 2234ファイル
+  partof_BP3D_4.0_obj_99.zip    64,888,505 bytes  OBJ 1258ファイル
+  isa_parts_list.txt               302,828 bytes  2905パーツ
+    列: concept id(FMA) / representation id(BP) / en / kanji / kana
+  他: isa_parts_list_e.txt, partof_parts_list.txt,
+      isa_element_parts.txt, partof_element_parts.txt,
+      isa_inclusion_relation_list.txt, README.html
+
+OBJヘッダに含まれるメタ情報（照合に使用）:
+  File ID / Representation ID(BP) / Concept ID(FMA) / English name /
+  Bounds(mm) / Volume(cm3)
+  座標系: mm単位、原点はCT撮影座標（例 z≈1470 が頭部）
+================================================================

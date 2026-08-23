@@ -57,3 +57,17 @@ __pycache__/
 
 # ブラウザプロファイルの取り込み跡（誤コミット防止）
 UsersabeshAppDataLocalBraveSoftwareBrave-BrowserUser Data/
+
+# 出自監査用の一次データ（BodyParts3D v4.0 本体・約880MB。再取得可）
+# 証跡テキスト(PROVENANCE.txt/checksums.sha256/*.html)と監査結果CSVはgit管理する
+refs/BodyParts3D_v4.0/*.zip
+refs/BodyParts3D_v4.0/obj_isa/
+refs/BodyParts3D_v4.0/obj_partof/
+refs/BodyParts3D_v4.0/man_geom.json
+refs/BodyParts3D_v4.0/sample_verts.json
+refs/BodyParts3D_v4.0/bp3d_index.json
+# ※監査の比較画像・偏差マップ（refs/BodyParts3D_v4.0/compare*・deviation、計42MB）は
+#   上の *.png ルールで既に除外される。scripts/provenance で再生成できる
+# 取得元ページのうち証跡価値の無いもの（404ページ・JSの塊）
+refs/BodyParts3D_v4.0/contact_jp.html
+refs/BodyParts3D_v4.0/bp3d_home.html

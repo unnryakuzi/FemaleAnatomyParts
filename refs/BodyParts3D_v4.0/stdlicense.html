@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>利用許諾 | LSDB Archive</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Database Archive">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="7z8Q-Qa53efgj2xrpMx3dL8gsjg_90Dj-3v07B2ywB63lDSgb8BJocJetqe4jpKZgQW_8bTDedWL08QwGBJHUA" />
+    <meta name="csp-nonce" content="QIU1gzZ5WXns6ecnhmrS1A==" />
+
+    
+
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <link rel="stylesheet" href="/assets/actiontext-e646701d.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/application-8b441ae0.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/database_metadatum-7803704f.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/tailwind-f1dc8163.css" data-turbo-track="reload" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <script type="importmap" data-turbo-track="reload" nonce="QIU1gzZ5WXns6ecnhmrS1A==">{
+  "imports": {
+    "application": "/assets/application-d2f8354c.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-ad2c7b86.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+    "trix": "/assets/trix-9a18fe03.js",
+    "@rails/actiontext": "/assets/actiontext.esm-c376325e.js",
+    "tinymce": "/assets/tinymce/tinymce.min-b01e51a6.js",
+    "controllers/admin/database_metadata_controller": "/assets/controllers/admin/database_metadata_controller-62bc504f.js",
+    "controllers/admin/databases_controller": "/assets/controllers/admin/databases_controller-c3d857c8.js",
+    "controllers/admin/export_controller": "/assets/controllers/admin/export_controller-df0e9e73.js",
+    "controllers/admin/flash_controller": "/assets/controllers/admin/flash_controller-f13cc4ab.js",
+    "controllers/admin/tinymce_controller": "/assets/controllers/admin/tinymce_controller-8e84d748.js",
+    "controllers/admin/users_controller": "/assets/controllers/admin/users_controller-60b64014.js",
+    "controllers/application": "/assets/controllers/application-3affb389.js",
+    "controllers/confirm_dialog_controller": "/assets/controllers/confirm_dialog_controller-f4369c29.js",
+    "controllers/data_shared_state": "/assets/controllers/data_shared_state-b48fcfd4.js",
+    "controllers/database_shared_state": "/assets/controllers/database_shared_state-7e8bd39c.js",
+    "controllers/detail_search_controller": "/assets/controllers/detail_search_controller-33b563f4.js",
+    "controllers/download_controller": "/assets/controllers/download_controller-8f7eaddb.js",
+    "controllers/export_controller": "/assets/controllers/export_controller-acb41065.js",
+    "controllers/filter_toggle_controller": "/assets/controllers/filter_toggle_controller-135a298d.js",
+    "controllers/home_shared_state": "/assets/controllers/home_shared_state-b908ab28.js",
+    "controllers": "/assets/controllers/index-ee64e1f1.js",
+    "controllers/list_controller": "/assets/controllers/list_controller-9d521029.js",
+    "controllers/modal_controller": "/assets/controllers/modal_controller-504068f9.js",
+    "controllers/poll_controller": "/assets/controllers/poll_controller-3d9731bd.js",
+    "controllers/search_controller": "/assets/controllers/search_controller-8998d715.js",
+    "controllers/tabs_controller": "/assets/controllers/tabs_controller-ae0b47fe.js",
+    "controllers/trix_controller": "/assets/controllers/trix_controller-b1c5208c.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-d2f8354c.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/turbo.min-ad2c7b86.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/stimulus.min-4b1e420e.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc53fe7.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/trix-9a18fe03.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/actiontext.esm-c376325e.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/tinymce/tinymce.min-b01e51a6.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/admin/database_metadata_controller-62bc504f.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/admin/databases_controller-c3d857c8.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/admin/export_controller-df0e9e73.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/admin/flash_controller-f13cc4ab.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/admin/tinymce_controller-8e84d748.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/admin/users_controller-60b64014.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/application-3affb389.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/confirm_dialog_controller-f4369c29.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/data_shared_state-b48fcfd4.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/database_shared_state-7e8bd39c.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/detail_search_controller-33b563f4.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/download_controller-8f7eaddb.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/export_controller-acb41065.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/filter_toggle_controller-135a298d.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/home_shared_state-b908ab28.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/index-ee64e1f1.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/list_controller-9d521029.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/modal_controller-504068f9.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/poll_controller-3d9731bd.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/search_controller-8998d715.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/tabs_controller-ae0b47fe.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<link rel="modulepreload" href="/assets/controllers/trix_controller-b1c5208c.js" nonce="QIU1gzZ5WXns6ecnhmrS1A==">
+<script type="module" nonce="QIU1gzZ5WXns6ecnhmrS1A==">import "application"</script>
+  </head>
+
+  <body>
+    <!--  Start Common header & Footer  -->
+    <script type="text/javascript"
+            src="/media/dbarchive/common-header-and-footer/script/common-header-and-footer.js"
+            style="display: block" id="common-header-and-footer__script"></script>
+    <!--  End Common header & Footer  -->
+
+    <header class="pt-3">
+      <div class="relative flex items-center w-[960px] mx-auto">
+  <div class="mr-auto">
+    <a href="/">
+      <img class="inline-block" src="/assets/logo-06f529d0.png" />
+</a>    <span class="ml-5 text-xs align-top">
+      [<a target="_blank" rel="noopener noreferrer" href="/files/nbdc_riyou_kiyaku.pdf">利用者規約</a>]
+    </span>
+  </div>
+
+  <div class="absolute left-1/2 -translate-x-1/2 text-center">
+      <div class="text-sm text-[#3f3fb2] font-bold">- あのデータベースが、丸ごとダウンロード可能に！-</div>
+
+    <img class="block mx-auto" src="/assets/banner-20cb4061.png" />
+  </div>
+
+  <div class="">
+
+    <form id="dbsearch" action="https://dbsearch.biosciencedbc.jp/result.php" method="get" class="mt-4"
+          target="_blank" rel="noopener noreferrer">
+      <input id="dbsearch_lang" name="lang" value="ja" type="hidden">
+      <input id="dbsearch_page" name="page" value="1" type="hidden">
+      <input id="dbsearch_target_node" name="target_node" value="dbarchive_root" type="hidden">
+      <input id="dbsearch_target_node_type" name="target_node_type" value="category" type="hidden">
+      <div class="flex items-center">
+        <input id="dbsearch_text" name="phrase" placeholder="アーカイブ内 横断検索へ" type="text"
+               class="text-xs p-1 max-w-[200px]">
+        <button name="button" type="submit">
+          <span class="material-symbols-outlined !text-[16px] bg-gray-400 text-white rounded-md cursor-pointer ml-1 p-1 ">search</span>
+</button>      </div>
+    </form>
+  </div>
+</div>
+
+<nav class="container w-[960px] mx-auto flex items-center justify-between text-sm mt-5 mb-2 bg-blue-400 py-2">
+  <ul class="flex">
+      <li>
+        <a class="text-white bg-blue-400 hover:bg-blue-600 px-5 py-2" href="/">ホーム</a>
+      </li>
+      <li>
+        <a class="text-white bg-blue-400 hover:bg-blue-600 px-5 py-2" href="/contents/about/about.html">アーカイブの説明</a>
+      </li>
+      <li>
+        <a class="text-white bg-blue-600 hover:bg-blue-600 px-5 py-2" href="/contents/deposit/application.html">寄託応募要領</a>
+      </li>
+      <li>
+        <a class="text-white bg-blue-400 hover:bg-blue-600 px-5 py-2" href="/contents/update.html">更新履歴</a>
+      </li>
+      <li>
+        <a class="text-white bg-blue-400 hover:bg-blue-600 px-5 py-2" href="/datameta-list.html">データ一覧</a>
+      </li>
+      <li>
+        <a class="text-white bg-blue-400 hover:bg-blue-600 px-5 py-2" href="/help/jp/index.html">ヘルプ</a>
+      </li>
+      <li>
+        <a class="text-white bg-blue-400 hover:bg-blue-600 px-5 py-2" href="https://form2.jst.go.jp/s/contact_nbdc">お問い合わせ</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+    <main id="main-content" class="container mx-auto">
+      
+<div class="mt-5 flex items-start gap-5 text-sm w-[960px] mx-auto">
+  
+  <div class="p-3 border border-blue-300 shrink-0">
+  <ul>
+    <li class="flex items-center gap-2">
+      <img src="/assets/sq_blue-ac500e48.png" />
+      <a class="" href="/contents/deposit/application.html">寄託応募要領</a>
+    </li>
+    <li class="flex items-center gap-2 ml-4 mt-2">
+      <img src="/assets/sq_blue-ac500e48.png" />
+      <a class="text-orange-400 font-bold" href="/contents/deposit/stdlicense.html">利用許諾</a>
+    </li>
+    <li class="flex items-center gap-2 ml-4 mt-1">
+      <img src="/assets/sq_blue-ac500e48.png" />
+      <a class="" href="/contents/deposit/tmplstdlicense.html">利用許諾テンプレート</a>
+    </li>
+  </ul>
+</div>
+
+
+  <div class="w-full">
+    <h1 class="font-bold text-base pl-2 py-1
+           border-l-16 border-b-1 border-blue-700 bg-gray-200">
+  利用許諾
+</h1>
+
+    <p class="my-3 text-xs leading-loose">
+      各データベースには、それぞれに利用許諾が設定されています。
+      バイオサイエンスデータベースセンター（NBDC)では、下記の目的・方針の下、生命科学系データベースアーカイブを提供します。
+    </p>
+
+    <h2 class="font-bold text-sm pl-2 py-1
+           border-l-10 border-b-1 border-lime-500">
+  利用許諾の設定に関して
+</h2>
+
+    <p class="my-2"></p>
+
+    <h3 class="font-bold text-xs pl-2 py-1
+           border-l-6 border-b-1 border-gray-500">
+  利用許諾設定の背景・目的
+</h3>
+
+    <p class="my-2 text-xs leading-loose">
+      現在の、国内ライフサイエンスデータベースでは、ダウンロード可能なデータが少なく、また著作権や利用条件の記載が非常に少ないため、利用者がデータベースを安心して自由に利用しにくい状況にあります。
+      一方、NCBIやEBIの分子データは、オリジナルデータの保有者が特許や著作権を主張する場合は例外ですが、基本的に自由に利用できます。
+      NBDC は、このような現状を踏まえ、下記の目的でNBDCの生命科学系データベースアーカイブで提供する各データベースに対して、利用許諾を設定します。
+    </p>
+
+    <ul class="ml-6 mt-4 mb-3 list-disc text-xs leading-loose">
+      <li>
+        データベース作成者に、安心して、かつ手間をかけずにダウンロード可能な形でデータを公開してもらうこと。
+      </li>
+      <li>
+        データベース利用者が、安心してデータをダウンロードして活用できること、またそのことによって、データベースがより広く用いられるようになること。
+      </li>
+    </ul>
+
+    <h3 class="font-bold text-xs pl-2 py-1
+           border-l-6 border-b-1 border-gray-500">
+  利用許諾の方針
+</h3>
+
+    <ul class="ml-6 my-3 list-disc text-xs leading-loose">
+      <li>
+        クリエイティブ・コモンズライセンスを利用した「標準利用許諾」をベースとして採用します。
+      </li>
+      <li>
+        適切な利用許諾によって、データベース作成者と利用者の双方にとって、安心してデータの提供と活用をできるようにします。
+      </li>
+    </ul>
+
+    <h2 class="font-bold text-sm pl-2 py-1
+           border-l-10 border-b-1 border-lime-500">
+  NBDC標準利用許諾
+</h2>
+
+    <p class="my-2 text-xs leading-loose">
+      NBDCの定める標準利用許諾は、
+      <a target="_blank" rel="noopener noreferrer" href="http://www.creativecommons.jp/">クリエイティブ・コモンズ・ジャパン</a>
+      の提供する
+      <a target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示-継承 4.0 国際 パブリック・ライセンス</a>
+      に準拠しています。
+    </p>
+
+    <h3 class="font-bold text-xs pl-2 py-1
+           border-l-6 border-b-1 border-gray-500">
+  利用者に許可されていること
+</h3>
+
+    <p class="my-2 text-xs leading-loose">
+      標準利用許諾においては、データベースの利用者は以下の行為が許可されます。
+    </p>
+    <ul class="ml-6 mt-2 mb-2 list-disc text-xs leading-loose">
+      <li>
+        データベースの複製及び再配布
+      </li>
+      <li>
+        データベースの改変
+      </li>
+      <li>
+        データベースをダウンロードすることなく検索または閲覧する行為（著作物をダウンロードせずに単に閲覧するだけの行為は、著作権法の規制がされていません）。
+      </li>
+    </ul>
+
+    <div class="mt-2 mb-3 text-xs leading-loose">
+      <span class="mr-1">※</span>
+標準利用許諾の用語の定義については、「
+<a target="_blank" rel="noopener noreferrer" href="/files/nbdc_license_glossary.pdf">
+    <img class="inline mr-1" src="/assets/pdficon_small-f5cf173e.gif" />
+    <span class="font-bold">データベース利用許諾用語定義解説</span>
+</a>」をご参照ください。
+
+    </div>
+
+    <h3 class="font-bold text-xs pl-2 py-1
+           border-l-6 border-b-1 border-gray-500">
+  利用者が守るべき条件
+</h3>
+
+    <p class="my-2 text-xs leading-loose">
+      標準利用許諾においては、データベースの利用者は以下の条件を守らねばなりません。
+    </p>
+    <ul class="ml-6 mt-4 mb-2 list-disc text-xs leading-loose">
+      <li>
+        データベース（またはそれを改変したデータベース）を配布、あるいは閲覧可能にする場合には、データベースの権利者（団体）の氏名、データベース名、指定URLなど、データベースに関する情報を表示すること。（「表示」）
+      </li>
+      <li>
+        改変したデータベースを配布、あるいは閲覧可能にする場合には、オリジナルのデータベースの利用許諾と同様の利用許諾を、改変したデータベースにも適用すること。（「継承」）
+      </li>
+    </ul>
+
+    <div class="mt-2 mb-3 text-xs leading-loose">
+      <span class="mr-1">※</span>
+標準利用許諾の用語の定義については、「
+<a target="_blank" rel="noopener noreferrer" href="/files/nbdc_license_glossary.pdf">
+    <img class="inline mr-1" src="/assets/pdficon_small-f5cf173e.gif" />
+    <span class="font-bold">データベース利用許諾用語定義解説</span>
+</a>」をご参照ください。
+
+    </div>
+
+    <h3 class="font-bold text-xs pl-2 py-1
+           border-l-6 border-b-1 border-gray-500">
+  データベースの営利利用及び改変について
+</h3>
+
+    <p class="my-2 text-xs leading-loose">
+      クリエイティブ・コモンズ・ジャパンには、上記の「表示」・「継承」の他にも「非営利」・「改変禁止」という２つの要素条件が用意されています。
+      しかしながら、NBDCでは標準利用許諾を定めるにあたり、「非営利」・「改変禁止」を採用せず、データベースの営利利用と改変を可能にしました。
+      NBDC では、これにより寄託者の努力が、科学の発展に大きなインパクトを与え得ると考えています。
+    </p>
+
+    <div class="mt-2 mb-3 text-xs leading-loose">
+      <span class="mr-1">※</span>
+標準利用許諾の背景、制定理由については、「
+<a target="_blank" rel="noopener noreferrer" href="/files/nbdc_dbarchive_guidelines.pdf">
+  <img class="inline mr-1" src="/assets/pdficon_small-f5cf173e.gif" />
+  <span class="font-bold">生命科学系データベースアーカイブ作成ガイドライン</span>
+</a>」をご参照ください。
+
+    </div>
+
+    <h2 class="font-bold text-sm pl-2 py-1
+           border-l-10 border-b-1 border-lime-500">
+  利用許諾テンプレート
+</h2>
+
+    <p class="my-2 text-xs leading-loose">
+      以下は、利用許諾を簡単に作成するためのテンプレートです。
+    </p>
+    <p class="mt-2 mb-4 text-xs leading-loose">
+      <a target="_blank" rel="noopener noreferrer" href="/contents/deposit/tmplstdlicense.html">利用許諾テンプレート</a>
+    </p>
+  </div>
+
+</div>
+
+    </main>
+    <footer class="mt-5 py-10 bg-[#f9f8f5]">
+      <div class="flex gap-20 justify-center text-sm">
+  <div class="text-center">
+    <img alt="NBDC Logo" class="w-[150px] h-[50px] block mx-auto" src="/assets/nbdclogo_web_standard_rgb-20a945c7.svg" />
+    <div class="mt-3">
+      <p class="text-xs text-gray-600">
+        Japan Science and Technology Agency <br/> Department for Information Infrastructure
+      </p>
+      <p class="">Office of NBDC Program</p>
+    </div>
+  </div>
+
+  <div class="text-xs text-gray-600">
+    <div>
+      <p>5-3, Science Plaza 7F,</p>
+      <p class="mt-1">Yonbancho, Chiyoda-ku,</p>
+      <p class="mt-1">Tokyo 102-8666 Japan</p>
+    </div>
+    <div class="mt-3">
+      <p>Tel. 03-5214-8491</p>
+      <p class="mt-1">Fax. 03-5214-8470</p>
+    </div>
+  </div>
+</div>
+
+    </footer>
+  </body>
+</html>

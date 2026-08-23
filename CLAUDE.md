@@ -2,6 +2,20 @@
 
 Blender 解剖モデル編集プロジェクト用の作業ルール。
 
+## ⚠ ライセンス移行の検討中（2026-08-23〜・確定するまで表記を変えない）
+
+**`LICENSE.txt` / `CREDITS.txt` / 商品説明文のライセンス記載を勝手に書き換えないこと。**
+CC BY-SA 2.1 JP から独自規約（VN3ライセンス）への移行を検討中で、可否が未確定。
+CC は一度与えた許諾を撤回できず、頒布済みの分を回収できないため、見込みで動かすと取り返しがつかない。
+
+- 現状: BodyParts3D は 2025-02-27 に **CC BY 4.0（継承なし）** へ変更済み。SA を課しているのは中間の always3d だけ
+- 出自監査済み: 製品931メッシュが always3d 配布FBXと頂点数・面数まで完全一致＝**always3d はジオメトリを1頂点も足していない**（自作は下着2＋肋間筋分割6の計8個のみ）
+- **唯一の未確定**: 製品が載っているのはアーカイブが配布していない高解像度版の BP3D。CC BY 4.0 がそこまで及ぶかを DBCLS に照会中（2026-08-23 送信・回答待ち）
+- always3d への許諾依頼は解決手段にならない（SA義務は DBCLS の許諾から発生しており always3d に免除権限がない）
+
+詳細: `ライセンス照会_DBCLS.md`（照会記録・無回答時の対応）／`refs/provenance_audit_summary.md`（監査）／
+`refs/provenance_audit.csv`（全939個の判定）／監査スクリプトは `scripts/provenance/`
+
 ## バージョン管理（詳細・体系は skill `blender-anatomy-mesh` §2 が正）
 - 削除・再作成・大規模変更の**前に必ず** `save_snapshot('説明')`（復元: `list_snapshots()` → `restore_snapshot(i)`）
 - モデルを変更したセッションの**終わりに必ず** `bump_version('patch'|'minor'|'major', '説明')`（.blend保存＋VERSION/CHANGELOG.md更新。`git_commit=True` でcommit同時実行）
