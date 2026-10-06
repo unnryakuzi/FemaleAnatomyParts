@@ -55,6 +55,8 @@ function imagePaths(p) {
 // product の配布zip（絶対パス）。booth.js と同じ規則。
 function zipSpec(p) {
   const root = CFG.root;
+  // 骨格SKUのように1商品=1zipのものは config の zips（絶対パス可）をそのまま使う
+  if (CFG[p] && CFG[p].zips) return CFG[p].zips.map(z => (path.isAbsolute(z) ? z : path.join(root, z)));
   const mk = g => CFG[g].preview_order ? ['blend', 'fbx', 'glb', 'obj'].map(ext =>
     path.join(root, CFG[g].zip_dir, `${CFG[g].zip_prefix}_${ext}.zip`)) : [];
   if (p === 'set') return [...mk('male'), ...mk('female')];
@@ -64,12 +66,21 @@ function zipSpec(p) {
 // Content タブに出ているファイル名（拡張子なしで表示される: MaleAnatomy_v1.2.0_obj）
 async function listFiles(page) {
   return await page.evaluate(() =>
-    [...new Set((document.body.innerText.match(/(?:Male|Female)Anatomy_[A-Za-z0-9_.\-]+/g) || []))]);
+    [...new Set((document.body.innerText.match(/(?:(?:Male|Female)Anatomy|AnatomySkeleton)_[A-Za-z0-9_.\-]+/g) || []))]);
 }
 
 async function gotoContent(page) {
   await page.goto(EDIT + '/content', { waitUntil: 'domcontentloaded', timeout: 60000 });
   await page.waitForTimeout(7000);
+  // ファイルがフォルダに畳まれていると一覧に出ず、旧版を「0本」と誤判定して消し残す
+  // （2026-10-07: 女性の v1.67.0 4本がフォルダ内に残った）。実クリックで全部開く。
+  try { await page.bringToFront(); } catch (e) { /* ignore */ }
+  for (let i = 0; i < 10; i++) {
+    const folded = page.locator('[role=treeitem][aria-expanded="false"]');
+    if (!(await folded.count())) break;
+    await folded.first().click({ timeout: 15000 });
+    await page.waitForTimeout(1500);
+  }
 }
 
 // 行の「Actions」→「Delete」。行はホバーしないとボタンが出ないので座標で当てる。
@@ -247,7 +258,7 @@ async function run() {
       if (missing.length) throw new Error('新版が保存されていないため削除を中止: ' + missing.join(','));
 
       // ── 2) 旧版を削除 → 保存 → 再読込で確認
-      const olds = after.filter(n => /Anatomy_v/.test(n) && !wantNames.includes(n));
+      const olds = after.filter(n => /Anatomy_v|AnatomySkeleton_/.test(n) && !wantNames.includes(n));
       console.log('削除対象(旧版):', olds);
       if (olds.length) {
         for (const n of olds) { console.log('delete', n); await deleteFileByName(page, n); }
@@ -284,7 +295,10 @@ async function save(page, maxWaitMs = 1800000) {
     console.log('Save changes が有効にならなかった（変更なし or 処理継続中）');
     return false;
   }
-  await page.getByRole('button', { name: 'Save changes', exact: true }).first().click({ timeout: 30000 });
+  // ★タブが背面だと描画が止まり、Playwright の click は「安定待ち」で固まる（2026-10-07 実測）。
+  //   前面化したうえで DOM の click で押す。
+  try { await page.bringToFront(); } catch (e) { /* ignore */ }
+  await page.evaluate(() => { const b = [...document.querySelectorAll('button')].find(x => /^\s*Save changes\s*$/i.test(x.textContent || '') && !x.disabled); if (b) b.click(); });
   await page.waitForTimeout(8000);
   return true;
 }

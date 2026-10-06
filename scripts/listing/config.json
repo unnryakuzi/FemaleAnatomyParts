@@ -6,7 +6,9 @@
     "products": {
       "female": { "id": "zdlbhd", "public": "https://liberation58.gumroad.com/l/zdlbhd" },
       "male":   { "id": "hgbvor", "public": "https://liberation58.gumroad.com/l/hgbvor" },
-      "set":    { "id": "dbwncg", "public": "https://liberation58.gumroad.com/l/dbwncg" }
+      "set":    { "id": "dbwncg", "public": "https://liberation58.gumroad.com/l/dbwncg" },
+      "skel_full": { "id": "oylejt", "public": "https://liberation58.gumroad.com/l/oylejt" },
+      "skel_vrc":  { "id": "floqr",  "public": "https://liberation58.gumroad.com/l/floqr" }
     }
   },
 
@@ -16,7 +18,9 @@
     "products": {
       "female": { "id": "8481858" },
       "male":   { "id": "8496247" },
-      "set":    { "id": "8496725" }
+      "set":    { "id": "8496725" },
+      "skel_full": { "id": "8702257" },
+      "skel_vrc":  { "id": "8702179" }
     }
   },
 
@@ -27,33 +31,40 @@
   "_booth_swimwear": "下着版(previews_sw)。BOOTH全年齢化の第2案。無彩色にせずカラーのまま該当部位を覆う。撮影は SWIMWEAR=1 blender -b ... render_previews.py。下着は scripts/listing/swimwear_fit_<model>.blend を append するだけでマスターは無変更。フィットの再生成は blender -b <model>.blend -P scripts/listing/fit_swimwear.py -- <model>。★どちらをBOOTHに出すかは未決。previews_dir_booth はマネキン版のまま据え置いてある（2026-08-15）",
 
   "female": {
-    "version": "v1.67.0",
+    "version": "v1.67.1",
+    "_booth_variant": "2026-08-29: BOOTH掲載を無彩色マネキン版(previews_mq/thumb_female_mq.png)から下着版カラー(previews_sw)へ切替。セット(8496725)が同じ女性画像(previews_sw・05_torso_closeup含む)で全年齢を維持できているため、女性単体も同じ有彩色へ揃えた。戻すときは previews_dir_booth を previews_mq、booth_thumb を thumb_female_mq.png へ戻し、booth_desc_notes の _female_mq_disabled を female に戻す",
     "previews_dir": "配布パッケージ_v1.67.0/previews",
-    "previews_dir_booth": "配布パッケージ_v1.67.0/previews_mq",
+    "previews_dir_booth": "配布パッケージ_v1.67.0/previews_sw",
+    "previews_dir_mq": "配布パッケージ_v1.67.0/previews_mq",
     "previews_dir_sw": "配布パッケージ_v1.67.0/previews_sw",
-    "booth_thumb": "thumb_female_mq.png",
+    "booth_thumb": "thumb_female_sw.png",
+    "booth_thumb_mq": "thumb_female_mq.png",
     "booth_thumb_sw": "thumb_female_sw.png",
-    "zip_dir": "配布zip_v1.67.0",
-    "zip_prefix": "FemaleAnatomy_v1.67.0",
+    "zip_dir": "配布zip_v1.67.1",
+    "zip_prefix": "FemaleAnatomy_v1.67.1",
     "preview_order": ["01_front.png","02_front34.png","03_back.png","04_skeleton_front.png","05_torso_closeup.png","06_forearm_tendon.png"]
   },
 
   "_male_booth_gate": "★男性の previews_dir_booth は撮影済みだが、まだBOOTHへ反映していない（2026-08-10）。07_skin.png＝肌色の全裸レンダーが最も明確なR-18要因なので preview_order_booth から外してある。生殖器13オブジェクトも AGESAFE=1 で全ショット非表示。反映と年齢制限の切替は女性(8481858)の再審査結果を見てから行う。全年齢へ切り替えて事務局にR-18固定されると自分で戻せなくなるため、順序を飛ばさない。撮影は MANNEQUIN=1 AGESAFE=1 blender -b ... render_previews.py -- male",
 
   "male": {
-    "version": "Man_v1.2.0",
+    "version": "Man_v1.2.1",
     "_booth_variant": "2026-08-18: BOOTH掲載を無彩色マネキン版(previews_mq/thumb_male_mq.png)から下着版(previews_sw)へ切替。カラーのまま該当部位を覆う版。男性から先に出し、全年齢を維持できることを確認してから女性・セットへ広げる方針（男性は現在R-18なので判断が覆っても失うものが無い）。戻すときは previews_dir_booth を previews_mq、booth_thumb を thumb_male_mq.png へ戻す",
     "previews_dir": "配布パッケージ_Man_v1.2.0/previews",
     "previews_dir_booth": "配布パッケージ_Man_v1.2.0/previews_sw",
     "previews_dir_mq": "配布パッケージ_Man_v1.2.0/previews_mq",
     "booth_thumb": "thumb_male_sw.png",
     "booth_thumb_mq": "thumb_male_mq.png",
-    "zip_dir": "配布zip_Man_v1.2.0",
-    "zip_prefix": "MaleAnatomy_v1.2.0",
+    "zip_dir": "配布zip_Man_v1.2.1",
+    "zip_prefix": "MaleAnatomy_v1.2.1",
     "preview_order": ["01_muscle_front.png","02_muscle_front34.png","03_muscle_back.png","04_skeleton_front.png","05_organs.png","06_vessels_nerves.png","07_skin.png","08_torso_closeup.png"],
     "_preview_order_booth_note": "01_muscle_front.png は先頭の正方形サムネ(thumb_male_sw.png)と中身が同一なので掲載順から外している（2026-08-18）。正方形サムネは一覧の中央クロップで頭足が切れるのを防ぐための必須枚。Gumroad/配布用の preview_order は8枚のまま",
     "preview_order_booth": ["02_muscle_front34.png","03_muscle_back.png","04_skeleton_front.png","05_organs.png","06_vessels_nerves.png","07_skin.png","08_torso_closeup.png"]
   },
+
+  "_skel": "骨格SKU（C:/Users/abesh/Documents/Blender/SkeletonSKU）。1商品=1zip。files コマンド専用（画像・タイトルは対象外）",
+  "skel_full": { "zips": ["C:/Users/abesh/Documents/Blender/SkeletonSKU/dist/AnatomySkeleton_Full_v1.0.1.zip"] },
+  "skel_vrc":  { "zips": ["C:/Users/abesh/Documents/Blender/SkeletonSKU/dist/AnatomySkeleton_Lite_v1.0.1.zip"] },
 
   "set_image_order": [
     "thumbnails/thumb_set.png",
@@ -67,12 +78,27 @@
     "male:04_skeleton_front.png"
   ],
 
+  "_set_image_order_booth": "2026-08-23: セットのBOOTH掲載を下着版カラー(previews_sw)へ切替。男性(8496247)がカラー＋ブリーフで全年齢を5日維持できたので、次の実験としてセットへ展開する。年齢制限の切替はユーザーが手動で行う。戻すときは set_image_order_booth を消せば set_image_order（カラー原版・肌色乳房あり）に戻る",
+  "set_image_order_booth": [
+    "thumbnails/thumb_set_sw.png",
+    "female:01_front.png",
+    "male:01_muscle_front.png",
+    "female:03_back.png",
+    "male:03_muscle_back.png",
+    "female:05_torso_closeup.png",
+    "male:05_organs.png",
+    "male:06_vessels_nerves.png",
+    "male:04_skeleton_front.png"
+  ],
+  "set_booth_previews_dir_key": { "female": "previews_dir_sw", "male": "previews_dir_booth" },
+
   "_booth_thumb_first": "BOOTHの一覧サムネは1枚目画像の正方形中央クロップ。縦長(1000x1400)を1枚目にすると頭と足が切れるため、正方形サムネを先頭に足す（2026-07-26）",
   "booth_thumb_first": true,
 
   "_booth_desc_notes": "node booth.js desc <product> が anchor の直後へ note を1回だけ挿入する（marker で冪等判定）。BOOTH掲載画像を無彩色にしたぶん、配布データはカラーである旨を購入者に明示するため（2026-08-10）",
+  "_booth_desc_notes_disabled": "2026-08-29: 女性のBOOTH掲載画像をカラー(下着版)へ戻したため、無彩色の注記は不要になった。キー名を _female_mq_disabled にして無効化（setDesc は booth_desc_notes[product] を見るため、名前を戻せば復活する）",
   "booth_desc_notes": {
-    "female": {
+    "_female_mq_disabled": {
       "anchor": "（glTF=COLOR_0／FBX=頂点カラー／OBJ=頂点ごとRGB）。",
       "marker": "無彩色（マネキン調）",
       "note": "\n\n  ※ 当ページの商品画像は、構造が見やすいよう無彩色（マネキン調）でレンダリングしたものです。配布データは上記のとおりカラー着色済みですので、ご購入後は色付きの状態でご利用いただけます。"

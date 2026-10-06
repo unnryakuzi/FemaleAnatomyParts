@@ -50,10 +50,20 @@ function fwd(p) { return p.replace(/\\/g, '/'); }
 
 function imagePaths(p) {
   const root = CFG.root;
-  if (p === 'set') return CFG.set_image_order.map(spec => {
-    if (spec.includes(':')) { const [g, f] = spec.split(':'); return fwd(path.join(root, CFG[g].previews_dir, f)); }
-    return fwd(path.join(root, spec));
-  });
+  // ★セットもBOOTH掲載分だけ別の並びを持つ（set_image_order_booth）。無彩色ではなくカラーのまま
+  //   該当部位を下着で覆う版(previews_sw)。男性(8496247)が同じ方式で全年齢を維持できたため
+  //   2026-08-23 にセットへ展開した。参照先ディレクトリは set_booth_previews_dir_key で切替。
+  if (p === 'set') {
+    const order = CFG.set_image_order_booth || CFG.set_image_order;
+    const dirKey = (CFG.set_image_order_booth && CFG.set_booth_previews_dir_key) || {};
+    return order.map(spec => {
+      if (spec.includes(':')) {
+        const [g, f] = spec.split(':');
+        return fwd(path.join(root, CFG[g][dirKey[g]] || CFG[g].previews_dir, f));
+      }
+      return fwd(path.join(root, spec));
+    });
+  }
   // ★BOOTH掲載分だけ無彩色マネキン調を使う（previews_dir_booth）。年齢制限判定は商品ページの
   //   画像を見ているため、肌色のécorché は「裸の人体」と読まれてR-18固定にされる（2026-08-10）。
   //   配布物・Gumroad はカラーのままなので previews_dir は触らない。
@@ -70,6 +80,8 @@ function imagePaths(p) {
 // product の作品ファイル(zip)絶対パスと、削除すべき旧版判定
 function zipSpec(p) {
   const root = CFG.root;
+  // 骨格SKUのように1商品=1zipのものは config の zips（絶対パス可）をそのまま使う
+  if (CFG[p] && CFG[p].zips) return CFG[p].zips.map(z => fwd(path.isAbsolute(z) ? z : path.join(root, z)));
   const mk = g => CFG[g].preview_order ? ['blend', 'fbx', 'glb', 'obj'].map(ext =>
     fwd(path.join(root, CFG[g].zip_dir, `${CFG[g].zip_prefix}_${ext}.zip`))) : [];
   if (p === 'set') return [...mk('male'), ...mk('female')];
@@ -256,6 +268,8 @@ async function doFiles(context, page) {
 async function run() {
   await withBrowser(async ({ context, getPage }) => {
     const page = await getPage('booth');
+    // 背面タブは描画が止まり click が固まる（2026-10-07 実測）
+    try { await page.bringToFront(); } catch (e) { /* ignore */ }
     // ★accept() は「既に閉じられたダイアログ」に対して Protocol error を投げ、
     //   未捕捉のまま Node を落とす（2026-08-19: セット商品で旧zipを1本消した直後に死亡）。
     //   握りつぶして処理を継続させる。
