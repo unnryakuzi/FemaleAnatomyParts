@@ -62,6 +62,7 @@ UsersabeshAppDataLocalBraveSoftwareBrave-BrowserUser Data/
 # 証跡テキスト(PROVENANCE.txt/checksums.sha256/*.html)と監査結果CSVはgit管理する
 refs/BodyParts3D_v4.0/*.zip
 refs/BodyParts3D_v4.0/obj_isa/
+refs/BodyParts3D_v3.0_95/BodyParts3D_3.0_obj_95/
 refs/BodyParts3D_v4.0/obj_partof/
 refs/BodyParts3D_v4.0/man_geom.json
 refs/BodyParts3D_v4.0/sample_verts.json
