@@ -1,0 +1,42 @@
+================================================================
+CREDITS / ATTRIBUTION  —  クレジット / 帰属表示
+================================================================
+
+----------------------------------------------------------------
+ATTRIBUTION / 出典表記
+----------------------------------------------------------------
+"Female Anatomy Model" (c) 2026 Kabe (Kabe-Tech)
+is an adaptation of "BodyParts3D" (c) The Database Center for Life Science,
+licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+
+「Female Anatomy Model」(c) 2026 Kabe (Kabe-Tech) は、
+「BodyParts3D」© ライフサイエンス統合データベースセンター（CC 表示 4.0 国際）
+を改変して作成したものです。
+
+----------------------------------------------------------------
+SOURCES / 出典
+----------------------------------------------------------------
+- BodyParts3D (c) The Database Center for Life Science (DBCLS)
+    License: CC BY 4.0  https://creativecommons.org/licenses/by/4.0/
+    https://dbarchive.biosciencedbc.jp/jp/bodyparts3d/lic.html
+    Data: Release 3.0 (2011-09-15), polygon reduction rate 95%
+- Female Anatomy Model (this adaptation) (c) 2026 Kabe (Kabe-Tech)
+    https://kabe-tech.com/   Contact: https://kabe-tech.com/contact.html
+
+----------------------------------------------------------------
+CHANGES MADE IN THIS ADAPTATION / 本モデルで加えた主な変更
+----------------------------------------------------------------
+- Female adaptation from the male source (per-region proportional
+  reshaping). 男性原本からの女性化（部位別プロポーション調整）
+- Anatomical corrections: rib cage re-fitting, intervertebral disc /
+  vertebra tilt corrections, shoulder tendon-attachment gap fixes.
+  解剖学的修正（胸郭再調整・椎間円板/椎骨の傾き補正・肩腱付着部
+  ギャップ解消）
+- A-pose matching the source; delivered as a pure static model
+  (rig removed). A-pose化・純静的化（リグ削除）
+- Naming / collection normalization. 命名・コレクション整理
+- Trilingual labels added as custom properties and index
+  (Japanese / English / Latin, TA/FMA-based).
+  3言語ラベル（日本語/英語/ラテン語）をカスタムプロパティ＋索引で付与
+
+================================================================

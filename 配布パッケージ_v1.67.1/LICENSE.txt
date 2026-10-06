@@ -1,0 +1,46 @@
+================================================================
+LICENSE / ライセンス
+================================================================
+
+"Female Anatomy Model" (c) 2026 Kabe (Kabe-Tech)  —  license version KT-L2026-10
+
+[日本語]
+本モデルは「BodyParts3D」© ライフサイエンス統合データベースセンター
+（CC 表示 4.0 国際）を改変して作成しました。
+商用・非商用を問わず、作品の制作に利用・改変できます。対象はイラスト・
+漫画・映像などのほか、モデルを単体で取り出せない形でのゲームへの組み込み
+も含みます。本モデルのデータそのもの（改変したものを含む）の再配布・転売・
+共有は禁止します。
+
+[English]
+This model is an adaptation of "BodyParts3D" (c) The Database Center for
+Life Science (CC BY 4.0).
+You may use and modify it to create your own works, commercial or not:
+illustrations, comics, video and more, including embedding it in a game in
+a form where the model cannot be extracted on its own. Redistributing,
+reselling or sharing the model data itself (including modified versions)
+is prohibited.
+
+----------------------------------------------------------------
+SOURCE DATA / 元データ
+----------------------------------------------------------------
+BodyParts3D, (c) The Database Center for Life Science
+licensed under CC BY 4.0 (Creative Commons Attribution 4.0 International)
+BodyParts3D © ライフサイエンス統合データベースセンター licensed under CC表示 4.0 国際
+  License / ライセンス: https://creativecommons.org/licenses/by/4.0/
+                       https://creativecommons.org/licenses/by/4.0/legalcode.ja
+  Source / 入手先:      https://dbarchive.biosciencedbc.jp/jp/bodyparts3d/lic.html
+
+The restrictions above apply to this model (Kabe-Tech's adaptation).
+They do not limit your rights to the original BodyParts3D data, which
+anyone can obtain from the source above under CC BY 4.0.
+上記の制限は本モデル（Kabe-Tech による改変物）に対するものです。元データの
+BodyParts3D そのものは、上記の入手先から CC BY 4.0 で誰でも入手できます。
+
+Models distributed before October 2026 (without the identifier KT-L2026-10
+embedded in the files) were provided under CC BY-SA 2.1 JP.
+2026年10月より前に配布した版（ファイル内に識別子 KT-L2026-10 が無いもの）は
+CC BY-SA 2.1 JP で提供しました。
+
+Contact / お問い合わせ: https://kabe-tech.com/contact.html
+================================================================
