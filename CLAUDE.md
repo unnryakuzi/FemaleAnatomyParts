@@ -2,19 +2,32 @@
 
 Blender 解剖モデル編集プロジェクト用の作業ルール。
 
-## ⚠ ライセンス移行の検討中（2026-08-23〜・確定するまで表記を変えない）
+## ライセンス（2026-10-07 確定・切替済み）
 
-**`LICENSE.txt` / `CREDITS.txt` / 商品説明文のライセンス記載を勝手に書き換えないこと。**
-CC BY-SA 2.1 JP から独自規約（VN3ライセンス）への移行を検討中で、可否が未確定。
-CC は一度与えた許諾を撤回できず、頒布済みの分を回収できないため、見込みで動かすと取り返しがつかない。
+**配布物のライセンスは「BodyParts3D（CC BY 4.0）の改変物／本モデルのデータの再配布・転売・共有は禁止」。**
+CC BY-SA 2.1 JP には戻さない。文面の正は `scripts/listing/rewrite_license_texts.py`（LICENSE/CREDITS/README）と
+`scripts/listing/license_desc_2026_10.js`（BOOTH/Gumroad の説明文）。
 
-- 現状: BodyParts3D は 2025-02-27 に **CC BY 4.0（継承なし）** へ変更済み。SA を課しているのは中間の always3d だけ
-- 出自監査済み: 製品931メッシュが always3d 配布FBXと頂点数・面数まで完全一致＝**always3d はジオメトリを1頂点も足していない**（自作は下着2＋肋間筋分割6の計8個のみ）
-- **唯一の未確定**: 製品が載っているのはアーカイブが配布していない高解像度版の BP3D。CC BY 4.0 がそこまで及ぶかを DBCLS に照会中（2026-08-23 送信・回答待ち）
-- always3d への許諾依頼は解決手段にならない（SA義務は DBCLS の許諾から発生しており always3d に免除権限がない）
+- 根拠: DBCLS 箕輪氏の回答（2026-10-06）「生命科学系データベースアーカイブから DL できるデータは CC BY 4.0」。
+  製品の元データはアーカイブ旧リリース `20110915/BodyParts3D_3.0_obj_95.zip` と全934パーツ完全一致（`refs/provenance_audit_summary.md` §9）。
+  always3d の配布物はこれを FBX に変換しただけ
+- 2026-10 より前に配布した版（識別子なし）は CC BY-SA 2.1 JP のまま（CC は撤回できない）
 
-詳細: `ライセンス照会_DBCLS.md`（照会記録・無回答時の対応）／`refs/provenance_audit_summary.md`（監査）／
-`refs/provenance_audit.csv`（全939個の判定）／監査スクリプトは `scripts/provenance/`
+### ★配布物には必ず識別子 `KT-L2026-10` を入れる（ユーザー指示 2026-10-07・全セッション共通）
+
+新版を書き出す・zip を作り直す・別形式を足すときは、**全形式に識別子が入っていることを確かめてから出品する**。
+識別子の有無で「旧ライセンス（BY-SA）版」と「転売禁止の新版」を見分ける。**形状に透かしを仕込む等はしない（やりすぎ・ユーザー判断）。**
+
+| 形式 | 入れる場所 | 入れ方 |
+|---|---|---|
+| .blend | シーン `kabe_tech_license` / `kabe_tech_license_id`、全 MESH/EMPTY/ARMATURE に `kt_license` | `apply_license_mark.py` |
+| .fbx | 上のカスタムプロパティ（user property） | `use_custom_props=True` で書き出す |
+| .glb | scene.extras / mesh node の extras | `export_extras=True`。既存 glb なら `stamp_glb.py`（BIN 不変） |
+| .obj / .mtl | 先頭コメント | `stamp_obj.py` |
+
+- **`export_dist.py` は自動で入れて検証する**（識別子が無いと verify で止まる）。別の手段で書き出すときだけ上の個別スクリプトを使う
+- 識別子の文字列・文面を変えるときは `apply_license_mark.py` の `MARK_ID` / `MARK_TEXT` だけを直す（他スクリプトはここを読む）
+- 公開済みファイルに印だけ足すときは、書き出し直さずに stamp 系で足す（2026-10-07: 公開版の女性 .blend にはガイド線2本が残っており、書き出し直すと glb/obj のパーツ数が変わった）
 
 ## バージョン管理（詳細・体系は skill `blender-anatomy-mesh` §2 が正）
 - 削除・再作成・大規模変更の**前に必ず** `save_snapshot('説明')`（復元: `list_snapshots()` → `restore_snapshot(i)`）

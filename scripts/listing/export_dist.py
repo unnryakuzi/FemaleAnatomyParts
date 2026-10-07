@@ -35,6 +35,10 @@ import struct
 import sys
 import time
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import apply_license_mark  # noqa: E402  識別子 KT-L2026-10（配布物には必ず入れる。CLAUDE.md 参照）
+import stamp_obj  # noqa: E402
+
 ROOT = r"C:\Users\abesh\Documents\Blender\MaleAnatomy"
 
 
@@ -104,6 +108,9 @@ def main():
         bpy.ops.object.mode_set(mode="OBJECT")
 
     print("[export_dist] model=%s version=%s outdir=%s" % (model, version, outdir))
+
+    # 0) ライセンス識別子を全オブジェクトとシーンに入れる（.blend/.fbx/.glb に伝搬。冪等）
+    apply_license_mark.apply()
 
     # 1) .blend は「表示状態を触る前」に保存する（購入者が開いたときの見え方を保つ）
     if "blend" in formats:
@@ -177,6 +184,15 @@ def main():
             global_scale=1.0,
             path_mode="AUTO",
         )
+        # OBJ はカスタムプロパティを持てないので、先頭コメントで識別子を入れる
+        stamp_obj.stamp(p, p + ".tmp")
+        os.replace(p + ".tmp", p)
+        mtl = p[:-4] + ".mtl"
+        if os.path.exists(mtl):
+            body = open(mtl, encoding="utf-8").read()
+            if apply_license_mark.MARK_ID not in body:
+                open(mtl, "w", encoding="utf-8", newline="\n").write(
+                    "# Kabe-Tech license %s (see LICENSE.txt)\n" % apply_license_mark.MARK_ID + body)
         print("[obj] %s  %.1f MB  %.0fs" % (p, os.path.getsize(p) / 1e6, time.time() - t))
 
     verify(outdir, stem, formats, len(meshes))
@@ -210,11 +226,15 @@ def verify(outdir, stem, formats, expect):
         check(len(nodes) == expect, "glb ノード数 %d != %d" % (len(nodes), expect))
         check("COLOR_0" in attrs, "glb に頂点カラーが無い")
         check(n_lab > 0, "glb にラベル(name_ja)が無い")
+        mesh_nodes = [n for n in nodes if "mesh" in n]
+        n_mark = sum(1 for n in mesh_nodes if n.get("extras", {}).get("kt_license") == apply_license_mark.MARK_ID)
+        check(n_mark == len(mesh_nodes), "glb の識別子 %d/%d" % (n_mark, len(mesh_nodes)))
     if "obj" in formats:
         p = os.path.join(outdir, stem + ".obj")
         o_cnt = 0
         rgb_ok = False
         with open(p, "r", encoding="utf-8", errors="replace") as f:
+            check(apply_license_mark.MARK_ID in f.readline(), "obj 先頭に識別子コメントが無い")
             for line in f:
                 if line.startswith("o "):
                     o_cnt += 1
@@ -233,6 +253,7 @@ def verify(outdir, stem, formats, expect):
               % (os.path.getsize(p) / 1e6, n_model, n_col, n_lab))
         check(n_col > 0, "fbx に頂点カラーレイヤーが無い")
         check(n_lab > 0, "fbx にラベル(name_ja)が無い")
+        check(data.count(apply_license_mark.MARK_ID.encode()) > 0, "fbx に識別子が無い")
         del data
 
     if bad:
