@@ -48,7 +48,7 @@ def parse_args():
     if len(argv) < 2:
         raise SystemExit("usage: -- <female|male> <version> [--outdir DIR] [--formats blend,fbx,glb,obj]")
     model, version = argv[0], argv[1]
-    outdir, formats = None, ["blend", "fbx", "glb", "obj"]
+    outdir, formats, decimate = None, ["blend", "fbx", "glb", "obj"], "keep"
     i = 2
     while i < len(argv):
         if argv[i] == "--outdir":
@@ -57,8 +57,15 @@ def parse_args():
         elif argv[i] == "--formats":
             formats = [x.strip() for x in argv[i + 1].split(",") if x.strip()]
             i += 2
+        elif argv[i] == "--decimate":
+            # keep = DECIMATE を効かせたまま書き出す（v1.67.1 まで販売してきた形。glb/fbx/obj は削減後の形）
+            # off  = DECIMATE を外して書き出す（全形式が元の形。.blend のモディファイアは残る）
+            decimate = argv[i + 1]
+            assert decimate in ("keep", "off"), decimate
+            i += 2
         else:
             raise SystemExit("unknown option: " + argv[i])
+    globals()["DECIMATE_MODE"] = decimate
     # 既存パッケージの命名規則: ディレクトリは男性だけ Man_ が付き、ファイル名には付かない
     dirtag = ("Man_" + version) if model == "male" else version
     if outdir is None:
@@ -126,6 +133,30 @@ def main():
     meshes = select_meshes()
     print("[export_dist] hide_viewport 解除 %d 件 / MESH %d 個を書き出し対象に" % (n, len(meshes)))
 
+    # 女性マスターには DECIMATE（113個）と MIRROR（Breast_Base）が付いている（2026-10-14 実測）。
+    # glb だけモディファイアを適用しないと、Breast_Base が片側だけになる（v1.68.0 の初回書き出しで発生）。
+    # → 全形式でモディファイアを適用する。DECIMATE は --decimate で効かせるか外すかを選ぶ
+    n_off = 0
+    if DECIMATE_MODE == "off":
+        for o in meshes:
+            for md in o.modifiers:
+                if md.type == "DECIMATE" and (md.show_viewport or md.show_render):
+                    md.show_viewport = False
+                    md.show_render = False
+                    n_off += 1
+    has_shape_keys = [o.name for o in meshes if o.data.shape_keys]
+    bpy.context.view_layer.update()
+    dg = bpy.context.evaluated_depsgraph_get()
+    evaluated = {}   # モディファイア付きパーツの、適用後の頂点数（検証用）
+    for o in meshes:
+        if any(md.show_viewport for md in o.modifiers):
+            ev = o.evaluated_get(dg)
+            me = ev.to_mesh()
+            evaluated[o.name] = len(me.vertices)
+            ev.to_mesh_clear()
+    print("[export_dist] DECIMATE=%s（外した %d 個）/ モディファイアを適用するパーツ %d 個 / シェイプキー付き %d 個"
+          % (DECIMATE_MODE, n_off, len(evaluated), len(has_shape_keys)))
+
     if "fbx" in formats:
         p = os.path.join(outdir, stem + ".fbx")
         t = time.time()
@@ -160,9 +191,12 @@ def main():
             export_cameras=False,
             export_lights=False,
             export_animations=False,
-            export_apply=False,       # モディファイアは 0 個なので不要（シェイプキー保護）
+            # モディファイアを適用する（Breast_Base の MIRROR 等）。シェイプキーがあると適用で消えるので、そのときだけ適用しない
+            export_apply=not has_shape_keys,
             export_yup=True,
         )
+        if has_shape_keys:
+            print("[glb] 警告: シェイプキー付きのパーツがあるためモディファイアを適用していない: %s" % has_shape_keys[:5])
         print("[glb] %s  %.1f MB  %.0fs" % (p, os.path.getsize(p) / 1e6, time.time() - t))
 
     if "obj" in formats:
@@ -195,10 +229,10 @@ def main():
                     "# Kabe-Tech license %s (see LICENSE.txt)\n" % apply_license_mark.MARK_ID + body)
         print("[obj] %s  %.1f MB  %.0fs" % (p, os.path.getsize(p) / 1e6, time.time() - t))
 
-    verify(outdir, stem, formats, len(meshes))
+    verify(outdir, stem, formats, len(meshes), evaluated)
 
 
-def verify(outdir, stem, formats, expect):
+def verify(outdir, stem, formats, expect, evaluated=None):
     """書き出した実物を読み直して数と色を確認する（サイズだけ見て済ませない）。
 
     途中で assert 中断すると後続形式が検査されないので、問題は貯めて最後に出す。
@@ -229,17 +263,41 @@ def verify(outdir, stem, formats, expect):
         mesh_nodes = [n for n in nodes if "mesh" in n]
         n_mark = sum(1 for n in mesh_nodes if n.get("extras", {}).get("kt_license") == apply_license_mark.MARK_ID)
         check(n_mark == len(mesh_nodes), "glb の識別子 %d/%d" % (n_mark, len(mesh_nodes)))
+        # モディファイア付きパーツ: glb の頂点数が適用後の頂点数から大きく外れたら、適用されていない
+        #  （MIRROR 未適用で片側の胸=0.5倍、DECIMATE 未適用で 3〜10倍）。削減後は使われない頂点が落ちて最大25%少なくなる（右側頭筋 0.746倍）ので幅を持たせる
+        if evaluated:
+            off = []
+            for n in mesh_nodes:
+                ev = evaluated.get(n.get("name"))
+                if ev is None:
+                    continue
+                cnt = sum(j["accessors"][pr["attributes"]["POSITION"]]["count"] for pr in j["meshes"][n["mesh"]]["primitives"])
+                if not (0.6 * ev <= cnt <= 1.5 * ev):
+                    off.append("%s %d/%d" % (n["name"].split("(")[0], cnt, ev))
+            print("[verify][glb] モディファイア付き %d 個の頂点数を確認、外れ %d 個" % (len(evaluated), len(off)))
+            check(not off, "glb でモディファイアが適用されていない: %s" % off[:5])
     if "obj" in formats:
         p = os.path.join(outdir, stem + ".obj")
         o_cnt = 0
         rgb_ok = False
+        cur, vcount, short = None, {}, []
         with open(p, "r", encoding="utf-8", errors="replace") as f:
             check(apply_license_mark.MARK_ID in f.readline(), "obj 先頭に識別子コメントが無い")
             for line in f:
                 if line.startswith("o "):
                     o_cnt += 1
-                elif not rgb_ok and line.startswith("v "):
-                    rgb_ok = len(line.split()) == 7   # x y z r g b
+                    cur = line[2:].strip(); vcount[cur] = 0
+                elif line.startswith("v "):
+                    if cur is not None:
+                        vcount[cur] += 1
+                    if not rgb_ok:
+                        rgb_ok = len(line.split()) == 7   # x y z r g b
+        if evaluated:
+            for name, ev in evaluated.items():
+                if name in vcount and vcount[name] != ev:
+                    short.append("%s %d!=%d" % (name.split("(")[0], vcount[name], ev))
+            print("[verify][obj] モディファイア付き %d 個の頂点数を確認、食い違い %d 個" % (len(evaluated), len(short)))
+            check(not short, "obj の頂点数が適用後と食い違う: %s" % short[:5])
         print("[verify][obj] o行=%d 頂点RGB=%s" % (o_cnt, rgb_ok))
         check(o_cnt == expect, "obj オブジェクト数 %d != %d" % (o_cnt, expect))
         check(rgb_ok, "obj の v 行に頂点カラーが無い（export_colors）")
