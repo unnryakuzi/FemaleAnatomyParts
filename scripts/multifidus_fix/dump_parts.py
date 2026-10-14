@@ -21,5 +21,9 @@ for o in objs:
     meta[k] = dict(slot=s, name=o.name, n=n, sig=sig, cols=[c.name for c in o.users_collection])
     if any(o.name.startswith(f) for f in FULL):
         out["w_%d" % s] = w; out["e_%d" % s] = ed.reshape(-1, 2).astype(np.int32); full[k] = s
+        lv = np.empty(len(me.loops), np.int32); me.loops.foreach_get("vertex_index", lv)          # 面（形の崩れ・干渉を測るため）
+        ls = np.empty(len(me.polygons), np.int32); me.polygons.foreach_get("loop_start", ls)
+        lt = np.empty(len(me.polygons), np.int32); me.polygons.foreach_get("loop_total", lt)
+        out["fl_%d" % s] = lv; out["fs_%d" % s] = ls; out["ft_%d" % s] = lt
 np.savez_compressed(OUT, **out); json.dump(dict(meta=meta, full=full), open(OUT.replace(".npz", ".json"), "w", encoding="utf-8"), ensure_ascii=False)
 print("DUMPED", len(meta), "full", list(full))

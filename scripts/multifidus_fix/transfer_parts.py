@@ -21,8 +21,14 @@ print("対応パーツ", len(same), "外した（周りとの食い違い mm）"
 keep = ~np.isin(Lb, [same.index(k) for k, _ in bad]); P, D = P[keep], D[keep]; tree = cKDTree(P)
 out = {}
 for k in TARGET:
-    assert m[k]["n"] == f[k]["n"] and m[k]["sig"] == f[k]["sig"], k
-    s = mj["full"][k]; w = M["w_%d" % s].astype(np.float64); e = M["e_%d" % s]
+    src, mirror = k, False
+    if not (m[k]["n"] == f[k]["n"] and m[k]["sig"] == f[k]["sig"]):
+        # 女性の左多裂筋は右の鏡像（男性の左とは頂点数が違う）。反対側の男性パーツを鏡に映して使う
+        opp = ("左" if k[0] == "右" else "右") + k[1:]
+        assert m[opp]["n"] == f[k]["n"] and m[opp]["sig"] == f[k]["sig"], k
+        src, mirror = opp, True
+    s = mj["full"][src]; w = M["w_%d" % s].astype(np.float64); e = M["e_%d" % s]
+    if mirror: w = w * np.array([-1.0, 1.0, 1.0])
     d, j = tree.query(w, K); wt = 1.0 / (d ** 2 + E ** 2); dv = (D[j] * wt[..., None]).sum(1) / wt.sum(1)[:, None]
     n = len(w); deg = np.bincount(e.ravel(), minlength=n).astype(np.float64)
     for _ in range(SM):
