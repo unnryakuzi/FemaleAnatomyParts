@@ -72,3 +72,6 @@ refs/BodyParts3D_v4.0/bp3d_index.json
 # 取得元ページのうち証跡価値の無いもの（404ページ・JSの塊）
 refs/BodyParts3D_v4.0/contact_jp.html
 refs/BodyParts3D_v4.0/bp3d_home.html
+
+# 多裂筋の作り直しの中間データ
+scripts/multifidus_fix/work/
