@@ -1,24 +1,27 @@
 # v1.68.0 で編集した所を色分けした確認用 .blend を別名で保存する（マスターは保存しない）
 #  頂点カラー「編集箇所」を全メッシュに作り、ビューポートをその色で表示する
 #    赤 = 首・背中の27個（男性版の形のまま、付着する骨と同じ変換で置き直した）
-#    橙 = 腹壁の深い4層（Tポーズ版から）／緑 = そのうち恥骨の上で作り直した頂点
+#    橙 = 腹壁の深い4層（Tポーズ版から）／緑 = そのうち恥骨の上で作り直した頂点／黄緑 = 腹横筋を肋骨のかごの内側へ戻した頂点
 #    水色 = 下腿骨間膜（Tポーズ版から）／青 = Man_All から足した腕の6個
 #    黄 = 多裂筋（首の部分だけ位置を修正）／紫 = 踵骨腱（骨格 → 靱帯・腱 へ移しただけ）／灰 = 変更なし
-# blender -b 3DAnatomyFemale.blend -P make_review_blend.py -- <added.json> <腹壁修正前の work/wb dir> <保存先 .blend>
+# blender -b 3DAnatomyFemale.blend -P make_review_blend.py -- <added.json> <腹壁修正前の work/wb dir> <保存先 .blend> [腹横筋の肋骨修正前の work/after2 dir]
 import bpy, sys, json, numpy as np
-a = sys.argv[sys.argv.index("--") + 1:]; ADDED, WB, OUT = a
+a = sys.argv[sys.argv.index("--") + 1:]; ADDED, WB, OUT = a[:3]; WR = a[3] if len(a) > 3 else None
 added = set(json.load(open(ADDED, encoding="utf-8")))
 ARM = ("右前腕骨間膜", "左前腕骨間膜", "右手の虫様筋", "左手の虫様筋", "右掌側骨間筋", "左掌側骨間筋")
 ABD = ("腹直筋", "内腹斜筋", "腹横筋", "錐体筋")
 fj = json.load(open(WB + "/female.json", encoding="utf-8")); F = np.load(WB + "/female.npz")
-C = dict(red=(0.85, 0.08, 0.05, 1), pink=(1.0, 0.35, 0.7, 1), orange=(1.0, 0.55, 0.1, 1), green=(0.1, 0.8, 0.2, 1), cyan=(0.2, 0.75, 0.9, 1),
-         blue=(0.1, 0.3, 0.95, 1), yellow=(1.0, 0.85, 0.0, 1), purple=(0.6, 0.2, 0.85, 1), grey=(0.62, 0.62, 0.62, 1))
+rj, R = (json.load(open(WR + "/female.json", encoding="utf-8")), np.load(WR + "/female.npz")) if WR else (None, None)
+C = dict(red=(0.85, 0.08, 0.05, 1), pink=(1.0, 0.35, 0.7, 1), orange=(1.0, 0.55, 0.1, 1), green=(0.1, 0.8, 0.2, 1), lime=(0.65, 0.95, 0.1, 1),
+         cyan=(0.2, 0.75, 0.9, 1), blue=(0.1, 0.3, 0.95, 1), yellow=(1.0, 0.85, 0.0, 1), purple=(0.6, 0.2, 0.85, 1), grey=(0.62, 0.62, 0.62, 1))
+Z_PUBIS = 1.03   # 恥骨の上の作り直しは z<=1.025m（blend_lower.py の z1）。それより上の動きは緑にしない
 LEGEND = """v1.68.0 で編集したパーツ（頂点カラー「編集箇所」で色分け。ビューポートはソリッド表示・カラー＝頂点）
 開いたときは変更していない筋を隠してある（骨と歯は表示）。ビューポートで Alt+H を押すと全部表示に戻る
 赤   首・背中の25個: 男性版の形のまま、付着する骨と同じ変換で置き直した（頭半棘筋・頚半棘筋・頚回旋筋・頚最長筋・大小後頭直筋・横突間筋・棘間筋・大小菱形筋・肩甲挙筋・鎖骨下筋・胸腸肋筋）
 桃   下後鋸筋（左右）: 上と同じ置き方のうえで、広背筋と脊柱起立筋のすき間に合わせて薄くした
-橙   腹壁の深い4層（腹直筋・内腹斜筋・腹横筋・錐体筋）: Tポーズ版から
+橙   腹壁の深い4層（腹直筋・内腹斜筋・腹横筋・錐体筋）: Tポーズ版から（腹横筋は上の部分を肋骨のかごの内側へ戻した）
 緑   そのうち恥骨の上で作り直した頂点
+黄緑 腹横筋の上の部分: 肋骨のかごの外側に出ていたのを内側へ戻した頂点
 水色 下腿骨間膜: Tポーズ版から
 青   Man_All から足した腕の6個（前腕骨間膜・手の虫様筋・掌側骨間筋）
 黄   多裂筋: 販売中の元の形のまま、首の部分だけ下げて上端を第2頚椎の高さに
@@ -40,10 +43,16 @@ for o in bpy.data.objects:
     else:
         key = "grey"
     col = np.tile(lin(C[key]), (n, 1))
-    if key == "orange" and b in fj["full"]:   # 腹壁の深い層: 恥骨の上で作り直した頂点を緑に
-        pre = F["w_%d" % fj["full"][b]].astype(np.float64)
+    if key == "orange" and b in fj["full"]:
         co = np.empty(n * 3); me.vertices.foreach_get("co", co); M = np.array(o.matrix_world)
-        mv = np.linalg.norm(co.reshape(-1, 3) @ M[:3, :3].T + M[:3, 3] - pre, axis=1) > 1e-4
+        w = co.reshape(-1, 3) @ M[:3, :3].T + M[:3, 3]
+        if rj is not None and b in rj["full"]:   # 腹横筋: 肋骨のかごの内側へ戻した頂点を黄緑に（肋骨修正の前と比べる）
+            pre_r = R["w_%d" % rj["full"][b]].astype(np.float64)
+            mr = np.linalg.norm(w - pre_r, axis=1) > 1e-4
+            col[mr] = lin(C["lime"]); cnt["lime(頂点)"] = cnt.get("lime(頂点)", 0) + int(mr.sum())
+        pre = F["w_%d" % fj["full"][b]].astype(np.float64)   # 恥骨の上で作り直した頂点を緑に（腹壁修正の前と比べ、z で恥骨まわりに限る）
+        base_pos = R["w_%d" % rj["full"][b]].astype(np.float64) if (rj is not None and b in rj["full"]) else w
+        mv = (np.linalg.norm(base_pos - pre, axis=1) > 1e-4) & (pre[:, 2] <= Z_PUBIS)
         col[mv] = lin(C["green"]); cnt["green(頂点)"] = cnt.get("green(頂点)", 0) + int(mv.sum())
     cnt[key] = cnt.get(key, 0) + 1
     at = me.color_attributes.get("編集箇所") or me.color_attributes.new("編集箇所", 'FLOAT_COLOR', 'POINT')
