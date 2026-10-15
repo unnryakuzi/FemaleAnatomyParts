@@ -24,7 +24,7 @@ USE = [c for c in bpy.data.collections if c.name.startswith("筋肉") or c.name 
 parts = sorted({o for c in USE for o in c.all_objects if o.type == 'MESH'}, key=lambda o: o.name)
 tg = [o for o in parts if base(o.name) in NAMES]
 if CAND is not None:
-    for o in tg:
+    for o in parts:                                                   # 候補にあるパーツは対象でなくても置き換える（相手側が動いた分も測る。2026-10-15）
         k = base(o.name)
         if k in CAND.files:
             w = CAND[k].astype(np.float64); Mi = np.array(o.matrix_world.inverted())
