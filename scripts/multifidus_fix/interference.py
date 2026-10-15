@@ -9,6 +9,9 @@ a = sys.argv[sys.argv.index("--") + 1:]
 NAMES = json.load(open(a[0], encoding="utf-8")); OUT = a[1]
 CAND = np.load(a[2]) if len(a) > 2 and a[2] not in ("", "-") else None
 STEP = int(a[3]) if len(a) > 3 else 4
+# parity: 面の向きで「中」と出た点を、光線の交差回数（局所座標の ±X/±Y/±Z の6本のうち4本以上が奇数）でも確かめる。
+#  薄い膜や閉じていない面での誤判定（外肋間筋で 46mm 等）を除く（2026-10-15 精度を上げた測り直し）
+PARITY = len(a) > 4 and a[4] == "parity"
 TH = 0.001
 base = lambda n: n.split("(")[0].split(".")[0]
 for o in bpy.context.scene.objects:                                   # 非表示だと depsgraph から外れて BVH が作れない
@@ -33,6 +36,18 @@ def wverts(o):
 bb = {}
 for o in parts:
     w = wverts(o); bb[o] = (w.min(0), w.max(0))
+AXES = [Vector(x) for x in ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))]
+def inside_parity(T, v):
+    # 局所座標で6方向に光線を飛ばし、面を横切る回数が奇数の方向が4本以上なら中（閉じたメッシュでの内外判定）
+    odd = 0; p0 = Vector(v)
+    for ax in AXES:
+        c, p = 0, p0
+        for _ in range(64):
+            h = T.ray_cast(p, ax, 1.0e6)
+            if h[0] is None: break
+            c += 1; p = h[0] + ax * 1e-4
+        odd += c % 2
+    return odd >= 4
 cache = {}
 def tree(o):
     if o not in cache:
@@ -52,9 +67,10 @@ for P in tg:
         for v in L:
             loc, n, _, _ = T.find_nearest(Vector(v))
             if loc is None: continue
-            dw = M3 @ (np.array(loc) - v); nw = Minv_T @ np.array(n); nw /= np.linalg.norm(nw)
-            d = float(dw @ nw)                                        # 正 = 相手の面の内側
-            if d > TH: deep.append(d)
+            dw = M3 @ (np.array(loc) - v); nw = Minv_T @ np.array(n); nn = np.linalg.norm(nw)
+            if nn == 0: continue
+            d = float(dw @ nw) / nn                                   # 正 = 相手の面の内側
+            if d > TH and (not PARITY or inside_parity(T, v)): deep.append(d)
         if deep:
             pr[base(Q.name) + ("" if Q.name.split("(")[0] == base(Q.name) else Q.name[len(base(Q.name)):].split("(")[0])] = [len(deep), round(len(deep) / len(W) * 100, 2), round(max(deep) * 1000, 1)]
     res[base(P.name)] = dict(n=len(W), pairs=pr)

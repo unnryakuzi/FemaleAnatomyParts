@@ -119,6 +119,18 @@ def main():
     # 0) ライセンス識別子を全オブジェクトとシーンに入れる（.blend/.fbx/.glb に伝搬。冪等）
     apply_license_mark.apply()
 
+    # 0.5) --decimate off: 配布物（.blend を含む全形式）から DECIMATE を外す。メモリ上だけで、マスターのファイルは書き換えない
+    #      （2026-10-15 ユーザー決定「配布物だけ外して全形式を元の形に」。マスターの表示は軽いまま）
+    if DECIMATE_MODE == "off":
+        n_rm = 0
+        for o in bpy.context.scene.objects:
+            if o.type != "MESH":
+                continue
+            for md in [m for m in o.modifiers if m.type == "DECIMATE"]:
+                o.modifiers.remove(md)
+                n_rm += 1
+        print("[export_dist] DECIMATE を %d 個外した（配布物のみ）" % n_rm)
+
     # 1) .blend は「表示状態を触る前」に保存する（購入者が開いたときの見え方を保つ）
     if "blend" in formats:
         p = os.path.join(outdir, stem + ".blend")

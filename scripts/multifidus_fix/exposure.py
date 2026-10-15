@@ -28,6 +28,10 @@ if CAND is not None:
 bpy.context.view_layer.update(); dg = bpy.context.evaluated_depsgraph_get(); sc = bpy.context.scene
 s2 = 2 ** -0.5
 DIRS = {"後ろ": (0, -1, 0), "前": (0, 1, 0), "右から": (1, 0, 0), "左から": (-1, 0, 0), "右後ろ": (s2, -s2, 0), "左後ろ": (-s2, -s2, 0)}   # 光線の向き（後ろ側 = +Y から -Y へ）
+if len(a) > 4 and a[4] == "14dirs":   # 上下斜め45°の8方向を足す（2026-10-15 精度を上げた測り直し）
+    for nm, (x, y) in {"後ろ": (0, -1), "前": (0, 1), "右から": (1, 0), "左から": (-1, 0)}.items():
+        DIRS[nm + "・上から"] = (x * s2, y * s2, -s2)
+        DIRS[nm + "・下から"] = (x * s2, y * s2, s2)
 res = {}
 for P in sorted(tg, key=lambda o: o.name):
     co = np.empty(len(P.data.vertices) * 3); P.data.vertices.foreach_get("co", co); M = np.array(P.matrix_world)
