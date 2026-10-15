@@ -11,6 +11,8 @@ X = dict(np.load(INP)); male_int = json.load(open(MI, encoding="utf-8")); male_e
 TARGETS = json.load(open(TJ, encoding="utf-8"))
 TH = 0.001; ISTEP, ESTEP = 6, 10
 import os
+ISTEP = int(os.environ.get("ISTEP", ISTEP)); ESTEP = int(os.environ.get("ESTEP", ESTEP))
+import os
 EXPW = float(os.environ.get("EXPW", "2"))   # 露出の重み（既定 2。表から見えては困るパーツは大きくする）
 base = lambda n: n.split("(")[0].split(".")[0]
 def key(n):
@@ -57,6 +59,9 @@ def interference(P, Z):
     return ex
 s2 = 2 ** -0.5
 DIRS = [(0, -1, 0), (0, 1, 0), (1, 0, 0), (-1, 0, 0), (s2, -s2, 0), (-s2, -s2, 0)]
+if os.environ.get("DIRS14") == "1":   # 上下斜め45°の8方向を足す（exposure.py の 14dirs と同じ）
+    for x, y in ((0, -1), (0, 1), (1, 0), (-1, 0)):
+        DIRS += [(x * s2, y * s2, -s2), (x * s2, y * s2, s2)]
 def exposure(P, Z):
     dg = bpy.context.evaluated_depsgraph_get(); sc = bpy.context.scene; seen = np.zeros(len(Z), bool)
     for d in DIRS:
