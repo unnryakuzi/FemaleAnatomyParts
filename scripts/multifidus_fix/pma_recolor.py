@@ -1,6 +1,6 @@
 # 大胸筋の腹部の下の端（腱の色＝白クリーム）を、筋の真ん中と同じ色にする（形は変えない）。別名で保存
 #  主軸（PCA）で上腕骨側を 1、下の端を 0 とし、0〜0.25 は筋の色、0.25〜0.40 で元の色へなめらかに戻す
-# blender -b <blend> -P pma_recolor.py -- <保存先>
+# blender -b <blend> -P pma_recolor.py -- <保存先（開いたファイルと同じパスなら上書き保存）>
 import bpy, sys, numpy as np
 OUT = sys.argv[sys.argv.index("--") + 1]
 base = lambda n: n.split("(")[0].split(".")[0]
@@ -17,4 +17,8 @@ for o in bpy.data.objects:
     w = np.clip((0.40 - t) / 0.15, 0, 1)[:, None]                         # 0.25 以下で 1、0.40 以上で 0
     col = col * (1 - w) + mus * w
     at.data.foreach_set("color", col.astype(np.float32).ravel()); print("色を変えた", o.name, int((w[:, 0] > 0).sum()), "/", n, "筋の色", np.round(mus, 3))
-bpy.ops.wm.save_as_mainfile(filepath=OUT, copy=True); print("SAVED", OUT)
+if bpy.path.abspath(OUT).replace("/", "\\").lower() == bpy.data.filepath.replace("/", "\\").lower():
+    bpy.ops.wm.save_mainfile()                                                # マスターと同じパスなら上書き保存
+else:
+    bpy.ops.wm.save_as_mainfile(filepath=OUT, copy=True)
+print("SAVED", OUT)

@@ -10,7 +10,7 @@ for k in X.files:   # npz のキー＝パーツの base 名（多裂筋・錐体
     loc = w @ Mi[:3, :3].T + Mi[:3, 3]
     o.data.vertices.foreach_set("co", loc.astype(np.float32).ravel()); o.data.update()
     print("SET", o.name, len(w))
-if bpy.path.abspath(OUT) == bpy.data.filepath:
+if bpy.path.abspath(OUT).replace("/", "\\").lower() == bpy.data.filepath.replace("/", "\\").lower():   # 区切り文字・大文字小文字の違いを無視
     bpy.ops.wm.save_mainfile()
 else:
     bpy.ops.wm.save_as_mainfile(filepath=OUT, copy=True)
