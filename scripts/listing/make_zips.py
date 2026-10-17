@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """配布パッケージから形式別 zip を組み立てる（blend/fbx/glb/obj の4本）。
 
-  python scripts/listing/make_zips.py <female|male> <version>
+  python scripts/listing/make_zips.py <female|male> <version> [--formats blend,fbx,glb,obj]
+
+  --formats を付けると、その形式の zip だけ作り直す（既定は4本とも）
 
 例:
   python scripts/listing/make_zips.py male v1.2.0
@@ -25,8 +27,15 @@ BOOTH_LIMIT = 1.2 * 1000 ** 3
 
 def main():
     if len(sys.argv) < 3:
-        raise SystemExit("usage: python make_zips.py <female|male> <version>")
+        raise SystemExit("usage: python make_zips.py <female|male> <version> [--formats blend,fbx,glb,obj]")
     model, version = sys.argv[1], sys.argv[2]
+    formats = list(EXTS)
+    if len(sys.argv) > 3:
+        if sys.argv[3] != "--formats" or len(sys.argv) < 5:
+            raise SystemExit("unknown option: " + " ".join(sys.argv[3:]))
+        formats = [x.strip() for x in sys.argv[4].split(",") if x.strip()]
+        if not all(f in EXTS for f in formats):
+            raise SystemExit("formats は blend,fbx,glb,obj から: " + sys.argv[4])
     dirtag = ("Man_" + version) if model == "male" else version
     stem = ("MaleAnatomy_" if model == "male" else "FemaleAnatomy_") + version
     pkg = os.path.join(ROOT, "配布パッケージ_" + dirtag)
@@ -38,6 +47,8 @@ def main():
 
     over = []
     for fmt, exts in EXTS.items():
+        if fmt not in formats:
+            continue
         members = [(os.path.join(pkg, f), f) for f in COMMON]
         members += [(os.path.join(index_dir, f), "index/" + f) for f in index_files]
         for e in exts:

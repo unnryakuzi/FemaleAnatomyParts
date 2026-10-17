@@ -38,6 +38,7 @@ import time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import apply_license_mark  # noqa: E402  識別子 KT-L2026-10（配布物には必ず入れる。CLAUDE.md 参照）
 import stamp_obj  # noqa: E402
+import ui_defaults  # noqa: E402
 
 ROOT = r"C:\Users\abesh\Documents\Blender\MaleAnatomy"
 
@@ -135,9 +136,19 @@ def main():
     if "blend" in formats:
         p = os.path.join(outdir, stem + ".blend")
         t = time.time()
-        # compress=True 必須。マスターも配布済み v1.1.0 も zstd 圧縮(先頭 28 B5 2F FD)で、
-        # 非圧縮にすると 644MB -> 1.89GB に膨らむ。
-        bpy.ops.wm.save_as_mainfile(filepath=p, copy=True, compress=True)
+        # 開いたときクリックでパーツを選べる画面にする（オーバーレイ・選択ツール。表示・非表示は触らない）
+        #  2026-10-18: 女性の配布 .blend がオーバーレイなし・回転ツールで開き、選んでも縁取りが出なかった
+        ui_defaults.apply()
+        # 上書きのとき旧版を .blend1 として models に残さない（2026-10-17 に残って zip の前に退避した）
+        fp = bpy.context.preferences.filepaths
+        keep_versions = fp.save_version
+        fp.save_version = 0
+        try:
+            # compress=True 必須。マスターも配布済み v1.1.0 も zstd 圧縮(先頭 28 B5 2F FD)で、
+            # 非圧縮にすると 644MB -> 1.89GB に膨らむ。
+            bpy.ops.wm.save_as_mainfile(filepath=p, copy=True, compress=True)
+        finally:
+            fp.save_version = keep_versions
         print("[blend] %s  %.1f MB  %.0fs" % (p, os.path.getsize(p) / 1e6, time.time() - t))
 
     # 2) ここから先はメッシュ形式。depsgraph から落ちないよう可視化してから書き出す
