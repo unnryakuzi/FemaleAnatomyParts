@@ -50,12 +50,14 @@ Tポーズ版のパーツは次の2つの元になっている。直したあと
 
 ## 6. 進捗（2026-10-18 済み）
 
-- 結果 = `3DAnatomyFemale_Tpose_final_20261018.blend`（`.blend1` = 腕の6個を置き直す前）。中身と数字は CHANGELOG v1.68.0「追記（10-18・Tポーズ版へ移した）」
+- 結果 = `3DAnatomyFemale_Tpose_final_20261018.blend`（`.blend1` = 大胸筋の腹部を前の形に戻す前）。中身と数字は CHANGELOG v1.68.0「追記（10-18・Tポーズ版へ移した）」
 - 手順（scripts/multifidus_fix/、作業ファイルは `work/tpose/`）:
   1. `tpose_port_dump.py`（3ファイルのダンプ）→ `tpose_port_plan.py`（移すパーツを決める）→ `tpose_port_take.py`（マスターから頂点・色を取り出す）→ `tpose_port_apply.py`（Tポーズ版へ書き込み、別名で保存）
   2. `tpose_port_arm6.py`（腕の6個を置き直す。§2-3 の「Tポーズ版にあるものを残す」は、6個が折れていたので変えた）
   3. 確かめ: `tpose_port_verify.py`（ビット照合）・`interference.py`/`exposure.py`（＋`tpose_port_intcmp.py`/`tpose_port_expcmp.py`）・`fold_report.py`・`shape_metrics.py`・`cage_profile.py`＋`cage_gapcmp.py`・`tpose_port_render.py`/`tpose_port_render_pma.py`＋`tpose_port_sheet.py`（画像）・`01_ray_idmap.py`＋`tpose_port_idmap_cmp.py`（テクスチャへの影響）
+- **ユーザー基準（10-18 夕）**: Tポーズ版は「前の Tポーズと表層の筋が合っていればよい（三角筋の位置など）。もともとは抜けていたパーツを足すのが目的」。
+  → 三角筋は動かさない（第四肋骨との重なりはそのまま）。大胸筋の腹部は前の Tポーズの形に戻した（`tpose_port_restore.py`）。腹の深い筋は表層の筋を変えていないのでマスターの形のまま
 - **未決（ユーザーに聞く）**:
-  - 第四肋骨と Tポーズ版の三角筋鎖骨部の重なり（深さ最大4mm、腋の奥で外からは見えない）を直すか。直すなら三角筋側（Tポーズ版でユーザーが手で直した形）を動かすことになる
-  - 色テクスチャ・ID マップを焼き直すか（§4。変わるのは鼠径部・乳房の下・胸骨のまわり・手のひらの、表面の約2%）
+  - 前の Tポーズで光線が何にも当たらなかった穴（正中の白線沿いの点線・ビキニライン・恥骨の上・腋の奥）に深い筋の色が入る。これも前と同じにしたいなら、穴から見える所だけ深い筋を奥へ下げる（恥骨の上は 1〜2cm 動かすことになる）
+  - 色テクスチャ・ID マップを焼き直すか（§4）。焼き直しても、変わるのは上の穴の所だけ（`Result\tpose_v168_20261018\texture_check\`）
 - Tポーズ版に前からある状態（今回は触っていない）: 上腕骨に付く筋（大胸筋・広背筋・大円筋）が Tポーズの上腕骨から 12〜33mm 離れている（マスターは 0.1〜6mm）。三角筋鎖骨部が前鋸筋に約2%入っている
