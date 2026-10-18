@@ -40,12 +40,54 @@ TERMS_EN = (
 )
 
 
+# 2026-10-14 個人利用／法人利用の段（C:\Users\abesh\Documents\Blender\LICENSE_TIERS_2026-10.md）。
+# 2026-10 の配布 zip には tier_zips_2026-10\make_tier_zips.py で後から足した。文面はそちらと同じ
+TIER_JA = [
+    "・個人利用ライセンス：個人の方（個人事業主・同人サークルを含む）向けです。",
+    "　営利・非営利を問わずお使いいただけます。学校の先生がご自身で購入し、",
+    "　授業や教材に使う場合も個人利用ライセンスでお使いいただけます。",
+    "・法人利用ライセンス：会社・学校・団体などの法人・組織の方向けです。",
+    "　1ライセンスで、その法人・組織に所属する方は人数に関係なくお使いいただけます。",
+    "",
+    "個人の方でも、次の場合は法人利用ライセンスが必要です。",
+    "・会社・団体などから依頼を受けて制作する作品に使う場合（受託制作）",
+    "・本モデルを組み込んだアプリ・ゲーム・Web サービスを、販売・課金・広告などで",
+    "　収益を得る形で提供する場合",
+    "",
+    "ライセンスの種類は購入時に選んだバリエーション（版）で決まり、購入履歴が",
+    "証明になります。2026年10月15日より前にご購入の方は、購入時のライセンスの",
+    "ままお使いいただけます。",
+]
+TIER_EN = [
+    "- Personal license: for individuals, including sole proprietors. Commercial",
+    "  and non-commercial use are both allowed. Teachers who buy it themselves may",
+    "  use it in their classes and teaching materials.",
+    "- Business license: for companies, schools and other organizations. One",
+    "  license covers everyone in the purchasing organization.",
+    "",
+    "Individuals also need a Business license when:",
+    "- the work is commissioned by a company or organization",
+    "- the model is built into an app, game or web service that earns money",
+    "  through sales, in-app purchases or ads",
+    "",
+    "Your license type is the variation (version) you chose at checkout, and your",
+    "purchase record serves as proof. Purchases made before October 15, 2026 keep",
+    "the license they were sold with.",
+]
+README_TIER = [
+    "License types (Personal / Business): see LICENSE.txt.",
+    "ライセンスの種類（個人利用／法人利用）は LICENSE.txt を参照してください。",
+]
+
+
 def license_txt(name):
     return "\n".join([
         RULE, "LICENSE / ライセンス", RULE, "",
         "\"%s\" (c) 2026 Kabe (Kabe-Tech)  —  license version %s" % (name, MARK_ID), "",
         "[日本語]", TERMS_JA, "",
         "[English]", TERMS_EN, "",
+        SUB, "LICENSE TYPES / ライセンスの種類", SUB,
+        "[日本語]", *TIER_JA, "", "[English]", *TIER_EN, "",
         SUB, "SOURCE DATA / 元データ", SUB,
         "BodyParts3D, (c) The Database Center for Life Science",
         "licensed under CC BY 4.0 (Creative Commons Attribution 4.0 International)",
@@ -100,7 +142,8 @@ README_LICENSE_BLOCK = "\n".join([
     "IMPORTANT: LICENSE / 重要：ライセンス", SUB,
     TERMS_JA, "", TERMS_EN, "",
     "Details and source attribution: LICENSE.txt / CREDITS.txt",
-    "詳細と出典表記は LICENSE.txt / CREDITS.txt を参照してください。", "",
+    "詳細と出典表記は LICENSE.txt / CREDITS.txt を参照してください。",
+    *README_TIER, "",
 ])
 
 
