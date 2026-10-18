@@ -73,18 +73,33 @@ async function auditBooth() {
       const PID = CFG.booth.products[product].id;
       await page.goto(CFG.booth.base_edit + PID + '/edit', { waitUntil: 'domcontentloaded', timeout: 60000 });
       await page.waitForTimeout(5000);
-      const info = await page.evaluate(() => ({
-        files: [...new Set([...document.querySelectorAll('a')]
-          .filter(a => /\.zip/.test(a.textContent || '')).map(a => a.textContent.trim()))],
-        unchecked: [...document.querySelectorAll('input[type=checkbox]')]
-          .filter(c => /\.zip/.test((c.closest('label') || c.parentElement || {}).textContent || '') && !c.checked)
-          .map(c => ((c.closest('label') || c.parentElement).textContent || '').trim().slice(0, 60)),
-      }));
-      report(`${product} (${PID})`, expectedZips(product), info.files);
-      if (info.unchecked.length) {
-        console.log('        NG: 購入者に提供されないチェックOFF:', info.unchecked.join(', '));
-        failures++;
+      const files = await page.evaluate(() => [...new Set([...document.querySelectorAll('a')]
+        .filter(a => /\.zip/.test(a.textContent || '')).map(a => a.textContent.trim()))]);
+      report(`${product} (${PID})`, expectedZips(product), files);
+      // 2026-10-14 から商品はバリエーション2つ（個人利用／法人利用）。作品ファイルは欄ごとにチェックで付けるので、
+      // 欄ごとにモーダルを開き、見えているチェック欄だけを読む（隠れたモーダルにも同じ欄があり、開かずに読むと OFF と出る）
+      const fields = [];
+      for (let t = 0; t < 20; t++) {
+        const idx = await page.evaluate(() => [...document.querySelectorAll('button')].map((b, i) => ({ i, t: (b.textContent || '').trim(), w: b.getBoundingClientRect().width }))
+          .filter(x => /^(変更する|ファイルの追加・管理)$/.test(x.t) && x.w > 0).map(x => x.i));
+        if (idx.length) { fields.push(...idx); break; }
+        await page.waitForTimeout(1000);
       }
+      for (const [k, bi] of fields.entries()) {
+        const btn = page.locator('button').nth(bi); await btn.scrollIntoViewIfNeeded(); await btn.click(); await page.waitForTimeout(3000);
+        const unchecked = await page.evaluate(() => [...document.querySelectorAll('input[type=checkbox]')]
+          .filter(c => c.getBoundingClientRect().width > 0 && /\.zip/.test((c.closest('label') || c.parentElement || {}).textContent || '') && !c.checked)
+          .map(c => (((c.closest('label') || c.parentElement).textContent || '').match(/[\w.\-]+\.zip/) || [''])[0]));
+        if (unchecked.length) {
+          console.log(`        NG: バリエーション${k + 1}の欄で購入者に提供されない（チェックOFF）:`, [...new Set(unchecked)].join(', '));
+          failures++;
+        }
+        const close = page.getByRole('button', { name: '閉じる', exact: true });
+        for (let i = 0; i < await close.count(); i++) if (await close.nth(i).isVisible()) { await close.nth(i).click(); break; }
+        await page.waitForTimeout(1500);
+      }
+      if (!fields.length) { console.log('        NG: 作品ファイルの欄が見つからない'); failures++; }
+      else console.log(`        チェック確認: ファイル欄 ${fields.length} 個`);
     }
   });
 }

@@ -75,3 +75,7 @@ refs/BodyParts3D_v4.0/bp3d_home.html
 
 # 多裂筋の作り直しの中間データ
 scripts/multifidus_fix/work/
+
+# 出品スクリプトのログ・スクショ（販路の画面を含む）
+scripts/listing/booth_log/
+scripts/listing/gum_log/

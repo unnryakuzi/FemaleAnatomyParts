@@ -46,6 +46,11 @@
   `rewrite_license_texts.py` は、書き換え済みのパッケージに流し直すと CREDITS.txt の「本モデルで加えた主な変更」節（CC BY の変更の明示）が消えたので、節の終わりの読み取りを直した
 - 追記（10-18）: マスターから編集用のガイド線2本（CURRENT_右腰腸肋筋_先端ライン・CURRENT_左広頚筋接触ライン）と `_ガイドライン` コレクションを消した
   （1本目とコレクションはユーザーが消した。「製品版なら消すのが妥当」）。配布物には元から入っていない（drop_review_only.py が外す）
+- **販売サイトへ反映（10-18・ユーザー承認「すべてして」）**: BOOTH 8481858・8496725 と Gumroad zdlbhd の zip を v1.68.0 に差し替えた（BOOTH は個人利用・法人利用の両方の欄。Gumroad は大きさが手元と一致）。
+  BOOTH 女性の5枚目と Gumroad 女性の説明欄の骨格の正面を、撮り直した 04 に。商品名・説明文・Gumroad の Summary と追加情報 Parts の「673」を 716 にし、女性の説明に v1.68.0 の1行を足した。
+  購入者への告知: BOOTH のメッセージ一斉送信（女性・セットの所有者4人、11:42 送信完了）、Gumroad の Emails（女性・セット2つの購入者7人、Sent）。
+  スクリプトは scripts/listing/booth_files.js・booth_text.js・booth_notice.js・gum_files.js・gum_desc.js・gum_notice.js（手順は 出品手順_販売サイト.md §4.5）。
+  audit_dist.js の BOOTH の判定を、バリエーションの欄ごとにモーダルを開いて見るように直した（開かずに読むと隠れた欄を拾い「チェックOFF」と誤判定していた）
 
 ## Man v1.2.1 追記 — 2026-10-18 （配布物の文面だけ。モデルは不変）
 
@@ -53,6 +58,8 @@
   「「BodyParts3D」(DBCLS, CC 表示 4.0 国際) を改変。Adapted from "BodyParts3D" (c) DBCLS, CC BY 4.0. See CREDITS.txt.」に直した
 - LICENSE / README を販売中の zip（個人利用／法人利用の段つき）と同じ文に作り直し、4形式の zip を作り直した（ファイル名は v1.2.1 のまま）。
   販売中の zip（`tier_zips_2026-10\out\`）との差は索引の2ファイルだけ（モデル・LICENSE・README・CREDITS・CSV は CRC 一致）
+- 販売サイトへ反映（10-18）: BOOTH 8496247・8496725 と Gumroad hgbvor の zip を差し替えた。BOOTH は新旧で名前が同じなので古い zip を消してから上げたが、
+  ファイルが空のバリエーションがあると「公開で保存する」が押せず、**BOOTH 男性商品にファイルが無い時間が 11:16〜11:26 の約10分あった**（両方の欄にチェックを入れて1回で保存して解消）。購入者への告知はしていない（索引の1行だけのため）
 
 ## Man v1.2.0 — 2026-08-19 （男性モデル Man_All.blend）
 
