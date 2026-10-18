@@ -50,7 +50,8 @@
   BOOTH 女性の5枚目と Gumroad 女性の説明欄の骨格の正面を、撮り直した 04 に。商品名・説明文・Gumroad の Summary と追加情報 Parts の「673」を 716 にし、女性の説明に v1.68.0 の1行を足した。
   購入者への告知: BOOTH のメッセージ一斉送信（女性・セットの所有者4人、11:42 送信完了）、Gumroad の Emails（女性・セット2つの購入者7人、Sent）。
   スクリプトは scripts/listing/booth_files.js・booth_text.js・booth_notice.js・gum_files.js・gum_desc.js・gum_notice.js（手順は 出品手順_販売サイト.md §4.5）。
-  audit_dist.js の BOOTH の判定を、バリエーションの欄ごとにモーダルを開いて見るように直した（開かずに読むと隠れた欄を拾い「チェックOFF」と誤判定していた）
+  audit_dist.js の BOOTH の判定を、バリエーションの欄ごとにモーダルを開いて見るように直した（開かずに読むと隠れた欄を拾い「チェックOFF」と誤判定していた）。
+  あわせて Gumroad 女性の Summary が「5 formats (blend/glb/fbx/obj)」と4形式を並べていたので「4 formats」に直した（ユーザー指示「直す」。BOOTH と他の Gumroad 商品は形式の数が合っていた）
 
 ## Man v1.2.1 追記 — 2026-10-18 （配布物の文面だけ。モデルは不変）
 
