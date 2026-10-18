@@ -22,6 +22,41 @@ reselling or sharing the model data itself (including modified versions)
 is prohibited.
 
 ----------------------------------------------------------------
+LICENSE TYPES / ライセンスの種類
+----------------------------------------------------------------
+[日本語]
+・個人利用ライセンス：個人の方（個人事業主・同人サークルを含む）向けです。
+　営利・非営利を問わずお使いいただけます。学校の先生がご自身で購入し、
+　授業や教材に使う場合も個人利用ライセンスでお使いいただけます。
+・法人利用ライセンス：会社・学校・団体などの法人・組織の方向けです。
+　1ライセンスで、その法人・組織に所属する方は人数に関係なくお使いいただけます。
+
+個人の方でも、次の場合は法人利用ライセンスが必要です。
+・会社・団体などから依頼を受けて制作する作品に使う場合（受託制作）
+・本モデルを組み込んだアプリ・ゲーム・Web サービスを、販売・課金・広告などで
+　収益を得る形で提供する場合
+
+ライセンスの種類は購入時に選んだバリエーション（版）で決まり、購入履歴が
+証明になります。2026年10月15日より前にご購入の方は、購入時のライセンスの
+ままお使いいただけます。
+
+[English]
+- Personal license: for individuals, including sole proprietors. Commercial
+  and non-commercial use are both allowed. Teachers who buy it themselves may
+  use it in their classes and teaching materials.
+- Business license: for companies, schools and other organizations. One
+  license covers everyone in the purchasing organization.
+
+Individuals also need a Business license when:
+- the work is commissioned by a company or organization
+- the model is built into an app, game or web service that earns money
+  through sales, in-app purchases or ads
+
+Your license type is the variation (version) you chose at checkout, and your
+purchase record serves as proof. Purchases made before October 15, 2026 keep
+the license they were sold with.
+
+----------------------------------------------------------------
 SOURCE DATA / 元データ
 ----------------------------------------------------------------
 BodyParts3D, (c) The Database Center for Life Science

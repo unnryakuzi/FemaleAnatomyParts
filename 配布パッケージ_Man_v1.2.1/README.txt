@@ -168,5 +168,7 @@ is prohibited.
 
 Details and source attribution: LICENSE.txt / CREDITS.txt
 詳細と出典表記は LICENSE.txt / CREDITS.txt を参照してください。
+License types (Personal / Business): see LICENSE.txt.
+ライセンスの種類（個人利用／法人利用）は LICENSE.txt を参照してください。
 
 ================================================================

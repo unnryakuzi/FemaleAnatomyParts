@@ -1,7 +1,7 @@
 {
  "_meta": {
   "desc": "正規化base名(JA) -> {en, la, conf}. 左右・番号はBlender適用スクリプトで展開。{o}=英語序数, {n}=算用数字, {r}=ローマ数字。conf=low は要照合(BodyParts3D/FMAで確認推奨)。",
-  "source_note": "出典 BodyParts3D(c)DBCLS / 3DAnatomyman(always3d) CC BY-SA 2.1 JP。最終的にFMA公式英名と照合推奨。"
+  "source_note": "出典 「BodyParts3D」(DBCLS, CC 表示 4.0 国際) を改変。Adapted from \"BodyParts3D\" (c) DBCLS, CC BY 4.0. See CREDITS.txt. 最終的にFMA公式英名と照合推奨。"
  },
  "Body_Tpose": {
   "en": "Body skin",

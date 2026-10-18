@@ -110,7 +110,9 @@ def license_txt(name):
 
 
 def extract_changes(old_credits):
-    m = re.search(r"-{20,}\nCHANGES MADE[^\n]*\n(?:[^\n-][^\n]*\n)?-{20,}\n(.*?)\n-{20,}\n", old_credits, re.S)
+    # 旧形式は次の「----」で、書き換え後の形式は空行＋「====」で終わる（2026-10-18: 書き換え済みの
+    # パッケージに流し直したら「====」を読めず、変更明示の節が消えた）
+    m = re.search(r"-{20,}\nCHANGES MADE[^\n]*\n(?:[^\n-][^\n]*\n)?-{20,}\n(.*?)\n(?:-{20,}|={20,})\n", old_credits, re.S)
     return m.group(1).rstrip() if m else None
 
 

@@ -40,6 +40,19 @@
   全ワークスペースの 3D ビューでオーバーレイと選択物の輪郭をオンにし、Modeling・Layout のツールを「選択（ボックス）」にした（scripts/listing/ui_defaults.py）。
   形・色・表示・識別子は不変（マスター724・配布720オブジェクトで照合）。export_dist.py は .blend を保存する前にこれをかけ、上書きのとき .blend1 を残さないようにした。
   配布 .blend と blend の zip だけ作り直した（make_zips.py に --formats を足した）
+- 追記（10-18）: 配布パッケージの LICENSE.txt / README.txt に、10/14 に販売中の zip へ足した「個人利用／法人利用」ライセンスの段が無かった
+  （v1.67.1 のパッケージから写したため。段は tier_zips_2026-10\make_tier_zips.py で zip にだけ足されていた）。
+  `rewrite_license_texts.py`（段の文は 10/14 から入っていて未コミットだった → f19e25e）で作り直し、LICENSE・CREDITS・README のライセンス節が販売中の zip と一致することを確かめて、4形式の zip を作り直した（中身の差は LICENSE.txt と README.txt だけ。モデル・索引・CREDITS は CRC 一致）。
+  `rewrite_license_texts.py` は、書き換え済みのパッケージに流し直すと CREDITS.txt の「本モデルで加えた主な変更」節（CC BY の変更の明示）が消えたので、節の終わりの読み取りを直した
+- 追記（10-18）: マスターから編集用のガイド線2本（CURRENT_右腰腸肋筋_先端ライン・CURRENT_左広頚筋接触ライン）と `_ガイドライン` コレクションを消した
+  （1本目とコレクションはユーザーが消した。「製品版なら消すのが妥当」）。配布物には元から入っていない（drop_review_only.py が外す）
+
+## Man v1.2.1 追記 — 2026-10-18 （配布物の文面だけ。モデルは不変）
+
+- 索引（`解剖名インデックス_Man.html`・`anatomy_terms.json`）の出典表記が「CC BY-SA 2.1 JP の派生」のままだった → 女性 v1.68.0 の索引と同じ
+  「「BodyParts3D」(DBCLS, CC 表示 4.0 国際) を改変。Adapted from "BodyParts3D" (c) DBCLS, CC BY 4.0. See CREDITS.txt.」に直した
+- LICENSE / README を販売中の zip（個人利用／法人利用の段つき）と同じ文に作り直し、4形式の zip を作り直した（ファイル名は v1.2.1 のまま）。
+  販売中の zip（`tier_zips_2026-10\out\`）との差は索引の2ファイルだけ（モデル・LICENSE・README・CREDITS・CSV は CRC 一致）
 
 ## Man v1.2.0 — 2026-08-19 （男性モデル Man_All.blend）
 
