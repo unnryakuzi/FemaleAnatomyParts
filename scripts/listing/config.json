@@ -26,6 +26,8 @@
 
   "root": "C:/Users/abesh/Documents/Blender/MaleAnatomy",
 
+  "_gumroad_thumb": "2026-10-31: Gumroad のカラー版3商品（＋法人向けカラーセット pxfku）の正方形サムネは帯入りの thumbnails/thumb_<p>_band_en.png（scripts/listing/band_thumbs.py で作る）。差し替えは THUMB=thumb_<p>_band_en.png node gumroad.js thumb <p>。帯なしの thumb_<p>.png で上書きしない。プロフィールは系統ごとの3セクションで、法人向けは載せない（gum_sections.js）",
+
   "_booth_mannequin": "BOOTHは商品ページの画像で年齢制限を判定する（事務局回答 2026-08-10）。肌色のécorché＝裸の人体と読まれてR-18固定にされたため、BOOTH掲載分だけ無彩色マネキン調に差し替える。配布物・Gumroadはカラーのまま（previews_dir）。撮影は MANNEQUIN=1 blender -b ... render_previews.py",
 
   "_booth_swimwear": "下着版(previews_sw)。BOOTH全年齢化の第2案。無彩色にせずカラーのまま該当部位を覆う。撮影は SWIMWEAR=1 blender -b ... render_previews.py。下着は scripts/listing/swimwear_fit_<model>.blend を append するだけでマスターは無変更。フィットの再生成は blender -b <model>.blend -P scripts/listing/fit_swimwear.py -- <model>。★どちらをBOOTHに出すかは未決。previews_dir_booth はマネキン版のまま据え置いてある（2026-08-15）",

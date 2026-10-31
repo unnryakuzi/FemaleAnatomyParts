@@ -8,7 +8,7 @@
  *   node gumroad.js verify  <female|male|set>      公開ページをスクショ（$TEMP/gum_<p>_pub.png）
  *   node gumroad.js covers  <product>              ★「Product covers」の旧ゴミを全削除（狭VP）→説明欄先頭がメイン昇格
  *   node gumroad.js desc    <product>              説明欄画像を全削除→config順で再挿入（※bannerも消える。必要時のみ）
- *   node gumroad.js thumb   <product>              正方形サムネを thumbnails/thumb_<p>.png に差替
+ *   node gumroad.js thumb   <product>              正方形サムネを thumbnails/thumb_<p>.png に差替（THUMB=<ファイル名> で別ファイル）
  *   node gumroad.js files   <product>              Contentタブの配布zipを config の版へ差替
  *
  * ★files の順序（2026-08-19 BOOTHでの事故を踏まえた設計）:
@@ -176,7 +176,8 @@ async function run() {
 
     if (cmd === 'thumb') {
       await gotoEdit(page);
-      const thumb = path.join(CFG.root, CFG.thumbnails_dir, `thumb_${product}.png`);
+      // THUMB=thumb_female_band_en.png のように thumbnails/ 内の別ファイルを指定できる（2026-10-31 帯入りサムネ）
+      const thumb = path.join(CFG.root, CFG.thumbnails_dir, process.env.THUMB || `thumb_${product}.png`);
       const ti = page.locator('img[alt="Thumbnail image"]').first();
       if (await ti.count()) {
         const sec = page.locator('section:has(img[alt="Thumbnail image"])').first();
