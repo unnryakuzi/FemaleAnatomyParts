@@ -39,7 +39,7 @@
     "previews_dir_booth": "配布パッケージ_v1.68.0/previews_sw",
     "previews_dir_mq": "配布パッケージ_v1.68.0/previews_mq",
     "previews_dir_sw": "配布パッケージ_v1.68.0/previews_sw",
-    "booth_thumb": "thumb_female_sw.png",
+    "booth_thumb": "thumb_female_band_ja.png",
     "booth_thumb_mq": "thumb_female_mq.png",
     "booth_thumb_sw": "thumb_female_sw.png",
     "zip_dir": "配布zip_v1.68.0",
@@ -55,7 +55,8 @@
     "previews_dir": "配布パッケージ_Man_v1.2.0/previews",
     "previews_dir_booth": "配布パッケージ_Man_v1.2.0/previews_sw",
     "previews_dir_mq": "配布パッケージ_Man_v1.2.0/previews_mq",
-    "booth_thumb": "thumb_male_sw.png",
+    "booth_thumb": "thumb_male_band_ja.png",
+    "booth_thumb_sw": "thumb_male_sw.png",
     "booth_thumb_mq": "thumb_male_mq.png",
     "zip_dir": "配布zip_Man_v1.2.1",
     "zip_prefix": "MaleAnatomy_v1.2.1",
@@ -82,7 +83,7 @@
 
   "_set_image_order_booth": "2026-08-23: セットのBOOTH掲載を下着版カラー(previews_sw)へ切替。男性(8496247)がカラー＋ブリーフで全年齢を5日維持できたので、次の実験としてセットへ展開する。年齢制限の切替はユーザーが手動で行う。戻すときは set_image_order_booth を消せば set_image_order（カラー原版・肌色乳房あり）に戻る",
   "set_image_order_booth": [
-    "thumbnails/thumb_set_sw.png",
+    "thumbnails/thumb_set_band_ja.png",
     "female:01_front.png",
     "male:01_muscle_front.png",
     "female:03_back.png",
@@ -93,6 +94,14 @@
     "male:04_skeleton_front.png"
   ],
   "set_booth_previews_dir_key": { "female": "previews_dir_sw", "male": "previews_dir_booth" },
+
+  "_booth_band_c": "2026-10-31 ユーザー決定（BOOTH 案C）: 一覧サムネ（1枚目）を帯入りの thumbnails/thumb_<p>_band_ja.png（band_thumbs.py で下着版 thumb_<p>_sw.png から作る。人物は同じで背景と帯だけ違う）にし、商品名の頭を他の系統（筋肉解剖ボディ（男性）／解剖骨格モデル（…））と同じ「カラー解剖モデル（女性）」の型にそろえた。戻すときは booth_thumb を booth_thumb_sw、set_image_order_booth[0] を thumbnails/thumb_set_sw.png に戻し、node booth.js images <p>",
+  "booth_titles": {
+    "female": "カラー解剖モデル（女性）716パーツ｜筋肉・骨格 écorché（A-pose・3言語ラベル付き）/ blend・glb・fbx・obj",
+    "male": "カラー解剖モデル（男性）939パーツ｜筋肉・骨格・内臓・血管・神経 écorché（A-pose・3言語ラベル付き）/ blend・glb・fbx・obj",
+    "set": "カラー解剖モデル 男女セット｜女性716＋男性939パーツ écorché（A-pose・3言語ラベル付き）/ blend・glb・fbx・obj",
+    "_before": "【カラー版】女性解剖モデル｜筋肉・骨格 écorché（A-pose・3言語ラベル付き）716パーツ / … ／ 【カラー版】男性解剖モデル｜筋肉・骨格・内臓・血管・神経 écorché（…）939パーツ / … ／ 【カラー版】【男女セット】解剖モデル ペア｜女性716＋男性939パーツ …"
+  },
 
   "_booth_thumb_first": "BOOTHの一覧サムネは1枚目画像の正方形中央クロップ。縦長(1000x1400)を1枚目にすると頭と足が切れるため、正方形サムネを先頭に足す（2026-07-26）",
   "booth_thumb_first": true,

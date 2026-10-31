@@ -5,7 +5,7 @@
  *   pwsh -File C:\Users\abesh\tools\browser-auto\brave-debug.ps1 -Profile "PC"
  *
  * サブコマンド（個別実行 or all）:
- *   node booth.js title  <female|male|set>   商品名に【カラー版】を前置（React value setter）
+ *   node booth.js title  <female|male|set>   商品名を config.booth_titles にする（無ければ【カラー版】を前置。React value setter）
  *   node booth.js desc   <product>           config.booth_desc_notes の注記を説明文へ冪等に挿入
  *   node booth.js images <product>           商品画像を全削除→config順で一括追加（1番目=一覧サムネ）
  *   node booth.js files  <product>           作品ファイル: 旧zip削除→新zipアップ（★容量10GB上限→削除を先に）
@@ -21,6 +21,14 @@
  *   - 「削除」は別カラムの <span>削除</span>（行リンクと非親子）。行リンクと中心Yの最近傍で対応付け、
  *     対象版のみ座標クリック（confirm accept）。リフローするので毎回再計測し下(大Y)から。
  *   - 保存後 confirm/公開ダイアログは accept。R-18 は触らない。
+ *
+ * ★★ 2026-10-31 BOOTH の画像欄が変わった（images は今のままでは動かない・使う前に直す）:
+ *   - 画像の追加・並べ替え・削除は「保存」を押さなくても即時に公開ページへ反映される（画面の注記どおり）。
+ *     「全部消してから入れ直す」は途中で止まると商品の画像が消えたままになる。
+ *   - ×を押すと window.confirm ではなくページ内のモーダル（「画像を削除」→ OK）が出る。deleteAllImages はこれを押せず1枚も消せない。
+ *   - 「画像を追加」は filechooser を出す（filechooser.setFiles で入る）。並べ替えはセルに focus →
+ *     Space → 矢印キー → Space（dnd-kit のキーボード操作）。
+ *   - 1枚目だけ替えるときは booth_thumb.js（追加→先頭へ→確認→旧1枚目を削除）を使う。
  *
  * ★★ 未保存の手編集は save で消える（2026-08-18 実証・再発防止）:
  *   このファイルの各サブコマンドは毎回 page.goto でページを開き直す。したがって
@@ -95,8 +103,12 @@ async function gotoEdit(page) {
 
 async function setTitle(page) {
   const cur = await page.evaluate(() => { const i = [...document.querySelectorAll('input')].find(x => /解剖|Anatomy|セット/.test(x.value || '')); return i ? i.value : null; });
-  if (cur && !cur.includes('カラー版')) {
-    const nv = '【カラー版】' + cur;
+  // config.booth_titles に商品名があればその文字列にする（2026-10-31 案C: 頭を「カラー解剖モデル（女性）」にそろえた。
+  // 新しい名前には「カラー版」が無いので、下の【カラー版】前置きに落ちると二重の名前になる）
+  const want = (CFG.booth_titles || {})[product];
+  if (want !== undefined || (cur && !cur.includes('カラー版'))) {
+    const nv = want !== undefined ? want : '【カラー版】' + cur;
+    if (cur === nv) { console.log('title unchanged:', cur); return; }
     await page.evaluate(v => { const i = [...document.querySelectorAll('input')].find(x => /解剖|Anatomy|セット/.test(x.value || '')); const set = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set; set.call(i, v); i.dispatchEvent(new Event('input', { bubbles: true })); i.dispatchEvent(new Event('change', { bubbles: true })); }, nv);
     console.log('title ->', nv);
   } else console.log('title already has カラー版 or not found:', cur);
