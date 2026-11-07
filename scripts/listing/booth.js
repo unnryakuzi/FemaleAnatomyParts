@@ -251,7 +251,8 @@ async function doFiles(context, page) {
       const files = [...document.querySelectorAll('a')].filter(a => /\.zip/.test(a.textContent || '')).map(a => { const r = a.getBoundingClientRect(); return { y: r.y + r.height / 2, name: a.textContent.trim() }; });
       return dels.map(d => { let best = null, bd = 1e9; for (const f of files) { const dd = Math.abs(f.y - d.y); if (dd < bd) { bd = dd; best = f; } } return { x: Math.round(d.x), y: Math.round(d.y), name: best ? best.name : '?' }; });
     });
-    const olds = map.filter(m => m.name !== '?' && !keep.has(m.name)).sort((a, b) => b.y - a.y);
+    // BusinessLicense_*.zip は法人利用のバリエーションだけに付けた証書（2026-11-07）。消さない
+    const olds = map.filter(m => m.name !== '?' && !keep.has(m.name) && !/^BusinessLicense_/.test(m.name)).sort((a, b) => b.y - a.y);
     if (olds.length === 0) break;
     console.log('delete old', olds[0].name);
     await page.mouse.click(olds[0].x, olds[0].y); await page.waitForTimeout(1800);

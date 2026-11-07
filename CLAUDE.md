@@ -12,6 +12,7 @@ CC BY-SA 2.1 JP には戻さない。文面の正は `scripts/listing/rewrite_li
   製品の元データはアーカイブ旧リリース `20110915/BodyParts3D_3.0_obj_95.zip` と全934パーツ完全一致（`refs/provenance_audit_summary.md` §9）。
   always3d の配布物はこれを FBX に変換しただけ
 - 2026-10 より前に配布した版（識別子なし）は CC BY-SA 2.1 JP のまま（CC は撤回できない）
+- **法人利用ライセンスの購入者には証書 `BusinessLicense_<商品>.zip`（識別子 `KT-L2026-10-B`）を法人利用の側だけに付けている（2026-11-07）。** Gumroad は版ごとに中身が別なので、zip を差し替えるときは Personal・Business の両方を替える（経緯と手順: `..\LICENSE_TIERS_2026-10.md` の末尾）
 
 ### ★配布物には必ず識別子 `KT-L2026-10` を入れる（ユーザー指示 2026-10-07・全セッション共通）
 

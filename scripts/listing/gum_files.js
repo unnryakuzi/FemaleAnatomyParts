@@ -41,6 +41,9 @@ withBrowser(async ({ context, getPage }) => {
   if (step === 'files') {
     for (const z of ZIPS) if (!fs.existsSync(path.join(ZIPDIR, z))) throw new Error('zip が無い: ' + z);
     await page.goto(EDIT + '/content', { waitUntil: 'domcontentloaded', timeout: 90000 }); await page.waitForTimeout(8000);
+    // 2026-11-07 から版ごとに中身が別（Business 版だけ証書付き。tier_zips_2026-10\gum_cert.js）。ここは表示中の1版しか替えないので止める
+    if (await page.evaluate(() => document.querySelector('[aria-label="Select a version"]')?.textContent.trim() !== 'Editing: All versions'))
+      throw new Error('版ごとに中身が分かれている。Personal と Business の両方の zip を替える（Business は証書を残す）');
     const rowNames = () => page.evaluate(() => [...document.querySelectorAll('.node-fileEmbed')].map(e => e.innerText.split('\n')[0].trim()));
     const want = ZIPS.map(z => z.replace(/\.zip$/, '')).sort();
     const cur = await rowNames(); log('rows before', JSON.stringify(cur));

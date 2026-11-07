@@ -211,6 +211,9 @@ async function run() {
 
       // ── 1) アップロード → 保存 → 再読込で確認（削除はそのあと）
       await gotoContent(page);
+      // 2026-11-07 から版ごとに中身が別（Business 版だけ証書付き。tier_zips_2026-10\gum_cert.js）。ここは表示中の1版しか替えないので止める
+      if (await page.evaluate(() => document.querySelector('[aria-label="Select a version"]')?.textContent.trim() !== 'Editing: All versions'))
+        throw new Error('版ごとに中身が分かれている。Personal と Business の両方の zip を替える（Business は証書を残す）');
       console.log('現在:', await listFiles(page));
       console.log('目標:', wantNames);
       const before = await listFiles(page);
